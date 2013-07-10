@@ -2,13 +2,13 @@
 # Michael Weber xmw at gentoo dot org 2013
 #
 # TODO 
-#	portage tree in squashfs
-# 	replace portage-latest with rsync
+# 	handle portage-latest correct.
+#	provide update mechanism for portage.squashfs -> lore.xmw.de/gentoo
 
 check() {
 	[ "$(id -u)" -eq 0 ] || echo "run as root"
 	for tool in mkdir wget openssl gpg pv mkfs.vfat mkswap mkfs.ext4 \
-		tar kpartx losetup sfdisk dd
+		tar kpartx losetup sfdisk dd mksquashfs
 	do
 		which ${tool} >/dev/null || echo "missing: ${tool}"
 	done
