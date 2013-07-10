@@ -1,4 +1,9 @@
 #!/bin/zsh
+# Michael Weber xmw at gentoo dot org 2013
+#
+# TODO 
+#	portage tree in squashfs
+# 	replace portage-latest with rsync
 
 check() {
 	[ "$(id -u)" -eq 0 ] || echo "run as root"
@@ -14,7 +19,7 @@ if [ -n "${ERR}" ] ; then
 	exit 1
 fi
 
-setopt -e 
+setopt -e -x
 
 WORKDIR=/rpi
 
@@ -65,7 +70,7 @@ gpg --recv-keys C9189250
 gpg --verify ${PORTAGE}.gpgsig ${PORTAGE}
 
 IMAGE=${WORKDIR}/image.raw
-dd bs=1M count=4000 if=/dev/zero | pv -s 4000M > ${IMAGE}
+dd bs=1M count=2000 if=/dev/zero | pv -s 2000M > ${IMAGE}
 
 LOOP=$(losetup -f)
 losetup ${LOOP} ${IMAGE}
@@ -73,21 +78,57 @@ losetup ${LOOP} ${IMAGE}
 	echo ",16,0x0C,*"
 	echo ",64,,-"
 	echo ",,,-"
-} | sfdisk -D -H 255 -S 63 -C 509 ${LOOP}
+} | sfdisk -D -H 255 -S 63 -C 254 ${LOOP} #509
+
 kpartx -a -v ${LOOP}
-BOOT=/dev/mapper/$(basename ${LOOP})p1
-SWAP=/dev/mapper/$(basename ${LOOP})p2
-ROOT=/dev/mapper/$(basename ${LOOP})p3
-mkfs.vfat ${BOOT}
-mkswap ${SWAP}
-mkfs.ext4 -i 4096 ${ROOT}
 
 TARGET=${WORKDIR}/target
+
+ROOT=/dev/mapper/$(basename ${LOOP})p3
+mkfs.ext4 -i 4096 ${ROOT}
 mkdir -p ${TARGET}
 mount ${ROOT} ${TARGET}
+
+BOOT=/dev/mapper/$(basename ${LOOP})p1
+mkfs.vfat ${BOOT}
 mkdir -p ${TARGET}/boot
 mount ${BOOT} ${TARGET}/boot
+
+SWAP=/dev/mapper/$(basename ${LOOP})p2
+mkswap ${SWAP}
  
 pv ${STAGE3} | tar xjC ${TARGET}
-pv ${PORTAGE} | tar xJC ${TARGET}/usr
+#pv ${PORTAGE} | tar xJC ${TARGET}/usr
 
+ACCEPT_KEYWORDS="~arm" emerge -v --nodeps --root=/rpi/target "=sys-kernel/raspberrypi-image-3.2.27_p20121105"
+ACCEPT_KEYWORDS="~arm" emerge -v --nodeps --root=/rpi/target "=sys-boot/raspberrypi-loader-0_p20121105"
+
+cp -v ${TARGET}/boot/kernel-3.2.27+.img ${TARGET}/boot/kernel.img
+
+sed -e 's:root=[/a-z0-9]*:root=/dev/mmcblk0p3:' \
+	-i ${TARGET}/boot/cmdline.txt
+
+{
+	sed -ne '/^#/p' ${TARGET}/etc/fstab
+	echo -e "/dev/mmcblk0p1\t\t/boot\t\tvfat\t\tdefaults\t1 2"
+	echo -e "/dev/mmcblk0p2\t\tnone\t\tswap\t\tsw\t\t0 0"
+	echo -e "/dev/mmcblk0p3\t\t/\t\text4\t\tnoatime\t0 1"
+} > ${TARGET}/etc/fstab.new
+mv ${TARGET}/etc/fstab{.new,}
+
+mv ${TARGET}/etc/shadow{,-}
+local PASSWD=$(echo Gentoo | openssl passwd -1 -stdin)
+{ 
+	echo "root:${PASSWD}:0:0:::::"
+	sed -e "/^root/d" ${TARGET}/etc/shadow-
+} > ${TARGET}/etc/shadow
+
+${SHELL}
+
+umount ${BOOT} 
+umount ${ROOT}
+
+
+kpartx -d -v ${LOOP}
+
+losetup -d ${LOOP}
