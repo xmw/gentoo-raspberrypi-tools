@@ -98,7 +98,11 @@ SWAP=/dev/mapper/$(basename ${LOOP})p2
 mkswap ${SWAP}
  
 pv ${STAGE3} | tar xjC ${TARGET}
-#pv ${PORTAGE} | tar xJC ${TARGET}/usr
+
+TMP=$(mktemp -d)
+pv ${PORTAGE} | tar xJC ${TMP}
+mksquashfs ${TMP} ${TARGET}/usr/portage.squashfs
+rm -r ${TMP}
 
 ACCEPT_KEYWORDS="~arm" emerge -v --nodeps --root=/rpi/target "=sys-kernel/raspberrypi-image-3.2.27_p20121105"
 ACCEPT_KEYWORDS="~arm" emerge -v --nodeps --root=/rpi/target "=sys-boot/raspberrypi-loader-0_p20121105"
