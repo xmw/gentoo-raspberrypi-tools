@@ -163,7 +163,10 @@ touch ${TARGET}/lib/rc/cache/shutdowntime
 	echo 'PKGDIR=/var/cache/packages'
 	echo 'PORT_LOGDIR=/var/log/portage'
 	echo 'SYNC=squashfs'
-	echo 'FEATURES="buildpkg candy"'
+	echo 'FEATURES="${FEATURES} candy"'
+	echo '#BINHOST="http://lore.xmw.de/gentoo/binhost/${CHOST}/raspberrypi-experimental/"'
+	echo '#FEATURES="${FEATURES} buildpkg getbinpkg"'
+	echo '#EMERGE_DEFAULT_OPTS="--binpkg-respect-use y"'
 } >> ${TARGET}/etc/portage/make.conf
 
 # profile update
