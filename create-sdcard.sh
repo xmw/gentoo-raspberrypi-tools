@@ -7,8 +7,11 @@
 # ADD
 #	syslog-ng, dcron, eix, vim, ntp, slocate
 
+WORKDIR=/rpi2
+
 check() {
 	[ "$(id -u)" -eq 0 ] || echo "run as root"
+	[ -d "${WORKDIR}" ] || echo "WORKDIR=${WORKDIR} does not exist"
 	for tool in mkdir wget openssl gpg pv mkfs.vfat mkswap mkfs.ext4 \
 		tar kpartx losetup sfdisk dd mksquashfs
 	do
@@ -22,8 +25,6 @@ if [ -n "${ERR}" ] ; then
 fi
 
 setopt -e -x
-
-WORKDIR=/rpi
 
 LATEST="20130207/20130207/armv6j-hardfloat-linux-gnueabi/stage3-armv6j_hardfp-20130207.tar.bz2"
 
