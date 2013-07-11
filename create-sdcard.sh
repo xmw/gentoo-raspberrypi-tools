@@ -164,6 +164,7 @@ ln -s net.lo ${TARGET}/etc/init.d/net.eth0
 #start sshd anyway and don't stop it.
 echo "rc_sshd_need=\"!net\"" >> ${TARGET}/etc/rc.conf
 ln -s /etc/init.d/net.eth0 ${TARGET}/etc/runlevels/default/sshd
+rm ${TARGET}/etc/runlevels/boot/hwclock
 ln -s /etc/init.d/swclock ${TARGET}/etc/runlevels/boot/swclock
 ln -s /etc/init.d/savecache ${TARGET}/etc/runlevels/boot/savecache
 
