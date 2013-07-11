@@ -29,12 +29,12 @@ check() {
 	done
 	if losetup -a | grep ${IMAGE} >/dev/null ; then
 		echo "The target file ${IMAGE} is set up as loopback device."
-		echo "Procceding would cause file corruption, exiting."
+		echo "Proceeding would cause file corruption, exiting."
 	fi
 	if mountpoint ${TARGET} >/dev/null ; then
 		echo "The target mountpoint ${TARGET} is already mounted."
-		echo "Procceding would overshadown the filesystem,"
-		echo "and is most likely due an unfinished previous invocation."
+		echo "Proceeding would overshadown the filesystem,"
+		echo "and is most likely due to an unfinished previous invocation."
 	fi
 }
 ERR=$(check)
