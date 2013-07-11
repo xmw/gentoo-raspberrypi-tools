@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # vim: tabstop=4
 # Michael Weber xmw at gentoo dot org 2013
 #
@@ -7,9 +7,6 @@
 #	use PORTAGE_CONFIGROOT
 # ADD
 #	syslog-ng, dcron, eix, vim, ntp, slocate
-
-echo "DOES NOT WORK"
-exit 
 
 WORKDIR=/rpi
 IMAGE=${WORKDIR}/image.raw
@@ -67,7 +64,6 @@ ERR=$( {
 [ -n "${ERR}" ] && quit 1 "${ERR}"
 
 set -e
-trap 'eend 1' EXIT
 
 ebegin "search for newer stage3 tarball"
 LATEST="20130207/20130207/armv6j-hardfloat-linux-gnueabi/stage3-armv6j_hardfp-20130207.tar.bz2"
@@ -119,34 +115,36 @@ LOOP=$(losetup -f)
 losetup ${LOOP} ${IMAGE}
 { # 4194304000 / 255 / 63 / 512 -> 509
 	echo ",16,0x0C,*"
-	echo ",64,,-"
+	echo ",64,0x82,-"
 	echo ",,,-"
 } | sfdisk -D -H 255 -S 63 -C 254 ${LOOP} #509
 partx -d "${LOOP}" || true
 partx -a "${LOOP}"
 eend
 
+
+ROOT=${LOOP}p3
+BOOT=${LOOP}p1
+SWAP=${LOOP}p2
+trap '{ 
+	set -x
+	mountpoint "${TARGET}"/boot && umount -v "${TARGET}"/boot
+	mountpoint "${TARGET}"/usr/portage && umount -v "${TARGET}"/usr/portage
+	mountpoint "${TARGET}" && umount -v "${TARGET}"
+	losetup -d "${LOOP}" ; }' EXIT
+
 ebegin "create and mount filesystems"
-ROOT=${LOOP})p3
-mkfs.ext4 -i 4096 "${ROOT}"
+mkfs.ext4 -q -L root -i 4096 "${ROOT}"
 mkdir -p "${TARGET}"
 mount -o noatime "${ROOT}" "${TARGET}"
-BOOT=${LOOP}p1
-mkfs.vfat "${BOOT}"
+
+
+mkfs.vfat -n boot "${BOOT}"
 mkdir -p "${TARGET}/boot"
-mount ${BOOT} ${TARGET}/boot
-SWAP=${LOOP}
-mkswap "${SWAP}"
+mount "${BOOT}" ${TARGET}/boot
+
+mkswap -L swap "${SWAP}"
 eend
-
-trap {
-	umount "${BOOT}" || true
-	umount "${ROOT}" || true
-	partx -d "${LOOP}" || true
-	losetup -d "${LOOP}" || true
-} EXIT
-
-exit
 
 ebegin "unpack stage3"
 pv ${STAGE3} | tar xjC ${TARGET}
@@ -167,41 +165,36 @@ ebegin "copy portage squashfs"
 PORTAGE_SQ_TGT=${TARGET}/var/cache/$(basename "${PORTAGE_SQ}")
 pv "${PORTAGE_SQ}" > "${PORTAGE_SQ_TGT}"
 ln -s "${PORTAGE_SQ}" "${TARGET}"/var/cache/portage.squashfs
-mkdir $"{TARGET}"/usr/portage
+mkdir "${TARGET}"/usr/portage
 eend
 
-ebegin "install kernel"
-ACCEPT_KEYWORDS="~arm" emerge -v --nodeps --root=/rpi/target "=sys-kernel/raspberrypi-image-3.2.27_p20121105"
-cp -v "${TARGET}"/boot/kernel-3.2.27+.img "${TARGET}"/boot/kernel.img
-eend
-
-ebegin "install boot loader"
-ACCEPT_KEYWORDS="~arm" emerge -v --nodeps --root=/rpi/target "=sys-boot/raspberrypi-loader-0_p20130705"
+ebegin "mount portage squashfs"
+mount "${TARGET}"/var/cache/portage.squashfs "${TARGET}"/usr/portage
 eend
 
 ebegin "configure filesystem"
-sed -e 's:root=[/a-z0-9]*:root=/dev/mmcblk0p3:' \
-	-i "${TARGET}"/boot/cmdline.txt
 sed -ne '/^#/p' -i "${TARGET}"/etc/fstab
 cat >> "${TARGET}"/etc/fstab <<EOF
 /dev/mmcblk0p1		/boot		vfat		defaults	1 2
 /dev/mmcblk0p2		none		swap		sw			0 0
 /dev/mmcblk0p3		/		ext4		noatime	0 1
 /var/cache/portage.quashfs	/usr/portage	squashfs	ro	0 0
+none			/tmp	tmpfs		size=256M	0 0
 EOF
 eend
 
 ebegin "setup profile and make.conf"
 cat >> "${TARGET}"/etc/portage/make.conf <<EOF
-USE="\${USE} zsh-completion"
+USE="\${USE} bash-completion zsh-completion"
 DISTDIR=/var/cache/distfiles
 PKGDIR=/var/cache/packages
 PORT_LOGDIR=/var/log/portage
 SYNC=squashfs
 FEATURES="\${FEATURES} candy"
 #BINHOST="http://lore.xmw.de/gentoo/binhost/\${CHOST}/raspberrypi-experimental/"'
-FEATURES="\${FEATURES} buildpkg getbinpkg"
-EMERGE_DEFAULT_OPTS="--binpkg-respect-use y"
+#FEATURES="\${FEATURES} buildpkg getbinpkg"
+#EMERGE_DEFAULT_OPTS="--binpkg-respect-use y"
+#PORTAGE_TMPDIR="/tmp"
 EOF
 
 # profile update
@@ -210,9 +203,21 @@ ln -s ../../usr/portage/profiles/default/linux/arm/13.0 \
 	"${TARGET}"/etc/portage/make.profile
 eend
 
+ebegin "install kernel"
+ACCEPT_KEYWORDS="~arm" emerge -v --nodeps --root=/rpi/target "=sys-kernel/raspberrypi-image-3.2.27_p20121105"
+cp -v "${TARGET}"/boot/kernel-3.2.27+.img "${TARGET}"/boot/kernel.img
+
+ebegin "install boot loader"
+ACCEPT_KEYWORDS="~arm" emerge -v --nodeps --root=/rpi/target "=sys-boot/raspberrypi-loader-0_p20130705"
+eend
+
+sed -e 's:root=[/a-z0-9]*:root=/dev/mmcblk0p3:' \
+	-i "${TARGET}"/boot/cmdline.txt
+eend
+
 ebegin "set hostname=genberry and root password=root"
 mv ${TARGET}/etc/shadow{,-}
-local PASSWD=$(echo root | openssl passwd -1 -stdin)
+PASSWD=$(echo root | openssl passwd -1 -stdin)
 {	echo "root:${PASSWD}:0:0:::::" # pam urges user to change password
 	sed -e "/^root/d" "${TARGET}"/etc/shadow-
 } > "${TARGET}"/etc/shadow
@@ -221,6 +226,9 @@ sed -e '/^hostname=/s:=.*:="genberry":' -i "${TARGET}"/etc/conf.d/hostname
 eend
 
 ebegin "configure services"
+#adjust name of the serial port
+sed -e '/^s0:/s:ttyS0:ttyAMA0:' -i "${TARGET}"/etc/inittab
+
 # start sshd anyway and don't stop it.
 echo "rc_sshd_need=\"!net\"" >> "${TARGET}"/etc/rc.conf
 
@@ -242,3 +250,4 @@ rm "${TARGET}"/etc/localtime
 ln -s ../usr/share/zoneinfo/UTC "${TARGET}"/etc/localtime
 eend
 
+echo Fin
