@@ -123,9 +123,9 @@ partx -a "${LOOP}"
 eend
 
 
-ROOT=${LOOP}p3
 BOOT=${LOOP}p1
 SWAP=${LOOP}p2
+ROOT=${LOOP}p3
 trap '{ 
 	set -x
 	mountpoint "${TARGET}"/boot && umount -v "${TARGET}"/boot
