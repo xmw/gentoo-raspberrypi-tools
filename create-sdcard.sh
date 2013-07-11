@@ -47,9 +47,9 @@ fi
 mkdir -p ${WORKDIR}/stage3
 URL=http://distfiles.gentoo.org/releases/arm/autobuilds/${LATEST}
 STAGE3=${WORKDIR}/stage3/$(basename ${URL})
-wget -c -O ${STAGE3} ${URL}
-wget -c -O ${STAGE3}.DIGESTS ${URL}.DIGESTS
-wget -c -O ${STAGE3}.CONTENTS ${URL}.CONTENTS
+[ -f ${STAGE3}          ] || wget -O ${STAGE3}          ${URL}
+[ -f ${STAGE3}.DIGESTS  ] || wget -O ${STAGE3}.DIGESTS  ${URL}.DIGESTS
+[ -f ${STAGE3}.CONTENTS ] || wget -O ${STAGE3}.CONTENTS ${URL}.CONTENTS
 
 { #stupid way to do that
 	cd $(dirname ${STAGE3})
@@ -74,8 +74,8 @@ wget -c -O ${STAGE3}.CONTENTS ${URL}.CONTENTS
 mkdir -p ${WORKDIR}/portage
 URL=http://lore.xmw.de/gentoo/snapshots/portage-20130709.tar.xz
 PORTAGE=${WORKDIR}/portage/$(basename ${URL})
-wget -c -O ${PORTAGE} ${URL}
-wget -c -O ${PORTAGE}.gpgsig ${URL}.gpgsig
+[ -f ${PORTAGE}        ] || wget -O ${PORTAGE}        ${URL}
+[ -f ${PORTAGE}.gpgsig ] || wget -O ${PORTAGE}.gpgsig ${URL}.gpgsig
 
 if [ "${VERIFY_GPG:-0}" -eq 1 ] ; then
 	gpg --verify ${PORTAGE}.gpgsig ${PORTAGE}
