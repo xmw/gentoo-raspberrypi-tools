@@ -7,11 +7,19 @@
 # ADD
 #	syslog-ng, dcron, eix, vim, ntp, slocate
 
-WORKDIR=/rpi2
+WORKDIR=/rpi
+VERIFY_GPG=1
+GPG_KEYID=C9189250
 
 check() {
 	[ "$(id -u)" -eq 0 ] || echo "run as root"
 	[ -d "${WORKDIR}" ] || echo "WORKDIR=${WORKDIR} does not exist"
+	if [ "${VERIFY_GPG:-0}" -eq 1 ] ; then
+		if ! gpg --list-keys ${GPG_KEYID} >/dev/null ; then
+			echo "install key ${GPG_KEYID}, try"
+			echo "  gpg --keyserver pgp.mit.edu --recv-keys ${GPG_KEYID}"
+		fi
+	fi
 	for tool in mkdir wget openssl gpg pv mkfs.vfat mkswap mkfs.ext4 \
 		tar kpartx losetup sfdisk dd mksquashfs
 	do
@@ -69,8 +77,9 @@ PORTAGE=${WORKDIR}/portage/$(basename ${URL})
 wget -c -O ${PORTAGE} ${URL}
 wget -c -O ${PORTAGE}.gpgsig ${URL}.gpgsig
 
-gpg --recv-keys C9189250
-gpg --verify ${PORTAGE}.gpgsig ${PORTAGE}
+if [ "${VERIFY_GPG:-0}" -eq 1 ] ; then
+	gpg --verify ${PORTAGE}.gpgsig ${PORTAGE}
+fi
 
 IMAGE=${WORKDIR}/image.raw
 dd bs=1M count=2000 if=/dev/zero | pv -s 2000M > ${IMAGE}
