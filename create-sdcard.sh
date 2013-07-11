@@ -8,6 +8,9 @@
 #	syslog-ng, dcron, eix, vim, ntp, slocate
 
 WORKDIR=/rpi
+IMAGE=${WORKDIR}/image.raw
+TARGET=${WORKDIR}/target
+
 VERIFY_GPG=1
 GPG_KEYID=C9189250
 
@@ -21,10 +24,18 @@ check() {
 		fi
 	fi
 	for tool in mkdir wget openssl gpg pv mkfs.vfat mkswap mkfs.ext4 \
-		tar kpartx losetup sfdisk dd mksquashfs
-	do
+		tar kpartx losetup sfdisk dd mksquashfs mountpoint ; do
 		which ${tool} >/dev/null || echo "missing: ${tool}"
 	done
+	if losetup -a | grep ${IMAGE} >/dev/null ; then
+		echo "The target file ${IMAGE} is set up as loopback device."
+		echo "Procceding would cause file corruption, exiting."
+	fi
+	if mountpoint ${TARGET} >/dev/null ; then
+		echo "The target mountpoint ${TARGET} is already mounted."
+		echo "Procceding would overshadown the filesystem,"
+		echo "and is most likely due an unfinished previous invocation."
+	fi
 }
 ERR=$(check)
 if [ -n "${ERR}" ] ; then
@@ -81,7 +92,6 @@ if [ "${VERIFY_GPG:-0}" -eq 1 ] ; then
 	gpg --verify ${PORTAGE}.gpgsig ${PORTAGE}
 fi
 
-IMAGE=${WORKDIR}/image.raw
 dd bs=1M count=2000 if=/dev/zero | pv -s 2000M > ${IMAGE}
 
 LOOP=$(losetup -f)
@@ -93,8 +103,6 @@ losetup ${LOOP} ${IMAGE}
 } | sfdisk -D -H 255 -S 63 -C 254 ${LOOP} #509
 
 kpartx -a -v ${LOOP}
-
-TARGET=${WORKDIR}/target
 
 ROOT=/dev/mapper/$(basename ${LOOP})p3
 mkfs.ext4 -i 4096 ${ROOT}
