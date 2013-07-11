@@ -166,6 +166,8 @@ ln -s ../../usr/portage/profiles/default/linux/arm/13.0 \
 rm ${TARGET}/etc/localtime
 ln -s ../usr/share/zoneinfo/UTC ${TARGET}/etc/localtime
 
+echo "Starting a shell for modifications of ${TARGET}"
+echo "Exit shell to finish image creation."
 ${SHELL}
 
 umount ${BOOT} 
