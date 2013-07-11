@@ -2,8 +2,10 @@
 # Michael Weber xmw at gentoo dot org 2013
 #
 # TODO 
-# 	handle portage-latest correct.
 #	provide update mechanism for portage.squashfs -> lore.xmw.de/gentoo
+#	fix respawning s0
+# ADD
+#	syslog-ng, dcron, eix, vim, ntp
 
 check() {
 	[ "$(id -u)" -eq 0 ] || echo "run as root"
@@ -61,7 +63,7 @@ wget -c -O ${STAGE3}.CONTENTS ${URL}.CONTENTS
 } | sed 's:*stage: stage:' | diff ${STAGE3}.DIGESTS -
 
 mkdir -p ${WORKDIR}/portage
-URL=http://distfiles.gentoo.org/releases/snapshots/current/portage-latest.tar.xz
+URL=http://lore.xmw.de/gentoo/snapshots/portage-20130709.tar.xz
 PORTAGE=${WORKDIR}/portage/$(basename ${URL})
 wget -c -O ${PORTAGE} ${URL}
 wget -c -O ${PORTAGE}.gpgsig ${URL}.gpgsig
@@ -101,11 +103,14 @@ pv ${STAGE3} | tar xjC ${TARGET}
 
 TMP=$(mktemp -d)
 pv ${PORTAGE} | tar xJC ${TMP}
-mksquashfs ${TMP} ${TARGET}/usr/portage.squashfs
+PORTAGE_SQ=${TARGET}/var/cache/$(basename ${PORTAGE%.tar.xz}).squashfs
+mksquashfs ${TMP}/portage ${PORTAGE_SQ}
 rm -r ${TMP}
+ln -s ${PORTAGE_SQ} ${TARGET}/var/cache/portage.squashfs
+mkdir ${TARGET}/usr/portage
 
 ACCEPT_KEYWORDS="~arm" emerge -v --nodeps --root=/rpi/target "=sys-kernel/raspberrypi-image-3.2.27_p20121105"
-ACCEPT_KEYWORDS="~arm" emerge -v --nodeps --root=/rpi/target "=sys-boot/raspberrypi-loader-0_p20121105"
+ACCEPT_KEYWORDS="~arm" emerge -v --nodeps --root=/rpi/target "=sys-boot/raspberrypi-loader-0_p20130705"
 
 cp -v ${TARGET}/boot/kernel-3.2.27+.img ${TARGET}/boot/kernel.img
 
@@ -117,21 +122,44 @@ sed -e 's:root=[/a-z0-9]*:root=/dev/mmcblk0p3:' \
 	echo -e "/dev/mmcblk0p1\t\t/boot\t\tvfat\t\tdefaults\t1 2"
 	echo -e "/dev/mmcblk0p2\t\tnone\t\tswap\t\tsw\t\t0 0"
 	echo -e "/dev/mmcblk0p3\t\t/\t\text4\t\tnoatime\t0 1"
+	echo -e "/var/cache/portage.quashfs\t/usr/portage\tsquashfs\t\tro\t0 0"
 } > ${TARGET}/etc/fstab.new
 mv ${TARGET}/etc/fstab{.new,}
 
 mv ${TARGET}/etc/shadow{,-}
-local PASSWD=$(echo Gentoo | openssl passwd -1 -stdin)
-{ 
-	echo "root:${PASSWD}:0:0:::::"
+local PASSWD=$(echo root | openssl passwd -1 -stdin)
+{
+	echo "root:${PASSWD}:0:0:::::" # pam urges user to change password
 	sed -e "/^root/d" ${TARGET}/etc/shadow-
 } > ${TARGET}/etc/shadow
+
+ln -s net.lo ${TARGET}/etc/init.d/net.eth0
+#start sshd anyway and don't stop it.
+echo "rc_sshd_need=\"!net\"" >> ${TARGET}/etc/rc.conf
+ln -s /etc/init.d/net.eth0 ${TARGET}/etc/runlevels/default/sshd
+ln -s /etc/init.d/swclock ${TARGET}/etc/runlevels/boot/swclock
+# pre-set the swclock to image creation time
+mkdir -p ${TARGET}/lib/rc/cache
+touch ${TARGET}/lib/rc/cache/shutdowntime
+
+{ 
+	echo
+	echo 'USE="${USE} zsh-completion"'
+	echo 'DISTDIR=/var/cache/distfiles'
+	echo 'PKGDIR=/var/cache/packages'
+	echo 'PORT_LOGDIR=/var/log/portage'
+	echo 'SYNC=squashfs'
+	echo 'FEATURES="buildpkg candy"'
+} >> ${TARGET}/etc/portage/make.conf
+
+rm ${TARGET}/etc/portage/make.profile
+ln -s ../../usr/portage/profiles/default/linux/arm/13.0 \
+	${TARGET}/etc/portage/make.profile
 
 ${SHELL}
 
 umount ${BOOT} 
 umount ${ROOT}
-
 
 kpartx -d -v ${LOOP}
 
