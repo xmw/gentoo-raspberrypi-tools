@@ -24,7 +24,7 @@ check() {
 		fi
 	fi
 	for tool in mkdir wget openssl gpg pv mkfs.vfat mkswap mkfs.ext4 \
-		tar kpartx losetup sfdisk dd mksquashfs mountpoint ; do
+		tar losetup sfdisk dd mksquashfs mountpoint ; do
 		which ${tool} >/dev/null || echo "missing: ${tool}"
 	done
 	if losetup -a | grep ${IMAGE} >/dev/null ; then
@@ -101,20 +101,21 @@ losetup ${LOOP} ${IMAGE}
 	echo ",64,,-"
 	echo ",,,-"
 } | sfdisk -D -H 255 -S 63 -C 254 ${LOOP} #509
+partx -d "${LOOP}" || true
+partx -a "${LOOP}"
 
-kpartx -a -v ${LOOP}
 
-ROOT=/dev/mapper/$(basename ${LOOP})p3
+ROOT=${LOOP})p3
 mkfs.ext4 -i 4096 ${ROOT}
 mkdir -p ${TARGET}
 mount ${ROOT} ${TARGET}
 
-BOOT=/dev/mapper/$(basename ${LOOP})p1
+BOOT=${LOOP}p1
 mkfs.vfat ${BOOT}
 mkdir -p ${TARGET}/boot
 mount ${BOOT} ${TARGET}/boot
 
-SWAP=/dev/mapper/$(basename ${LOOP})p2
+SWAP=${LOOP}
 mkswap ${SWAP}
  
 pv ${STAGE3} | tar xjC ${TARGET}
@@ -192,13 +193,7 @@ ln -s ../../usr/portage/profiles/default/linux/arm/13.0 \
 rm ${TARGET}/etc/localtime
 ln -s ../usr/share/zoneinfo/UTC ${TARGET}/etc/localtime
 
-echo "Starting a shell for modifications of ${TARGET}"
-echo "Exit shell to finish image creation."
-${SHELL}
-
 umount ${BOOT} 
 umount ${ROOT}
-
-kpartx -d -v ${LOOP}
-
+partx -d "${LOOP}" || true
 losetup -d ${LOOP}
