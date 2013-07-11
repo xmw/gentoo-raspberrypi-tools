@@ -1,4 +1,5 @@
 #!/bin/zsh
+# vim: tabstop=4
 # Michael Weber xmw at gentoo dot org 2013
 #
 # TODO 
@@ -192,6 +193,9 @@ ln -s ../../usr/portage/profiles/default/linux/arm/13.0 \
 # timezone
 rm ${TARGET}/etc/localtime
 ln -s ../usr/share/zoneinfo/UTC ${TARGET}/etc/localtime
+
+# name it 
+sed -e '/^hostname=/s:=.*:="genberry":' -i "${TARGET}"/etc/conf.d/hostname
 
 umount ${BOOT} 
 umount ${ROOT}
