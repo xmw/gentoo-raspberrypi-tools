@@ -119,11 +119,17 @@ mkswap ${SWAP}
  
 pv ${STAGE3} | tar xjC ${TARGET}
 
-TMP=$(mktemp -d)
-pv ${PORTAGE} | tar xJC ${TMP}
-PORTAGE_SQ=${TARGET}/var/cache/$(basename ${PORTAGE%.tar.xz}).squashfs
-mksquashfs ${TMP}/portage ${PORTAGE_SQ}
-rm -r ${TMP}
+PORTAGE_SQ=${PORTAGE%.tar.xz}.squashfs
+if ! [ -f ${PORTAGE_SQ} ] ; then 
+	mkdir -p ${WORKDIR}/tmp
+	TMP=$(mktemp -d ${WORKDIR}/tmp/squash.XXXXX)
+	pv ${PORTAGE} | tar xJC ${TMP}
+	mksquashfs ${TMP}/portage ${PORTAGE_SQ}
+	rm -r ${TMP}
+fi
+
+PORTAGE_SQ_TGT=${TARGET}/var/cache/$(basename ${PORTAGE_SQ})
+pv ${PORTAGE_SQ} > ${PORTAGE_SQ_TGT}
 ln -s ${PORTAGE_SQ} ${TARGET}/var/cache/portage.squashfs
 mkdir ${TARGET}/usr/portage
 
