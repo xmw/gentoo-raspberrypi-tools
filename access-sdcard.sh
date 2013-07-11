@@ -50,13 +50,13 @@ pushd "${MOUNTPOINT}"
 $SHELL
 popd >/dev/null
 
-while sleep 1 ; mountpoint "${MOUNTPOINT}"/boot >/dev/null ; do
-	umount "${MOUNTPOINT}"/boot
+while mountpoint "${MOUNTPOINT}"/boot >/dev/null ; do
+	umount "${MOUNTPOINT}"/boot || sleep 1
 done
-while sleep 1 ; mountpoint "${MOUNTPOINT}" >/dev/null ; do
-	umount "${MOUNTPOINT}"
+while mountpoint "${MOUNTPOINT}" >/dev/null ; do
+	umount "${MOUNTPOINT}" || sleep 1
 done
 partx -d "${LOOP}" || true
-while sleep 1 ; losetup -a | grep "${IMAGE}" | grep "${LOOP}" ; do
-	losetup -d "${LOOP}"
+while losetup -a | grep "${IMAGE}" | grep "${LOOP}" >/dev/null ; do
+	losetup -d "${LOOP}" || sleep 1
 done
