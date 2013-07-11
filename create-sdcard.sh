@@ -5,7 +5,7 @@
 #	provide update mechanism for portage.squashfs -> lore.xmw.de/gentoo
 #	fix respawning s0
 # ADD
-#	syslog-ng, dcron, eix, vim, ntp
+#	syslog-ng, dcron, eix, vim, ntp, slocate
 
 check() {
 	[ "$(id -u)" -eq 0 ] || echo "run as root"
@@ -133,15 +133,19 @@ local PASSWD=$(echo root | openssl passwd -1 -stdin)
 	sed -e "/^root/d" ${TARGET}/etc/shadow-
 } > ${TARGET}/etc/shadow
 
+# services
 ln -s net.lo ${TARGET}/etc/init.d/net.eth0
 #start sshd anyway and don't stop it.
 echo "rc_sshd_need=\"!net\"" >> ${TARGET}/etc/rc.conf
 ln -s /etc/init.d/net.eth0 ${TARGET}/etc/runlevels/default/sshd
 ln -s /etc/init.d/swclock ${TARGET}/etc/runlevels/boot/swclock
-# pre-set the swclock to image creation time
+ln -s /etc/init.d/savecache ${TARGET}/etc/runlevels/boot/savecache
+
+# swclock pre-set to image creation time
 mkdir -p ${TARGET}/lib/rc/cache
 touch ${TARGET}/lib/rc/cache/shutdowntime
 
+# make.conf
 { 
 	echo
 	echo 'USE="${USE} zsh-completion"'
@@ -152,9 +156,14 @@ touch ${TARGET}/lib/rc/cache/shutdowntime
 	echo 'FEATURES="buildpkg candy"'
 } >> ${TARGET}/etc/portage/make.conf
 
+# profile update
 rm ${TARGET}/etc/portage/make.profile
 ln -s ../../usr/portage/profiles/default/linux/arm/13.0 \
 	${TARGET}/etc/portage/make.profile
+
+# timezone
+rm ${TARGET}/etc/localtime
+ln -s ../usr/share/zoneinfo/UTC ${TARGET}/etc/localtime
 
 ${SHELL}
 
