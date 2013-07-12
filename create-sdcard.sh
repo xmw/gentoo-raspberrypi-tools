@@ -178,7 +178,7 @@ cat >> "${TARGET}"/etc/fstab <<EOF
 /dev/mmcblk0p1		/boot		vfat		defaults	1 2
 /dev/mmcblk0p2		none		swap		sw			0 0
 /dev/mmcblk0p3		/		ext4		noatime	0 1
-/var/cache/portage.quashfs	/usr/portage	squashfs	ro	0 0
+/var/cache/portage.squashfs	/usr/portage	squashfs	ro	0 0
 none			/tmp	tmpfs		size=256M	0 0
 EOF
 eend
@@ -231,6 +231,7 @@ sed -e '/^s0:/s:ttyS0:ttyAMA0:' -i "${TARGET}"/etc/inittab
 
 # start sshd anyway and don't stop it.
 echo "rc_sshd_need=\"!net\"" >> "${TARGET}"/etc/rc.conf
+ln -s /etc/init.d/ssh "${TARGET}"/etc/runlevels/default
 
 # networking
 ln -s net.lo "${TARGET}"/etc/init.d/net.eth0
