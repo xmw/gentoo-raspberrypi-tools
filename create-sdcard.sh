@@ -200,10 +200,10 @@ PKGDIR=/var/cache/packages
 PORT_LOGDIR=/var/log/portage
 $( [ "${PORTAGE_ON_SQUASHFS}" -eq 1 ] && echo "SYNC=use-update-portage" )
 FEATURES="\${FEATURES} candy"
-#PORTAGE_BINHOST="http://lore.xmw.de/gentoo/binhost/\${CHOST}/raspberrypi-experimental/"
-#FEATURES="\${FEATURES} buildpkg getbinpkg"
-#EMERGE_DEFAULT_OPTS="--binpkg-respect-use y"
-#PORTAGE_TMPDIR="/tmp"
+PORTAGE_BINHOST="http://lore.xmw.de/gentoo/genberry/experimental"
+FEATURES="\${FEATURES} buildpkg getbinpkg"
+EMERGE_DEFAULT_OPTS="--binpkg-respect-use y"
+PORTAGE_TMPDIR="/tmp"
 EOF
 
 # profile update
