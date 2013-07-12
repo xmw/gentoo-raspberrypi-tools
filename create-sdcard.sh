@@ -174,9 +174,11 @@ else
 	ebegin "copy and mount portage squashfs"
 	PORTAGE_SQ_TGT=${TARGET}/var/cache/portage/$(basename "${PORTAGE_SQ}")
 	pv "${PORTAGE_SQ}" > "${PORTAGE_SQ_TGT}"
-	ln -s "$(basename "${PORTAGE_SQ}")" "${TARGET}"/var/cache/portage/latest.squashfs
-
+	ln -s "$(basename "${PORTAGE_SQ}")" \
+		"${TARGET}"/var/cache/portage/latest.squashfs
+	PORTAGE_MNT="/var/cache/portage/latest.squashfs	/usr/portage	squashfs	ro,loop	0 0"
 	mount -o ro,loop "${TARGET}"/var/cache/portage/latest.squashfs "${TARGET}"/usr/portage
+	DISABLE_SYNC="SYNC=\"use update-portage\""
 	eend
 fi
 
@@ -187,10 +189,10 @@ cat >> "${TARGET}"/etc/fstab <<EOF
 /dev/mmcblk0p2		none		swap		sw			0 0
 /dev/mmcblk0p3		/		ext4		noatime	0 1
 none			/tmp	tmpfs		size=256M,noauto	0 0
-$( [ "${PORTAGE_ON_SQUASHFS}" -eq 1 ] && echo \
-"/var/cache/portage/latest.squashfs	/usr/portage	squashfs	ro,loop	0 0")
+${PORTAGE_MNT}
 EOF
 eend
+
 
 ebegin "setup profile and make.conf"
 cat >> "${TARGET}"/etc/portage/make.conf <<EOF
@@ -198,7 +200,7 @@ USE="\${USE} bash-completion zsh-completion"
 DISTDIR=/var/cache/distfiles
 PKGDIR=/var/cache/packages
 PORT_LOGDIR=/var/log/portage
-$( [ "${PORTAGE_ON_SQUASHFS}" -eq 1 ] && echo "SYNC=use-update-portage" )
+${DISABLE_SYNC}
 FEATURES="\${FEATURES} candy"
 PORTAGE_BINHOST="http://lore.xmw.de/gentoo/genberry/experimental"
 FEATURES="\${FEATURES} buildpkg getbinpkg"
