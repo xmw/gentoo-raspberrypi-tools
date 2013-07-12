@@ -164,7 +164,7 @@ fi
 ebegin "copy portage squashfs"
 PORTAGE_SQ_TGT=${TARGET}/var/cache/$(basename "${PORTAGE_SQ}")
 pv "${PORTAGE_SQ}" > "${PORTAGE_SQ_TGT}"
-ln -s "${PORTAGE_SQ}" "${TARGET}"/var/cache/portage.squashfs
+ln -s "$(basename "${PORTAGE_SQ}")" "${TARGET}"/var/cache/portage.squashfs
 mkdir "${TARGET}"/usr/portage
 eend
 
@@ -191,7 +191,7 @@ PKGDIR=/var/cache/packages
 PORT_LOGDIR=/var/log/portage
 SYNC=squashfs
 FEATURES="\${FEATURES} candy"
-#BINHOST="http://lore.xmw.de/gentoo/binhost/\${CHOST}/raspberrypi-experimental/"'
+#BINHOST="http://lore.xmw.de/gentoo/binhost/\${CHOST}/raspberrypi-experimental/"
 #FEATURES="\${FEATURES} buildpkg getbinpkg"
 #EMERGE_DEFAULT_OPTS="--binpkg-respect-use y"
 #PORTAGE_TMPDIR="/tmp"
