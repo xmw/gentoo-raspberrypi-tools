@@ -213,11 +213,11 @@ ln -s ../../usr/portage/profiles/default/linux/arm/13.0 \
 eend
 
 ebegin "install kernel"
-ACCEPT_KEYWORDS="~arm" emerge -v --nodeps --root=/rpi/target "=sys-kernel/raspberrypi-image-3.2.27_p20121105"
+ACCEPT_KEYWORDS="~arm" emerge -v --nodeps --root=/rpi/target "sys-kernel/raspberrypi-image"
 cp -v "${TARGET}"/boot/kernel-3.2.27+.img "${TARGET}"/boot/kernel.img
 
 ebegin "install boot loader"
-ACCEPT_KEYWORDS="~arm" emerge -v --nodeps --root=/rpi/target "=sys-boot/raspberrypi-loader-0_p20130705"
+ACCEPT_KEYWORDS="~arm" emerge -v --nodeps --root=/rpi/target "sys-boot/raspberrypi-loader"
 eend
 
 sed -e 's:root=[/a-z0-9]*:root=/dev/mmcblk0p3:' \
