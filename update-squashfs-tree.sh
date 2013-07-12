@@ -30,8 +30,8 @@ ERR=$( {
 [ -z "${ERR}" ] || quit 1 "${ERR}"
 
 for src in "${SNAPSHOT_DIR}"/*.tar.xz ; do
-	tgt_gz=${SQUASHFS_DIR}/$(basename "${src%.tar.xz}").squashfs.gz
-	tgt_xz=${SQUASHFS_DIR}/$(basename "${src%.tar.xz}").squashfs.xz
+	tgt_gz=${SQUASHFS_DIR}/$(basename "${src%.tar.xz}").gz.squashfs
+	tgt_xz=${SQUASHFS_DIR}/$(basename "${src%.tar.xz}").xz.squashfs
 	[ -e "${tgt_gz}" -a "${src}" -nt "${tgt_gz}" ] && rm -v "${tgt_gz}"
 	[ -e "${tgt_xz}" -a "${src}" -nt "${tgt_xz}" ] && rm -v "${tgt_xz}"
 	[ -e "${tgt_gz}" -a -e "${tgt_xz}" ] && continue
@@ -48,3 +48,13 @@ for src in "${SNAPSHOT_DIR}"/*.tar.xz ; do
 	rm -rf "${tmp}" EXIT
 	eend
 done
+
+for src in "${SQUASHFS_DIR}"/*.gz.squashfs ; do
+	echo "${src}" | grep "latest" >/dev/null && continue
+	echo "$(basename "${src}")"
+done | sort | tail -n 1 | tee "${SQUASHFS_DIR}"/LATEST.gz.txt
+for src in "${SQUASHFS_DIR}"/*.xz.squashfs ; do
+	echo "${src}" | grep "latest" >/dev/null && continue
+	echo "$(basename "${src}")"
+done | sort | tail -n 1 | tee "${SQUASHFS_DIR}"/LATEST.xz.txt
+
