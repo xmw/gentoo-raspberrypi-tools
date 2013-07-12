@@ -5,6 +5,7 @@
 RUN_QEMU=0
 
 usage() {
+	[ -n "${@:2}" ] && echo "${@:2}"
 	echo "Usage: $(basename ${0}) [-v] [-h|--help] <image> [mountpoint]"
 	[ -n "${1}" ] && exit ${1}
 }
@@ -31,20 +32,18 @@ done
 if [ "${RUN_QEMU}" -eq 1 ] ; then
 	if ! qemu-system-arm -version || \
 		! qemu-system-arm -cpu ? | grep arm1176 >/dev/null ; then
-		echo "Please install qemu-system-arm with arm1176 support." 
-		exit 1;
+		quit 1 "Please install qemu-system-arm with arm1176 support." 
 	fi
 fi
 
 IMAGE=${1}
 MOUNTPOINT=${2}
-[ -z "${IMAGE}" ] && usage 1
-[ -n "${3}" ] && usage 1
+[ -z "${IMAGE}" ] && usage 1 "specify image file"
+[ -n "${3}" ] && usage 1 "too many arguments"
 if [ -n "${MOUNTPOINT}" ] ; then
-	[ -d "${MOUNTPOINT}" ] || usage 1
+	[ -d "${MOUNTPOINT}" ] || usage 1 "mountpoint is not a directory"
 	if mountpoint -q "${MOUNTPOINT}" ; then
-		echo "${MOUNTPOINT} already mounted"
-		usage 1
+		usage 1 "${MOUNTPOINT} already mounted"
 	fi
 else
 	TMP=$(mktemp -d)
