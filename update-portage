@@ -1,0 +1,22 @@
+#!/bin/bash
+
+[ -f /etc/portage/make.conf ] && source /etc/portage/make.conf
+
+PORTAGE_SQUASHFS_CACHE=${PORTAGE_SQUASHFS_CACHE:-/var/cache/portage}
+mkdir -p "${PORTAGE_SQUASHFS_CACHE}"
+
+if [ -z "${PORTAGE_SQUASHFS_URL}" ] ; then
+	PORTAGE_SQUASHFS_LATEST=${PORTAGE_SQUASHFS_LATEST:-http://lore.xmw.de/gentoo/genberry/snapshots/LATEST.xz.txt}
+	LATEST=$(wget -O - -o /dev/null "${PORTAGE_SQUASHFS_LATEST}")
+	PORTAGE_SQUASHFS_URL=$(dirname "${PORTAGE_SQUASHFS_LATEST}")/${LATEST}
+fi
+
+PORTAGE_SQUASHFS=${PORTAGE_SQUASHFS_CACHE}/${LATEST}
+if [ ! -e "${PORTAGE_SQUASHFS}" ] ; then
+	wget -O "${PORTAGE_SQUASHFS}" "${PORTAGE_SQUASHFS_URL}"
+fi
+
+rm /var/cache/portage.squashfs
+ln -s "${PORTAGE_SQUASHFS}" /var/cache/portage.squashfs
+umount /var/cache/portage.squashfs
+mount /var/cache/portage.squashfs

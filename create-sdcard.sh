@@ -18,6 +18,7 @@ TARGET=${TARGET:-${WORKDIR}/target}
 
 VERIFY_GPG=${VERIFY_GPG:-1}
 GPG_KEYID=C9189250
+PORTAGE_ON_SQUASHFS=${PORTAGE_ON_SQUASHFS:-1}
 
 # check shells
 if [ -z "${ZSH_VERSION}" -a -z "${BASH_VERSION}" ] ; then
@@ -96,17 +97,27 @@ ebegin "verify stage3 tarball"
 } | sed 's:*stage: stage:' | diff ${STAGE3}.DIGESTS -
 eend
 
-ebegin "fetch portage"
 mkdir -p "${WORKDIR}"/portage
-URL=http://lore.xmw.de/gentoo/snapshots/portage-20130709.tar.xz
-PORTAGE=${WORKDIR}/portage/$(basename ${URL})
-[ -f "${PORTAGE}"        ] || wget -O "${PORTAGE}"        "${URL}"
-[ -f "${PORTAGE}".gpgsig ] || wget -O "${PORTAGE}".gpgsig "${URL}".gpgsig
-eend
+if [ "${PORTAGE_ON_SQUASHFS}" -eq 0 ] ; then
+	ebegin "fetch portage snapshot"
+	URL=http://lore.xmw.de/gentoo/snapshots/portage-latest.tar.xz
+	PORTAGE=${WORKDIR}/portage/$(basename ${URL})
+	wget -N -P "$(dirname "${PORTAGE}")" "${URL}"
+	wget -N -P "$(dirname "${PORTAGE}")" "${URL}.gpgsig"
+	eend
 
-if [ "${VERIFY_GPG:-0}" -eq 1 ] ; then
-	ebegin "verify portage gpg signature"
-	gpg --verify ${PORTAGE}.gpgsig ${PORTAGE}
+	if [ "${VERIFY_GPG:-0}" -eq 1 ] ; then
+		ebegin "verify portage gpg signature"
+		gpg --verify ${PORTAGE}.gpgsig ${PORTAGE}
+		eend
+	fi
+else
+	ebegin "fetch portage squashfs"
+	URL=http://lore.xmw.de/gentoo/genberry/snapshots/LATEST.xz.txt
+	LATEST=$(wget -O - -o /dev/null "${URL}")
+	URL=$(dirname "${URL}")/${LATEST}
+	PORTAGE_SQ=${WORKDIR}/portage/${LATEST}
+	wget -N -P "$(dirname "${PORTAGE_SQ}")" "${URL}"
 	eend
 fi
 
@@ -151,30 +162,23 @@ mkswap -L swap "${SWAP}"
 eend
 
 ebegin "unpack stage3"
-pv ${STAGE3} | tar xjC ${TARGET}
+pv "${STAGE3}" | tar xjC "${TARGET}"
 eend
 
-PORTAGE_SQ=${PORTAGE%.tar.xz}.squashfs
-if ! [ -f "${PORTAGE_SQ}" -o "${PORTAGE}" -nt "${PORTAGE_SQ}" ] ; then
-	ebegin "create portage squashfs"
-	mkdir -p "${WORKDIR}"/tmp
-	TMP=$(mktemp -d "${WORKDIR}"/tmp/squash.XXXXX)
-	pv "${PORTAGE}" | tar xJC "${TMP}"
-	mksquashfs -noappend "${TMP}"/portage "${PORTAGE_SQ}"
-	rm -r "${TMP}"
+mkdir "${TARGET}"/usr/portage
+if [ "${PORTAGE_ON_SQUASHFS}" -eq 0 ] ; then
+	ebegin "extract portage snapshot"
+	pv "${PORTAGE}" > tar xJC "${TARGET}"/usr/portage
+	eend
+else
+	ebegin "copy and mount portage squashfs"
+	PORTAGE_SQ_TGT=${TARGET}/var/cache/portage/$(basename "${PORTAGE_SQ}")
+	pv "${PORTAGE_SQ}" > "${PORTAGE_SQ_TGT}"
+	ln -s "$(basename "${PORTAGE_SQ}")" "${TARGET}"/var/cache/portage/latest.squashfs
+
+	mount -o ro,loop "${TARGET}"/var/cache/portage/latest.squashfs "${TARGET}"/usr/portage
 	eend
 fi
-
-ebegin "copy portage squashfs"
-PORTAGE_SQ_TGT=${TARGET}/var/cache/$(basename "${PORTAGE_SQ}")
-pv "${PORTAGE_SQ}" > "${PORTAGE_SQ_TGT}"
-ln -s "$(basename "${PORTAGE_SQ}")" "${TARGET}"/var/cache/portage.squashfs
-mkdir "${TARGET}"/usr/portage
-eend
-
-ebegin "mount portage squashfs"
-mount "${TARGET}"/var/cache/portage.squashfs "${TARGET}"/usr/portage
-eend
 
 ebegin "configure filesystem"
 sed -ne '/^#/p' -i "${TARGET}"/etc/fstab
@@ -182,8 +186,9 @@ cat >> "${TARGET}"/etc/fstab <<EOF
 /dev/mmcblk0p1		/boot		vfat		defaults	1 2
 /dev/mmcblk0p2		none		swap		sw			0 0
 /dev/mmcblk0p3		/		ext4		noatime	0 1
-/var/cache/portage.squashfs	/usr/portage	squashfs	ro	0 0
-none			/tmp	tmpfs		size=256M	0 0
+none			/tmp	tmpfs		size=256M,noauto	0 0
+$( [ "${PORTAGE_ON_SQUASHFS}" -eq 1 ] && echo \
+"/var/cache/portage/latest.squashfs	/usr/portage	squashfs	ro,loop	0 0")
 EOF
 eend
 
@@ -193,7 +198,7 @@ USE="\${USE} bash-completion zsh-completion"
 DISTDIR=/var/cache/distfiles
 PKGDIR=/var/cache/packages
 PORT_LOGDIR=/var/log/portage
-SYNC=squashfs
+$( [ "${PORTAGE_ON_SQUASHFS}" -eq 1 ] && echo "SYNC=use-update-portage" )
 FEATURES="\${FEATURES} candy"
 #PORTAGE_BINHOST="http://lore.xmw.de/gentoo/binhost/\${CHOST}/raspberrypi-experimental/"
 #FEATURES="\${FEATURES} buildpkg getbinpkg"
