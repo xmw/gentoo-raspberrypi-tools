@@ -8,11 +8,15 @@
 # ADD
 #	syslog-ng, dcron, eix, vim, ntp, slocate
 
-WORKDIR=/rpi
-IMAGE=${WORKDIR}/image.raw
-TARGET=${WORKDIR}/target
+unset WORKDIR IMAGE TARGET BOOT SWAP ROOT
 
-VERIFY_GPG=1
+[ -r /etc/genberry/create-sdcard.conf ] && source /etc/genberry/create-sdcard.conf
+
+WORKDIR=${WORKDIR:-/rpi}
+IMAGE=${IMAGE:-${WORKDIR}/image.raw}
+TARGET=${TARGET:-${WORKDIR}/target}
+
+VERIFY_GPG=${VERIFY_GPG:-1}
 GPG_KEYID=C9189250
 
 # check shells
