@@ -325,7 +325,7 @@ sed -e '/^s0:/s:ttyS0:ttyAMA0:' -i "${TARGET}"/etc/inittab
 
 # start sshd anyway and don't stop it.
 echo "rc_sshd_need=\"!net\"" >> "${TARGET}"/etc/rc.conf
-ln -s /etc/init.d/ssh "${TARGET}"/etc/runlevels/default
+ln -s /etc/init.d/sshd "${TARGET}"/etc/runlevels/default
 
 # networking
 ln -s net.lo "${TARGET}"/etc/init.d/net.eth0
