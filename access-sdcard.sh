@@ -64,7 +64,9 @@ if [ "${RUN_QEMU}" -eq 1 ] ; then
 else 
 	mount "${LOOP}"p3 "${MOUNTPOINT}"
 	mount "${LOOP}"p1 "${MOUNTPOINT}"/boot
-	mount "${MOUNTPOINT}"/var/cache/portage.squashfs "${MOUNTPOINT}"/usr/portage
+	[ -e "${MOUNTPOINT}"/var/cache/portage/latest.squashfs ] && \
+		mount "${MOUNTPOINT}"/var/cache/portage/latest.squashfs \
+			"${MOUNTPOINT}"/usr/portage
 	pushd "${MOUNTPOINT}"
 	$SHELL
 	popd >/dev/null
