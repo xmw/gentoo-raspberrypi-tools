@@ -53,7 +53,7 @@ ERR=$( {
 		GPG=gpg
 	fi
 	for tool in mkdir wget openssl pv mkfs.vfat mkswap mkfs.ext4 tar losetup \
-		sfdisk dd mksquashfs mountpoint emerge ${GPG} tr ; do
+		sfdisk dd mksquashfs mountpoint emerge ${GPG} tr bc ; do
 		which ${tool} >/dev/null || echo "missing binary: ${tool}"
 	done
 	if losetup -a | grep "${IMAGE}" >/dev/null ; then
@@ -122,21 +122,45 @@ else
 fi
 
 ebegin "create blank disk image"
-dd bs=1M count=2000 if=/dev/zero | pv -s 2000M > "${IMAGE}"
+CBYTES=$(echo 255*63*512 | bc) # bytes per cylinder of 255 heads and 63 sectors
+SIZE=$(echo 2048*1024*1024 | bc) # estimated size
+CYLS=$(echo ${SIZE}/${CBYTES} | bc)  # number of cylinders
+SIZE=$(echo ${CYLS}*${CBYTES} | bc)  # exact image size
+dd if=/dev/zero bs="${CBYTES}" count="${CYLS}" | pv -s "${SIZE}" > "${IMAGE}"
 eend
 
 ebegin "set up partitions"
 LOOP=$(losetup -f)
 losetup ${LOOP} ${IMAGE}
-{ # 4194304000 / 255 / 63 / 512 -> 509
-	echo ",16,0x0C,*"
-	echo ",64,0x82,-"
-	echo ",,,-"
-} | sfdisk -D -H 255 -S 63 -C 254 ${LOOP} #509
-partx -d "${LOOP}" || true
-partx -a "${LOOP}"
-eend
+cat << EOF | fdisk -H 255 -S 63 -C 254 "${IMAGE}"
+o
+n
+p
+1
+2048
++128M
+n
+p
+2
 
++512M
+n
+p
+3
+
+
+t
+1
+c
+t
+2
+82
+t
+3
+83
+w
+EOF
+eend
 
 BOOT=${LOOP}p1
 SWAP=${LOOP}p2
