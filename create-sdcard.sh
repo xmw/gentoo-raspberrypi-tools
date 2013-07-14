@@ -17,7 +17,8 @@ IMAGE=${IMAGE:-${WORKDIR}/image.raw}
 TARGET=${TARGET:-${WORKDIR}/target}
 
 VERIFY_GPG=${VERIFY_GPG:-1}
-GPG_KEYID=C9189250
+STAGE3_GPG_KEYID=2D182910
+PORTAGE_GPG_KEYID=C9189250
 PORTAGE_ON_SQUASHFS=${PORTAGE_ON_SQUASHFS:-1}
 
 # check shells
@@ -46,9 +47,13 @@ ERR=$( {
 	[ "$(id -u)" -eq 0 ] || echo "run as root"
 	[ -d "${WORKDIR}" ] || echo "WORKDIR=${WORKDIR} does not exist"
 	if [ "${VERIFY_GPG:-0}" -eq 1 ] ; then
-		if ! gpg --list-keys ${GPG_KEYID} >/dev/null ; then
-			echo "install key ${GPG_KEYID}, try"
-			echo "  gpg --keyserver pgp.mit.edu --recv-keys ${GPG_KEYID}"
+		if ! gpg --list-keys ${STAGE3_GPG_KEYID} >/dev/null ; then
+			echo "install key ${STAGE3_GPG_KEYID}, try"
+			echo "gpg --keyserver pgp.mit.edu --recv-keys ${STAGE3_GPG_KEYID}"
+		fi
+		if ! gpg --list-keys ${PORTAGE_GPG_KEYID} >/dev/null ; then
+			echo "install key ${PORTAGE_GPG_KEYID}, try"
+			echo "gpg --keyserver pgp.mit.edu --recv-keys ${PORTAGE_GPG_KEYID}"
 		fi
 		GPG=gpg
 	fi
@@ -82,11 +87,16 @@ mkdir -p "${WORKDIR}"/stage3
 URL=http://distfiles.gentoo.org/releases/arm/autobuilds/${LATEST}
 STAGE3=${WORKDIR}/stage3/$(basename "${URL}")
 [ -f "${STAGE3}"          ] || wget -O "${STAGE3}"          "${URL}"
-[ -f "${STAGE3}".DIGESTS  ] || wget -O "${STAGE3}".DIGESTS  "${URL}".DIGESTS
+[ -f "${STAGE3}".DIGESTS.asc ] || wget -O "${STAGE3}".DIGESTS.asc  "${URL}".DIGESTS.asc
 [ -f "${STAGE3}".CONTENTS ] || wget -O "${STAGE3}".CONTENTS "${URL}".CONTENTS
 eend
 
-ebegin "verify stage3 tarball"
+if [ "${VERIFY_GPG:-0}" -eq 1 ] ; then
+	ebegin "verify stage3 gpg signature"
+	gpg --decrypt "${STAGE3}".DIGESTS.asc > "${STAGE3}".DIGESTS
+	eend
+fi
+ebegin "verify stage3 checksums"
 {	cd "$(dirname "${STAGE3}")"
 	for f in "$(basename "${STAGE3}")"{,.CONTENTS} ; do
 		for h in MD5 SHA1 SHA512 WHIRLPOOL ; do
