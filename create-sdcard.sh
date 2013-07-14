@@ -209,6 +209,7 @@ if [ "${PORTAGE_ON_SQUASHFS}" -eq 0 ] ; then
 else
 	ebegin "copy and mount portage squashfs"
 	PORTAGE_SQ_TGT=${TARGET}/var/cache/portage/$(basename "${PORTAGE_SQ}")
+	mkdir -p "${TARGET}/var/cache/portage"
 	pv "${PORTAGE_SQ}" > "${PORTAGE_SQ_TGT}"
 	ln -s "$(basename "${PORTAGE_SQ}")" \
 		"${TARGET}"/var/cache/portage/latest.squashfs
