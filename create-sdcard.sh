@@ -4,11 +4,8 @@
 #
 # TODO 
 #	provide update mechanism for portage.squashfs -> lore.xmw.de/gentoo
-#	use PORTAGE_CONFIGROOT
-# ADD
-#	syslog-ng, dcron, eix, vim, ntp, slocate
 
-unset WORKDIR IMAGE TARGET BOOT SWAP ROOT
+unset WORKDIR IMAGE TARGET BOOT SWAP ROOT TIMEZONE
 
 [ -r /etc/genberry/create-sdcard.conf ] && source /etc/genberry/create-sdcard.conf
 
@@ -17,9 +14,12 @@ IMAGE=${IMAGE:-${WORKDIR}/image.raw}
 TARGET=${TARGET:-${WORKDIR}/target}
 
 VERIFY_GPG=${VERIFY_GPG:-1}
-STAGE3_GPG_KEYID=2D182910
-PORTAGE_GPG_KEYID=C9189250
+STAGE3_GPG_KEYID=${STAGE3_GPG_KEYID:-2D182910}
+PORTAGE_GPG_KEYID=${PORTAGE_GPG_KEYID:-C9189250}
 PORTAGE_ON_SQUASHFS=${PORTAGE_ON_SQUASHFS:-1}
+UPDATE_FROM_BINHOST=${UPDATE_FROM_BINHOST:-1}
+TIMEZONE="${TIMEZONE:-UTC}"
+PASSWD=$(echo root | openssl passwd -1 -stdin)
 
 # check shells
 if [ -z "${ZSH_VERSION}" -a -z "${BASH_VERSION}" ] ; then
@@ -58,7 +58,7 @@ ERR=$( {
 		GPG=gpg
 	fi
 	for tool in mkdir wget openssl pv mkfs.vfat mkswap mkfs.ext4 tar losetup \
-		sfdisk dd mksquashfs mountpoint emerge ${GPG} tr bc ; do
+		sfdisk dd mountpoint emerge ${GPG} tr bc ; do
 		which ${tool} >/dev/null || echo "missing binary: ${tool}"
 	done
 	if losetup -a | grep "${IMAGE}" >/dev/null ; then
@@ -231,7 +231,7 @@ EOF
 eend
 
 
-ebegin "setup profile and make.conf"
+ebegin "setup make.conf"
 cat >> "${TARGET}"/etc/portage/make.conf <<EOF
 USE="\${USE} bash-completion zsh-completion"
 DISTDIR=/var/cache/distfiles
@@ -244,29 +244,75 @@ FEATURES="\${FEATURES} buildpkg getbinpkg"
 EMERGE_DEFAULT_OPTS="--binpkg-respect-use y"
 PORTAGE_TMPDIR="/tmp"
 EOF
+eend
 
-# profile update
+ebegin "update profile" 
 rm "${TARGET}"/etc/portage/make.profile
 ln -s ../../usr/portage/profiles/default/linux/arm/13.0 \
 	"${TARGET}"/etc/portage/make.profile
 eend
 
-ebegin "install kernel"
-ACCEPT_KEYWORDS="~arm" emerge -v --nodeps --root=/rpi/target "sys-kernel/raspberrypi-image"
-cp -v "${TARGET}"/boot/kernel-3.2.27+.img "${TARGET}"/boot/kernel.img
+ebegin "keyword some packages and set use flags"
+cat >> "${TARGET}"/etc/portage/package.keywords << EOF
+=app-portage/eix-0.28.5::gentoo
+=app-shells/zsh-5.0.2-r2::gentoo
+=net-misc/openssh-6.2_p2-r1::gentoo **
+sys-boot/raspberrypi-loader::xmw
+sys-boot/raspberrypi-loader::gentoo
+sys-kernel/raspberrypi-image::xmw
+sys-kernel/raspberrypi-image::gentoo
+=net-libs/ldns-1.6.16::gentoo
+EOF
+cat >> "${TARGET}"/etc/portage/package.use << EOF
+net-misc/openssh ldns
+net-libs/ldns -ecdsa
+EOF
 
-ebegin "install boot loader"
-ACCEPT_KEYWORDS="~arm" emerge -v --nodeps --root=/rpi/target "sys-boot/raspberrypi-loader"
+export ROOT=${TARGET}
+export FEATURES="-buildpkg"
+
+ebegin "install binary bootloader and kernel image"
+ACCEPT_KEYWORDS="~arm" emerge --verbose --quiet-build --nodeps \
+	"sys-kernel/raspberrypi-image" \
+	"sys-boot/raspberrypi-loader"
+cp -v "${TARGET}"/boot/kernel-3.2.27+.img "${TARGET}"/boot/kernel.img
 eend
 
+ebegin "update kernel command line"
 sed -e 's:root=[/a-z0-9]*:root=/dev/mmcblk0p3:' \
 	-i "${TARGET}"/boot/cmdline.txt
 eend
 
+export PORTAGE_CONFIGROOT=${TARGET}
+
+if [ "${UPDATE_FROM_BINHOST}" -eq 1 ] ; then
+	ebegin "install essential packages from binhost"
+	emerge --quiet-build --verbose --usepkgonly \
+		app-admin/syslog-ng \
+		app-misc/screen \
+		app-portage/eix \
+		app-portage/layman \
+		app-shells/zsh \
+		net-misc/ntp \
+		net-misc/openssh \
+		sys-process/dcron \
+		sys-apps/mlocate
+	eend
+	ebegin "update @world from binhost"
+	emerge --quiet-build --verbose --update --changed-use --deep --usepkgonly \
+		@world
+	eend
+	ebegin "simulate dispatch-conf"
+	for f in $(find "${TARGET}" -name "._cfg????_*" | sort) ; do
+		fn=$(basename "${f}")
+		mv -vf "${f}" "$(dirname "${f}")/${fn#._cfg????_}"
+	done
+	eend
+fi
+
 ebegin "set hostname=genberry and root password=root"
 mv ${TARGET}/etc/shadow{,-}
-PASSWD=$(echo root | openssl passwd -1 -stdin)
-{	echo "root:${PASSWD}:0:0:::::" # pam urges user to change password
+{	echo "root:${PASSWD}:15900:0:::::"
 	sed -e "/^root/d" "${TARGET}"/etc/shadow-
 } > "${TARGET}"/etc/shadow
 # name it 
@@ -288,7 +334,8 @@ ln -s /etc/init.d/net.eth0 "${TARGET}"/etc/runlevels/default
 #clocks
 rm "${TARGET}"/etc/runlevels/boot/hwclock
 ln -s /etc/init.d/swclock "${TARGET}"/etc/runlevels/boot
-ln -s /etc/init.d/savecache "${TARGET}"/etc/runlevels/boot/savecache
+#ln -s /etc/init.d/savecache "${TARGET}"/etc/runlevels/boot/savecache
+ln -s /etc/init.d/ntp-client "${TARGET}"/etc/runlevels/default
 
 # swclock pre-set to image creation time
 mkdir -p "${TARGET}"/lib/rc/cache
@@ -296,7 +343,7 @@ touch "${TARGET}"/lib/rc/cache/shutdowntime
 
 # timezone
 rm "${TARGET}"/etc/localtime
-ln -s ../usr/share/zoneinfo/UTC "${TARGET}"/etc/localtime
+ln -s ../usr/share/zoneinfo/"${TIMEZONE}" "${TARGET}"/etc/localtime
 eend
 
 echo Fin
