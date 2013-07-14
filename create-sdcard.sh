@@ -170,6 +170,8 @@ t
 83
 w
 EOF
+partx -d "${LOOP}"
+partx -a "${LOOP}"
 eend
 
 BOOT=${LOOP}p1
