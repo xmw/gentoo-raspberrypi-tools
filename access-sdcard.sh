@@ -6,7 +6,7 @@ RUN_QEMU=0
 
 usage() {
 	[ -n "${@:2}" ] && echo "${@:2}"
-	echo "Usage: $(basename ${0}) [-v] [-h|--help] <image> [mountpoint]"
+	echo "Usage: $(basename ${0}) [-v] [-h|--help] <image file|device> [mountpoint]"
 	[ -n "${1}" ] && exit ${1}
 }
 
@@ -51,19 +51,28 @@ else
 fi
 
 set -e
-LOOP=$(losetup -f)
-losetup "${LOOP}" "${IMAGE}"
-partx -d "${LOOP}" || true
-partx -a "${LOOP}"
+if [ -f "${IMAGE}" ] ; then
+	LOOP=$(losetup -f)
+	losetup "${LOOP}" "${IMAGE}"
+	partx -d "${LOOP}" || true
+	partx -a "${LOOP}"
+	BOOT=${LOOP}p1
+	ROOT=${LOOP}p3
+else
+	partx -d "${IMAGE}" || true
+	partx -a "${IMAGE}"
+	BOOT=${IMAGE}1
+	ROOT=${IMAGE}3
+fi
 
 if [ "${RUN_QEMU}" -eq 1 ] ; then
-	mount "${LOOP}"p1 "${MOUNTPOINT}"
+	mount "${ROOT}" "${MOUNTPOINT}"
 	pushd "${MOUNTPOINT}"
 	echo "fix me"
 	popd >/dev/null
 else 
-	mount "${LOOP}"p3 "${MOUNTPOINT}"
-	mount "${LOOP}"p1 "${MOUNTPOINT}"/boot
+	mount "${ROOT}" "${MOUNTPOINT}"
+	mount "${BOOT}" "${MOUNTPOINT}"/boot
 	[ -e "${MOUNTPOINT}"/var/cache/portage/latest.squashfs ] && \
 		mount "${MOUNTPOINT}"/var/cache/portage/latest.squashfs \
 			"${MOUNTPOINT}"/usr/portage
@@ -83,6 +92,8 @@ while mountpoint "${MOUNTPOINT}" >/dev/null ; do
 	umount "${MOUNTPOINT}" || sleep 1
 done
 
-while losetup -a | grep "${IMAGE}" | grep "${LOOP}" >/dev/null ; do
-	losetup -d "${LOOP}" || sleep 1
-done
+if [ -n "${LOOP}" ] ; then
+	while losetup -a | grep "${IMAGE}" | grep "${LOOP}" >/dev/null ; do
+		losetup -d "${LOOP}" || sleep 1
+	done
+fi
