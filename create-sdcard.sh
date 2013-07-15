@@ -238,7 +238,6 @@ DISTDIR=/var/cache/distfiles
 PKGDIR=/var/cache/packages
 PORT_LOGDIR=/var/log/portage
 ${DISABLE_SYNC}
-FEATURES="\${FEATURES} candy"
 PORTAGE_BINHOST="http://lore.xmw.de/gentoo/genberry/experimental"
 FEATURES="\${FEATURES} buildpkg getbinpkg"
 EMERGE_DEFAULT_OPTS="--binpkg-respect-use y"
