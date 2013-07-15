@@ -243,8 +243,9 @@ FEATURES="\${FEATURES} buildpkg getbinpkg"
 EMERGE_DEFAULT_OPTS="--binpkg-respect-use y"
 PORTAGE_TMPDIR="/tmp"
 #source /var/lib/layman/make.conf
-#PORTDIR_OVERLAY="/usr/local/portage \${PORTDIR_OVERLAY}"
+PORTDIR_OVERLAY="/usr/local/portage \${PORTDIR_OVERLAY}"
 EOF
+mkdir -p "${TARGET}"/usr/local/portage
 eend
 
 ebegin "update profile" 
