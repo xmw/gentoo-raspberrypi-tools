@@ -242,6 +242,8 @@ PORTAGE_BINHOST="http://lore.xmw.de/gentoo/genberry/experimental"
 FEATURES="\${FEATURES} buildpkg getbinpkg"
 EMERGE_DEFAULT_OPTS="--binpkg-respect-use y"
 PORTAGE_TMPDIR="/tmp"
+#source /var/lib/layman/make.conf
+#PORTDIR_OVERLAY="/usr/local/portage \${PORTDIR_OVERLAY}"
 EOF
 eend
 
