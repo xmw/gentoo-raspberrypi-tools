@@ -288,6 +288,8 @@ export PORTAGE_CONFIGROOT=${TARGET}
 if [ "${UPDATE_FROM_BINHOST}" -eq 1 ] ; then
 	ebegin "install essential packages from binhost"
 	emerge --quiet-build --verbose --usepkgonly \
+		sys-apps/portage #update to FEATURES=preserved-libs
+	emerge --quiet-build --verbose --usepkgonly \
 		app-admin/syslog-ng \
 		app-misc/screen \
 		app-portage/eix \
