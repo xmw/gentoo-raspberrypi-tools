@@ -37,7 +37,7 @@ for src in "${SNAPSHOT_DIR}"/*.tar.xz ; do
 	[ -e "${tgt_gz}" -a -e "${tgt_xz}" ] && continue
 	ebegin "update ${src}"
 	gpg --verify "${src}".gpgsig "${src}" || quit 1 "failed to verify ${src}"
-	tmp=$(mktemp -d /dev/shm/portage.XXXXXX)
+	tmp=$(mktemp -d /tmp/portage.XXXXXX)
 	[ -n "${tmp}" ] || quit 2 "Failed to create tempdir."
 	trap 'rm -rf "${tmp}"' EXIT
 	pv "${src}" | tar xJC "${tmp}" || quit 1 "tar failed"
