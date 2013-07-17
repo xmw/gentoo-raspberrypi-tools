@@ -127,7 +127,7 @@ else
 	LATEST=$(wget -O - -o /dev/null "${URL}")
 	URL=$(dirname "${URL}")/${LATEST}
 	PORTAGE_SQ=${WORKDIR}/portage/${LATEST}
-	wget -N -P "$(dirname "${PORTAGE_SQ}")" "${URL}"
+	[ -f ${WORKDIR}/portage/${LATEST} ] || wget -O "${PORTAGE_SQ}" "${URL}"
 	eend
 fi
 
