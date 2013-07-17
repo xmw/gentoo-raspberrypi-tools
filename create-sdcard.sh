@@ -259,8 +259,8 @@ cat >> "${TARGET}"/etc/portage/package.keywords << EOF
 =app-portage/eix-0.28.5::gentoo
 =app-shells/zsh-5.0.2-r2::gentoo
 =net-misc/openssh-6.2_p2-r1::gentoo **
-sys-boot/raspberrypi-firmware::gentoo
-sys-kernel/raspberrypi-image::gentoo
+=sys-boot/raspberrypi-firmware-0_p20130711::gentoo
+=sys-kernel/raspberrypi-image-3.6.11_p20130711::gentoo
 =net-libs/ldns-1.6.16::gentoo
 EOF
 cat >> "${TARGET}"/etc/portage/package.use << EOF
@@ -273,9 +273,9 @@ export FEATURES="-buildpkg"
 
 ebegin "install binary bootloader and kernel image"
 ACCEPT_KEYWORDS="~arm" emerge --verbose --quiet-build --nodeps \
-	"sys-kernel/raspberrypi-image" \
-	"sys-boot/raspberrypi-firmware"
-cp -v "${TARGET}"/boot/kernel-3.2.27+.img "${TARGET}"/boot/kernel.img
+	"=sys-kernel/raspberrypi-image-3.6.11_p20130711" \
+	"=sys-boot/raspberrypi-firmware-0_p20130711"
+cp -v "${TARGET}"/boot/kernel-3.6.11+.img "${TARGET}"/boot/kernel.img
 eend
 
 ebegin "update kernel command line"
