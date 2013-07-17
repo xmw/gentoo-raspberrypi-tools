@@ -16,7 +16,7 @@ if [ ! -e "${PORTAGE_SQUASHFS}" ] ; then
 	wget -O "${PORTAGE_SQUASHFS}" "${PORTAGE_SQUASHFS_URL}"
 fi
 
-rm /var/cache/portage.squashfs
-ln -s "${PORTAGE_SQUASHFS}" /var/cache/portage.squashfs
-umount /var/cache/portage.squashfs
-mount /var/cache/portage.squashfs
+rm /var/cache/portage/latest.squashfs
+ln -s "${PORTAGE_SQUASHFS}" /var/cache/portage/latest.squashfs
+umount /usr/portage
+mount /usr/portage
