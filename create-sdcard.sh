@@ -346,6 +346,12 @@ touch "${TARGET}"/lib/rc/cache/shutdowntime
 # timezone
 rm "${TARGET}"/etc/localtime
 ln -s ../usr/share/zoneinfo/"${TIMEZONE}" "${TARGET}"/etc/localtime
+
+cat >> "${TARGET}"/etc/sysctl.d/genberry.conf << EOF
+vm.swappiness=1
+vm.min_free_kbytes = 16184
+EOF
+
 eend
 
 echo Fin
