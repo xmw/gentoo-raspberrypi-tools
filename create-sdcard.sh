@@ -352,6 +352,14 @@ vm.swappiness=1
 vm.min_free_kbytes = 16184
 EOF
 
+cat >> "${TARGET}"/etc/conf.d/net << EOF
+#config_eth0="192.168.23.5/24"
+#routes_eth0="default via 192.168.23.254"
+#dns_servers_eth0="8.8.8.8"
+#dns_domain_eth0=""
+#dns_search=""
+EOF
+
 eend
 
 echo Fin
