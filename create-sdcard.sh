@@ -250,7 +250,7 @@ eend
 
 ebegin "update profile" 
 rm "${TARGET}"/etc/portage/make.profile
-ln -s ../../usr/portage/profiles/default/linux/arm/13.0 \
+ln -s ../../usr/portage/profiles/default/linux/arm/13.0/armv6j \
 	"${TARGET}"/etc/portage/make.profile
 eend
 
