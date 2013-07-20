@@ -257,8 +257,7 @@ eend
 ebegin "keyword some packages and set use flags"
 cat >> "${TARGET}"/etc/portage/package.keywords << EOF
 =app-portage/eix-0.28.5::gentoo
-=app-shells/zsh-5.0.2-r2::gentoo
-=net-misc/openssh-6.2_p2-r1::gentoo **
+=net-misc/openssh-6.2_p2*::gentoo **
 =sys-boot/raspberrypi-firmware-0_p20130711::gentoo
 =sys-kernel/raspberrypi-image-3.6.11_p20130711::gentoo
 =net-libs/ldns-1.6.16::gentoo
@@ -290,6 +289,7 @@ if [ "${UPDATE_FROM_BINHOST}" -eq 1 ] ; then
 	emerge --quiet-build --verbose --usepkgonly \
 		sys-apps/portage #update to FEATURES=preserved-libs
 	emerge --quiet-build --verbose --usepkgonly \
+		app-admin/logrotate \
 		app-admin/syslog-ng \
 		app-misc/screen \
 		app-portage/eix \
@@ -298,6 +298,7 @@ if [ "${UPDATE_FROM_BINHOST}" -eq 1 ] ; then
 		net-misc/ntp \
 		net-misc/openssh \
 		sys-process/dcron \
+		sys-process/htop \
 		sys-apps/mlocate
 	eend
 	ebegin "update @world from binhost"
