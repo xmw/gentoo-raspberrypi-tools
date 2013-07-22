@@ -263,6 +263,7 @@ cat >> "${TARGET}"/etc/portage/package.keywords << EOF
 =net-libs/ldns-1.6.16::gentoo
 EOF
 cat >> "${TARGET}"/etc/portage/package.use << EOF
+dev-lang/python:2.7 berkdb sqlite
 net-misc/openssh ldns
 net-libs/ldns -ecdsa
 EOF
