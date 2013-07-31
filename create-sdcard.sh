@@ -245,9 +245,11 @@ FEATURES="\${FEATURES} buildpkg getbinpkg"
 EMERGE_DEFAULT_OPTS="--binpkg-respect-use y"
 PORTAGE_TMPDIR="/tmp"
 #source /var/lib/layman/make.conf
-PORTDIR_OVERLAY="/usr/local/portage \${PORTDIR_OVERLAY}"
+PORTDIR_OVERLAY="\${PORTDIR_OVERLAY} /usr/local/portage"
 EOF
-mkdir -p "${TARGET}"/usr/local/portage
+mkdir -p "${TARGET}"/usr/local/portage/{metadata,profile}
+echo local > "${TARGET}"/usr/local/portage/profile/repo_name
+echo "masters = gentoo" > "${TARGET}"/usr/local/portage/metadata/layout.conf
 eend
 
 ebegin "update profile" 
