@@ -171,7 +171,7 @@ t
 83
 w
 EOF
-partx -d "${LOOP}"
+partx -d "${LOOP}" || true
 partx -a "${LOOP}"
 eend
 
