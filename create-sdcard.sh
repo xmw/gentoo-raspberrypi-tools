@@ -14,7 +14,7 @@ IMAGE=${IMAGE:-${WORKDIR}/image.raw}
 TARGET=${TARGET:-${WORKDIR}/target}
 
 VERIFY_GPG=${VERIFY_GPG:-1}
-STAGE3_GPG_KEYID=${STAGE3_GPG_KEYID:-2D182910}
+STAGE3_GPG_KEYID=${STAGE3_GPG_KEYID:-62EEF090}
 PORTAGE_GPG_KEYID=${PORTAGE_GPG_KEYID:-C9189250}
 PORTAGE_ON_SQUASHFS=${PORTAGE_ON_SQUASHFS:-1}
 UPDATE_FROM_BINHOST=${UPDATE_FROM_BINHOST:-1}
@@ -75,16 +75,17 @@ ERR=$( {
 
 set -e
 
-ebegin "search for newer stage3 tarball"
-LATEST="20130207/20130207/armv6j-hardfloat-linux-gnueabi/stage3-armv6j_hardfp-20130207.tar.bz2"
-latest=$(wget -O - http://distfiles.gentoo.org/releases/arm/autobuilds/latest-stage3-armv6j_hardfp.txt 2>/dev/null | tail -n 1)
-[ "${LATEST}" != "${latest}" ] && \
-	quit 1  "update stage3 tarball reference to ${latest}"
-eend
+#ebegin "search for newer stage3 tarball"
+#LATEST="20130207/20130207/armv6j-hardfloat-linux-gnueabi/stage3-armv6j_hardfp-20130207.tar.bz2"
+#latest=$(wget -O - http://distfiles.gentoo.org/releases/arm/autobuilds/latest-stage3-armv6j_hardfp.txt 2>/dev/null | tail -n 1)
+#[ "${LATEST}" != "${latest}" ] && \
+#	quit 1  "update stage3 tarball reference to ${latest}"
+#eend
 
 ebegin "fetch stage3 tarball"
 mkdir -p "${WORKDIR}"/stage3
-URL=http://distfiles.gentoo.org/releases/arm/autobuilds/${LATEST}
+#URL=http://distfiles.gentoo.org/releases/arm/autobuilds/${LATEST}
+URL=http://lore.xmw.de/gentoo/genberry/stage3/stage3-armv6j_hardfp-20130722.tar.bz2
 STAGE3=${WORKDIR}/stage3/$(basename "${URL}")
 [ -f "${STAGE3}"          ] || wget -O "${STAGE3}"          "${URL}"
 [ -f "${STAGE3}".DIGESTS.asc ] || wget -O "${STAGE3}".DIGESTS.asc  "${URL}".DIGESTS.asc
