@@ -252,12 +252,6 @@ echo local > "${TARGET}"/usr/local/portage/profile/repo_name
 echo "masters = gentoo" > "${TARGET}"/usr/local/portage/metadata/layout.conf
 eend
 
-ebegin "update profile" 
-rm "${TARGET}"/etc/portage/make.profile
-ln -s ../../usr/portage/profiles/default/linux/arm/13.0/armv6j \
-	"${TARGET}"/etc/portage/make.profile
-eend
-
 ebegin "keyword some packages and set use flags"
 cat >> "${TARGET}"/etc/portage/package.keywords << EOF
 =app-portage/eix-0.28.5::gentoo
