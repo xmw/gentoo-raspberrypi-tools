@@ -63,7 +63,9 @@ else
 	partx -d "${IMAGE}" || true
 	partx -a "${IMAGE}"
 	BOOT=${IMAGE}1
+	[ ! -e "${BOOT}" ] && BOOT=${IMAGE}p1
 	ROOT=${IMAGE}3
+	[ ! -e "${ROOT}" ] && ROOT=${IMAGE}p3
 fi
 
 if [ "${RUN_QEMU}" -eq 1 ] ; then
