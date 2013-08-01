@@ -48,6 +48,7 @@ if [ -n "${MOUNTPOINT}" ] ; then
 else
 	TMP=$(mktemp -d)
 	MOUNTPOINT=${TMP}
+	REMOVE_MOUNTPOINT=1
 fi
 
 set -e
@@ -91,6 +92,10 @@ fi
 while mountpoint "${MOUNTPOINT}" >/dev/null ; do
 	umount "${MOUNTPOINT}" || sleep 1
 done
+
+if [ -n "${REMOVE_MOUNTPOINT}" ] ; then
+	rmdir "${MOUNTPOINT}"
+fi
 
 if [ -n "${LOOP}" ] ; then
 	while losetup -a | grep "${IMAGE}" | grep "${LOOP}" >/dev/null ; do
