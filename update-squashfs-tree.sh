@@ -42,9 +42,9 @@ for src in "${SNAPSHOT_DIR}"/*.tar.xz ; do
 	trap 'rm -rf "${tmp}"' EXIT
 	pv "${src}" | tar xJC "${tmp}" || quit 1 "tar failed"
 	[ -e "${tgt_gz}" ] || \
-		mksquashfs ${tmp}/portage ${tgt_gz} -comp gzip -processors 4
+		mksquashfs ${tmp}/portage ${tgt_gz} -no-progress -comp gzip -processors 4
 	[ -e "${tgt_xz}" ] || \
-		mksquashfs ${tmp}/portage ${tgt_xz} -comp xz -Xbcj arm -processors 4
+		mksquashfs ${tmp}/portage ${tgt_xz} -no-progress -comp xz -Xbcj arm -processors 4
 	rm -rf "${tmp}" EXIT
 	eend
 done
