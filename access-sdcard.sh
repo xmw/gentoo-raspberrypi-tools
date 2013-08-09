@@ -38,7 +38,7 @@ fi
 
 IMAGE=${1}
 MOUNTPOINT=${2}
-[ -z "${IMAGE}" ] && usage 1 "specify image file"
+[ -z "${IMAGE}" ] && usage 1 "specify image file or device"
 [ -n "${3}" ] && usage 1 "too many arguments"
 if [ -n "${MOUNTPOINT}" ] ; then
 	[ -d "${MOUNTPOINT}" ] || usage 1 "mountpoint is not a directory"
@@ -46,7 +46,7 @@ if [ -n "${MOUNTPOINT}" ] ; then
 		usage 1 "${MOUNTPOINT} already mounted"
 	fi
 else
-	TMP=$(mktemp -d)
+	TMP=$(mktemp -d /tmp/rpi-card.XXXXX)
 	MOUNTPOINT=${TMP}
 	REMOVE_MOUNTPOINT=1
 fi
@@ -57,16 +57,16 @@ if [ -f "${IMAGE}" ] ; then
 	losetup "${LOOP}" "${IMAGE}"
 	partx -d "${LOOP}" || true
 	partx -a "${LOOP}"
-	BOOT=${LOOP}p1
-	ROOT=${LOOP}p3
+	DEV=${LOOP}
 else
 	partx -d "${IMAGE}" || true
 	partx -a "${IMAGE}"
-	BOOT=${IMAGE}1
-	[ ! -e "${BOOT}" ] && BOOT=${IMAGE}p1
-	ROOT=${IMAGE}3
-	[ ! -e "${ROOT}" ] && ROOT=${IMAGE}p3
+	DEV=${IMAGE}
 fi
+
+#try some magic
+BOOT=$(fdisk -l "${DEV}" | grep "^${DEV}" | awk '$5 == "c" { print $1 }')
+ROOT=$(fdisk -l "${DEV}" | grep "^${DEV}" | awk '$5 == "83" { print $1 }')
 
 if [ "${RUN_QEMU}" -eq 1 ] ; then
 	mount "${ROOT}" "${MOUNTPOINT}"
