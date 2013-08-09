@@ -1,0 +1,19 @@
+#!/bin/zsh
+
+setopt -e
+
+rm .config
+make ARCH=arm bcmrpi_defconfig
+make ARCH=arm CROSS_COMPILE=/usr/bin/armv6j-hardfloat-linux-gnueabi- oldconfig
+
+loc=$(git log --date=short HEAD~1..HEAD | awk '$1 == "Date:" { print $2 }' | tr -d -)
+sed -e "/^CONFIG_LOCALVERSION/s:=.*:=\"-$loc\":" -i .config
+
+make ARCH=arm CROSS_COMPILE=/usr/bin/armv6j-hardfloat-linux-gnueabi- -j2
+
+TMPDIR=$(mktemp -d /tmp/rpi-kernel-XXXXX)
+mkdir "${TMPDIR}"/boot
+make ARCH=arm CROSS_COMPILE=/usr/bin/armv6j-hardfloat-linux-gnueabi- modules_install INSTALL_MOD_PATH="${TMPDIR}"
+make ARCH=arm CROSS_COMPILE=/usr/bin/armv6j-hardfloat-linux-gnueabi- install INSTALL_PATH="${TMPDIR}"/boot
+tar cvJf "${TMPDIR}".tar.xz -C "${TMPDIR}" .
+
