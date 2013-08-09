@@ -241,7 +241,7 @@ PORT_LOGDIR=/var/log/portage
 ${DISABLE_SYNC}
 GENTOO_MIRRORS="http://lore.xmw.de/gentoo/"
 PORTAGE_BINHOST="http://lore.xmw.de/gentoo/genberry/experimental"
-FEATURES="\${FEATURES} buildpkg getbinpkg"
+FEATURES="\${FEATURES} buildpkg getbinpkg splitdebug split-log"
 EMERGE_DEFAULT_OPTS="--binpkg-respect-use y"
 PORTAGE_TMPDIR="/tmp"
 #source /var/lib/layman/make.conf
