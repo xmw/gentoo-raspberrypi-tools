@@ -1,0 +1,3815 @@
+ACCEPT_KEYWORDS: arm
+ACCEPT_LICENSE: * -@EULA
+ACCEPT_PROPERTIES: *
+ACCEPT_RESTRICT: *
+CBUILD: armv6j-hardfloat-linux-gnueabi
+CHOST: armv6j-hardfloat-linux-gnueabi
+CONFIG_PROTECT: /boot/cmdline.txt /boot/config.txt /etc /usr/share/gnupg/qualified.txt /var/spool/munin-async/.ssh
+CONFIG_PROTECT_MASK: /etc/ca-certificates.conf /etc/env.d /etc/gconf /etc/gentoo-release /etc/revdep-rebuild /etc/sandbox.d /etc/terminfo
+FEATURES: assume-digests binpkg-logs buildpkg ccache config-protect-if-modified distcc distlocks ebuild-locks fixlafiles getbinpkg merge-sync news parallel-fetch preserve-libs protect-owned sandbox sfperms strict unknown-features-warn unmerge-logs unmerge-orphans userfetch
+GENTOO_MIRRORS: http://lore.xmw.de/gentoo/
+PACKAGES: 269
+PROFILE: default/linux/arm/13.0
+SYNC: use update-portage
+TIMESTAMP: 1374522581
+USE: acl apache2_modules_actions apache2_modules_alias apache2_modules_auth_basic apache2_modules_authn_alias apache2_modules_authn_anon apache2_modules_authn_core apache2_modules_authn_dbm apache2_modules_authn_default apache2_modules_authn_file apache2_modules_authz_core apache2_modules_authz_dbm apache2_modules_authz_default apache2_modules_authz_groupfile apache2_modules_authz_host apache2_modules_authz_owner apache2_modules_authz_user apache2_modules_autoindex apache2_modules_cache apache2_modules_cgi apache2_modules_cgid apache2_modules_dav apache2_modules_dav_fs apache2_modules_dav_lock apache2_modules_deflate apache2_modules_dir apache2_modules_disk_cache apache2_modules_env apache2_modules_expires apache2_modules_ext_filter apache2_modules_file_cache apache2_modules_filter apache2_modules_headers apache2_modules_include apache2_modules_info apache2_modules_log_config apache2_modules_logio apache2_modules_mem_cache apache2_modules_mime apache2_modules_mime_magic apache2_modules_negotiation apache2_modules_rewrite apache2_modules_setenvif apache2_modules_socache_shmcb apache2_modules_speling apache2_modules_status apache2_modules_unique_id apache2_modules_unixd apache2_modules_userdir apache2_modules_usertrack apache2_modules_vhost_alias arm bash-completion berkdb bindist bzip2 calligra_features_author calligra_features_braindump calligra_features_flow calligra_features_karbon calligra_features_kexi calligra_features_krita calligra_features_plan calligra_features_sheets calligra_features_stage calligra_features_tables calligra_features_words cameras_ptp2 cli collectd_plugins_df collectd_plugins_interface collectd_plugins_irq collectd_plugins_load collectd_plugins_memory collectd_plugins_rrdtool collectd_plugins_swap collectd_plugins_syslog cracklib crypt cxx dri elibc_glibc fortran gdbm gpm gpsd_protocols_aivdm gpsd_protocols_ashtech gpsd_protocols_earthmate gpsd_protocols_evermore gpsd_protocols_fv18 gpsd_protocols_garmin gpsd_protocols_garmintxt gpsd_protocols_gpsclock gpsd_protocols_itrax gpsd_protocols_mtk3301 gpsd_protocols_navcom gpsd_protocols_nmea gpsd_protocols_ntrip gpsd_protocols_oceanserver gpsd_protocols_oldstyle gpsd_protocols_oncore gpsd_protocols_rtcm104v2 gpsd_protocols_rtcm104v3 gpsd_protocols_sirf gpsd_protocols_superstar2 gpsd_protocols_timing gpsd_protocols_tnt gpsd_protocols_tripmate gpsd_protocols_tsip gpsd_protocols_ubx iconv input_devices_evdev input_devices_keyboard input_devices_mouse ipv6 kernel_linux lcd_devices_bayrad lcd_devices_cfontz lcd_devices_cfontz633 lcd_devices_glk lcd_devices_hd44780 lcd_devices_lb216 lcd_devices_lcdm001 lcd_devices_mtxorb lcd_devices_ncurses lcd_devices_text libreoffice_extensions_presenter-console libreoffice_extensions_presenter-minimizer modules mudflap ncurses nls nptl office_implementation_libreoffice openmp pam pcre php_targets_php5-4 python_single_target_python2_7 python_targets_python2_7 python_targets_python3_2 readline ruby_targets_ruby18 ruby_targets_ruby19 session ssl tcpd unicode userland_GNU video_cards_dummy video_cards_exynos video_cards_fbdev video_cards_omap video_cards_omapfb video_cards_v4l xtables_addons_account xtables_addons_chaos xtables_addons_condition xtables_addons_delude xtables_addons_dhcpmac xtables_addons_fuzzy xtables_addons_geoip xtables_addons_iface xtables_addons_ipmark xtables_addons_ipp2p xtables_addons_ipset xtables_addons_ipv4options xtables_addons_length2 xtables_addons_logmark xtables_addons_lscan xtables_addons_pknock xtables_addons_psd xtables_addons_quota2 xtables_addons_rawnat xtables_addons_steal xtables_addons_sysrq xtables_addons_tarpit xtables_addons_tee zlib zsh-completion
+VERSION: 0
+REPO: gentoo
+
+BUILD_TIME: 1373876749
+CPV: app-admin/eselect-1.3.4
+DEFINED_PHASES: compile install postinst
+DEPEND: sys-apps/sed || ( sys-apps/coreutils sys-freebsd/freebsd-bin app-misc/realpath ) app-arch/xz-utils
+DESC: Gentoo's multi-purpose configuration and management tool
+EAPI: 4
+IUSE: doc
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2+
+MD5: 568537d874a9d6a29f7fe18c546a6528
+MTIME: 1373876766
+RDEPEND: !app-admin/eselect-news sys-apps/sed || ( sys-apps/coreutils sys-freebsd/freebsd-bin app-misc/realpath ) sys-apps/file sys-libs/ncurses
+SHA1: d593f4a94b76fce198197ef5ec57f876ea904eac
+SIZE: 90623
+
+BUILD_TIME: 1373627330
+CPV: app-admin/eselect-ctags-1.14
+DEFINED_PHASES: compile install
+DESC: Manages ctags implementations
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2
+MD5: 4b0abedb2725ce5b6ab62bfe1baf4d78
+MTIME: 1373627343
+RDEPEND: >=app-admin/eselect-1.2.3
+SHA1: 992721b5bebb869deb815266ce003d2093d3d871
+SIZE: 9343
+
+BUILD_TIME: 1373568737
+CPV: app-admin/eselect-lib-bin-symlink-0.1.1
+DEFINED_PHASES: compile configure install prepare test
+DESC: An eselect library to manage executable symlinks
+EAPI: 5
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2
+MD5: 9763a2e7c09eea99d692a6e438e3420b
+MTIME: 1373568751
+RDEPEND: app-admin/eselect
+SHA1: 0dd002dac65f76d67a395d91dc38d7e821b9e4d3
+SIZE: 30596
+
+BUILD_TIME: 1373568847
+CPV: app-admin/eselect-pinentry-0.4
+DEFINED_PHASES: install
+DESC: Manage /usr/bin/pinentry symlink
+EAPI: 5
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2
+MD5: fd90548104c11eaccada14e3196770ac
+MTIME: 1373568858
+RDEPEND: >=app-admin/eselect-lib-bin-symlink-0.1.1
+SHA1: 057c55e4a340819526d0d48bae6281cd140c66ef
+SIZE: 6388
+
+BUILD_TIME: 1373876925
+CPV: app-admin/eselect-python-20111108
+DEFINED_PHASES: install postinst preinst unpack
+DESC: Eselect module for management of multiple Python versions
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: bd519ad8930301092eaa215c01120306
+MTIME: 1373876937
+RDEPEND: >=app-admin/eselect-1.2.3
+SHA1: 3281966eb617b082b4af63db15de6e1e48842078
+SIZE: 12536
+
+BUILD_TIME: 1373627184
+CPV: app-admin/eselect-vi-1.1.7-r1
+DEFINED_PHASES: install prepare
+DESC: Manages the /usr/bin/vi symlink
+EAPI: 3
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2
+MD5: 441238b2d21af930c45e3d80d594c0c6
+MTIME: 1373627199
+RDEPEND: >=app-admin/eselect-1.0.6
+SHA1: 1dca0c4166e6ebfdfa32a2f4c981549631ec86aa
+SIZE: 21869
+
+BUILD_TIME: 1373524656
+CPV: app-admin/syslog-ng-3.4.2
+DEFINED_PHASES: configure install postinst prepare
+DEPEND: dev-libs/libpcre dev-libs/openssl:0/0= >=sys-apps/tcp-wrappers-7.6 >=dev-libs/eventlog-0.2.12 >=dev-libs/glib-2.10.1:2 virtual/pkgconfig sys-devel/flex || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool virtual/pkgconfig
+DESC: syslog replacement with advanced filtering features
+EAPI: 5
+IUSE: caps dbi geoip ipv6 json mongodb +pcre smtp spoof-source ssl tcpd
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc x86 ~x86-fbsd
+LICENSE: GPL-2+ LGPL-2.1+
+MD5: c3e864007ce75d650a66ef183755716e
+MTIME: 1373524684
+RDEPEND: dev-libs/libpcre dev-libs/openssl:0/0= >=sys-apps/tcp-wrappers-7.6 >=dev-libs/eventlog-0.2.12 >=dev-libs/glib-2.10.1:2
+RESTRICT: test
+SHA1: 60ca1bf9d4a681a4e5a782c549b07dca55ff1e48
+SIZE: 748885
+USE: ipv6 pcre ssl tcpd
+
+BUILD_TIME: 1373960617
+CPV: app-admin/tmpreaper-1.6.13
+DEFINED_PHASES: install postinst prepare
+DESC: A utility for removing files based on when they were last accessed
+EAPI: 3
+KEYWORDS: amd64 ~arm ppc x86
+LICENSE: GPL-2
+MD5: 2790c1555039c0cc3f6a804482c5585f
+MTIME: 1373960654
+SHA1: 2bbb64c635e7c79471c1baff7a7462764df610bc
+SIZE: 53365
+
+BUILD_TIME: 1373567392
+CPV: app-arch/cpio-2.11
+DEFINED_PHASES: configure install prepare
+DESC: A file archival tool which can also read and write tar files
+EAPI: 2
+IUSE: nls
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-3
+MD5: 9bc9c403995704b911848d3858925be4
+MTIME: 1373567410
+SHA1: e436a46d600c3016376bda44435eb686c3ef4736
+SIZE: 215166
+USE: nls
+
+BUILD_TIME: 1374174737
+CPV: app-arch/lbzip2-2.2-r1
+DEFINED_PHASES: compile configure install prepare test
+DESC: Parallel bzip2 utility
+EAPI: 4
+IUSE: debug symlink
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd ~amd64-linux ~x86-linux
+LICENSE: GPL-3
+MD5: fc2e85591e59cb027378a58aa65bf711
+MTIME: 1374174775
+SHA1: 5fa699a82814cb69b260351551b2c9e8ee6c636f
+SIZE: 103781
+
+BUILD_TIME: 1374094206
+CPV: app-arch/libarchive-3.1.2-r1
+DEFINED_PHASES: configure install postinst preinst prepare test
+DEPEND: dev-libs/openssl:0 virtual/acl app-arch/bzip2 dev-libs/libxml2 virtual/libiconv app-arch/xz-utils sys-libs/zlib virtual/os-headers sys-fs/e2fsprogs
+DESC: BSD tar command
+EAPI: 5
+IUSE: acl +bzip2 +e2fsprogs expat +iconv kernel_linux +lzma lzo nettle static-libs xattr +zlib
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: BSD BSD-2 BSD-4 public-domain
+MD5: 04266677766cc9c261d80b99b35cb5d3
+MTIME: 1374094260
+RDEPEND: dev-libs/openssl:0 virtual/acl app-arch/bzip2 dev-libs/libxml2 virtual/libiconv app-arch/xz-utils sys-libs/zlib
+SHA1: 5bcc2e9b3c446f76345b9daedea113cc159ae197
+SIZE: 491769
+SLOT: 0/13
+USE: acl bzip2 e2fsprogs iconv kernel_linux lzma zlib
+
+BUILD_TIME: 1373881858
+CPV: app-arch/tar-1.26-r1
+DEFINED_PHASES: configure install prepare
+DEPEND: >=sys-devel/gettext-0.10.35 || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: Use this to make tarballs :)
+EAPI: 3
+IUSE: minimal nls static userland_GNU xattr
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-3
+MD5: 7886346de62af6a1f97c0a56b9f8161b
+MTIME: 1373881884
+SHA1: 2cdaa83fb26f56ee4c405a7b30a945d9a81aadaa
+SIZE: 907928
+USE: nls userland_GNU
+
+BUILD_TIME: 1374179176
+CPV: app-arch/unzip-6.0-r3
+DEFINED_PHASES: compile install prepare
+DEPEND: app-arch/bzip2
+DESC: unzipper for pkzip-compressed files
+EAPI: 2
+IUSE: bzip2 natspec unicode
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~arm-linux ~x86-linux
+LICENSE: Info-ZIP
+MD5: 9d00c7d3b9f4033101a0e421c15b6ac0
+MTIME: 1374179215
+RDEPEND: app-arch/bzip2
+SHA1: ba1ee2ed0080e57bd1963cafeebfdff05223d706
+SIZE: 205492
+USE: bzip2 unicode
+
+BUILD_TIME: 1374182516
+CPV: app-cdr/cdrtools-3.00
+DEFINED_PHASES: compile configure install prepare
+DEPEND: virtual/acl !app-cdr/cdrkit
+DESC: A set of tools for CD/DVD reading and recording, including cdrecord
+EAPI: 2
+IUSE: acl unicode
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd
+LICENSE: GPL-2 LGPL-2.1 CDDL-Schily
+MD5: 8c1d1f005e3499a432ddb29d3bc471bf
+MTIME: 1374182551
+RDEPEND: virtual/acl !app-cdr/cdrkit
+SHA1: 7ce6c38fd0004e82a5dc101b82b251c526f1ff69
+SIZE: 1132980
+USE: acl unicode
+
+BUILD_TIME: 1373575470
+CPV: app-crypt/gnupg-2.0.20
+DEFINED_PHASES: compile configure install postinst prepare
+DEPEND: >=dev-libs/libassuan-2 >=dev-libs/libgcrypt-1.4 >=dev-libs/libgpg-error-1.7 >=dev-libs/libksba-1.0.7 >=dev-libs/pth-1.3.7 >=net-misc/curl-7.10 sys-libs/zlib app-arch/bzip2 sys-libs/readline || ( app-crypt/pinentry app-crypt/pinentry-qt ) sys-devel/gettext
+DESC: The GNU Privacy Guard, a GPL pgp replacement
+EAPI: 5
+IUSE: adns bzip2 doc ldap nls mta readline static selinux smartcard usb
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-3
+MD5: 74ae62de9397128e229cdf16467d7596
+MTIME: 1373575508
+RDEPEND: >=dev-libs/libassuan-2 >=dev-libs/libgcrypt-1.4 >=dev-libs/libgpg-error-1.7 >=dev-libs/libksba-1.0.7 >=dev-libs/pth-1.3.7 >=net-misc/curl-7.10 sys-libs/zlib app-arch/bzip2 sys-libs/readline || ( app-crypt/pinentry app-crypt/pinentry-qt ) !<=app-crypt/gnupg-2.0.1 virtual/libintl
+SHA1: fbc7624893ac1bc0070554c5c5eb56e50fcde2e3
+SIZE: 2102719
+USE: bzip2 nls readline
+
+BUILD_TIME: 1374177878
+CPV: app-crypt/mhash-0.9.9.9-r1
+DEFINED_PHASES: compile configure install prepare
+DEPEND: dev-lang/perl
+DESC: library providing a uniform interface to a large number of hash algorithms
+EAPI: 4
+IUSE: static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2
+MD5: 0a85c51cecdf96bda2d4f2bb75ffe637
+MTIME: 1374177911
+SHA1: 1352a556041108177ba6ea2a99a70fa79ebc976c
+SIZE: 182266
+
+BUILD_TIME: 1373573886
+CPV: app-crypt/pinentry-0.8.2
+DEFINED_PHASES: compile configure install postinst postrm prepare
+DEPEND: app-admin/eselect-pinentry sys-libs/ncurses || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: Collection of simple PIN or passphrase entry dialogs which utilize the Assuan protocol
+EAPI: 5
+IUSE: gtk ncurses qt4 caps static
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2
+MD5: a73e362288020d8f30eb649262d4d056
+MTIME: 1373573901
+RDEPEND: app-admin/eselect-pinentry sys-libs/ncurses
+SHA1: 49f438c62c7fb24e2160db4c69cb39a9044b6dd6
+SIZE: 67549
+USE: ncurses
+
+BUILD_TIME: 1374183574
+CPV: app-crypt/shash-0.2.6-r1
+DEFINED_PHASES: compile install postinst unpack
+DEPEND: >=app-crypt/mhash-0.8.18-r1
+DESC: Generate or check digests or MACs of files
+IUSE: static bash-completion
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos
+LICENSE: GPL-2
+MD5: 75844c877c00f6542f1e9ecdb29f6a6e
+MTIME: 1374183589
+PDEPEND: app-shells/bash-completion
+RDEPEND: >=app-crypt/mhash-0.8.18-r1 app-admin/eselect
+SHA1: 18856528fb5a5ddd828e6edbc9d1f1d59b234cc2
+SIZE: 42072
+USE: bash-completion
+
+BUILD_TIME: 1373918856
+CPV: app-editors/joe-3.7-r1
+DEFINED_PHASES: configure install postinst prepare
+DEPEND: >=sys-libs/ncurses-5.2-r2
+DESC: A free ASCII-Text Screen Editor for UNIX
+EAPI: 3
+IUSE: xterm
+KEYWORDS: alpha amd64 arm ~ia64 ~mips ppc ppc64 sparc x86 ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris
+LICENSE: GPL-1
+MD5: bb1c423cc38fa442e1782765f4239cc9
+MTIME: 1373918881
+SHA1: a92a767db35a6510d19eb58e645ada97ec1a488f
+SIZE: 403294
+
+BUILD_TIME: 1373882411
+CPV: app-editors/nano-2.3.2
+DEFINED_PHASES: configure install prepare
+DEPEND: >=sys-libs/ncurses-5.9-r1[unicode] sys-apps/file virtual/libintl sys-devel/gettext virtual/pkgconfig || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: GNU GPL'd Pico clone with more functionality
+EAPI: 3
+IUSE: debug justify +magic minimal ncurses nls slang spell unicode
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-3
+MD5: ea61b1d7263ea1eb6ecbbdb9ff254eaf
+MTIME: 1373882434
+RDEPEND: >=sys-libs/ncurses-5.9-r1[unicode] sys-apps/file virtual/libintl
+SHA1: 3d3ba540daee3bdd1a4f371312963245932d4f65
+SIZE: 511968
+USE: magic ncurses nls unicode
+
+BUILD_TIME: 1373849893
+CPV: app-editors/vim-7.3.762
+DEFINED_PHASES: compile configure install postinst postrm prepare setup test
+DEPEND: >=app-admin/eselect-vi-1.1 sys-apps/gawk >=sys-apps/sed-4 sys-devel/autoconf >=sys-libs/ncurses-5.2-r2 virtual/libintl >=sys-libs/gpm-1.19.3 sys-apps/acl dev-util/ctags
+DESC: Vim, an improved vi-style text editor
+EAPI: 3
+IUSE: nls acl cscope debug gpm perl python ruby X minimal vim-pager
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~ia64-hpux ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: vim
+MD5: ad7ebf1897d8be9c7c07333c0555338c
+MTIME: 1373849910
+RDEPEND: >=app-admin/eselect-vi-1.1 >=sys-libs/ncurses-5.2-r2 virtual/libintl >=sys-libs/gpm-1.19.3 sys-apps/acl !<app-vim/align-30-r1 !<app-vim/vimbuddy-0.9.1-r1 !<app-vim/autoalign-11 !<app-vim/supertab-0.41 ~app-editors/vim-core-7.3.762 dev-util/ctags !<app-editors/nvi-1.81.5-r4
+SHA1: 46dd6aab0d7f45b96bd94af42571685dba86546a
+SIZE: 828781
+USE: acl gpm nls
+
+BUILD_TIME: 1373847913
+CPV: app-editors/vim-core-7.3.762
+DEFINED_PHASES: compile configure install postinst postrm prepare setup test
+DEPEND: >=app-admin/eselect-vi-1.1 sys-apps/gawk >=sys-apps/sed-4 sys-devel/autoconf >=sys-libs/ncurses-5.2-r2 virtual/libintl
+DESC: vim and gvim shared files
+EAPI: 3
+IUSE: nls acl livecd
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: vim
+MD5: e19582c72be0a5c262bcace5811ba3b4
+MTIME: 1373847998
+PDEPEND: app-vim/gentoo-syntax
+RDEPEND: >=app-admin/eselect-vi-1.1 >=sys-libs/ncurses-5.2-r2 virtual/libintl
+SHA1: a7a639614e9cc2013832e97b93009082fe11bd99
+SIZE: 6575770
+USE: acl nls
+
+BUILD_TIME: 1373868890
+CPV: app-misc/ca-certificates-20130119
+DEFINED_PHASES: compile install postinst prepare setup unpack
+DEPEND: !<sys-apps/portage-2.1.10.41
+DESC: Common CA Certificates PEM files
+EAPI: 3
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris ~x86-winnt
+LICENSE: MPL-1.1
+MD5: b244a6b189199688a081b776df90b081
+MTIME: 1373868909
+RDEPEND: !<sys-apps/portage-2.1.10.41 dev-libs/openssl sys-apps/debianutils
+SHA1: 9ae5323a20a413fa1419b57576b0985e700ee722
+SIZE: 233437
+
+BUILD_TIME: 1374153209
+CPV: app-misc/mc-4.8.7
+DEFINED_PHASES: configure install postinst prepare
+DEPEND: >=dev-libs/glib-2.8:2 sys-libs/gpm sys-fs/e2fsprogs >=sys-libs/slang-2 app-arch/xz-utils virtual/pkgconfig sys-devel/gettext
+DESC: GNU Midnight Commander is a text based file manager
+EAPI: 4
+IUSE: +edit gpm mclib nls samba sftp +slang spell test X +xdg
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x86-solaris
+LICENSE: GPL-3
+MD5: 847883585a1a560afba91a4910ae8649
+MTIME: 1374153245
+RDEPEND: >=dev-libs/glib-2.8:2 sys-libs/gpm sys-fs/e2fsprogs >=sys-libs/slang-2
+SHA1: 4d3784d3f5e20e9396c694d4c06ee92b830d590d
+SIZE: 1729082
+USE: edit gpm nls slang xdg
+
+BUILD_TIME: 1373503591
+CPV: app-misc/screen-4.0.3-r6
+DEFINED_PHASES: configure install postinst prepare setup
+DEPEND: >=sys-libs/ncurses-5.2 virtual/pam || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: Full-screen window manager that multiplexes physical terminals between several processes
+EAPI: 4
+IUSE: debug nethack pam selinux multiuser
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~sparc-fbsd ~x86-fbsd ~hppa-hpux ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2
+MD5: f5f4fc0ba8753561738e2f8abe18b3fb
+MTIME: 1373503611
+RDEPEND: >=sys-libs/ncurses-5.2 virtual/pam
+SHA1: 1f08f7e15e32d067319ef02b848cee8027b700c8
+SIZE: 642441
+USE: pam
+
+BUILD_TIME: 1374176443
+CPV: app-misc/zisofs-tools-1.0.6
+DEFINED_PHASES: compile install
+DEPEND: >=sys-libs/zlib-1.1.4
+DESC: User utilities for zisofs
+IUSE: static
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86
+LICENSE: GPL-2
+MD5: 98380e4a3dd327b538fd5f7a786686ca
+MTIME: 1374176477
+RDEPEND: >=sys-libs/zlib-1.1.4
+SHA1: 099f842d4bcc857cb030b38f8dbc1e6ef807106d
+SIZE: 39589
+
+BUILD_TIME: 1373506295
+CPV: app-portage/eix-0.28.5
+DEFINED_PHASES: configure install postinst prepare setup
+DEPEND: app-shells/push virtual/libintl app-arch/xz-utils sys-devel/gettext
+DESC: Search and query ebuilds, portage incl. local settings, ext. overlays, version changes, and more
+EAPI: 5
+IUSE: clang debug +dep doc nls optimization security strong-optimization strong-security sqlite swap-remote tools zsh-completion linguas_de linguas_ru
+KEYWORDS: ~alpha ~amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x86-freebsd ~ia64-hpux ~x86-interix ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x86-solaris
+LICENSE: GPL-2
+MD5: 5e48d5f25626f5f9d847197589d9f4c2
+MTIME: 1373506314
+RDEPEND: app-shells/push virtual/libintl
+SHA1: 766d968dc32ea7d5f592483f6ec790b772e15bef
+SIZE: 658070
+USE: dep nls zsh-completion
+
+BUILD_TIME: 1374427915
+CPV: app-portage/genlop-0.30.8-r2
+DEFINED_PHASES: install postinst unpack
+DEPEND: >=dev-lang/perl-5.8.0-r12 >=dev-perl/DateManip-5.40 dev-perl/libwww-perl
+DESC: A nice emerge.log parser
+IUSE: bash-completion
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: 5ea69b2686069d75cf15539b8daf090a
+MTIME: 1374427945
+PDEPEND: app-shells/bash-completion
+RDEPEND: >=dev-lang/perl-5.8.0-r12 >=dev-perl/DateManip-5.40 dev-perl/libwww-perl app-admin/eselect
+SHA1: 106ad16fa1579be262d5c82db4ef4ceb690c8680
+SIZE: 36674
+USE: bash-completion
+
+BUILD_TIME: 1373916377
+CPV: app-portage/gentoolkit-0.3.0.7
+DEFINED_PHASES: compile install postinst postrm prepare setup
+DEPEND: sys-apps/portage dev-lang/python[xml] dev-lang/python
+DESC: Collection of administration scripts for Gentoo
+EAPI: 3
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2
+MD5: f1032e173ea86066827c1fb92a6bf46e
+MTIME: 1373916430
+RDEPEND: sys-apps/portage >=dev-lang/python-2.6[xml] !>=dev-lang/python-2.6[-xml] !<=app-portage/gentoolkit-dev-0.2.7 || ( >=sys-apps/coreutils-8.15 app-misc/realpath sys-freebsd/freebsd-bin ) sys-apps/gawk sys-apps/grep virtual/python-argparse dev-lang/python[xml] dev-lang/python
+SHA1: 3ae2dfcc81d8b1dea6c04091b93cbebc111e2192
+SIZE: 6371357
+
+BUILD_TIME: 1373916020
+CPV: app-portage/gentoolkit-dev-0.2.8
+DEFINED_PHASES: install prepare setup test
+DEPEND: || ( =dev-lang/python-3.3* =dev-lang/python-3.2* =dev-lang/python-3.1* =dev-lang/python-2.7* =dev-lang/python-2.6* ) || ( =dev-lang/python-3.3*[xml] =dev-lang/python-3.2*[xml] =dev-lang/python-3.1*[xml] =dev-lang/python-2.7*[xml] =dev-lang/python-2.6*[xml] )
+DESC: Collection of developer scripts for Gentoo
+EAPI: 3
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2
+MD5: fe01fac443adb73689d9c69687816a62
+MTIME: 1373916040
+RDEPEND: sys-apps/portage dev-lang/perl sys-apps/diffutils || ( =dev-lang/python-3.3* =dev-lang/python-3.2* =dev-lang/python-3.1* =dev-lang/python-2.7* =dev-lang/python-2.6* ) || ( =dev-lang/python-3.3*[xml] =dev-lang/python-3.2*[xml] =dev-lang/python-3.1*[xml] =dev-lang/python-2.7*[xml] =dev-lang/python-2.6*[xml] )
+SHA1: fa686ff9fa21b2e67821608ad936aa3768617cc4
+SIZE: 83317
+
+BUILD_TIME: 1373582411
+CPV: app-portage/layman-2.0.0
+DEFINED_PHASES: compile configure install postinst prepare test
+DEPEND: dev-lang/python:2.7[xml] dev-python/python-exec[python_targets_python2_7(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-)]
+DESC: Tool to manage Gentoo overlays
+EAPI: 5
+IUSE: bazaar cvs darcs +git mercurial subversion test python_targets_python2_6 python_targets_python2_7
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2
+MD5: a1b72d6cc0a15c427776d3912bf2a929
+MTIME: 1373582428
+RDEPEND: dev-vcs/git virtual/python-argparse[python_targets_python2_7(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-)] dev-lang/python:2.7[xml] dev-python/python-exec[python_targets_python2_7(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-)]
+SHA1: 3aa1ebb7302627fe1b15913de62d04b5344bfb75
+SIZE: 137971
+USE: git python_targets_python2_7
+
+BUILD_TIME: 1373873914
+CPV: app-portage/portage-utils-0.21
+DEFINED_PHASES: configure install postinst preinst
+DEPEND: app-arch/xz-utils
+DESC: small and fast portage helper tools written in C
+EAPI: 3
+IUSE: static
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2
+MD5: 1cb4b56dc91f571b53c97e11207b2c03
+MTIME: 1373873930
+SHA1: a2d63ceb6077e809a3e61bea3ef9d0c2e94d1454
+SIZE: 121452
+
+BUILD_TIME: 1373608178
+CPV: app-shells/bash-4.2_p45
+DEFINED_PHASES: compile install postinst preinst setup unpack
+DEPEND: >=sys-libs/ncurses-5.2-r2 >=sys-libs/readline-6.2 virtual/libintl virtual/yacc
+DESC: The standard GNU Bourne again shell
+EAPI: 1
+IUSE: afs bashlogger examples mem-scramble +net nls plugins +readline vanilla
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-3
+MD5: 7405eec207794128721421935171dc75
+MTIME: 1373608206
+RDEPEND: >=sys-libs/ncurses-5.2-r2 >=sys-libs/readline-6.2 virtual/libintl !<sys-apps/portage-2.1.6.7_p1 !<sys-apps/paludis-0.26.0_alpha5
+SHA1: 479a955769681a61c750c77d0bfb68d28ab33b43
+SIZE: 1104509
+USE: net nls readline
+
+BUILD_TIME: 1374183178
+CPV: app-shells/bash-completion-1.3-r2
+DEFINED_PHASES: compile configure install postinst prepare
+DESC: Programmable Completion for bash
+EAPI: 3
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris
+LICENSE: GPL-2
+MD5: f210d19fb3b2935988b5fc24ca6b9978
+MTIME: 1374183194
+PDEPEND: app-shells/gentoo-bashcomp
+RDEPEND: app-admin/eselect || ( >=app-shells/bash-3.2 app-shells/zsh ) sys-apps/miscfiles
+SHA1: f2f5b5e8f98cf1ec5ebd69174c4f016caad33ec0
+SIZE: 129845
+
+BUILD_TIME: 1374183355
+CPV: app-shells/gentoo-bashcomp-20101217-r1
+DEFINED_PHASES: compile install postinst prepare
+DESC: Gentoo-specific bash command-line completions (emerge, ebuild, equery, repoman, layman, etc)
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris
+LICENSE: GPL-2
+MD5: f722228f664a8cc3af2895a5abbd5a89
+MTIME: 1374183369
+RDEPEND: app-shells/bash-completion
+SHA1: 7d7c4357ddd9ab1d74ca07f33df9aa4f20b001f7
+SIZE: 39351
+
+BUILD_TIME: 1373503890
+CPV: app-shells/push-1.5
+DEFINED_PHASES: install unpack
+DESC: A POSIX shell function to treat a variable like an array, quoting args.
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x86-freebsd ~ia64-hpux ~x86-interix ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x86-solaris
+LICENSE: BSD
+MD5: 6fe0263c2714b0d3bbba4c58196f0c08
+MTIME: 1373503902
+SHA1: fca41cffac659f5e6cdbd62c4e6cae7ff5f67c7d
+SIZE: 7575
+
+BUILD_TIME: 1374135344
+CPV: app-shells/zsh-5.0.2
+DEFINED_PHASES: configure install postinst prepare test
+DEPEND: sys-apps/groff >=sys-libs/ncurses-5.1 >=dev-libs/libpcre-3.9 sys-libs/gdbm
+DESC: UNIX Shell similar to the Korn shell
+EAPI: 5
+IUSE: caps debug doc examples gdbm maildir pcre static unicode
+KEYWORDS: alpha amd64 arm hppa ia64 ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: ZSH GPL-2
+MD5: fee2f231c954dd193e4ead25878599d4
+MTIME: 1374135459
+RDEPEND: >=sys-libs/ncurses-5.1 >=dev-libs/libpcre-3.9 sys-libs/gdbm
+SHA1: 680398055c13dfa0d99ab3394d695c7977a0c06f
+SIZE: 2444669
+USE: gdbm pcre unicode
+
+BUILD_TIME: 1373544562
+CPV: app-shells/zsh-5.0.2-r2
+DEFINED_PHASES: configure install postinst prepare test
+DEPEND: sys-apps/groff >=sys-libs/ncurses-5.1 >=dev-libs/libpcre-3.9 sys-libs/gdbm
+DESC: UNIX Shell similar to the Korn shell
+EAPI: 5
+IUSE: caps debug doc examples gdbm maildir pcre static unicode
+KEYWORDS: ~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: ZSH GPL-2
+MD5: ac731d6d3356739f4fad1e8d31527b14
+MTIME: 1373544613
+RDEPEND: >=sys-libs/ncurses-5.1 >=dev-libs/libpcre-3.9 sys-libs/gdbm
+SHA1: 599a7789ff21ce74b719e52036df88688685157a
+SIZE: 2443176
+USE: gdbm pcre unicode
+
+BUILD_TIME: 1374183020
+CPV: app-text/asciidoc-8.6.5
+DEFINED_PHASES: compile configure install prepare setup test
+DEPEND: || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
+DESC: A text document format for writing short documents, articles, books and UNIX man pages
+EAPI: 3
+IUSE: examples graphviz highlight test vim-syntax
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~x86-solaris
+LICENSE: GPL-2
+MD5: b90529b620125c962d07a4545632c16c
+MTIME: 1374183040
+RDEPEND: >=app-text/docbook-xsl-stylesheets-1.75 dev-libs/libxslt app-text/docbook-xml-dtd:4.5 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
+SHA1: 9612d4a9f0546a5acd06165bff92eba6b602dd1c
+SIZE: 241914
+
+BUILD_TIME: 1373517302
+CPV: app-text/build-docbook-catalog-1.19.1
+DEFINED_PHASES: postinst
+DESC: DocBook XML catalog auto-updater
+EAPI: 4
+IUSE: userland_BSD
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: b45ccf29346629af3df4c7a7f0bb6b5f
+MTIME: 1373517315
+RDEPEND: || ( sys-apps/util-linux app-misc/getopt ) !<app-text/docbook-xsl-stylesheets-1.73.1 dev-libs/libxml2
+SHA1: d8496df46e06142b643b5fca92ca156e7c94cfc1
+SIZE: 9935
+
+BUILD_TIME: 1374182696
+CPV: app-text/docbook-xml-dtd-4.5-r1
+DEFINED_PHASES: compile install postinst postrm prerm unpack
+DEPEND: >=app-arch/unzip-5.41 >=dev-libs/libxml2-2.4 >=app-text/docbook-xsl-stylesheets-1.65 >=app-text/build-docbook-catalog-1.2 >=app-text/sgml-common-0.6.3-r2
+DESC: Docbook DTD for XML
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE: docbook
+MD5: 3d30e7b18b1a579dad557ef45a71e457
+MTIME: 1374182717
+SHA1: 3ce4e1789c2b8a18306d12fc16becd0f99863b74
+SIZE: 82718
+SLOT: 4.5
+
+BUILD_TIME: 1373517488
+CPV: app-text/docbook-xsl-stylesheets-1.78.0
+DEFINED_PHASES: compile install postinst postrm test
+DESC: XSL Stylesheets for Docbook
+EAPI: 5
+IUSE: ruby
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~ia64-hpux ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: BSD
+MD5: 13a78a9c2122d272f428c48b82adc30e
+MTIME: 1373517587
+RDEPEND: >=app-text/build-docbook-catalog-1.1
+RESTRICT: test
+SHA1: 65da35cfa0730f6762f228bc30f8ae0aef8cae63
+SIZE: 4116887
+
+BUILD_TIME: 1374175165
+CPV: app-text/sgml-common-0.6.3-r5
+DEFINED_PHASES: configure install postinst postrm prepare prerm
+DESC: Base ISO character entities and utilities for SGML
+EAPI: 3
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2
+MD5: 13973acec54634e57c9f688019bdbecc
+MTIME: 1374175198
+SHA1: 88d4ea90a388c52c8984ed61cdadb4647eae1a6e
+SIZE: 60698
+
+BUILD_TIME: 1373850083
+CPV: app-vim/gentoo-syntax-20120109
+DEFINED_PHASES: install postinst postrm prepare
+DEPEND: || ( >=app-editors/vim-7.3 >=app-editors/gvim-7.3 )
+DESC: vim plugin: Gentoo and portage related syntax highlighting, filetype, and indent settings
+EAPI: 4
+IUSE: ignore-glep31
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: vim
+MD5: 4f2b21b7cee6f50cc3a4a4c1d64ec19e
+MTIME: 1373850098
+RDEPEND: || ( >=app-editors/vim-7.3 >=app-editors/gvim-7.3 )
+SHA1: 8f991f113f7e5411af511763ba76ce3d86656b92
+SIZE: 29707
+
+BUILD_TIME: 1374321116
+CPV: dev-db/sqlite-3.7.16.2
+DEFINED_PHASES: compile configure install prepare setup test
+DEPEND: sys-libs/readline || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: A SQL Database Engine in a C Library
+EAPI: 5
+IUSE: debug doc +extensions icu +readline secure-delete static-libs tcl test
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x86-freebsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: public-domain
+MD5: 3f9a168ffa9688929e4ce11d94a5639e
+MTIME: 1374321135
+RDEPEND: sys-libs/readline
+SHA1: 985fcf4019ea3ff92a2950002e4b27f509c442a5
+SIZE: 445193
+SLOT: 3
+USE: extensions readline
+
+BUILD_TIME: 1374322753
+CPV: dev-lang/python-2.7.5
+DEFINED_PHASES: compile configure install postinst postrm preinst prepare setup test
+DEPEND: app-arch/bzip2 >=sys-libs/zlib-1.1.3 virtual/libffi virtual/libintl || ( sys-libs/db:5.3 sys-libs/db:5.2 sys-libs/db:5.1 sys-libs/db:5.0 sys-libs/db:4.8 sys-libs/db:4.7 sys-libs/db:4.6 sys-libs/db:4.5 sys-libs/db:4.4 sys-libs/db:4.3 sys-libs/db:4.2 ) sys-libs/gdbm[berkdb] >=sys-libs/ncurses-5.2 >=sys-libs/readline-4.1 >=dev-db/sqlite-3.3.8:3[extensions] dev-libs/openssl >=dev-libs/expat-2.1 !!<sys-apps/portage-2.1.9 virtual/pkgconfig >=sys-devel/autoconf-2.65 !sys-devel/gcc[libffi] sys-devel/automake >=sys-devel/autoconf-2.68
+DESC: An interpreted, interactive, object-oriented programming language
+EAPI: 4
+IUSE: -berkdb build doc elibc_uclibc examples gdbm hardened ipv6 +ncurses +readline sqlite +ssl +threads tk +wide-unicode wininst +xml
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 ~s390 ~sh ~sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: PSF-2
+MD5: dd0b1195b2672ed6069384abcd8709cb
+MTIME: 1374322997
+PDEPEND: app-admin/eselect-python app-admin/python-updater
+RDEPEND: app-arch/bzip2 >=sys-libs/zlib-1.1.3 virtual/libffi virtual/libintl || ( sys-libs/db:5.3 sys-libs/db:5.2 sys-libs/db:5.1 sys-libs/db:5.0 sys-libs/db:4.8 sys-libs/db:4.7 sys-libs/db:4.6 sys-libs/db:4.5 sys-libs/db:4.4 sys-libs/db:4.3 sys-libs/db:4.2 ) sys-libs/gdbm[berkdb] >=sys-libs/ncurses-5.2 >=sys-libs/readline-4.1 >=dev-db/sqlite-3.3.8:3[extensions] dev-libs/openssl >=dev-libs/expat-2.1 !!<sys-apps/portage-2.1.9 app-misc/mime-types
+SHA1: 178bbf9ff1e6085400c2a8d7d1bbeafa051a5035
+SIZE: 13089347
+SLOT: 2.7
+USE: berkdb gdbm ipv6 ncurses readline sqlite ssl threads wide-unicode xml
+
+BUILD_TIME: 1373885930
+CPV: dev-lang/python-3.2.5-r1
+DEFINED_PHASES: compile configure install postinst postrm preinst prepare setup test
+DEPEND: app-arch/bzip2 >=sys-libs/zlib-1.1.3 virtual/libffi virtual/libintl sys-libs/gdbm[berkdb] >=sys-libs/ncurses-5.2 >=sys-libs/readline-4.1 dev-libs/openssl >=dev-libs/expat-2.1 virtual/pkgconfig >=sys-devel/autoconf-2.65 !sys-devel/gcc[libffi] sys-devel/automake >=sys-devel/autoconf-2.68
+DESC: An interpreted, interactive, object-oriented programming language
+EAPI: 4
+IUSE: build doc elibc_uclibc examples gdbm hardened ipv6 +ncurses +readline sqlite +ssl +threads tk +wide-unicode wininst +xml
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 ~s390 ~sh ~sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: PSF-2
+MD5: e83bda78df4cb38a103895308baa4c95
+MTIME: 1373886169
+PDEPEND: app-admin/eselect-python app-admin/python-updater
+RDEPEND: app-arch/bzip2 >=sys-libs/zlib-1.1.3 virtual/libffi virtual/libintl sys-libs/gdbm[berkdb] >=sys-libs/ncurses-5.2 >=sys-libs/readline-4.1 dev-libs/openssl >=dev-libs/expat-2.1 app-misc/mime-types
+SHA1: 9b280297e13b4dc8a46e647e8055a86b72930468
+SIZE: 12819009
+SLOT: 3.2
+USE: gdbm ipv6 ncurses readline ssl threads wide-unicode xml
+
+BUILD_TIME: 1373519074
+CPV: dev-libs/eventlog-0.2.12
+DEFINED_PHASES: configure install prepare
+DESC: Support library for syslog-ng
+EAPI: 2
+IUSE: static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd
+LICENSE: BSD
+MD5: 0a37a8d57ae503f079556ed01eed5d28
+MTIME: 1373519100
+SHA1: 2735dbe9daf98e457b107624cd248cb74b7d9514
+SIZE: 36087
+
+BUILD_TIME: 1373568139
+CPV: dev-libs/libassuan-2.1.0
+DEFINED_PHASES: configure install
+DEPEND: >=dev-libs/libgpg-error-1.8
+DESC: IPC library used by GnuPG and GPGME
+EAPI: 4
+IUSE: static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-3 LGPL-2.1
+MD5: b133383dd84599c5a874cff54a348515
+MTIME: 1373568154
+RDEPEND: >=dev-libs/libgpg-error-1.8
+SHA1: 53e25a20a6e010212b131a0abe7e08e09486528b
+SIZE: 88554
+
+BUILD_TIME: 1374141781
+CPV: dev-libs/libevent-2.0.21
+DEFINED_PHASES: configure install prepare test
+DEPEND: dev-libs/openssl
+DESC: A library to execute a function when a specific event occurs on a file descriptor
+EAPI: 5
+IUSE: +ssl static-libs test
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE: BSD
+MD5: 930f863a15393ec39c5b6fd7d48dfccd
+MTIME: 1374141800
+RDEPEND: dev-libs/openssl !<=dev-libs/9libs-1.0
+SHA1: 19986abb74ca8507172aa547b6487ed3edc80079
+SIZE: 305284
+USE: ssl
+
+BUILD_TIME: 1373519208
+CPV: dev-libs/libgcrypt-1.5.2-r1
+DEFINED_PHASES: compile configure install prepare test
+DEPEND: >=dev-libs/libgpg-error-1.8 || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: General purpose crypto library based on the code used in GnuPG
+EAPI: 5
+IUSE: static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 ~s390 ~sh ~sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: LGPL-2.1 MIT
+MD5: c66656c3fa2d91cb78e444cab75385dc
+MTIME: 1373519245
+RDEPEND: >=dev-libs/libgpg-error-1.8
+SHA1: 2307fc81f2d260cbdfefabf8637dd4e4147dce0a
+SIZE: 425143
+SLOT: 0/11
+
+BUILD_TIME: 1373517832
+CPV: dev-libs/libgpg-error-1.10
+DEFINED_PHASES: configure install prepare
+DEPEND: sys-devel/gettext
+DESC: Contains error handling functions used by GnuPG software
+EAPI: 3
+IUSE: common-lisp nls static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2 LGPL-2.1
+MD5: e0d724af63137b9b8283336e6e5398f2
+MTIME: 1373517846
+RDEPEND: virtual/libintl
+SHA1: 38738c56e9663e4ac494876d1d08030ee0fe24ce
+SIZE: 97837
+USE: nls
+
+BUILD_TIME: 1373567864
+CPV: dev-libs/libksba-1.3.0
+DEFINED_PHASES: compile configure install prepare test
+DEPEND: >=dev-libs/libgpg-error-1.8
+DESC: X.509 and CMS (PKCS#7) library
+EAPI: 4
+IUSE: static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: LGPL-3+ GPL-2+ GPL-3
+MD5: 510628d866ee49eb7f56507a4998ae49
+MTIME: 1373567880
+RDEPEND: >=dev-libs/libgpg-error-1.8
+SHA1: 1ddac0e8b656824b0920016d7570069b391e584a
+SIZE: 151197
+
+BUILD_TIME: 1373614990
+CPV: dev-libs/libnl-1.1.4
+DEFINED_PHASES: compile install prepare
+DESC: A collection of libraries providing APIs to netlink protocol based Linux kernel interfaces
+EAPI: 5
+IUSE: doc static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc x86 ~amd64-linux ~ia64-linux ~x86-linux
+LICENSE: LGPL-2.1
+MD5: f29f51b0bc29716d2de49d049ffeec95
+MTIME: 1373615021
+SHA1: d74a652857a3edf04d9225e5a46d1856daa9ec0f
+SIZE: 149899
+SLOT: 1.1
+
+BUILD_TIME: 1373878419
+CPV: dev-libs/libpcre-8.33
+DEFINED_PHASES: configure install postinst preinst prepare
+DEPEND: app-arch/bzip2 sys-libs/zlib sys-libs/readline virtual/pkgconfig >=sys-apps/findutils-4.4.0
+DESC: Perl-compatible regular expression library
+EAPI: 4
+IUSE: bzip2 +cxx +jit libedit pcre16 pcre32 +readline +recursion-limit static-libs unicode zlib
+KEYWORDS: ~alpha amd64 arm hppa ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: BSD
+MD5: 90b827987ad4f11d9f2aa06ad5cc0f8a
+MTIME: 1373878449
+RDEPEND: app-arch/bzip2 sys-libs/zlib sys-libs/readline
+SHA1: 183c6b82bda3478b26c955d570eebe88df7b8fd5
+SIZE: 862622
+SLOT: 3
+USE: bzip2 cxx jit readline recursion-limit unicode zlib
+
+BUILD_TIME: 1373953719
+CPV: dev-libs/libusb-1.0.9
+DEFINED_PHASES: compile configure install
+DESC: Userspace access to USB devices
+EAPI: 4
+IUSE: debug doc static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 -amd64-fbsd -x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos
+LICENSE: LGPL-2.1
+MD5: c3e6e5a7c48c52a0096d77c2ecf09b8a
+MTIME: 1373953728
+RDEPEND: !dev-libs/libusbx:1
+SHA1: bba1e3dc0c9fbb8600945c1e5cdc38ce52c755a2
+SIZE: 45809
+SLOT: 1
+
+BUILD_TIME: 1373611582
+CPV: dev-libs/libxml2-2.9.0-r2
+DEFINED_PHASES: compile configure install postinst prepare test unpack
+DEPEND: sys-libs/zlib:0/0= sys-libs/readline:0/0= dev-util/gtk-doc-am || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: Version 2 of the library to manipulate XML files
+EAPI: 5
+IUSE: debug examples icu ipv6 lzma python readline static-libs test python_targets_python2_5 python_targets_python2_6 python_targets_python2_7
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris ~x86-winnt
+LICENSE: MIT
+MD5: 3b084629a38946b4cfaa39f277f3cae1
+MTIME: 1373611628
+RDEPEND: sys-libs/zlib:0/0= sys-libs/readline:0/0=
+SHA1: 5763993a4852bbd5b565dcde8ee91ebd0ce71f1b
+SIZE: 1421451
+SLOT: 2
+USE: ipv6 python_targets_python2_7 readline
+
+BUILD_TIME: 1374130630
+CPV: dev-libs/libxml2-2.9.1-r1
+DEFINED_PHASES: compile configure install postinst prepare test unpack
+DEPEND: sys-libs/zlib:0/0= sys-libs/readline:0/0= dev-util/gtk-doc-am || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: Version 2 of the library to manipulate XML files
+EAPI: 5
+IUSE: debug examples icu ipv6 lzma python readline static-libs test python_targets_python2_5 python_targets_python2_6 python_targets_python2_7 python_targets_python3_1 python_targets_python3_2 python_targets_python3_3
+KEYWORDS: alpha amd64 arm hppa ~ia64 ~m68k ~mips ppc ppc64 ~s390 ~sh ~sparc x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris ~x86-winnt
+LICENSE: MIT
+MD5: 557c24574eb5e7a5a8981f8d19ac9247
+MTIME: 1374130678
+RDEPEND: sys-libs/zlib:0/0= sys-libs/readline:0/0=
+SHA1: a7d2bdbc77bb1571fac5d9ccb333c3a6ad99d009
+SIZE: 1432367
+SLOT: 2
+USE: ipv6 python_targets_python2_7 python_targets_python3_2 readline
+
+BUILD_TIME: 1373520681
+CPV: dev-libs/libxslt-1.1.28-r1
+DEFINED_PHASES: compile configure install prepare test
+DEPEND: >=dev-libs/libxml2-2.8.0:2 >=dev-libs/libgcrypt-1.1.42:0/11= || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: XSLT libraries and tools
+EAPI: 5
+IUSE: crypt debug python static-libs python_targets_python2_5 python_targets_python2_6 python_targets_python2_7
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~arm-linux ~x86-linux
+LICENSE: MIT
+MD5: f15dc87a3031606ee1062f5179be3b85
+MTIME: 1373520731
+RDEPEND: >=dev-libs/libxml2-2.8.0:2 >=dev-libs/libgcrypt-1.1.42:0/11=
+SHA1: fc5573c69ae3d43a4a8cc290001a05d2933968a8
+SIZE: 486710
+USE: crypt python_targets_python2_7
+
+BUILD_TIME: 1373874860
+CPV: dev-libs/mpc-1.0.1
+DEFINED_PHASES: compile install postinst preinst unpack
+DEPEND: >=dev-libs/gmp-4.3.2 >=dev-libs/mpfr-2.4.2
+DESC: A library for multiprecision complex arithmetic with exact rounding.
+IUSE: static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~ia64-hpux ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: LGPL-2.1
+MD5: 4153459fad86904d143e5760aba745e8
+MTIME: 1373874875
+RDEPEND: >=dev-libs/gmp-4.3.2 >=dev-libs/mpfr-2.4.2
+SHA1: 3f940d4983df9bd9f8d5409c7e88a2982f1409ed
+SIZE: 85420
+
+BUILD_TIME: 1373553494
+CPV: dev-libs/protobuf-2.5.0
+DEFINED_PHASES: compile configure install postinst postrm preinst prepare setup test
+DEPEND: || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: Google's Protocol Buffers -- an efficient method of encoding structured data
+EAPI: 5
+IUSE: emacs examples java python static-libs vim-syntax python_targets_python2_5 python_targets_python2_6 python_targets_python2_7 elibc_FreeBSD source java
+KEYWORDS: ~amd64 ~arm ~ia64 ~mips ~ppc ~ppc64 ~x86 ~amd64-linux ~arm-linux ~x86-linux ~x64-macos x86-macos
+LICENSE: Apache-2.0
+MD5: 1802e0d50d77c78cea57ee63d241b4fb
+MTIME: 1373553552
+SHA1: 68f7cd52bde2be45284af3b191a4484b5ebefaa1
+SIZE: 815143
+SLOT: 0/8
+USE: python_targets_python2_7
+
+BUILD_TIME: 1373568575
+CPV: dev-libs/pth-2.0.7-r3
+DEFINED_PHASES: configure install prepare
+DEPEND: >=sys-apps/sed-4
+DESC: GNU Portable Threads
+EAPI: 4
+IUSE: debug static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~arm-linux ~x86-fbsd
+LICENSE: LGPL-2.1
+MD5: 9b08d8d304908c72303cec48c34ede82
+MTIME: 1373568591
+SHA1: f896ae546d59574b97caf0e0a2e0dac06fad75a0
+SIZE: 142084
+
+BUILD_TIME: 1373575991
+CPV: dev-perl/Authen-SASL-2.160.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: dev-perl/Digest-HMAC dev-lang/perl[-build]
+DESC: A Perl SASL interface
+EAPI: 4
+IUSE: kerberos
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: 7a8d5ac3401d13c5a1a4d5a89343ccf0
+MTIME: 1373576005
+RDEPEND: dev-perl/Digest-HMAC dev-lang/perl[-build]
+SHA1: c43cc61cac92d04b3d9ec9cd985b48e2ebedbf83
+SIZE: 43564
+
+BUILD_TIME: 1373956844
+CPV: dev-perl/Crypt-DES-2.50.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: dev-lang/perl[-build]
+DESC: Crypt::DES module for perl
+EAPI: 4
+KEYWORDS: alpha amd64 ~arm hppa ia64 ~mips ppc ppc64 sparc x86 ~ppc-aix ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris ~x86-solaris
+LICENSE: DES
+MD5: 3cc2e954284e14c47a30225b019b66f1
+MTIME: 1373956854
+RDEPEND: dev-lang/perl[-build]
+SHA1: 0e5a486004acc40fcaf256f53ca744d08723ae02
+SIZE: 33467
+
+BUILD_TIME: 1373961306
+CPV: dev-perl/DBI-1.623.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: >=dev-perl/PlRPC-0.200.0 >=virtual/perl-Sys-Syslog-0.170.0 virtual/perl-File-Spec !<=dev-perl/SQL-Statement-1.330.0 dev-lang/perl[-build]
+DESC: The Perl DBI Module
+EAPI: 5
+IUSE: test
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: 6fd599515f245dea83b6507298d68d86
+MTIME: 1373961333
+RDEPEND: >=dev-perl/PlRPC-0.200.0 >=virtual/perl-Sys-Syslog-0.170.0 virtual/perl-File-Spec !<=dev-perl/SQL-Statement-1.330.0 dev-lang/perl[-build]
+SHA1: fe0ac20f58b927222e53c37ded1024840a31fd75
+SIZE: 503359
+
+BUILD_TIME: 1373565361
+CPV: dev-perl/DateManip-6.310.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: dev-perl/YAML-Syck virtual/perl-Storable >=virtual/perl-Module-Build-0.380.0 dev-lang/perl[-build]
+DESC: Perl date manipulation routines
+EAPI: 4
+IUSE: test
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: 2d905ecd31077247ab18babb8282faa3
+MTIME: 1373565415
+RDEPEND: dev-perl/YAML-Syck virtual/perl-Storable dev-lang/perl[-build]
+SHA1: 3046855ec231024dbda64ed9f408cf49b7e55973
+SIZE: 853416
+
+BUILD_TIME: 1373575828
+CPV: dev-perl/Digest-HMAC-1.30.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: virtual/perl-Digest-MD5 virtual/perl-Digest-SHA dev-lang/perl[-build]
+DESC: Keyed Hashing for Message Authentication
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: 25957991fa0227e068286e44e628a3a2
+MTIME: 1373575841
+RDEPEND: virtual/perl-Digest-MD5 virtual/perl-Digest-SHA dev-lang/perl[-build]
+SHA1: 3ff12ff0bcba733521c9b432c13917d296199309
+SIZE: 26444
+
+BUILD_TIME: 1373958983
+CPV: dev-perl/Digest-SHA1-2.130.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: virtual/perl-digest-base dev-lang/perl[-build]
+DESC: NIST SHA message digest algorithm
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: deb68daafd28bed64e4888dbc8a39e60
+MTIME: 1373958993
+RDEPEND: virtual/perl-digest-base dev-lang/perl[-build]
+SHA1: 7d5a2fe2170837aca69d6de19785321e8d334be6
+SIZE: 42007
+
+BUILD_TIME: 1373545740
+CPV: dev-perl/Encode-Locale-1.30.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: dev-lang/perl[-build]
+DESC: Determine the locale encoding
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: a94991c3f47fcb94f30462863156e92a
+MTIME: 1373545753
+RDEPEND: dev-lang/perl[-build]
+SHA1: 045e6001026de631df6809846fee3e787ee67194
+SIZE: 29417
+
+BUILD_TIME: 1373576153
+CPV: dev-perl/Error-0.170.160
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: virtual/perl-Module-Build dev-lang/perl[-build]
+DESC: Error/exception handling in an OO-ish way
+EAPI: 2
+IUSE: test
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: fcdb5edd6ccbb9fc2b29343c311f7c24
+MTIME: 1373576165
+RDEPEND: dev-lang/perl[-build]
+SHA1: ea93ed1bc1536b921b5425c249d18f2314946b19
+SIZE: 37263
+
+BUILD_TIME: 1373956133
+CPV: dev-perl/File-Copy-Recursive-0.380.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: dev-lang/perl[-build]
+DESC: uses File::Copy to recursively copy dirs
+EAPI: 4
+KEYWORDS: alpha amd64 ~arm hppa ia64 ~mips ppc sparc x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: c036b526ec03d03f7f234f650fccaeca
+MTIME: 1373956142
+RDEPEND: dev-lang/perl[-build]
+SHA1: 81197d58cc96eacccd5021364ba7e14386594fb2
+SIZE: 34155
+
+BUILD_TIME: 1373560915
+CPV: dev-perl/File-Listing-6.40.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: !<dev-perl/libwww-perl-6 >=dev-perl/HTTP-Date-6.0.0 dev-lang/perl[-build]
+DESC: Parse directory listings
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: 1edb442d090805d81a131739c943d5d4
+MTIME: 1373560929
+RDEPEND: !<dev-perl/libwww-perl-6 >=dev-perl/HTTP-Date-6.0.0 dev-lang/perl[-build]
+SHA1: 734ccec36f337cf6acf2f88d6ce2bd4eebff1b56
+SIZE: 29829
+
+BUILD_TIME: 1373555884
+CPV: dev-perl/HTML-Parser-3.690.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: >=dev-perl/HTML-Tagset-3.03 dev-lang/perl[-build]
+DESC: Parse <HEAD> section of HTML documents
+EAPI: 4
+IUSE: test
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: 995c4cdce22737f3dea03512e593cfa2
+MTIME: 1373555898
+RDEPEND: >=dev-perl/HTML-Tagset-3.03 dev-lang/perl[-build]
+SHA1: 6618f6c8f2180a8b3ab4c8a2b9189692b23b91bb
+SIZE: 85025
+
+BUILD_TIME: 1373546569
+CPV: dev-perl/HTML-Tagset-3.200.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: dev-lang/perl[-build]
+DESC: Data tables useful in parsing HTML
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: d5f8329c6d62f73c9934587d612a5b45
+MTIME: 1373546583
+RDEPEND: dev-lang/perl[-build]
+SHA1: 733c95090fe57af7a459264a4b77873594bfd52a
+SIZE: 30184
+
+BUILD_TIME: 1373562279
+CPV: dev-perl/HTTP-Cookies-6.0.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: !<dev-perl/libwww-perl-6 >=dev-perl/HTTP-Date-6.0.0 virtual/perl-Time-Local >=dev-perl/HTTP-Message-6.0.0 dev-lang/perl[-build]
+DESC: Storage of cookies
+EAPI: 3
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: ee5e881e0d5bd990f4da046ca023cb77
+MTIME: 1373562292
+RDEPEND: !<dev-perl/libwww-perl-6 >=dev-perl/HTTP-Date-6.0.0 virtual/perl-Time-Local >=dev-perl/HTTP-Message-6.0.0 dev-lang/perl[-build]
+SHA1: 6fb406cde1565df1495bf4e158528f99840945b3
+SIZE: 36980
+
+BUILD_TIME: 1373562442
+CPV: dev-perl/HTTP-Daemon-6.10.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: !<dev-perl/libwww-perl-6 >=dev-perl/HTTP-Date-6.0.0 virtual/perl-IO >=dev-perl/HTTP-Message-6.0.0 >=dev-perl/LWP-MediaTypes-6.0.0 dev-lang/perl[-build]
+DESC: Base class for simple HTTP servers
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: da1ff30f9c2abd237edf362580b9c364
+MTIME: 1373562455
+RDEPEND: !<dev-perl/libwww-perl-6 >=dev-perl/HTTP-Date-6.0.0 virtual/perl-IO >=dev-perl/HTTP-Message-6.0.0 >=dev-perl/LWP-MediaTypes-6.0.0 dev-lang/perl[-build]
+SHA1: 63a4f5efdecdf1ce726607a1cb63e664bc930346
+SIZE: 35802
+
+BUILD_TIME: 1373557225
+CPV: dev-perl/HTTP-Date-6.20.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: !<dev-perl/libwww-perl-6 virtual/perl-Time-Local dev-lang/perl[-build]
+DESC: Date conversion for HTTP date formats
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: 3d6bea5f5396d16386e4bd0af5d31e2b
+MTIME: 1373557239
+RDEPEND: !<dev-perl/libwww-perl-6 virtual/perl-Time-Local dev-lang/perl[-build]
+SHA1: 715b0a06287ba7918902170b7a5cad5443cda818
+SIZE: 30465
+
+BUILD_TIME: 1373561406
+CPV: dev-perl/HTTP-Message-6.30.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: !<dev-perl/libwww-perl-6 virtual/perl-Compress-Raw-Zlib >=dev-perl/URI-1.10 >=virtual/perl-Encode-2.12 >=dev-perl/HTTP-Date-6.0.0 >=dev-perl/Encode-Locale-1.0.0 >=dev-perl/LWP-MediaTypes-6.0.0 >=dev-perl/HTML-Parser-3.33 >=virtual/perl-IO-Compress-2.021 >=virtual/perl-MIME-Base64-2.1 dev-lang/perl[-build]
+DESC: Base class for Request/Response
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: 65fe6cfa49f297f2c25b25d2f47dfad1
+MTIME: 1373561420
+RDEPEND: !<dev-perl/libwww-perl-6 virtual/perl-Compress-Raw-Zlib >=dev-perl/URI-1.10 >=virtual/perl-Encode-2.12 >=dev-perl/HTTP-Date-6.0.0 >=dev-perl/Encode-Locale-1.0.0 >=dev-perl/LWP-MediaTypes-6.0.0 >=dev-perl/HTML-Parser-3.33 >=virtual/perl-IO-Compress-2.021 >=virtual/perl-MIME-Base64-2.1 dev-lang/perl[-build]
+SHA1: b17c6f722ae405fb2fec363f26aca9be8455545e
+SIZE: 57382
+
+BUILD_TIME: 1373562604
+CPV: dev-perl/HTTP-Negotiate-6.0.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: !<dev-perl/libwww-perl-6 >=dev-perl/HTTP-Message-6.0.0 dev-lang/perl[-build]
+DESC: HTTP content negotiation
+EAPI: 3
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: f93e665a058514c4eda3accaefd0c030
+MTIME: 1373562616
+RDEPEND: !<dev-perl/libwww-perl-6 >=dev-perl/HTTP-Message-6.0.0 dev-lang/perl[-build]
+SHA1: a030892cb888c5f594c609f0a5620d0cfc26957c
+SIZE: 33142
+
+BUILD_TIME: 1373956294
+CPV: dev-perl/IO-Multiplex-1.130.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: dev-lang/perl[-build]
+DESC: Manage IO on many file handles
+EAPI: 4
+KEYWORDS: alpha amd64 ~arm hppa ia64 ~mips ppc ~ppc64 sparc x86 ~x86-fbsd
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: 1b7c4a19b02af7dca9bf40a5f97cf5aa
+MTIME: 1373956304
+RDEPEND: dev-lang/perl[-build]
+SHA1: cb1a1d76597236c5c7c67feebf8eb6cf9dd09ffd
+SIZE: 35303
+
+BUILD_TIME: 1373963071
+CPV: dev-perl/IO-Socket-INET6-2.690.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: dev-perl/Socket6 virtual/perl-Module-Build dev-lang/perl[-build]
+DESC: Work with IO sockets in ipv6
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: 101d2d9fe643477bf9b31ad62da829bb
+MTIME: 1373963090
+RDEPEND: dev-perl/Socket6 dev-lang/perl[-build]
+SHA1: e4aaa4ed8dff0d6808b52b605436143ff7895a78
+SIZE: 33459
+
+BUILD_TIME: 1373557628
+CPV: dev-perl/IO-Socket-SSL-1.840.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: >=dev-perl/Net-SSLeay-1.330.0 virtual/perl-Scalar-List-Utils dev-lang/perl[-build]
+DESC: Nearly transparent SSL encapsulation for IO::Socket::INET
+EAPI: 5
+IUSE: idn
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: c553dc4fef2f284a48069dca257dc87d
+MTIME: 1373557642
+RDEPEND: >=dev-perl/Net-SSLeay-1.330.0 virtual/perl-Scalar-List-Utils dev-lang/perl[-build]
+SHA1: b57523be8617318779d3842b2f84c8ad918ca339
+SIZE: 67270
+
+BUILD_TIME: 1373548683
+CPV: dev-perl/IO-Tty-1.08
+DEFINED_PHASES: compile install postinst postrm preinst prerm setup test unpack
+DEPEND: dev-lang/perl
+DESC: IO::Tty and IO::Pty modules for Perl
+KEYWORDS: alpha amd64 arm ia64 ppc ~ppc64 s390 sh sparc x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
+LICENSE: || ( Artistic GPL-2 )
+MD5: b72c5044ad16ca9c190b57aa81470a01
+MTIME: 1373548709
+RDEPEND: dev-lang/perl
+SHA1: ff065be97d99d9a66b891aa844a23cffe2ffac03
+SIZE: 46170
+
+BUILD_TIME: 1373545454
+CPV: dev-perl/LWP-MediaTypes-6.20.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: !<dev-perl/libwww-perl-6 dev-lang/perl[-build]
+DESC: Media types and mailcap processing
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: df13aaf14201adffbece46a733bd6865
+MTIME: 1373545469
+RDEPEND: !<dev-perl/libwww-perl-6 dev-lang/perl[-build]
+SHA1: c3d2d60ceb58904241f29c2467769cced02bc86c
+SIZE: 40958
+
+BUILD_TIME: 1373564243
+CPV: dev-perl/LWP-Protocol-https-6.30.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: app-misc/ca-certificates >=dev-perl/libwww-perl-6.20.0 >=dev-perl/Net-HTTP-6 >=dev-perl/IO-Socket-SSL-1.540.0 virtual/perl-ExtUtils-MakeMaker dev-lang/perl[-build]
+DESC: Provide https support for LWP::UserAgent
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: e0446e074b07397c5dda4a34ab919e52
+MTIME: 1373564257
+RDEPEND: app-misc/ca-certificates >=dev-perl/libwww-perl-6.20.0 >=dev-perl/Net-HTTP-6 >=dev-perl/IO-Socket-SSL-1.540.0 dev-lang/perl[-build]
+SHA1: 1388c6c3a9e812b3eb8f87e77a54b7b717cf9454
+SIZE: 27390
+
+BUILD_TIME: 1373955804
+CPV: dev-perl/List-MoreUtils-0.330.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: dev-lang/perl[-build]
+DESC: Provide the missing functionality from List::Util
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ppc ppc64 s390 sh sparc x86 ~ppc-aix ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: 5b0baef27aeec2224aba3ca95529c0d1
+MTIME: 1373955813
+RDEPEND: dev-lang/perl[-build]
+SHA1: 73b67486f102fe19f07072ba9b95bc014252da5b
+SIZE: 60477
+
+BUILD_TIME: 1373959661
+CPV: dev-perl/Log-Log4perl-1.400.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: virtual/perl-Time-HiRes dev-lang/perl[-build]
+DESC: Log::Log4perl is a Perl port of the widely popular log4j logging package.
+EAPI: 4
+IUSE: test
+KEYWORDS: ~amd64 ~arm ~ppc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: 79d0ceb6b4826894ca611c2ed31b0b05
+MTIME: 1373959690
+RDEPEND: virtual/perl-Time-HiRes dev-lang/perl[-build]
+SHA1: 52a903d680ff3c7c071e7e2edb66c798f0b6f91d
+SIZE: 193870
+
+BUILD_TIME: 1373955915
+CPV: dev-perl/Net-CIDR-0.170.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: dev-lang/perl[-build]
+DESC: Manipulate netblock lists in CIDR notation
+EAPI: 4
+KEYWORDS: ~amd64 ~arm ~hppa ~ppc ~x86
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: 4448a44bea5b92d819e7c64b1e365cc2
+MTIME: 1373955924
+RDEPEND: dev-lang/perl[-build]
+SHA1: a4d4ba9a88a9df67f119b550210f2ad99fcb7f21
+SIZE: 31308
+
+BUILD_TIME: 1373956957
+CPV: dev-perl/Net-Daemon-0.480.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: dev-lang/perl[-build]
+DESC: Abstract base class for portable servers
+EAPI: 3
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: 18f175430b0196437aeff1c1c8526835
+MTIME: 1373956965
+RDEPEND: dev-lang/perl[-build]
+SHA1: d98a56a6f4b6d9ae58d572a8a7f96a92663e8372
+SIZE: 49458
+
+BUILD_TIME: 1373561571
+CPV: dev-perl/Net-HTTP-6.30.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: !<dev-perl/libwww-perl-6 virtual/perl-Compress-Raw-Zlib virtual/perl-IO virtual/perl-IO-Compress dev-lang/perl[-build]
+DESC: Low-level HTTP connection (client)
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: b1e817a33444db97a959e1d6cfe364d9
+MTIME: 1373561585
+RDEPEND: !<dev-perl/libwww-perl-6 virtual/perl-Compress-Raw-Zlib virtual/perl-IO virtual/perl-IO-Compress dev-lang/perl[-build]
+SHA1: b89a786a575116139b8a7feaeb453a1b45826761
+SIZE: 37423
+
+BUILD_TIME: 1373956024
+CPV: dev-perl/Net-Netmask-1.901.600
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: dev-lang/perl[-build]
+DESC: Parse, manipulate and lookup IP network blocks
+EAPI: 3
+KEYWORDS: amd64 ~arm ~mips ppc x86
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: 99cc1a38047d9e2a36762d132672d0ac
+MTIME: 1373956032
+RDEPEND: dev-lang/perl[-build]
+SHA1: bd041a7e93633036cdfc84f2e031641b4ae8f353
+SIZE: 35346
+
+BUILD_TIME: 1373575669
+CPV: dev-perl/Net-SMTP-SSL-1.10.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: virtual/perl-libnet dev-perl/IO-Socket-SSL dev-lang/perl[-build]
+DESC: SSL support for Net::SMTP
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: 2a7f1db95582d5072563100c55e6e255
+MTIME: 1373575682
+RDEPEND: virtual/perl-libnet dev-perl/IO-Socket-SSL dev-lang/perl[-build]
+SHA1: cbe10c224fb7309b6671934f4885939bd4b01ec5
+SIZE: 25387
+
+BUILD_TIME: 1373962830
+CPV: dev-perl/Net-SNMP-6.0.1
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: >=dev-perl/Crypt-DES-2.03 >=virtual/perl-Digest-MD5-2.11 >=dev-perl/Digest-SHA1-1.02 >=dev-perl/Digest-HMAC-1.0 >=virtual/perl-libnet-1.0703 virtual/perl-Module-Build dev-lang/perl[-build]
+DESC: A SNMP Perl Module
+EAPI: 3
+KEYWORDS: alpha amd64 ~arm hppa ia64 ~mips ppc ppc64 sparc x86 ~ppc-aix ~sparc-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: 019ed0541c83550f046786e1279737ca
+MTIME: 1373962851
+RDEPEND: >=dev-perl/Crypt-DES-2.03 >=virtual/perl-Digest-MD5-2.11 >=dev-perl/Digest-SHA1-1.02 >=dev-perl/Digest-HMAC-1.0 >=virtual/perl-libnet-1.0703 dev-lang/perl[-build]
+SHA1: 4cef76fde6f98980c53d5a78849a0eab8cae1e75
+SIZE: 91979
+
+BUILD_TIME: 1373546409
+CPV: dev-perl/Net-SSLeay-1.520.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: dev-libs/openssl dev-lang/perl[-build]
+DESC: Net::SSLeay module for perl
+EAPI: 5
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: SSLeay
+MD5: 7d4de2ca18b15e4ceb542e791bec3ad4
+MTIME: 1373546425
+RDEPEND: dev-libs/openssl dev-lang/perl[-build]
+SHA1: 8d59bf33dd4a882d3aecc22e99710e87f9d3c5df
+SIZE: 197738
+
+BUILD_TIME: 1373960066
+CPV: dev-perl/PlRPC-0.202.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: >=virtual/perl-Storable-1.0.7 >=dev-perl/Net-Daemon-0.34 dev-lang/perl[-build]
+DESC: The Perl RPC Module
+EAPI: 3
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: f4b885c30cd4b52db662696187a7a3e8
+MTIME: 1373960085
+RDEPEND: >=virtual/perl-Storable-1.0.7 >=dev-perl/Net-Daemon-0.34 dev-lang/perl[-build]
+SHA1: a02d19dce8d8021a217058d3e2c3e6b6f5a9e044
+SIZE: 41727
+
+BUILD_TIME: 1373956680
+CPV: dev-perl/Socket6-0.20
+DEFINED_PHASES: compile install postinst postrm preinst prerm setup test unpack
+DEPEND: dev-lang/perl
+DESC: IPv6 related part of the C socket.h defines and structure manipulators
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86
+LICENSE: || ( Artistic GPL-2 )
+MD5: 5f48b4efe809f9f49109fe2e87283f5e
+MTIME: 1373956689
+RDEPEND: dev-lang/perl
+SHA1: 225b8e5550682bf3485a1da78a1263038281078d
+SIZE: 40736
+
+BUILD_TIME: 1373557390
+CPV: dev-perl/URI-1.600.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: virtual/perl-MIME-Base64 dev-lang/perl[-build]
+DESC: A URI Perl Module
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~ia64-hpux ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: 1befedc8d7149fbfde5c6cbe8077d2b1
+MTIME: 1373557405
+RDEPEND: virtual/perl-MIME-Base64 dev-lang/perl[-build]
+SHA1: b239757624055ce6d2953ff6d71ae3cff56deb8e
+SIZE: 68744
+
+BUILD_TIME: 1373561077
+CPV: dev-perl/WWW-RobotRules-6.10.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: !<dev-perl/libwww-perl-6 >=dev-perl/URI-1.10 dev-lang/perl[-build]
+DESC: Parse /robots.txt file
+EAPI: 3
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: bc16d1a931b1e3e27da6b8bf5995d533
+MTIME: 1373561090
+RDEPEND: !<dev-perl/libwww-perl-6 >=dev-perl/URI-1.10 dev-lang/perl[-build]
+SHA1: 5c324ed05d34155825984e1602da290a32198cd8
+SIZE: 31641
+
+BUILD_TIME: 1373546058
+CPV: dev-perl/YAML-Syck-1.200.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: dev-lang/perl[-build]
+DESC: Fast, lightweight YAML loader and dumper
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x86-solaris
+LICENSE: MIT
+MD5: d145d33c25c6ff83889457beef97e7a5
+MTIME: 1373546072
+RDEPEND: dev-lang/perl[-build]
+SHA1: dc5a47102018b064af14ccc93a7a0efd0bace818
+SIZE: 92346
+
+BUILD_TIME: 1373563796
+CPV: dev-perl/libwww-perl-6.30.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: >=dev-perl/File-Listing-6.0.0 >=dev-perl/HTTP-Cookies-6.0.0 >=dev-perl/HTTP-Daemon-6.0.0 >=dev-perl/HTTP-Date-6.0.0 >=dev-perl/HTTP-Negotiate-6.0.0 >=dev-perl/HTTP-Message-6.0.0 >=dev-perl/LWP-MediaTypes-6.0.0 >=dev-perl/Net-HTTP-6.0.0 >=dev-perl/WWW-RobotRules-6.0.0 >=virtual/perl-Digest-MD5-2.12 dev-perl/Encode-Locale >=dev-perl/HTML-Parser-3.34 >=virtual/perl-MIME-Base64-2.12 virtual/perl-libnet >=dev-perl/URI-1.10 dev-lang/perl[-build]
+DESC: A collection of Perl Modules for the WWW
+EAPI: 4
+IUSE: ssl
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: 858ff8ed53c96c841ce41304314df1de
+MTIME: 1373563813
+PDEPEND: dev-perl/LWP-Protocol-https
+RDEPEND: >=dev-perl/File-Listing-6.0.0 >=dev-perl/HTTP-Cookies-6.0.0 >=dev-perl/HTTP-Daemon-6.0.0 >=dev-perl/HTTP-Date-6.0.0 >=dev-perl/HTTP-Negotiate-6.0.0 >=dev-perl/HTTP-Message-6.0.0 >=dev-perl/LWP-MediaTypes-6.0.0 >=dev-perl/Net-HTTP-6.0.0 >=dev-perl/WWW-RobotRules-6.0.0 >=virtual/perl-Digest-MD5-2.12 dev-perl/Encode-Locale >=dev-perl/HTML-Parser-3.34 >=virtual/perl-MIME-Base64-2.12 virtual/perl-libnet >=dev-perl/URI-1.10 dev-lang/perl[-build]
+SHA1: 57975dbd08d545a408cee1f923b24de11cb170e6
+SIZE: 140295
+USE: ssl
+
+BUILD_TIME: 1373963319
+CPV: dev-perl/net-server-2.7.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: dev-perl/IO-Multiplex dev-perl/IO-Socket-INET6 dev-lang/perl[-build]
+DESC: Extensible, general Perl server engine
+EAPI: 4
+IUSE: ipv6
+KEYWORDS: alpha amd64 ~arm hppa ia64 ~mips ppc ppc64 ~sparc x86 ~x86-fbsd
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: 4b9c728df3fb04b0f9466d70849205ab
+MTIME: 1373963342
+RDEPEND: dev-perl/IO-Multiplex dev-perl/IO-Socket-INET6 dev-lang/perl[-build]
+SHA1: 3f7ca5fae5080e6038eccc8047bf100ece931d9d
+SIZE: 121924
+USE: ipv6
+
+BUILD_TIME: 1373582095
+CPV: dev-python/python-exec-0.3.1
+DEFINED_PHASES: compile configure install prepare test
+DESC: Python script wrapper
+EAPI: 5
+IUSE: python_targets_jython2_5 python_targets_jython2_7 python_targets_pypy1_9 python_targets_pypy2_0 python_targets_python3_1 python_targets_python3_2 python_targets_python3_3 python_targets_python2_5 python_targets_python2_6 python_targets_python2_7
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: BSD
+MD5: 899185b2c75d48132a02baaf03bbf648
+MTIME: 1373582109
+SHA1: bb2b3c1417d60bd9c8626b43659266ce47aa030a
+SIZE: 38641
+USE: python_targets_python2_5 python_targets_python2_6 python_targets_python2_7 python_targets_python3_1 python_targets_python3_2
+
+BUILD_TIME: 1374268998
+CPV: dev-util/catalyst-2.0.12.2
+DEFINED_PHASES: install postinst prepare setup
+DEPEND: app-text/asciidoc =dev-lang/python-2*
+DESC: release metatool used for creating releases based on Gentoo Linux
+EAPI: 3
+IUSE: ccache kernel_linux
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd
+LICENSE: GPL-2
+MD5: e71039baa578ee3c30f0662ed1be63e3
+MTIME: 1374269019
+RDEPEND: app-arch/lbzip2 app-crypt/shash virtual/cdrtools dev-util/ccache app-misc/zisofs-tools >=sys-fs/squashfs-tools-2.1 =dev-lang/python-2*
+SHA1: 24dd851a5f845ab339f2095770f47f97f5fbb962
+SIZE: 931233
+USE: ccache kernel_linux
+
+BUILD_TIME: 1374266021
+CPV: dev-util/ccache-3.1.9
+DEFINED_PHASES: install postinst prepare
+DEPEND: sys-libs/zlib app-arch/xz-utils
+DESC: fast compiler cache
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd
+LICENSE: GPL-3
+MD5: 5f07f61ff2292349b74ee687a363d0fc
+MTIME: 1374266037
+RDEPEND: sys-libs/zlib
+SHA1: 9b5ad0f99db62ad8013b5e24ce49c22b611a961f
+SIZE: 93431
+
+BUILD_TIME: 1373627689
+CPV: dev-util/ctags-5.8
+DEFINED_PHASES: configure install postinst postrm prepare
+DEPEND: app-admin/eselect-ctags
+DESC: Exuberant Ctags creates tags files for code browsing in editors
+EAPI: 4
+IUSE: ada
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: 0cf8b2eab222973256e7e91e9de1a88c
+MTIME: 1373627705
+SHA1: 1417e55ef64dc5630d6593b901822eb15f0bf235
+SIZE: 163744
+
+BUILD_TIME: 1373608527
+CPV: dev-util/pkgconfig-0.28
+DEFINED_PHASES: configure install prepare
+DEPEND: >=dev-libs/glib-2.30 !dev-util/pkgconf[pkg-config] !dev-util/pkg-config-lite !dev-util/pkgconfig-openbsd[pkg-config]
+DESC: Package config system that manages compile/link flags
+EAPI: 5
+IUSE: elibc_FreeBSD hardened internal-glib
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2
+MD5: 1ad65bab05f9e4e631ab873ec71943d4
+MTIME: 1373608542
+RDEPEND: >=dev-libs/glib-2.30 !dev-util/pkgconf[pkg-config] !dev-util/pkg-config-lite !dev-util/pkgconfig-openbsd[pkg-config]
+SHA1: 10e89e77e870c60fa2e39c7283b22acf11f38f1a
+SIZE: 66572
+
+BUILD_TIME: 1373954939
+CPV: dev-util/strace-4.7
+DEFINED_PHASES: install prepare
+DEPEND: sys-kernel/linux-headers
+DESC: A useful diagnostic, instructional, and debugging tool
+EAPI: 4
+IUSE: static aio
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux
+LICENSE: BSD
+MD5: 3b88cd146b962c8afb49dc3d137bc057
+MTIME: 1373954950
+SHA1: 958c80a200dc5e5a503136db3aa4fe45e163e826
+SIZE: 219732
+
+BUILD_TIME: 1373578293
+CPV: dev-vcs/git-1.8.1.5
+DEFINED_PHASES: compile configure install postinst postrm prepare setup test unpack
+DEPEND: dev-libs/openssl sys-libs/zlib dev-libs/libpcre dev-lang/perl[-build] net-misc/curl dev-libs/expat app-arch/cpio =dev-lang/python-2*
+DESC: GIT - the stupid content tracker, the revision control system heavily used by the Linux kernel team
+EAPI: 4
+IUSE: +blksha1 +curl cgi doc emacs gnome-keyring +gpg gtk highlight +iconv +nls +pcre +perl +python ppcsha1 tk +threads +webdav xinetd cvs subversion test
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~ia64-hpux ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2
+MD5: 6ed6d0f2fdb0e9d868659ffbe445d7fc
+MTIME: 1373578377
+RDEPEND: dev-libs/openssl sys-libs/zlib dev-libs/libpcre dev-lang/perl[-build] net-misc/curl dev-libs/expat app-crypt/gnupg dev-perl/Error dev-perl/Net-SMTP-SSL dev-perl/Authen-SASL =dev-lang/python-2*
+SHA1: 3e4c1c7d6f07ec0723e5380201766c01763d36a0
+SIZE: 5038102
+USE: blksha1 curl gpg iconv nls pcre perl python threads webdav
+
+BUILD_TIME: 1373524896
+CPV: mail-mta/ssmtp-2.64-r2
+DEFINED_PHASES: compile configure install prepare setup
+DEPEND: dev-libs/openssl sys-devel/automake >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: Extremely simple MTA to get mail off the system to a Mailhub
+EAPI: 4
+IUSE: ipv6 +ssl gnutls +mta
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2
+MD5: 1c55dc1b7d98892ae65357d1cf48be47
+MTIME: 1373524911
+RDEPEND: dev-libs/openssl net-mail/mailbase !net-mail/mailwrapper !mail-mta/courier !mail-mta/esmtp !mail-mta/exim !mail-mta/mini-qmail !mail-mta/msmtp[mta] !mail-mta/nbsmtp !mail-mta/netqmail !mail-mta/nullmailer !mail-mta/postfix !mail-mta/qmail-ldap !mail-mta/sendmail !mail-mta/opensmtpd
+SHA1: b4ddf271f89a102cafe28b8710d77fec00782434
+SIZE: 56353
+USE: ipv6 mta ssl
+
+BUILD_TIME: 1374103759
+CPV: media-libs/raspberrypi-userland-bin-0_p20130711
+DEFINED_PHASES: install prepare unpack
+DESC: Raspberry Pi userspace tools and libraries
+EAPI: 5
+IUSE: +hardfp examples
+KEYWORDS: ~arm -*
+LICENSE: BSD GPL-2 raspberrypi-videocore-bin
+MD5: d4de60e9034dd19a5452b3976726592a
+MTIME: 1374103816
+RDEPEND: !media-libs/raspberrypi-userland
+RESTRICT: binchecks
+SHA1: 4f6145b7fb03e29baa3c5b7a3b83e08c57d68d56
+SIZE: 940226
+USE: hardfp
+REPO: xmw
+
+BUILD_TIME: 1373963912
+CPV: net-analyzer/munin-2.0.14
+DEFINED_PHASES: compile config configure install postinst preinst prepare setup test
+DEPEND: dev-lang/perl[berkdb] sys-process/procps dev-perl/Net-SSLeay dev-perl/DBI dev-perl/DateManip dev-perl/File-Copy-Recursive dev-perl/List-MoreUtils dev-perl/Log-Log4perl dev-perl/Net-CIDR dev-perl/Net-Netmask dev-perl/Net-SNMP dev-perl/net-server[ipv6(-)] virtual/perl-Digest-MD5 virtual/perl-Getopt-Long virtual/perl-MIME-Base64 virtual/perl-Storable virtual/perl-Text-Balanced virtual/perl-Time-HiRes virtual/perl-Module-Build
+DESC: Munin Server Monitoring Tool
+EAPI: 5
+IUSE: asterisk irc java memcached minimal mysql postgres ssl test cgi ipv6 syslog ipmi http dhcpd doc apache elibc_FreeBSD java
+KEYWORDS: ~amd64 ~arm ~mips ~ppc ~x86
+LICENSE: GPL-2
+MD5: 08fcc7978b17551705857e0c9d7b8ac7
+MTIME: 1373963944
+RDEPEND: dev-lang/perl[berkdb] sys-process/procps dev-perl/Net-SSLeay dev-perl/DBI dev-perl/DateManip dev-perl/File-Copy-Recursive dev-perl/List-MoreUtils dev-perl/Log-Log4perl dev-perl/Net-CIDR dev-perl/Net-Netmask dev-perl/Net-SNMP dev-perl/net-server[ipv6(-)] virtual/perl-Digest-MD5 virtual/perl-Getopt-Long virtual/perl-MIME-Base64 virtual/perl-Storable virtual/perl-Text-Balanced virtual/perl-Time-HiRes virtual/awk !<sys-apps/openrc-0.11.8
+SHA1: 1c7d943110e10de627190ebccc652f9943934484
+SIZE: 455476
+USE: ipv6 minimal ssl
+
+BUILD_TIME: 1373954543
+CPV: net-analyzer/netcat6-1.0-r2
+DEFINED_PHASES: compile configure install prepare
+DEPEND: !net-analyzer/netcat || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: netcat clone with better IPv6 support, improved code, etc...
+EAPI: 5
+IUSE: ipv6 nls bluetooth
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ~ppc64 s390 sh sparc x86 ~amd64-linux ~arm-linux ~x86-linux
+LICENSE: GPL-2
+MD5: e9b8f28e990bf2cdc1841b9441066fc4
+MTIME: 1373954553
+RDEPEND: !net-analyzer/netcat
+SHA1: 1e3e79ee890c15e0aff00fa350f24dbaea4ec962
+SIZE: 66154
+USE: ipv6 nls
+
+BUILD_TIME: 1374320633
+CPV: net-analyzer/tcpdump-4.3.0
+DEFINED_PHASES: configure install postinst prepare setup test
+DEPEND: net-libs/libpcap >=dev-libs/openssl-0.9.6m
+DESC: A Tool for network monitoring and data acquisition
+EAPI: 4
+IUSE: +chroot smi ssl ipv6 -samba suid test
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~arm-linux ~x86-linux
+LICENSE: BSD
+MD5: c110ad858e2ed72cd74b04304e9d45f5
+MTIME: 1374320674
+RDEPEND: net-libs/libpcap >=dev-libs/openssl-0.9.6m
+SHA1: eeec7aded787d4e3c502aa774825ee1f33a3e759
+SIZE: 365728
+USE: chroot ipv6 ssl
+
+BUILD_TIME: 1373966745
+CPV: net-dns/bind-tools-9.9.2
+DEFINED_PHASES: compile configure install prepare
+DEPEND: dev-libs/openssl sys-libs/readline || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: bind tools: dig, nslookup, host, nsupdate, dnssec-keygen
+EAPI: 4
+IUSE: doc gssapi idn ipv6 readline ssl urandom xml
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: ISC BSD BSD-2 HPND JNIC RSA openssl
+MD5: 3ef61e1d47bf4ecaa91e1a61d35eed6f
+MTIME: 1373966768
+RDEPEND: dev-libs/openssl sys-libs/readline
+SHA1: dbbc0c3e6678dff92f56c3db194b6d19f0da2270
+SIZE: 3346176
+USE: ipv6 readline ssl
+
+BUILD_TIME: 1373618976
+CPV: net-firewall/iptables-1.4.16.3
+DEFINED_PHASES: compile configure install prepare
+DEPEND: virtual/os-headers virtual/pkgconfig
+DESC: Linux kernel (2.4+) firewall, NAT and packet mangling tools
+EAPI: 4
+IUSE: ipv6 netlink static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86
+LICENSE: GPL-2
+MD5: 826b63e3de11315ba6435766de43dbc7
+MTIME: 1373619051
+SHA1: 10f7aa8677e66dd58612c44edaba5eced1d419b7
+SIZE: 288789
+USE: ipv6
+
+BUILD_TIME: 1374143526
+CPV: net-fs/nfs-utils-1.2.6
+DEFINED_PHASES: configure install postinst prepare
+DEPEND: sys-apps/tcp-wrappers sys-libs/e2fsprogs-libs net-nds/rpcbind net-libs/libtirpc >=dev-libs/libevent-1.0b >=net-libs/libnfsidmap-0.21-r1 virtual/pkgconfig !<sys-apps/util-linux-2.12r-r7 || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: NFS client and server daemons
+EAPI: 4
+IUSE: caps ipv6 kerberos nfsdcld nfsidmap +nfsv4 nfsv41 selinux tcpd
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86
+LICENSE: GPL-2
+MD5: 20e45fbae20e95efecf9945c4965e82b
+MTIME: 1374143547
+RDEPEND: sys-apps/tcp-wrappers sys-libs/e2fsprogs-libs net-nds/rpcbind net-libs/libtirpc >=dev-libs/libevent-1.0b >=net-libs/libnfsidmap-0.21-r1 !net-nds/portmap
+RESTRICT: test
+SHA1: 307efbaa4ee402d8a7bb3a6e88bdf895272710ee
+SIZE: 275919
+USE: ipv6 nfsv4 tcpd
+
+BUILD_TIME: 1373958215
+CPV: net-ftp/atftp-0.7-r1
+DEFINED_PHASES: compile install unpack
+DEPEND: sys-apps/tcp-wrappers sys-libs/readline dev-libs/libpcre
+DESC: Advanced TFTP implementation client/server
+IUSE: selinux tcpd readline pcre
+KEYWORDS: amd64 arm ppc ppc64 sparc x86 ~s390
+LICENSE: GPL-2
+MD5: 72783adcf3dafdcd41585b77647af607
+MTIME: 1373958238
+RDEPEND: sys-apps/tcp-wrappers sys-libs/readline dev-libs/libpcre !net-ftp/netkit-tftp !net-ftp/tftp-hpa
+SHA1: 54bb13c8bb3c9b39d42409cf9d1103928bc9d456
+SIZE: 101779
+USE: pcre readline tcpd
+
+BUILD_TIME: 1373545258
+CPV: net-libs/ldns-1.6.16
+DEFINED_PHASES: compile configure install postinst postrm setup
+DEPEND: >=dev-libs/openssl-0.9.7
+DESC: ldns is a library with the aim to simplify DNS programing in C
+EAPI: 4
+IUSE: doc gost +ecdsa python +ssl static-libs vim-syntax
+KEYWORDS: ~alpha ~amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~amd64-fbsd ~ppc-macos ~x64-macos
+LICENSE: BSD
+MD5: ab54980ac0ea6e2fbe43191d8aec4fbb
+MTIME: 1373545288
+RDEPEND: >=dev-libs/openssl-0.9.7
+RESTRICT: test
+SHA1: 0e0d352e21bc5f639687d124f4f5782ca2e698bd
+SIZE: 408266
+USE: ssl
+
+BUILD_TIME: 1374141225
+CPV: net-libs/libnfsidmap-0.24
+DEFINED_PHASES: configure install prepare
+DEPEND: || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: NFSv4 ID <-> name mapping library
+EAPI: 2
+IUSE: ldap static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86
+LICENSE: BSD
+MD5: 4d2527db3d93645ef95bd7b7b3da17ec
+MTIME: 1374141241
+RDEPEND: !<net-fs/nfs-utils-1.2.2 !net-fs/idmapd
+SHA1: c97585431dcf64c3d18192d8144f814dc3f03dcf
+SIZE: 54645
+
+BUILD_TIME: 1374319129
+CPV: net-libs/libpcap-1.3.0-r1
+DEFINED_PHASES: compile configure install prepare
+DEPEND: sys-devel/flex virtual/yacc || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: A system-independent library for user-level network packet capture
+EAPI: 4
+IUSE: bluetooth ipv6 netlink static-libs canusb
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x86-solaris
+LICENSE: BSD
+MD5: 75ac84f681eb682e7e20b5391f95ace6
+MTIME: 1374319175
+SHA1: 753652af5c4fc3aec4a0505386f6a50ceb1a542b
+SIZE: 282420
+USE: ipv6
+
+BUILD_TIME: 1374142178
+CPV: net-libs/libtirpc-0.2.2-r1
+DEFINED_PHASES: configure install prepare unpack
+DEPEND: app-arch/xz-utils virtual/pkgconfig
+DESC: Transport Independent RPC library (SunRPC replacement)
+EAPI: 3
+IUSE: kerberos static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86
+LICENSE: GPL-2
+MD5: e8c2cae6aae3deb7353c8402cd0f675f
+MTIME: 1374142195
+SHA1: 4fa88867750a10247de5c8712f467c74502da42b
+SIZE: 166360
+
+BUILD_TIME: 1373519962
+CPV: net-mail/mailbase-1.1
+DEFINED_PHASES: install postinst setup
+DESC: MTA layout package
+IUSE: pam
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: 69f9cd241e791aae38d2679ba8e8c90c
+MTIME: 1373519985
+RDEPEND: virtual/pam
+SHA1: 79cc997bde2c0e892a6feca92fd5320db4d60959
+SIZE: 25802
+USE: pam
+
+BUILD_TIME: 1373570435
+CPV: net-misc/curl-7.30.0
+DEFINED_PHASES: configure install prepare
+DEPEND: dev-libs/openssl sys-libs/zlib virtual/pkgconfig || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: A Client that groks URLs
+EAPI: 5
+IUSE: adns idn ipv6 kerberos ldap metalink rtmp ssh ssl static-libs test threads curl_ssl_axtls curl_ssl_cyassl curl_ssl_gnutls curl_ssl_nss +curl_ssl_openssl curl_ssl_polarssl
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: MIT
+MD5: 1c933c894ef11a65992c3f9078316740
+MTIME: 1373570455
+RDEPEND: dev-libs/openssl sys-libs/zlib
+RESTRICT: test
+SHA1: 7bbe0393dffaeaaf6bdda86fb612f93fe19bf702
+SIZE: 605292
+USE: curl_ssl_openssl ipv6 ssl
+
+BUILD_TIME: 1373555597
+CPV: net-misc/mosh-1.2.4
+DEFINED_PHASES: compile configure install prepare unpack
+DEPEND: dev-libs/protobuf sys-libs/ncurses:5 virtual/ssh dev-lang/perl dev-perl/IO-Tty sys-libs/libutempter virtual/pkgconfig || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: Mobile shell that supports roaming and intelligent local echo
+EAPI: 4
+IUSE: bash-completion +client examples +mosh-hardening +server ufw +utempter
+KEYWORDS: amd64 ~mips ppc x86 ~arm-linux ~x86-linux
+LICENSE: GPL-3
+MD5: ca8d0e2d2cb1f74f6b732a63fba42b2f
+MTIME: 1373555631
+RDEPEND: dev-libs/protobuf sys-libs/ncurses:5 virtual/ssh dev-lang/perl dev-perl/IO-Tty sys-libs/libutempter
+SHA1: d462b7b1fe9d32630c8fec6f901ffdc0fd7cd69e
+SIZE: 269612
+USE: client mosh-hardening server utempter
+
+BUILD_TIME: 1373617776
+CPV: net-misc/ntp-4.2.6_p5-r1
+DEFINED_PHASES: configure install postinst prepare setup
+DEPEND: >=sys-libs/ncurses-5.2 >=sys-libs/readline-4.1 !net-misc/openntpd dev-libs/openssl
+DESC: Network Time Protocol suite/programs
+EAPI: 2
+IUSE: caps debug ipv6 openntpd parse-clocks samba selinux snmp ssl vim-syntax zeroconf
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: HPND BSD ISC
+MD5: 2dc44b1bc404220f0f162ec9a03d79ee
+MTIME: 1373617833
+RDEPEND: >=sys-libs/ncurses-5.2 >=sys-libs/readline-4.1 !net-misc/openntpd dev-libs/openssl
+SHA1: ffd9c9586bfdfa13bcc32b3691be137cf29fac8f
+SIZE: 1763470
+USE: ipv6 ssl
+
+BUILD_TIME: 1373559839
+CPV: net-misc/openssh-6.2_p2-r1
+DEFINED_PHASES: configure install postinst preinst prepare setup test
+DEPEND: >=dev-libs/openssl-0.9.6d:0[bindist] dev-libs/openssl >=sys-libs/zlib-1.2.3 >=sys-apps/tcp-wrappers-7.6 net-libs/ldns[-ecdsa,ssl] virtual/pam virtual/pkgconfig virtual/os-headers sys-devel/autoconf || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool virtual/pkgconfig
+DESC: Port of OpenBSD's free SSH release
+EAPI: 4
+IUSE: bindist +hpn kerberos ldap ldns libedit pam selinux skey static tcpd X X509
+LICENSE: BSD GPL-2
+MD5: aaaf53c7cf2b1ee99d6fb909bfcc2cff
+MTIME: 1373559865
+RDEPEND: >=dev-libs/openssl-0.9.6d:0[bindist] dev-libs/openssl >=sys-libs/zlib-1.2.3 >=sys-apps/tcp-wrappers-7.6 net-libs/ldns[-ecdsa,ssl] virtual/pam >=sys-auth/pambase-20081028 virtual/shadow
+SHA1: 7fefa877a70f60304132cfe095a6360754998fe0
+SIZE: 933842
+USE: bindist hpn ldns pam tcpd
+
+BUILD_TIME: 1374142608
+CPV: net-nds/rpcbind-0.2.0
+DEFINED_PHASES: configure install prepare
+DEPEND: net-libs/libtirpc sys-apps/tcp-wrappers virtual/pkgconfig || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: portmap replacement which supports RPC over various protocols
+EAPI: 2
+IUSE: selinux tcpd
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86
+LICENSE: BSD
+MD5: acf5d07c26f8234b19630974d743ea72
+MTIME: 1374142624
+RDEPEND: net-libs/libtirpc sys-apps/tcp-wrappers
+SHA1: 0b9e21a6e1c933081661f4c507f9ab6bbf5365a0
+SIZE: 63662
+USE: tcpd
+
+BUILD_TIME: 1373954160
+CPV: net-wireless/dump1090-9999
+DEFINED_PHASES: compile install unpack
+DEPEND: net-wireless/rtl-sdr dev-vcs/git
+DESC: simple Mode S decoder for RTLSDR devices
+EAPI: 5
+LICENSE: BSD
+MD5: 51bb1d0f6a113ad53f458a197c15fbf1
+MTIME: 1373954169
+RDEPEND: net-wireless/rtl-sdr
+SHA1: e441e35c8e58f1b423639985e27b443fafd04593
+SIZE: 41441
+
+BUILD_TIME: 1373954056
+CPV: net-wireless/rtl-sdr-0.5.0
+DEFINED_PHASES: postinst prepare unpack
+DEPEND: virtual/libusb:1 || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: turns your Realtek RTL2832 based DVB dongle into a SDR receiver
+EAPI: 5
+KEYWORDS: ~amd64 ~arm ~x86
+LICENSE: GPL-2
+MD5: 1020682dd6f371255f14b24b3baa6498
+MTIME: 1373954066
+RDEPEND: virtual/libusb:1
+SHA1: 90df729c3ce41449b8f9dbbc4a531fbfd4dd1608
+SIZE: 95931
+
+BUILD_TIME: 1373620038
+CPV: net-wireless/wpa_supplicant-0.7.3-r5
+DEFINED_PHASES: compile configure install postinst prepare setup unpack
+DEPEND: dev-libs/libnl:1.1 sys-libs/ncurses sys-libs/readline dev-libs/openssl virtual/pkgconfig virtual/pkgconfig
+DESC: IEEE 802.1X/WPA supplicant for secure wireless transfers
+EAPI: 4
+IUSE: dbus debug gnutls eap-sim fasteap madwifi ps3 qt4 readline selinux ssl wimax wps kernel_linux kernel_FreeBSD
+KEYWORDS: amd64 arm ~mips ppc ppc64 x86 ~x86-fbsd
+LICENSE: || ( GPL-2 BSD )
+MD5: e2abe88fdb36db60f500742dde5c0460
+MTIME: 1373620073
+RDEPEND: dev-libs/libnl:1.1 sys-libs/ncurses sys-libs/readline dev-libs/openssl
+SHA1: e2048254a7639d57dd3f2077ef20c14243c33863
+SIZE: 298566
+USE: kernel_linux readline ssl
+
+BUILD_TIME: 1373561943
+CPV: perl-core/Archive-Tar-1.900.0
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: >=virtual/perl-IO-Zlib-1.01 virtual/perl-IO-Compress virtual/perl-Package-Constants dev-lang/perl[-build]
+DESC: A Perl module for creation and manipulation of tar files
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: 15732fa504bd6989431f0331a61e12d3
+MTIME: 1373561958
+RDEPEND: >=virtual/perl-IO-Zlib-1.01 virtual/perl-IO-Compress virtual/perl-Package-Constants dev-lang/perl[-build]
+SHA1: 34c70e9fe413e60f616e805749573ea920d9ed54
+SIZE: 71107
+
+BUILD_TIME: 1373564413
+CPV: perl-core/CPAN-Meta-2.120.921
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: >=virtual/perl-CPAN-Meta-Requirements-2.121.0 >=virtual/perl-CPAN-Meta-YAML-0.8.0 >=virtual/perl-JSON-PP-2.272.0 >=virtual/perl-Parse-CPAN-Meta-1.440.300 virtual/perl-Scalar-List-Utils >=virtual/perl-version-0.82 virtual/perl-File-Spec >=virtual/perl-File-Temp-0.20 virtual/perl-IO >=virtual/perl-Test-Simple-0.88 >=virtual/perl-ExtUtils-MakeMaker-6.56 dev-lang/perl[-build]
+DESC: The distribution metadata for a CPAN dist
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: c077ef76d1b6a2c73d51dec677034b7c
+MTIME: 1373564427
+RDEPEND: >=virtual/perl-CPAN-Meta-Requirements-2.121.0 >=virtual/perl-CPAN-Meta-YAML-0.8.0 >=virtual/perl-JSON-PP-2.272.0 >=virtual/perl-Parse-CPAN-Meta-1.440.300 virtual/perl-Scalar-List-Utils >=virtual/perl-version-0.82 dev-lang/perl[-build]
+SHA1: 107439755eeb4f7a419a5cbfc0ead64f1f8a6f02
+SIZE: 63093
+
+BUILD_TIME: 1373558138
+CPV: perl-core/CPAN-Meta-Requirements-2.122.0
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: virtual/perl-Scalar-List-Utils >=virtual/perl-version-0.77 !<perl-core/CPAN-Meta-2.120.920 dev-lang/perl[-build]
+DESC: A set of version requirements for a CPAN dist
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: a589f6462cea77ec02a486d3a41a94b5
+MTIME: 1373558151
+RDEPEND: virtual/perl-Scalar-List-Utils >=virtual/perl-version-0.77 !<perl-core/CPAN-Meta-2.120.920 dev-lang/perl[-build]
+SHA1: b1ffcdc2874b18d75f2cca4f44ff6fe3b262acd1
+SIZE: 34073
+
+BUILD_TIME: 1373550123
+CPV: perl-core/CPAN-Meta-YAML-0.8.0
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: dev-lang/perl[-build]
+DESC: Read and write a subset of YAML for CPAN Meta files
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: b3737b08193400a927b0a93b68da5999
+MTIME: 1373550150
+RDEPEND: dev-lang/perl[-build]
+SHA1: 7426dae545cc9e5977fcc6b01db8a8329a30ee77
+SIZE: 32079
+
+BUILD_TIME: 1373547259
+CPV: perl-core/Compress-Raw-Bzip2-2.60.0
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: app-arch/bzip2 dev-lang/perl[-build]
+DESC: Low-Level Interface to bzip2 compression library
+EAPI: 5
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: 926e243e2cbb2262fc09c68aff678a3a
+MTIME: 1373547273
+RDEPEND: app-arch/bzip2 dev-lang/perl[-build]
+SHA1: 89cd1dd5aec468b68838fb9de6d277bb95766b36
+SIZE: 45287
+
+BUILD_TIME: 1373547458
+CPV: perl-core/Compress-Raw-Zlib-2.60.0
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: >=sys-libs/zlib-1.2.5 dev-lang/perl[-build]
+DESC: Low-Level Interface to zlib compression library
+EAPI: 5
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: ee4aec0ad2f9a280f4076e605077a006
+MTIME: 1373547472
+RDEPEND: >=sys-libs/zlib-1.2.5 dev-lang/perl[-build]
+SHA1: 1a5b71ac16308a84bdbf1aaeb76642450017f6fe
+SIZE: 66613
+
+BUILD_TIME: 1373561751
+CPV: perl-core/Digest-MD5-2.520.0
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: virtual/perl-digest-base dev-lang/perl[-build]
+DESC: MD5 message digest algorithm
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: 6d65f2a613b50464b53889d8a1a896d7
+MTIME: 1373561767
+RDEPEND: virtual/perl-digest-base dev-lang/perl[-build]
+SHA1: 2cd908e90de9897bf364ef9b17a21c04b46496ca
+SIZE: 55314
+
+BUILD_TIME: 1373549403
+CPV: perl-core/Encode-2.470.0
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: dev-lang/perl[-build]
+DESC: character encodings
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: d87c097ca47a817f06e59262e4f695ee
+MTIME: 1373549459
+RDEPEND: !!<dev-lang/perl-5.8.8-r8 dev-lang/perl[-build]
+SHA1: ffcffb4c3b7aa98c4d333b00a56e88679cb33f1a
+SIZE: 1843412
+
+BUILD_TIME: 1373563270
+CPV: perl-core/ExtUtils-CBuilder-0.280.205
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: virtual/perl-File-Spec virtual/perl-File-Temp virtual/perl-IPC-Cmd virtual/perl-Perl-OSType dev-lang/perl[-build]
+DESC: Compile and link C code for Perl modules
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: 5ec5b82efc1a1bb58340281092a6b5b0
+MTIME: 1373563284
+RDEPEND: virtual/perl-File-Spec virtual/perl-File-Temp virtual/perl-IPC-Cmd virtual/perl-Perl-OSType dev-lang/perl[-build]
+SHA1: f92d980dc1f94263dc31f53832dc2dbf2acce64e
+SIZE: 46166
+
+BUILD_TIME: 1373552193
+CPV: perl-core/ExtUtils-Command-1.170.0
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: dev-lang/perl[-build]
+DESC: Utilities to replace common UNIX commands in Makefiles etc.
+EAPI: 3
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: 2d8d68da30067a7bf3061e13ddf8c2c4
+MTIME: 1373552219
+RDEPEND: dev-lang/perl[-build]
+SHA1: e55c3df0ac9fcb9c5ef3db319fef7da5dfee20a8
+SIZE: 32102
+
+BUILD_TIME: 1373551860
+CPV: perl-core/ExtUtils-Install-1.540.0
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: dev-lang/perl[-build]
+DESC: Install files from here to there
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: da334f4200a02e4b5b6a66815511a48e
+MTIME: 1373551889
+RDEPEND: dev-lang/perl[-build]
+SHA1: 997215d83609c14802cf564759fa46e92c72bc46
+SIZE: 48500
+
+BUILD_TIME: 1373563990
+CPV: perl-core/ExtUtils-MakeMaker-6.640.0
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: >=virtual/perl-ExtUtils-Command-1.160.0 >=virtual/perl-ExtUtils-Install-1.540.0 >=virtual/perl-ExtUtils-Manifest-1.600.0 >=virtual/perl-File-Spec-0.800.0 dev-lang/perl[-build]
+DESC: Create a module Makefile
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: cbc3af61e29915e1152a57817423872d
+MTIME: 1373564007
+PDEPEND: >=virtual/perl-CPAN-Meta-2.112.621 >=virtual/perl-Parse-CPAN-Meta-1.440.100
+RDEPEND: >=virtual/perl-ExtUtils-Command-1.160.0 >=virtual/perl-ExtUtils-Install-1.540.0 >=virtual/perl-ExtUtils-Manifest-1.600.0 >=virtual/perl-File-Spec-0.800.0 dev-lang/perl[-build]
+SHA1: 069e81f10b7a5d18bdd60b2833634a2844e2c894
+SIZE: 166848
+
+BUILD_TIME: 1373551525
+CPV: perl-core/ExtUtils-Manifest-1.610.0
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: dev-lang/perl[-build]
+DESC: Utilities to write and check a MANIFEST file
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: 64d5d4ccf4a8f0a95b91043ee979d6d8
+MTIME: 1373551554
+RDEPEND: dev-lang/perl[-build]
+SHA1: 2b1a6df6e2e3fc6f83706c4636aba30e0335b10e
+SIZE: 39032
+
+BUILD_TIME: 1373563527
+CPV: perl-core/ExtUtils-ParseXS-2.22.05
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: virtual/perl-ExtUtils-CBuilder dev-lang/perl[-build]
+DESC: Converts Perl XS code into C code
+EAPI: 2
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: e8a95367454db1cb60406f22402d4377
+MTIME: 1373563540
+RDEPEND: dev-lang/perl[-build]
+SHA1: 9bdbf0d51939435e794a349a658e24868401683e
+SIZE: 52739
+
+BUILD_TIME: 1373551189
+CPV: perl-core/File-Spec-3.400.0
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: dev-lang/perl[-build]
+DESC: Handling files and directories portably
+EAPI: 5
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: ba00fc855bd7d63deaa0292ebbc1e5e6
+MTIME: 1373551218
+RDEPEND: dev-lang/perl[-build]
+SHA1: a1ae694fde7888b6abb75211335d1a35065d08f8
+SIZE: 72294
+
+BUILD_TIME: 1373546906
+CPV: perl-core/IO-1.25
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: dev-lang/perl[-build]
+DESC: load various IO modules
+EAPI: 2
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: 2ca8806f0c783e975aed8c9fe6118837
+MTIME: 1373546918
+RDEPEND: dev-lang/perl[-build]
+SHA1: 585f7569481b642ff25106ebee73d20ee6c3473e
+SIZE: 57397
+
+BUILD_TIME: 1373557803
+CPV: perl-core/IO-Compress-2.60.0
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: virtual/perl-Scalar-List-Utils >=virtual/perl-Compress-Raw-Zlib-2.60.0 >=virtual/perl-Compress-Raw-Bzip2-2.60.0 !perl-core/Compress-Zlib !perl-core/IO-Compress-Zlib !perl-core/IO-Compress-Bzip2 !perl-core/IO-Compress-Base dev-lang/perl[-build]
+DESC: allow reading and writing of compressed data
+EAPI: 5
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: ccbbdf4c700196b29c2988aad5584d5b
+MTIME: 1373557819
+RDEPEND: virtual/perl-Scalar-List-Utils >=virtual/perl-Compress-Raw-Zlib-2.60.0 >=virtual/perl-Compress-Raw-Bzip2-2.60.0 !perl-core/Compress-Zlib !perl-core/IO-Compress-Zlib !perl-core/IO-Compress-Bzip2 !perl-core/IO-Compress-Base dev-lang/perl[-build]
+SHA1: 3cfa2594d7686ae8a941c1a194172dd1c9e9048a
+SIZE: 128568
+
+BUILD_TIME: 1373563014
+CPV: perl-core/IPC-Cmd-0.780.0
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: virtual/perl-Locale-Maketext-Simple virtual/perl-Module-Load-Conditional >=virtual/perl-Params-Check-0.26 dev-lang/perl[-build]
+DESC: Finding and running system commands made easy
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: f7e29cda8e6b12757a8f4bb0c469df81
+MTIME: 1373563028
+RDEPEND: virtual/perl-Locale-Maketext-Simple virtual/perl-Module-Load-Conditional >=virtual/perl-Params-Check-0.26 dev-lang/perl[-build]
+SHA1: 10a130a80d6b60170c9d4d33c536d260f0afe3b9
+SIZE: 46262
+
+BUILD_TIME: 1373549786
+CPV: perl-core/JSON-PP-2.272.0
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: dev-lang/perl[-build]
+DESC: JSON::XS compatible pure-Perl module
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: 2af79cd29db75e10cd30fa27a7bbb891
+MTIME: 1373549817
+RDEPEND: !!<dev-perl/JSON-2.50 dev-lang/perl[-build]
+SHA1: 477df36a0f5ad167bdd7ca0399c2a637a50580b7
+SIZE: 55870
+
+BUILD_TIME: 1373547080
+CPV: perl-core/MIME-Base64-3.130.0
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: dev-lang/perl[-build]
+DESC: A base64/quoted-printable encoder/decoder Perl Modules
+EAPI: 3
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: 295de170da923f4198759a4594dbead8
+MTIME: 1373547092
+RDEPEND: dev-lang/perl[-build]
+SHA1: 69933159b7f1fd974417b5e7ea6e6fc9c5548143
+SIZE: 39405
+
+BUILD_TIME: 1373564697
+CPV: perl-core/Module-Build-0.400.300
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: >=virtual/perl-CPAN-Meta-2.110.420 >=virtual/perl-CPAN-Meta-YAML-0.3.0 >=virtual/perl-Parse-CPAN-Meta-1.440.100 >=virtual/perl-Module-Metadata-1.0.2 >=virtual/perl-Perl-OSType-1 >=virtual/perl-ExtUtils-CBuilder-0.27 >=virtual/perl-ExtUtils-ParseXS-2.22.05 >=virtual/perl-Archive-Tar-1.09 >=virtual/perl-Test-Harness-3.16 >=virtual/perl-version-0.87 dev-lang/perl[-build]
+DESC: Build and install Perl modules
+EAPI: 4
+IUSE: test
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: 079f8eabe138474d734b3cd6397e3a7b
+MTIME: 1373564713
+RDEPEND: >=virtual/perl-CPAN-Meta-2.110.420 >=virtual/perl-CPAN-Meta-YAML-0.3.0 >=virtual/perl-Parse-CPAN-Meta-1.440.100 >=virtual/perl-Module-Metadata-1.0.2 >=virtual/perl-Perl-OSType-1 >=virtual/perl-ExtUtils-CBuilder-0.27 >=virtual/perl-ExtUtils-ParseXS-2.22.05 >=virtual/perl-Archive-Tar-1.09 >=virtual/perl-Test-Harness-3.16 >=virtual/perl-version-0.87 dev-lang/perl[-build]
+SHA1: fbf2e706f8dee638eca877405ea51ec5f1311ae8
+SIZE: 181060
+
+BUILD_TIME: 1373554132
+CPV: perl-core/Module-CoreList-2.800.0
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: dev-lang/perl[-build]
+DESC: what modules shipped with versions of perl
+EAPI: 5
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: 0685d622adeca71169e305e53d1ae8ea
+MTIME: 1373554164
+RDEPEND: dev-lang/perl[-build]
+SHA1: df5d0dc099e8e60744403006e0282390b7208bcc
+SIZE: 68117
+
+BUILD_TIME: 1373554466
+CPV: perl-core/Module-Load-0.240.0
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: dev-lang/perl[-build]
+DESC: runtime require of both modules and files
+EAPI: 5
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: f363a0805c4309ddd19e69977e14e612
+MTIME: 1373554494
+RDEPEND: dev-lang/perl[-build]
+SHA1: e1f8c4afd1f52f13076c4ca214c41a507676e2ea
+SIZE: 28789
+
+BUILD_TIME: 1373562114
+CPV: perl-core/Module-Load-Conditional-0.540.0
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: >=virtual/perl-Module-Load-0.12 >=virtual/perl-Module-CoreList-0.22 >=virtual/perl-Module-Metadata-1.0.5 virtual/perl-Locale-Maketext-Simple virtual/perl-Params-Check virtual/perl-version dev-lang/perl[-build]
+DESC: Looking up module information / loading at runtime
+EAPI: 5
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: e026a1d72def6fe36ba110b00b8964f1
+MTIME: 1373562128
+RDEPEND: >=virtual/perl-Module-Load-0.12 >=virtual/perl-Module-CoreList-0.22 >=virtual/perl-Module-Metadata-1.0.5 virtual/perl-Locale-Maketext-Simple virtual/perl-Params-Check virtual/perl-version dev-lang/perl[-build]
+SHA1: 051ca6832c0ab962268e54b1a72ccad9c1240e12
+SIZE: 34438
+
+BUILD_TIME: 1373558466
+CPV: perl-core/Module-Metadata-1.0.11
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: >=virtual/perl-version-0.870 dev-lang/perl[-build]
+DESC: Gather package and POD information from perl module files
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: ec751ecffd63953b76986249e2999cb2
+MTIME: 1373558480
+RDEPEND: >=virtual/perl-version-0.870 dev-lang/perl[-build]
+SHA1: 9f22cec94ec1c47d31322e3966d8d7a1e5c291c8
+SIZE: 34687
+
+BUILD_TIME: 1373556907
+CPV: perl-core/Params-Check-0.360.0
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: virtual/perl-Locale-Maketext-Simple dev-lang/perl[-build]
+DESC: A generic input parsing/checking mechanism
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: fbb6efb2bc5214613624ec863a9fc66e
+MTIME: 1373556920
+RDEPEND: virtual/perl-Locale-Maketext-Simple dev-lang/perl[-build]
+SHA1: e0baba4aac34f8e99e59cd04966b78eda00030d2
+SIZE: 32375
+
+BUILD_TIME: 1373557973
+CPV: perl-core/Parse-CPAN-Meta-1.440.400
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: >=virtual/perl-CPAN-Meta-YAML-0.8.0 >=virtual/perl-JSON-PP-2.272.0 dev-lang/perl[-build]
+DESC: Parse META.yml and other similar CPAN metadata files
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: e354ca6307ba487281632a58ab417312
+MTIME: 1373557987
+RDEPEND: >=virtual/perl-CPAN-Meta-YAML-0.8.0 >=virtual/perl-JSON-PP-2.272.0 dev-lang/perl[-build]
+SHA1: 33946d0b2884bf0e3a03b56e4da62b59974d9d13
+SIZE: 28969
+
+BUILD_TIME: 1373553785
+CPV: perl-core/Perl-OSType-1.2.0
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: dev-lang/perl[-build]
+DESC: Map Perl operating system names to generic types
+EAPI: 3
+IUSE: test
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: c7fd5e4623ef1e6d736d52ccbaf5b85e
+MTIME: 1373553810
+RDEPEND: dev-lang/perl[-build]
+SHA1: a20d76c4cfd70aa44032f722260639c0bb0c7600
+SIZE: 27669
+
+BUILD_TIME: 1373547683
+CPV: perl-core/Scalar-List-Utils-1.270.0
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: dev-lang/perl[-build]
+DESC: Scalar-List-Utils module for perl
+EAPI: 5
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: f2e298c65ca632cb63b5cc049cc1e83c
+MTIME: 1373547699
+RDEPEND: dev-lang/perl[-build]
+SHA1: b7751e093edbfcd1588906fb86f4701d6bb00fc3
+SIZE: 46753
+
+BUILD_TIME: 1373552793
+CPV: perl-core/Storable-2.390.0
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: dev-lang/perl[-build]
+DESC: The Perl Storable Module
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: cb81b21e521977e504167158bf4b76e7
+MTIME: 1373552822
+RDEPEND: dev-lang/perl[-build]
+SHA1: a4a8239376fff02fe6462aace6728ab0e920a26c
+SIZE: 80816
+
+BUILD_TIME: 1373957182
+CPV: perl-core/Sys-Syslog-0.320.0
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: dev-lang/perl[-build]
+DESC: Provides same functionality as BSD syslog
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: 04cd38dd6625bb0ebe36da63025466d4
+MTIME: 1373957191
+RDEPEND: dev-lang/perl[-build]
+SHA1: d320aef5d3e39b2eccd03c99041aa86d144f8d16
+SIZE: 53041
+
+BUILD_TIME: 1373553163
+CPV: perl-core/Test-Harness-3.260.0
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: dev-lang/perl[-build]
+DESC: Runs perl standard test scripts with statistics
+EAPI: 5
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: 7756614f154def102dacecf690bca4a6
+MTIME: 1373553196
+RDEPEND: dev-lang/perl[-build]
+SHA1: 2f70d46ba35e8ab774232a9fcf205f687dcba974
+SIZE: 132039
+
+BUILD_TIME: 1373550843
+CPV: perl-core/Test-Simple-0.980.0
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: dev-lang/perl[-build]
+DESC: Basic utilities for writing tests
+EAPI: 3
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: 7bc1079506fb340a6e0155809ff954f9
+MTIME: 1373550869
+RDEPEND: dev-lang/perl[-build]
+SHA1: 9ad7fc5b1dc5769a5041f3985ccf23182d8f05f7
+SIZE: 81777
+
+BUILD_TIME: 1373958108
+CPV: perl-core/Time-HiRes-1.972.500
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: dev-lang/perl[-build]
+DESC: Perl Time::HiRes. High resolution alarm, sleep, gettimeofday, interval timers
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: c0bf6a00e5cb7f1b43b56b053bda2ea6
+MTIME: 1373958131
+RDEPEND: dev-lang/perl[-build]
+SHA1: a94c1ddf32db3b31789868de670e6a620a497cb3
+SIZE: 57351
+
+BUILD_TIME: 1373546729
+CPV: perl-core/Time-Local-1.230.0
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: dev-lang/perl[-build]
+DESC: Implements timelocal() and timegm()
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: 9c22601a2149b4fcd3183e67cb1a50a9
+MTIME: 1373546742
+RDEPEND: dev-lang/perl[-build]
+SHA1: 925a7f1db105821bdc601a98fe6f89f469857626
+SIZE: 33184
+
+BUILD_TIME: 1373558302
+CPV: perl-core/digest-base-1.170.0
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: virtual/perl-MIME-Base64 dev-lang/perl[-build]
+DESC: Modules that calculate message digests
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-interix ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: bf12357ee25cebdff69eec0dccec621f
+MTIME: 1373558316
+RDEPEND: virtual/perl-MIME-Base64 dev-lang/perl[-build]
+SHA1: 93f78c0e9e17c7e34b98d84096f2818d1e19e4de
+SIZE: 31293
+
+BUILD_TIME: 1373550504
+CPV: perl-core/version-0.990.100
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: dev-lang/perl[-build]
+DESC: Perl extension for Version Objects
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: 7e1e64935c2149c332aaf55cb2508f76
+MTIME: 1373550533
+RDEPEND: dev-lang/perl[-build]
+SHA1: 865f3d914bb38bb055a413ae603fca56e616ad47
+SIZE: 71125
+
+BUILD_TIME: 1373868625
+CPV: sys-apps/baselayout-2.2
+DEFINED_PHASES: install postinst preinst setup
+DESC: Filesystem baselayout and init scripts
+IUSE: build kernel_linux
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: 59b29ef19aca4480c9995223f2dafda5
+MTIME: 1373868638
+PDEPEND: sys-apps/openrc
+SHA1: fee450612938292ef79b4a16de323009e09e8246
+SIZE: 69804
+USE: kernel_linux
+
+BUILD_TIME: 1374522539
+CPV: sys-apps/fbset-2.1
+DEFINED_PHASES: compile install unpack
+DEPEND: sys-devel/bison sys-devel/flex
+DESC: A utility to set the framebuffer videomode
+IUSE: static
+KEYWORDS: alpha amd64 arm hppa ia64 ppc ppc64 s390 sh sparc x86
+LICENSE: GPL-2
+MD5: 6ee39f31da520c6cc019ca3752f11083
+MTIME: 1374522571
+SHA1: 39304635d8b8e1e3587dd64d0cb4e94b64a2faa5
+SIZE: 51809
+
+BUILD_TIME: 1373873552
+CPV: sys-apps/file-5.12-r1
+DEFINED_PHASES: compile configure install postinst postrm prepare
+DEPEND: sys-libs/zlib
+DESC: identify a file's format by scanning binary data for patterns
+EAPI: 2
+IUSE: python static-libs zlib
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: BSD-2
+MD5: 3b4f00867a55961508051a396f52ebbb
+MTIME: 1373873570
+RDEPEND: sys-libs/zlib
+SHA1: f8a205c1a587e9cc491797d18e80ea9ab4ab3c78
+SIZE: 258525
+USE: zlib
+
+BUILD_TIME: 1374219318
+CPV: sys-apps/hwids-20130329
+DEFINED_PHASES: compile install postinst prepare
+DEPEND: dev-lang/perl >=virtual/udev-197-r1 virtual/pkgconfig
+DESC: Hardware (PCI, USB, OUI, IAB) IDs databases
+EAPI: 5
+IUSE: +udev
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~amd64-linux ~arm-linux ~x86-linux
+LICENSE: || ( GPL-2 BSD ) public-domain
+MD5: 04882e4e4d695c5dcb5fb88d28889081
+MTIME: 1374219363
+RDEPEND: !<sys-apps/pciutils-3.1.9-r2 !<sys-apps/usbutils-005-r1
+SHA1: 5cafb561e9657b42968d0483c10b90168e0fd364
+SIZE: 2134966
+USE: udev
+
+BUILD_TIME: 1373623736
+CPV: sys-apps/iproute2-3.8.0
+DEFINED_PHASES: configure install prepare
+DEPEND: !net-misc/arpd >=net-firewall/iptables-1.4.5 sys-libs/db app-arch/xz-utils virtual/pkgconfig sys-devel/bison sys-devel/flex >=sys-kernel/linux-headers-2.6.27 >=sys-libs/glibc-2.7
+DESC: kernel routing and traffic control utilities
+EAPI: 4
+IUSE: atm berkdb +iptables ipv6 minimal
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 ~sh sparc x86
+LICENSE: GPL-2
+MD5: 72a8c1fa674b98df11e187c043ed9b01
+MTIME: 1373623758
+RDEPEND: !net-misc/arpd >=net-firewall/iptables-1.4.5 sys-libs/db
+SHA1: 49a7a59fd72dcb44445a10c30b348bdf7a808aa0
+SIZE: 542268
+USE: berkdb iptables ipv6
+
+BUILD_TIME: 1373521476
+CPV: sys-apps/kmod-13-r1
+DEFINED_PHASES: compile configure install postinst postrm preinst prepare setup
+DEPEND: !sys-apps/module-init-tools !sys-apps/modutils >=sys-libs/zlib-1.2.6 dev-libs/libxslt virtual/pkgconfig || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: library and tools for managing linux kernel modules
+EAPI: 5
+IUSE: debug doc lzma static-libs +tools zlib kernel_linux
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86
+LICENSE: LGPL-2
+MD5: b29450e35e04708ecb0dc19c975e5852
+MTIME: 1373521509
+RDEPEND: !sys-apps/module-init-tools !sys-apps/modutils >=sys-libs/zlib-1.2.6
+RESTRICT: test
+SHA1: 6625f8ca6ae0a5f57c15904abac2d75052fe6490
+SIZE: 131309
+USE: kernel_linux tools zlib
+
+BUILD_TIME: 1373868322
+CPV: sys-apps/man-pages-3.50
+DEFINED_PHASES: compile configure install
+DESC: A somewhat comprehensive collection of Linux man pages
+EAPI: 3
+IUSE: nls linguas_da linguas_de linguas_fr linguas_it linguas_ja linguas_nl linguas_pl linguas_ro linguas_ru linguas_zh_CN
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux
+LICENSE: man-pages GPL-2+ BSD
+MD5: c5401ab2ba4c8fd4dc192f98a705df3e
+MTIME: 1373868384
+PDEPEND: sys-apps/man-pages-posix
+RDEPEND: virtual/man !<dev-libs/libaio-0.3.109-r2
+RESTRICT: binchecks
+SHA1: 4ebf60685c0be97de10fa2cbfa45066d383d4190
+SIZE: 2538998
+USE: nls
+
+BUILD_TIME: 1374178161
+CPV: sys-apps/miscfiles-1.5-r1
+DEFINED_PHASES: configure install postinst prepare
+DEPEND: app-arch/xz-utils
+DESC: Miscellaneous files
+EAPI: 3
+IUSE: minimal
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x86-solaris
+LICENSE: GPL-2 unicode
+MD5: bd2443204d5df54c1eabd8ad6da4a1e7
+MTIME: 1374178213
+RDEPEND: !<sys-freebsd/freebsd-share-7.2-r1
+SHA1: c478555816a43d91569f6a1e3404aa5aa961baeb
+SIZE: 1583846
+
+BUILD_TIME: 1373519684
+CPV: sys-apps/mlocate-0.26
+DEFINED_PHASES: compile configure install postinst setup
+DEPEND: app-arch/xz-utils sys-devel/gettext
+DESC: Merging locate is an utility to index and quickly search for files
+EAPI: 4
+IUSE: nls selinux
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sparc x86
+LICENSE: GPL-2
+MD5: a835650ffdbc7dd5be7b53c5c54184fe
+MTIME: 1373519720
+RDEPEND: !sys-apps/slocate !sys-apps/rlocate
+SHA1: 5b51ae8ecc284f1cb23293c70a5c8cbb284f41bd
+SIZE: 125296
+USE: nls
+
+BUILD_TIME: 1373609656
+CPV: sys-apps/portage-2.1.12.2
+DEFINED_PHASES: compile install postinst preinst prepare setup test
+DEPEND: || ( >=dev-lang/python-2.7 dev-lang/python:2.6[threads] ) dev-lang/python:2.7 dev-lang/python:3.2 >=sys-devel/make-3.82 >=sys-apps/sed-4.0.5 sys-devel/patch
+DESC: Portage is the package management and distribution system for Gentoo
+EAPI: 2
+IUSE: build doc epydoc +ipc linguas_pl linguas_ru pypy2_0 python2 python3 selinux xattr python_targets_pypy1_9 python_targets_pypy2_0 python_targets_python3_1 python_targets_python3_2 python_targets_python3_3 python_targets_python3_4 python_targets_python2_6 python_targets_python2_7
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: 2b93b14ab19c428bcb887819582cea58
+MTIME: 1373609818
+PDEPEND: >=net-misc/rsync-2.6.4 >=sys-apps/coreutils-6.4
+RDEPEND: || ( >=dev-lang/python-2.7 dev-lang/python:2.6[threads] ) dev-lang/python:2.7 dev-lang/python:3.2 >=sys-apps/sed-4.0.5 || ( >=app-shells/bash-4.2_p37[readline] ( <app-shells/bash-4.2_p37 >=app-shells/bash-3.2_p17 ) ) >=app-admin/eselect-1.2 || ( >=dev-lang/python-2.7[ssl] dev-lang/python:2.6[threads,ssl] dev-python/python-mhash ) >=sys-apps/sandbox-2.2 >=app-misc/pax-utils-0.1.17 !<app-shells/bash-3.2_p17 !<app-admin/logrotate-3.8.0
+SHA1: 0f7f395cef680e85bf6fb3e44922bd671c6bb3ca
+SIZE: 4239513
+USE: ipc python_targets_python2_7 python_targets_python3_2
+
+BUILD_TIME: 1374146226
+CPV: sys-apps/pv-1.4.6
+DEFINED_PHASES: configure prepare test
+DESC: Pipe Viewer: a tool for monitoring the progress of data through a pipe
+EAPI: 4
+IUSE: debug nls linguas_de linguas_fr linguas_pl linguas_pt
+KEYWORDS: alpha amd64 arm hppa ~mips ppc ppc64 sparc x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc64-solaris ~x86-solaris
+LICENSE: Artistic-2
+MD5: af2378df8622bb06dbecab8f2b6c8f7f
+MTIME: 1374146242
+SHA1: 7738836bbef98d87ce6e24b22e0f6f50a115885f
+SIZE: 48618
+USE: nls
+
+BUILD_TIME: 1373874461
+CPV: sys-apps/sandbox-2.6-r1
+DEFINED_PHASES: compile install postinst preinst test unpack
+DEPEND: app-arch/xz-utils >=app-misc/pax-utils-0.1.19
+DESC: sandbox'd LD_PRELOAD hack
+IUSE: multilib
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~sparc-fbsd -x86-fbsd
+LICENSE: GPL-2
+MD5: aaa78c515e26243682cf309d8a423c50
+MTIME: 1373874477
+SHA1: 2813beb2a1325d0061f6e832fdf3032138649966
+SIZE: 130154
+
+BUILD_TIME: 1373888000
+CPV: sys-apps/shadow-4.1.5.1-r1
+DEFINED_PHASES: configure install postinst preinst prepare
+DEPEND: sys-apps/acl >=sys-libs/cracklib-2.7-r3 virtual/pam virtual/libintl sys-devel/gettext
+DESC: Utilities to deal with user accounts
+EAPI: 2
+IUSE: acl audit cracklib nls pam selinux skey xattr
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 ~s390 ~sh ~sparc x86
+LICENSE: BSD GPL-2
+MD5: 09860062cd407643ebbf05b5c90cfdb5
+MTIME: 1373888047
+RDEPEND: sys-apps/acl >=sys-libs/cracklib-2.7-r3 virtual/pam virtual/libintl >=sys-auth/pambase-20120417
+SHA1: caa274772af00767d8e57b464fa2ad6420d504b8
+SIZE: 1593751
+USE: acl cracklib nls pam
+
+BUILD_TIME: 1373611905
+CPV: sys-apps/sysvinit-2.88-r4
+DEFINED_PHASES: compile install postinst prepare
+DEPEND: !>=sys-apps/util-linux-2.23 virtual/os-headers
+DESC: /sbin/init - parent of all processes
+EAPI: 4
+IUSE: selinux ibm static kernel_FreeBSD
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86
+LICENSE: GPL-2
+MD5: c7c24a9fea5796985dfbd30898a11c2e
+MTIME: 1373611923
+RDEPEND: !>=sys-apps/util-linux-2.23
+SHA1: 68fd36a473bd7c7630c9015b44ebc6cc46e9bff0
+SIZE: 122676
+
+BUILD_TIME: 1373868072
+CPV: sys-apps/texinfo-4.13-r2
+DEFINED_PHASES: compile configure install prepare
+DEPEND: !=app-text/tetex-2* >=sys-libs/ncurses-5.2-r2 virtual/libintl app-arch/xz-utils sys-devel/gettext
+DESC: The GNU info program and utilities
+EAPI: 2
+IUSE: nls static
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-3
+MD5: 982b3a955d7b4527802dcb8666e6c09a
+MTIME: 1373868130
+RDEPEND: !=app-text/tetex-2* >=sys-libs/ncurses-5.2-r2 virtual/libintl
+SHA1: 4a713cd582b52098d247e4fa913e0d3d77fb18f5
+SIZE: 864603
+USE: nls
+
+BUILD_TIME: 1374219723
+CPV: sys-apps/usbutils-006-r1
+DEFINED_PHASES: configure install prepare setup
+DEPEND: virtual/libusb:1/1= sys-libs/zlib:0/0= app-arch/xz-utils virtual/pkgconfig
+DESC: USB enumeration utilities
+EAPI: 5
+IUSE: python zlib python_targets_python2_7 python_single_target_python2_7
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-linux ~arm-linux ~x86-linux
+LICENSE: GPL-2
+MD5: 68593a41365ac27bece6db8f567b3430
+MTIME: 1374219741
+RDEPEND: virtual/libusb:1/1= sys-libs/zlib:0/0= sys-apps/hwids
+SHA1: 79ac7ec54f86eb23d985cdee4e1a42d7f88076d5
+SIZE: 88405
+USE: python_single_target_python2_7 python_targets_python2_7 zlib
+
+BUILD_TIME: 1373876474
+CPV: sys-apps/util-linux-2.22.2
+DEFINED_PHASES: configure install postinst prepare
+DEPEND: !sys-process/schedutils !sys-apps/setarch !<sys-apps/sysvinit-2.88-r4 !sys-block/eject !<sys-libs/e2fsprogs-libs-1.41.8 !<sys-fs/e2fsprogs-1.41.8 sys-libs/zlib >=sys-libs/ncurses-5.2-r2 sys-devel/gettext virtual/os-headers
+DESC: Various useful Linux utilities
+EAPI: 3
+IUSE: +cramfs crypt ddate ncurses nls old-linux perl selinux slang static-libs +suid test udev unicode
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-linux ~arm-linux ~x86-linux
+LICENSE: GPL-2 GPL-3 LGPL-2.1 BSD-4 MIT public-domain
+MD5: 5e285903cb55f0cc5ecccf17f2261a3e
+MTIME: 1373876529
+RDEPEND: !sys-process/schedutils !sys-apps/setarch !<sys-apps/sysvinit-2.88-r4 !sys-block/eject !<sys-libs/e2fsprogs-libs-1.41.8 !<sys-fs/e2fsprogs-1.41.8 sys-libs/zlib >=sys-libs/ncurses-5.2-r2
+SHA1: fdff2d9251d126201bcb93dbd4019f303abef432
+SIZE: 2299840
+USE: cramfs crypt ncurses nls suid unicode
+
+BUILD_TIME: 1373886781
+CPV: sys-auth/pambase-20120417-r2
+DEFINED_PHASES: compile install postinst prepare test
+DEPEND: app-portage/portage-utils
+DESC: PAM base configuration files
+EAPI: 5
+IUSE: consolekit cracklib debug gnome-keyring minimal mktemp pam_krb5 pam_ssh passwdqc selinux +sha512 systemd
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 ~s390 ~sh ~sparc x86 -sparc-fbsd -x86-fbsd ~x86-freebsd ~amd64-linux ~ia64-linux ~x86-linux
+LICENSE: GPL-2
+MD5: 6342b61f24c808d8948d122241a875c0
+MTIME: 1373886793
+RDEPEND: || ( >=sys-libs/pam-1.1.3 ( sys-auth/openpam || ( sys-freebsd/freebsd-pam-modules sys-netbsd/netbsd-pam-modules ) ) ) >=sys-libs/pam-1.1.3[cracklib] >=sys-libs/pam-1.1.3 !<sys-apps/shadow-4.1.5-r1 !<sys-freebsd/freebsd-pam-modules-6.2-r1 !<sys-libs/pam-0.99.9.0-r1
+RESTRICT: binchecks
+SHA1: 63793de0906dcf7c24f6778b2e12d93618073e63
+SIZE: 25607
+USE: cracklib sha512
+
+BUILD_TIME: 1373887287
+CPV: sys-boot/raspberrypi-firmware-0_p20130711
+DEFINED_PHASES: install postinst preinst unpack
+DESC: Raspberry PI boot loader and firmware
+EAPI: 5
+KEYWORDS: ~arm -*
+LICENSE: GPL-2 raspberrypi-videocore-bin
+MD5: 258128fd38ef9b9350e69ce8acda1846
+MTIME: 1373887350
+RDEPEND: !sys-boot/raspberrypi-loader
+RESTRICT: binchecks strip
+SHA1: e0832c1848e09c2a5e3693e0014175d1bb586eba
+SIZE: 4240438
+REPO: x-portage
+
+BUILD_TIME: 1374128355
+CPV: sys-devel/autoconf-2.69
+DEFINED_PHASES: configure install prepare
+DEPEND: >=sys-devel/m4-1.4.16 >=dev-lang/perl-5.6
+DESC: Used to create autoconfiguration files
+EAPI: 3
+IUSE: emacs multislot
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~arm-linux ~x86-linux
+LICENSE: GPL-3
+MD5: 8c78d5ef3c7369d9461cb1a7fb5c25b8
+MTIME: 1374128381
+RDEPEND: >=sys-devel/m4-1.4.16 >=dev-lang/perl-5.6 >=sys-devel/autoconf-wrapper-10
+SHA1: e4706c9218d849ecb4c959fdc1df13db9de49e54
+SIZE: 869330
+SLOT: 2.5
+
+BUILD_TIME: 1373503044
+CPV: sys-devel/automake-1.12.6
+DEFINED_PHASES: compile install unpack
+DEPEND: dev-lang/perl >=sys-devel/automake-wrapper-7 >=sys-devel/autoconf-2.62 sys-devel/gnuconfig sys-apps/help2man
+DESC: Used to generate Makefile.in from Makefile.am
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: bf4936c5007d46e6235508bc591d94d0
+MTIME: 1373503066
+RDEPEND: dev-lang/perl >=sys-devel/automake-wrapper-7 >=sys-devel/autoconf-2.62 sys-devel/gnuconfig
+SHA1: 4ae6c68dee240320e831f463601d988860076653
+SIZE: 719474
+SLOT: 1.12
+
+BUILD_TIME: 1374078398
+CPV: sys-devel/bc-1.06.95
+DEFINED_PHASES: compile install
+DEPEND: >=sys-libs/readline-4.1 >=sys-libs/ncurses-5.2 sys-devel/flex
+DESC: Handy console-based calculator utility
+IUSE: libedit readline static
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~sparc-fbsd ~x86-fbsd ~x86-freebsd ~ia64-hpux ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2 LGPL-2.1
+MD5: d14352bad969902a9e86457fe45980a7
+MTIME: 1374078416
+RDEPEND: >=sys-libs/readline-4.1 >=sys-libs/ncurses-5.2
+SHA1: 70d1bfacffb1fabea73745fee83bc3a4c59aceee
+SIZE: 125826
+USE: readline
+
+BUILD_TIME: 1373537571
+CPV: sys-devel/binutils-2.23.1
+DEFINED_PHASES: compile install postinst postrm test unpack
+DEPEND: sys-devel/gnuconfig >=sys-devel/binutils-config-1.9 sys-libs/zlib sys-devel/gettext sys-devel/flex virtual/yacc
+DESC: Tools necessary to build programs
+IUSE: cxx nls multitarget multislot static-libs test vanilla zlib
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 ~s390 ~sh ~sparc x86 -amd64-fbsd -sparc-fbsd -x86-fbsd
+LICENSE: || ( GPL-3 LGPL-3 )
+MD5: 4f3760e39ba0c80f416a638a15480fee
+MTIME: 1373537653
+RDEPEND: >=sys-devel/binutils-config-1.9 sys-libs/zlib
+SHA1: 792907ffd59c7a27d965e91ba32f1f8f492be13d
+SIZE: 6660101
+USE: cxx nls zlib
+
+BUILD_TIME: 1374089960
+CPV: sys-devel/distcc-3.1-r5
+DEFINED_PHASES: configure install postinst postrm prepare setup
+DEPEND: dev-libs/popt virtual/pkgconfig =dev-lang/python-2*
+DESC: a program to distribute compilation of C code across several machines on a network
+EAPI: 3
+IUSE: avahi gnome gtk hardened ipv6 selinux xinetd
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: df3cbac285fc463a859551ce1b66bd79
+MTIME: 1374089980
+RDEPEND: dev-libs/popt !net-misc/pump >=sys-devel/gcc-config-1.4.1 =dev-lang/python-2*
+RESTRICT: test
+SHA1: 69f0f30ad24c06e711bcde9b8bb9e4655422b065
+SIZE: 288206
+USE: ipv6
+
+BUILD_TIME: 1373945483
+CPV: sys-devel/gcc-4.6.3
+DEFINED_PHASES: compile install postinst postrm setup test unpack
+DEPEND: >=sys-libs/glibc-2.8 >=sys-devel/binutils-2.18 sys-devel/gnuconfig >=sys-apps/sed-4 sys-libs/zlib sys-devel/gettext virtual/libiconv >=dev-libs/gmp-4.3.2 >=dev-libs/mpfr-2.4.2 >=dev-libs/mpc-0.8.1 >=sys-devel/bison-1.875 >=sys-devel/flex-2.5.4
+DESC: The GNU Compiler Collection
+IUSE: multislot nls nptl regression-test vanilla altivec cxx fortran nopie nossp doc gcj gtk hardened multilib objc objc-gc mudflap libssp objc++ openmp fixed-point graphite lto
+KEYWORDS: ~alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh ~sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: GPL-3+ LGPL-3+ || ( GPL-3+ libgcc libstdc++ gcc-runtime-library-exception-3.1 ) FDL-1.3+
+MD5: aee67d098732b3e5e1315f33b698af17
+MTIME: 1373945618
+PDEPEND: >=sys-libs/glibc-2.8 >=sys-devel/gcc-config-1.7
+RDEPEND: sys-libs/zlib sys-devel/gettext virtual/libiconv >=dev-libs/gmp-4.3.2 >=dev-libs/mpfr-2.4.2 >=dev-libs/mpc-0.8.1
+RESTRICT: strip
+SHA1: feb1fd667ef69f35ffd0884e3e0c75a08868d805
+SIZE: 18673528
+SLOT: 4.6
+USE: cxx fortran mudflap nls nptl openmp
+
+BUILD_TIME: 1373965641
+CPV: sys-devel/gdb-7.5.1
+DEFINED_PHASES: configure install postinst prepare test
+DEPEND: !dev-util/gdbserver >=sys-libs/ncurses-5.2-r2 sys-libs/readline =dev-lang/python-2* sys-libs/zlib app-arch/xz-utils virtual/yacc sys-devel/gettext
+DESC: GNU debugger
+EAPI: 3
+IUSE: +client expat multitarget nls +python +server test vanilla zlib
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~amd64-linux ~arm-linux ~x86-linux ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2 LGPL-2
+MD5: b8d0d5aa281b04cee46eb0a19e01807a
+MTIME: 1373965699
+RDEPEND: !dev-util/gdbserver >=sys-libs/ncurses-5.2-r2 sys-libs/readline =dev-lang/python-2* sys-libs/zlib
+SHA1: b77a81728be24abf58bfbc13a09f9e1e63ef7416
+SIZE: 3413368
+USE: client nls python server zlib
+
+BUILD_TIME: 1373616892
+CPV: sys-devel/gettext-0.18.2
+DEFINED_PHASES: configure install postinst preinst prepare setup
+DEPEND: virtual/libiconv dev-libs/libxml2 sys-libs/ncurses dev-libs/expat virtual/acl
+DESC: GNU locale utilities
+EAPI: 2
+IUSE: acl -cvs doc emacs git java nls +cxx openmp static-libs elibc_glibc elibc_FreeBSD java
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-3 LGPL-2
+MD5: dc1e475732571b9274f5a8575251fe1e
+MTIME: 1373616984
+RDEPEND: virtual/libiconv dev-libs/libxml2 sys-libs/ncurses dev-libs/expat virtual/acl
+SHA1: 2dd689c3c7e94fae7189ef73c9975f99182a30f0
+SIZE: 2393286
+USE: acl cxx elibc_glibc nls openmp
+
+BUILD_TIME: 1373607026
+CPV: sys-devel/gnuconfig-20130111
+DEFINED_PHASES: compile install prepare unpack
+DESC: Updated config.sub and config.guess file from GNU
+EAPI: 2
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x86-freebsd ~hppa-hpux ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2
+MD5: 650829683377f813c06cada28365ebf3
+MTIME: 1373607046
+SHA1: f5c2d4625d40e26033af345242dc0541b9be05b6
+SIZE: 65628
+
+BUILD_TIME: 1373879732
+CPV: sys-fs/e2fsprogs-1.42.7
+DEFINED_PHASES: compile configure install preinst prepare setup
+DEPEND: ~sys-libs/e2fsprogs-libs-1.42.7 >=sys-apps/util-linux-2.16 virtual/libintl sys-devel/gettext virtual/pkgconfig sys-apps/texinfo
+DESC: Standard EXT2/EXT3/EXT4 filesystem utilities
+EAPI: 3
+IUSE: nls static-libs elibc_FreeBSD
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 -x86-fbsd ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x86-macos ~m68k-mint
+LICENSE: GPL-2 BSD
+MD5: bf991b94b7fb9e003e20876143ac2d73
+MTIME: 1373879759
+RDEPEND: ~sys-libs/e2fsprogs-libs-1.42.7 >=sys-apps/util-linux-2.16 virtual/libintl
+SHA1: de664a85c4d8fd753ac46aef88e45c7cf4fc7528
+SIZE: 931829
+USE: nls
+
+BUILD_TIME: 1374094441
+CPV: sys-fs/ncdu-1.10
+DEFINED_PHASES: -
+DEPEND: sys-libs/ncurses[unicode] virtual/pkgconfig
+DESC: NCurses Disk Usage
+EAPI: 5
+KEYWORDS: ~amd64 ~arm ~ppc ~ppc64 ~x86 ~amd64-linux ~x86-linux ~x64-macos
+LICENSE: MIT
+MD5: 24bede69db376ed962ad7fbe0aaa09bb
+MTIME: 1374094482
+RDEPEND: sys-libs/ncurses[unicode]
+SHA1: 496f2fcd0ad29e3c0f79c62c6d03882d6300feb7
+SIZE: 46698
+
+BUILD_TIME: 1374175966
+CPV: sys-fs/squashfs-tools-4.2
+DEFINED_PHASES: configure install postinst
+DEPEND: sys-libs/zlib app-arch/xz-utils
+DESC: Tool for creating compressed filesystem type squashfs
+EAPI: 2
+IUSE: +xz lzo xattr
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~x86-linux
+LICENSE: GPL-2
+MD5: e0604cc9c17e042a549f2726bdc31629
+MTIME: 1374175998
+RDEPEND: sys-libs/zlib app-arch/xz-utils
+SHA1: 10103da460c43aa61fdaaf9a18aed99df41f5a01
+SIZE: 131073
+USE: xz
+
+BUILD_TIME: 1373523449
+CPV: sys-fs/udev-204
+DEFINED_PHASES: compile configure install postinst preinst prepare setup
+DEPEND: >=sys-apps/util-linux-2.20 sys-apps/acl >=sys-apps/kmod-13 !<sys-libs/glibc-2.11 !sys-apps/systemd app-text/docbook-xsl-stylesheets dev-libs/libxslt >=sys-devel/make-3.82-r4 virtual/os-headers virtual/pkgconfig !<sys-kernel/linux-headers-2.6.32 || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: Linux dynamic and persistent device naming support (aka userspace devfs)
+EAPI: 5
+IUSE: acl doc +firmware-loader gudev hwdb introspection keymap +kmod +openrc selinux static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86
+LICENSE: LGPL-2.1 MIT GPL-2
+MD5: ce63b5ad331140bb74697a4dacb0a3b2
+MTIME: 1373523490
+PDEPEND: >=virtual/udev-197-r1 >=sys-fs/udev-init-scripts-25
+RDEPEND: >=sys-apps/util-linux-2.20 sys-apps/acl >=sys-apps/kmod-13 !<sys-libs/glibc-2.11 !sys-apps/systemd !<sys-apps/openrc-0.9.9 !sys-apps/coldplug !<sys-fs/lvm2-2.02.97-r1 !sys-fs/device-mapper !<sys-fs/udev-init-scripts-22 !<sys-kernel/dracut-017-r1 !<sys-kernel/genkernel-3.4.25 !<sec-policy/selinux-base-2.20120725-r10
+RESTRICT: test
+SHA1: 05a270aaa64c9677665644d9e48c76bae79294da
+SIZE: 323173
+USE: acl firmware-loader kmod openrc
+
+BUILD_TIME: 1373524083
+CPV: sys-fs/udev-init-scripts-26
+DEFINED_PHASES: postinst prepare
+DEPEND: virtual/pkgconfig
+DESC: udev startup scripts for openrc
+EAPI: 5
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86
+LICENSE: GPL-2
+MD5: a6b35b5ae0779cf78f0f8e83cfccba5b
+MTIME: 1373524111
+RDEPEND: >=virtual/udev-180 sys-apps/openrc !<sys-fs/udev-186
+RESTRICT: test
+SHA1: 201bbcc2fb659792b17aa77aec82ebfbdbcd0471
+SIZE: 27081
+
+BUILD_TIME: 1373895076
+CPV: sys-fs/xfsprogs-3.1.10
+DEFINED_PHASES: configure install prepare setup
+DEPEND: >=sys-apps/util-linux-2.17.2 sys-libs/readline !<sys-fs/xfsdump-3 sys-devel/gettext
+DESC: xfs filesystem utilities
+EAPI: 4
+IUSE: libedit nls readline static static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86
+LICENSE: LGPL-2.1
+MD5: 94d4a5f0823b54ebd339c95eabc4927a
+MTIME: 1373895102
+RDEPEND: >=sys-apps/util-linux-2.17.2 sys-libs/readline !<sys-fs/xfsdump-3
+SHA1: a003d7055e4acbfe641e8cd0f8d06fde3c2f5043
+SIZE: 779267
+USE: nls readline
+
+BUILD_TIME: 1373608846
+CPV: sys-kernel/linux-headers-3.7
+DEFINED_PHASES: compile install postinst postrm preinst prepare setup test unpack
+DEPEND: app-arch/xz-utils dev-lang/perl
+DESC: Linux system headers
+EAPI: 3
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-linux ~arm-linux ~x86-linux
+LICENSE: GPL-2
+MD5: 8119672bb274b5b7a4689992c6054454
+MTIME: 1373608865
+RESTRICT: binchecks strip
+SHA1: b537fdd46c63eaa10655a6a8497473cbae4b0b0a
+SIZE: 638526
+
+BUILD_TIME: 1373501517
+CHOST: x86_64-pc-linux-gnu
+CPV: sys-kernel/raspberrypi-image-3.2.27_p20121105
+DEFINED_PHASES: install
+DESC: Raspberry PI precompiled kernel and modules
+EAPI: 4
+KEYWORDS: ~arm -*
+LICENSE: GPL-2 raspberrypi-videocore-bin
+MD5: e7d79fadc5adaf6bc8a743b0d09e29a2
+MTIME: 1373566598
+SHA1: 9d206db4af6d114e633f829b5295d4e77f361b4e
+SIZE: 29864024
+REPO: xmw
+
+BUILD_TIME: 1373869897
+CPV: sys-libs/e2fsprogs-libs-1.42
+DEFINED_PHASES: configure install prepare
+DEPEND: sys-devel/gettext virtual/pkgconfig
+DESC: e2fsprogs libraries (common error and subsystem)
+EAPI: 2
+IUSE: nls static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd
+LICENSE: GPL-2
+MD5: 5c4de6a745ef2fb34b2326b63058a13b
+MTIME: 1373869911
+RDEPEND: !sys-libs/com_err !sys-libs/ss !<sys-fs/e2fsprogs-1.41.8
+SHA1: 6fee794cc56fb9b2b6020d04639f0ab32456c7a3
+SIZE: 36360
+USE: nls
+
+BUILD_TIME: 1373877471
+CPV: sys-libs/e2fsprogs-libs-1.42.7
+DEFINED_PHASES: configure install prepare
+DEPEND: sys-devel/gettext virtual/pkgconfig
+DESC: e2fsprogs libraries (common error and subsystem)
+EAPI: 2
+IUSE: nls static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~amd64-linux ~arm-linux ~x86-linux
+LICENSE: GPL-2
+MD5: 8e9a588b2f64ba47b7d06eee6dc0e5fa
+MTIME: 1373877486
+RDEPEND: !sys-libs/com_err !sys-libs/ss !<sys-fs/e2fsprogs-1.41.8
+SHA1: fc5258c21ce2f691f300cae79026831a79009adb
+SIZE: 46001
+USE: nls
+
+BUILD_TIME: 1373548048
+CPV: sys-libs/libutempter-1.1.5
+DEFINED_PHASES: compile install postinst setup
+DESC: Library that allows non-privileged apps to write utmp (login) info, which need root access
+IUSE: elibc_FreeBSD
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd
+LICENSE: LGPL-2.1
+MD5: 6046579e677972006733d0a8d31963f3
+MTIME: 1373548074
+RDEPEND: !sys-apps/utempter
+SHA1: 0da97b4edf7771e2d2a4c2a2e9eec2e6006e88ed
+SIZE: 29631
+
+BUILD_TIME: 1374150737
+CPV: sys-libs/slang-2.2.4
+DEFINED_PHASES: compile configure install prepare
+DEPEND: sys-libs/ncurses dev-libs/libpcre sys-libs/readline sys-libs/zlib
+DESC: A multi-platform programmer's library designed to allow a developer to create robust software
+EAPI: 4
+IUSE: cjk pcre png readline static-libs zlib
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x86-solaris
+LICENSE: GPL-2
+MD5: 07daa656c90505835a83bbfc6990cef5
+MTIME: 1374150767
+RDEPEND: sys-libs/ncurses dev-libs/libpcre sys-libs/readline sys-libs/zlib
+SHA1: 28c13c6dbb83472451f039d56d40712436b96041
+SIZE: 715384
+USE: pcre readline zlib
+
+BUILD_TIME: 1373872961
+CPV: sys-libs/timezone-data-2013b
+DEFINED_PHASES: compile config install postinst unpack
+DESC: Timezone data (/usr/share/zoneinfo) and utilities (tzselect/zic/zdump)
+IUSE: nls elibc_FreeBSD elibc_glibc
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: BSD public-domain
+MD5: 1b5844659323834a621d3c7c56b91dd7
+MTIME: 1373873000
+RDEPEND: !<sys-libs/glibc-2.3.5
+SHA1: a0bba141b467eba7dc94f50118ab5e5e37e7332a
+SIZE: 475186
+USE: elibc_glibc nls
+
+BUILD_TIME: 1373892969
+CPV: sys-power/cpufrequtils-008-r4
+DEFINED_PHASES: compile configure install prepare
+DEPEND: virtual/libintl virtual/pkgconfig
+DESC: Userspace utilities for the Linux kernel cpufreq subsystem
+EAPI: 4
+IUSE: debug nls
+KEYWORDS: amd64 arm ia64 ~mips ~ppc ~ppc64 ~sparc x86 ~amd64-linux ~arm-linux ~x86-linux
+LICENSE: GPL-2
+MD5: 6931e781b5ce8a0ab07269bea0d2da7a
+MTIME: 1373892986
+SHA1: 1b58d16a82dc583d36bdbbee919f23064195eda6
+SIZE: 58695
+USE: nls
+
+BUILD_TIME: 1374135847
+CPV: sys-process/at-3.1.13-r2
+DEFINED_PHASES: configure install postinst prepare setup
+DEPEND: virtual/mta >=sys-devel/autoconf-2.64 sys-devel/bison >=sys-devel/flex-2.5.4a virtual/pam || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool virtual/pkgconfig
+DESC: Queues jobs for later execution
+EAPI: 4
+IUSE: pam selinux
+KEYWORDS: ~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sparc ~x86
+LICENSE: GPL-2
+MD5: 65c2353b375d2c85142315c2ec6e8cd7
+MTIME: 1374135883
+RDEPEND: virtual/mta virtual/logger
+SHA1: 2ced78cd6b506ed769e3f551b3f3fce253327e7e
+SIZE: 71927
+USE: pam
+
+BUILD_TIME: 1373518661
+CPV: sys-process/cronbase-0.3.3
+DEFINED_PHASES: install postinst setup
+DESC: base for all cron ebuilds
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: f002c164b062f1fc11bee810f9b3785a
+MTIME: 1373518684
+SHA1: 0a007747a82beeec92a8373e509cd4a7913193fa
+SIZE: 9944
+
+BUILD_TIME: 1373525159
+CPV: sys-process/dcron-4.5
+DEFINED_PHASES: install postinst prepare
+DEPEND: >=sys-apps/sed-4.0.5
+DESC: A cute little cron from Matt Dillon
+EAPI: 2
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86
+LICENSE: GPL-2
+MD5: 63beaa370c412c01314d50623c90f56b
+MTIME: 1373525174
+RDEPEND: virtual/mta >=sys-process/cronbase-0.3.2 !sys-process/vixie-cron !sys-process/bcron !sys-process/cronie !sys-process/fcron
+SHA1: 680aa5b5b1fed6baefe64eed4e77722bf4185117
+SIZE: 59615
+
+BUILD_TIME: 1373506769
+CPV: sys-process/htop-1.0.2
+DEFINED_PHASES: configure prepare setup
+DEPEND: sys-libs/ncurses[unicode] || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: interactive process viewer
+EAPI: 4
+IUSE: kernel_FreeBSD kernel_linux openvz unicode vserver
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~amd64-linux ~x86-linux
+LICENSE: BSD GPL-2
+MD5: 6cf9311cfb6fdaa49a8d9d69ce4f07cc
+MTIME: 1373506784
+RDEPEND: sys-libs/ncurses[unicode]
+SHA1: f2dfe1e7c1dd9dd771a180ea88b2bf204dc17973
+SIZE: 86162
+USE: kernel_linux unicode
+
+BUILD_TIME: 1374080228
+CPV: sys-process/iotop-0.4.3
+DEFINED_PHASES: compile install postinst postrm prepare setup
+DEPEND: || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) || ( =dev-lang/python-2.7*[ncurses] =dev-lang/python-2.6*[ncurses] =dev-lang/python-2.5*[ncurses] )
+DESC: Top-like UI used to show which process is using the I/O
+EAPI: 4
+KEYWORDS: amd64 arm hppa ~ia64 ppc sparc x86 ~amd64-linux ~x86-linux
+LICENSE: GPL-2
+MD5: bcd077837c101fe8d2c985a1ca75b112
+MTIME: 1374080263
+RDEPEND: || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) || ( =dev-lang/python-2.7*[ncurses] =dev-lang/python-2.6*[ncurses] =dev-lang/python-2.5*[ncurses] )
+SHA1: c053c9a158bad2d5b2a27ee6492ed58c77acbb56
+SIZE: 66802
+
+BUILD_TIME: 1374484549
+CPV: sys-process/lsof-4.85-r2
+DEFINED_PHASES: compile configure install prepare unpack
+DESC: Lists open files for running Unix processes
+EAPI: 2
+IUSE: examples ipv6 rpc selinux static
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd
+LICENSE: lsof
+MD5: 5c7f05994656ee8928272c34d1a55e74
+MTIME: 1374484588
+SHA1: 8092b618a90119a0af44654c13dc00b4ece039d2
+SIZE: 340108
+USE: ipv6
+
+BUILD_TIME: 1373869476
+CPV: sys-process/procps-3.3.6
+DEFINED_PHASES: configure install prepare
+DEPEND: >=sys-libs/ncurses-5.7-r7[unicode] virtual/pkgconfig
+DESC: standard informational utilities and process-handling tools
+EAPI: 5
+IUSE: +ncurses nls static-libs unicode
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh ~sparc x86 ~amd64-linux ~ia64-linux ~x86-linux
+LICENSE: GPL-2
+MD5: 8997457f5b09c5a347ab1168deba8672
+MTIME: 1373869496
+RDEPEND: >=sys-libs/ncurses-5.7-r7[unicode]
+SHA1: 8a312f729ad671825a690977112f90a128f33c8d
+SIZE: 283419
+USE: ncurses nls unicode
+
+BUILD_TIME: 1373866838
+CPV: sys-process/psmisc-22.20
+DEFINED_PHASES: compile configure install prepare
+DEPEND: >=sys-libs/ncurses-5.7-r7 virtual/libintl >=sys-devel/libtool-2.2.6b sys-devel/gettext
+DESC: A set of tools that use the proc filesystem
+EAPI: 4
+IUSE: ipv6 nls selinux X
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux
+LICENSE: GPL-2
+MD5: 699772c2a65595cef2e9c2d36877b1f6
+MTIME: 1373866877
+RDEPEND: >=sys-libs/ncurses-5.7-r7 virtual/libintl
+SHA1: c142b11fa890b1ce0b90da54a12ca830cd1c4c6d
+SIZE: 144200
+USE: ipv6 nls
+
+BUILD_TIME: 1373958268
+CPV: virtual/awk-0
+DEFINED_PHASES: -
+DESC: Virtual for awk implementation
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~amd64-linux ~arm-linux ~x86-linux ~x86-macos
+MD5: 067c594e215cd410654409661f7a5cad
+MTIME: 1373958284
+RDEPEND: || ( sys-apps/gawk sys-apps/mawk sys-apps/nawk sys-apps/busybox )
+SHA1: ad249f1eb962ef2264c0f941f5267bd680073f3f
+SIZE: 4168
+
+BUILD_TIME: 1374182825
+CPV: virtual/cdrtools-0
+DEFINED_PHASES: -
+DESC: Virtual for command-line recorders cdrtools and cdrkit
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~sparc-solaris ~x86-solaris
+MD5: 8436df662f61d3c8c72f25b98ad4b850
+MTIME: 1374182837
+RDEPEND: || ( app-cdr/cdrtools app-cdr/cdrkit )
+SHA1: b5ad5c0038f9e160f37200e939d27ffdf439f900
+SIZE: 4351
+
+BUILD_TIME: 1373953792
+CPV: virtual/libusb-1
+DEFINED_PHASES: -
+DESC: Virtual for libusb
+EAPI: 2
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos
+MD5: bdeb165fb05db1952cc7b3717e5f3a36
+MTIME: 1373953799
+RDEPEND: || ( >=dev-libs/libusbx-1.0.15:1 >=dev-libs/libusb-1.0.9:1 >=sys-freebsd/freebsd-lib-9.1_rc3-r1[usb] )
+SHA1: 58bce2b007949eb076d6759cc3da6d7ccf285f2f
+SIZE: 4328
+SLOT: 1
+
+BUILD_TIME: 1374135152
+CPV: virtual/logger-0
+DEFINED_PHASES: -
+DESC: Virtual for system loggers
+EAPI: 2
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: 6264e22bbfe56bea46a64e03a66a78ef
+MTIME: 1374135178
+RDEPEND: || ( app-admin/metalog app-admin/rsyslog app-admin/socklog app-admin/sysklogd app-admin/syslog-ng app-admin/syslogread sys-freebsd/freebsd-usbin sys-apps/busybox[syslog] )
+SHA1: f92d1e4590c096f061b12cc89d67d8b04cb3d68e
+SIZE: 4911
+
+BUILD_TIME: 1373525007
+CPV: virtual/mta-1
+DEFINED_PHASES: -
+DESC: Virtual for Message Transfer Agents
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: 916668d525e7146ecbee6b5299c20d60
+MTIME: 1373525018
+RDEPEND: || ( mail-mta/nullmailer mail-mta/msmtp[mta] mail-mta/ssmtp[mta] mail-mta/courier mail-mta/esmtp mail-mta/exim mail-mta/mini-qmail mail-mta/netqmail mail-mta/postfix mail-mta/qmail-ldap mail-mta/sendmail mail-mta/opensmtpd mail-mta/citadel[-postfix] )
+SHA1: 93cb9f760af1cba11c4b713731e55f46e0727462
+SIZE: 4900
+
+BUILD_TIME: 1373562784
+CPV: virtual/perl-Archive-Tar-1.900.0
+DEFINED_PHASES: -
+DESC: Virtual for Archive-Tar
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: af83d516799d6fc868a2b7a4dfb02f09
+MTIME: 1373562795
+RDEPEND: ~perl-core/Archive-Tar-1.900.0
+SHA1: 8c090ba4e65778dfef439103882fc9e714408e41
+SIZE: 4336
+
+BUILD_TIME: 1373564515
+CPV: virtual/perl-CPAN-Meta-2.120.921
+DEFINED_PHASES: -
+DESC: Virtual for CPAN-Meta
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: 2607bfe4d5f967ab29790c781c12ccd9
+MTIME: 1373564526
+RDEPEND: ~perl-core/CPAN-Meta-2.120.921
+SHA1: d6fe0053d3a88c49cf1ce97f9d85afc6fb0ad111
+SIZE: 4312
+
+BUILD_TIME: 1373561178
+CPV: virtual/perl-CPAN-Meta-Requirements-2.122.0
+DEFINED_PHASES: -
+DESC: Virtual for CPAN-Meta-Requirements
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: 575c8ea3028728f549f17f0e28b9d70b
+MTIME: 1373561189
+RDEPEND: ~perl-core/CPAN-Meta-Requirements-2.122.0
+SHA1: 2bd44766061e6f5c107aa619bd36863d3773596e
+SIZE: 4399
+
+BUILD_TIME: 1373555458
+CPV: virtual/perl-CPAN-Meta-YAML-0.8.0
+DEFINED_PHASES: -
+DESC: Virtual for CPAN-Meta-YAML
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: de5cb9683049101ee915fc2455642062
+MTIME: 1373555481
+RDEPEND: ~perl-core/CPAN-Meta-YAML-0.8.0
+SHA1: 181a1acce9d50545217c3d492251412fe17677bb
+SIZE: 4353
+
+BUILD_TIME: 1373556213
+CPV: virtual/perl-Compress-Raw-Bzip2-2.60.0
+DEFINED_PHASES: -
+DESC: Virtual for Compress-Raw-Bzip2
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: 02a535f1b7049fa67f61acbf6c5b3d6d
+MTIME: 1373556224
+RDEPEND: ~perl-core/Compress-Raw-Bzip2-2.60.0
+SHA1: 67d6aefa79ab77b3b580ab7f4f827db2465f37ad
+SIZE: 4387
+
+BUILD_TIME: 1373555300
+CPV: virtual/perl-Compress-Raw-Zlib-2.60.0
+DEFINED_PHASES: -
+DESC: Virtual for Compress-Raw-Zlib
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: d4934eb6ba2408f29c598dbc9524e415
+MTIME: 1373555322
+RDEPEND: ~perl-core/Compress-Raw-Zlib-2.60.0
+SHA1: 5b1242dc02a4068ca4e2e5d0682a467f0c9e3d14
+SIZE: 4377
+
+BUILD_TIME: 1373562703
+CPV: virtual/perl-Digest-MD5-2.520.0
+DEFINED_PHASES: -
+DESC: Virtual for Digest-MD5
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: c44c051cca45938f75e96f7a2353d0b1
+MTIME: 1373562714
+RDEPEND: ~perl-core/Digest-MD5-2.520.0
+SHA1: f1d8326505c30455fecabafba5d94c9675401821
+SIZE: 4324
+
+BUILD_TIME: 1373568929
+CPV: virtual/perl-Digest-SHA-5.47
+DEFINED_PHASES: -
+DESC: Perl extension for SHA-1/224/256/384/512
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ppc ppc64 s390 sh sparc x86
+MD5: 57b17406b9e4c1c4b2bec786f573ca8e
+MTIME: 1373568939
+RDEPEND: || ( ~dev-lang/perl-5.12.4 ~dev-lang/perl-5.12.3 ~dev-lang/perl-5.12.2 ~dev-lang/perl-5.10.1 ~perl-core/Digest-SHA-5.47 )
+SHA1: 5b91351940b16871833f4866743601ec7666de5d
+SIZE: 4071
+
+BUILD_TIME: 1373556292
+CPV: virtual/perl-Encode-2.470.0
+DEFINED_PHASES: -
+DESC: Virtual for Encode
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos
+MD5: 3d738ed253bdb0bc89bd871c8452e71f
+MTIME: 1373556303
+RDEPEND: ~perl-core/Encode-2.470.0
+SHA1: c235e444a6505b1f2aaf3db98a6ed4ba721559fe
+SIZE: 4043
+
+BUILD_TIME: 1373563372
+CPV: virtual/perl-ExtUtils-CBuilder-0.280.205
+DEFINED_PHASES: -
+DESC: Virtual for ExtUtils-CBuilder
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: 2c2349e24629c5f219fd79a304ba1ff9
+MTIME: 1373563383
+RDEPEND: ~perl-core/ExtUtils-CBuilder-0.280.205
+SHA1: 40ce6ae1f61bb83394e748407d974c78b430ef79
+SIZE: 4383
+
+BUILD_TIME: 1373556604
+CPV: virtual/perl-ExtUtils-Command-1.170.0-r3
+DEFINED_PHASES: -
+DESC: Virtual for ExtUtils-Command
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: 19dd4c476fd0c117c0fb14209bcc7380
+MTIME: 1373556615
+RDEPEND: || ( =dev-lang/perl-5.16* =dev-lang/perl-5.14* ~perl-core/ExtUtils-Command-1.170.0 )
+SHA1: 85cfd8a01cfc93e048f1a751aba580e4286edcd3
+SIZE: 4491
+
+BUILD_TIME: 1373556526
+CPV: virtual/perl-ExtUtils-Install-1.540.0
+DEFINED_PHASES: -
+DESC: Virtual for ExtUtils-Install
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: a13bc947c5a31d7b27fe7a78c759cd8b
+MTIME: 1373556537
+RDEPEND: || ( ~dev-lang/perl-5.10.1 ~perl-core/ExtUtils-Install-1.540.0 )
+SHA1: 29d57ecfd3bad4d00bb5b16b0630ea43047ec2b5
+SIZE: 4464
+
+BUILD_TIME: 1373564096
+CPV: virtual/perl-ExtUtils-MakeMaker-6.640.0
+DEFINED_PHASES: -
+DESC: Virtual for ExtUtils-MakeMaker
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: aa0604627e984771111a8f69a4db3dff
+MTIME: 1373564107
+RDEPEND: ~perl-core/ExtUtils-MakeMaker-6.640.0
+SHA1: 3779d73c3c06bd4a30edf3a0370dda3e8949c1fd
+SIZE: 4370
+
+BUILD_TIME: 1373556448
+CPV: virtual/perl-ExtUtils-Manifest-1.610.0
+DEFINED_PHASES: -
+DESC: Virtual for ExtUtils-Manifest
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: 31bd17447a4dff5f178b2e087b8dc4bf
+MTIME: 1373556459
+RDEPEND: ~perl-core/ExtUtils-Manifest-1.610.0
+SHA1: 2000d71573a569e7a4f7b169158c16e6a66e78cc
+SIZE: 4368
+
+BUILD_TIME: 1373563630
+CPV: virtual/perl-ExtUtils-ParseXS-2.22.05
+DEFINED_PHASES: -
+DESC: Converts Perl XS code into C code
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: 06efc8192fa8c1d4ced6ffe6ebc87a0b
+MTIME: 1373563641
+RDEPEND: ~perl-core/ExtUtils-ParseXS-2.22.05
+SHA1: c2fff4e93b60bef29a9c7370061ed3b071ced133
+SIZE: 4321
+
+BUILD_TIME: 1373555617
+CPV: virtual/perl-File-Spec-3.400.0
+DEFINED_PHASES: -
+DESC: Virtual for File-Spec
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: e016cd6bf1ab41825b3b89e1c3397a42
+MTIME: 1373555639
+RDEPEND: ~perl-core/File-Spec-3.400.0
+SHA1: 6f13dca4dc801df188983494d211b66ccd1f0920
+SIZE: 4326
+
+BUILD_TIME: 1373545833
+CPV: virtual/perl-File-Temp-0.220.0-r2
+DEFINED_PHASES: -
+DESC: Virtual for File-Temp
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: c6a67c5b6e10e74e677493218de65064
+MTIME: 1373545844
+RDEPEND: || ( =dev-lang/perl-5.16* =dev-lang/perl-5.14* ~dev-lang/perl-5.12.4 ~dev-lang/perl-5.12.3 ~dev-lang/perl-5.12.2 ~dev-lang/perl-5.10.1 ~perl-core/File-Temp-0.220.0 )
+SHA1: 9294e2355196f6163b3df2fcee4b63ecae3bac10
+SIZE: 4656
+
+BUILD_TIME: 1373958425
+CPV: virtual/perl-Getopt-Long-2.380.0-r2
+DEFINED_PHASES: -
+DESC: Virtual for Getopt-Long
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+MD5: 1f9900d650f534e9fe150831f4ee692c
+MTIME: 1373958432
+RDEPEND: || ( =dev-lang/perl-5.16* =dev-lang/perl-5.14* ~dev-lang/perl-5.12.4 ~dev-lang/perl-5.12.3 ~dev-lang/perl-5.12.2 ~dev-lang/perl-5.10.1 ~perl-core/Getopt-Long-2.380.0 )
+SHA1: 4d85ad0f9dab269b0d3392e4433c7434b7d2260b
+SIZE: 4537
+
+BUILD_TIME: 1373555141
+CPV: virtual/perl-IO-1.25
+DEFINED_PHASES: -
+DESC: Virtual for IO
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: bfd68e854dc998d6e634b3f65a50ebc4
+MTIME: 1373555164
+RDEPEND: || ( ~dev-lang/perl-5.10.1 ~perl-core/IO-1.25 )
+SHA1: 91d102c4e554a225c69e765983f0f091d4bb995d
+SIZE: 4302
+
+BUILD_TIME: 1373560007
+CPV: virtual/perl-IO-Compress-2.60.0
+DEFINED_PHASES: -
+DESC: Virtual for IO-Compress
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: 8ffd51dac93f1efc9b117a9c5ca07192
+MTIME: 1373560019
+RDEPEND: ~perl-core/IO-Compress-2.60.0
+SHA1: c10e66bd957e28fa8a593292a3a51249efd27804
+SIZE: 4328
+
+BUILD_TIME: 1373553526
+CPV: virtual/perl-IO-Zlib-1.100.0-r2
+DEFINED_PHASES: -
+DESC: Virtual for IO-Zlib
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: 6f0629ccc1197e66fe2703992b0948fd
+MTIME: 1373553548
+RDEPEND: || ( =dev-lang/perl-5.16* =dev-lang/perl-5.14* ~dev-lang/perl-5.12.4 ~dev-lang/perl-5.12.3 ~dev-lang/perl-5.12.2 ~perl-core/IO-Zlib-1.100.0 )
+SHA1: b0996bed7c87249272163c60b65f692f4ce0a8fd
+SIZE: 4590
+
+BUILD_TIME: 1373563116
+CPV: virtual/perl-IPC-Cmd-0.780.0
+DEFINED_PHASES: -
+DESC: Virtual for IPC-Cmd
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: 3baffe7028cd0f3e78f0072314564c6d
+MTIME: 1373563127
+RDEPEND: ~perl-core/IPC-Cmd-0.780.0
+SHA1: ca82d8d407ba242a302a0151a060e81ccffa24af
+SIZE: 4298
+
+BUILD_TIME: 1373556057
+CPV: virtual/perl-JSON-PP-2.272.0-r1
+DEFINED_PHASES: -
+DESC: Virtual for JSON-PP
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: b044055ea354eb6ca1f810a47e4c7d86
+MTIME: 1373556067
+RDEPEND: || ( =dev-lang/perl-5.16* ~perl-core/JSON-PP-2.272.0 )
+SHA1: 02b79eff857832fb05b637d939973c6afc7dc4c1
+SIZE: 4389
+
+BUILD_TIME: 1373545573
+CPV: virtual/perl-Locale-Maketext-Simple-0.210.0-r2
+DEFINED_PHASES: -
+DESC: Virtual for Locale-Maketext-Simple
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: ce09fdc5f59fce0122209fdbf9d5d23b
+MTIME: 1373545595
+RDEPEND: || ( =dev-lang/perl-5.16* =dev-lang/perl-5.14* ~dev-lang/perl-5.12.4 ~dev-lang/perl-5.12.3 ~dev-lang/perl-5.12.2 ~perl-core/Locale-Maketext-Simple-0.210.0 )
+SHA1: 5ce34cc10d2f79b7e069453474b176acbd532749
+SIZE: 4702
+
+BUILD_TIME: 1373554821
+CPV: virtual/perl-MIME-Base64-3.130.0-r2
+DEFINED_PHASES: -
+DESC: Virtual for MIME-Base64
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~ia64-hpux ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: c92ae5bfcf523abccaa134e0d83ab821
+MTIME: 1373554843
+RDEPEND: || ( =dev-lang/perl-5.16* =dev-lang/perl-5.14* ~perl-core/MIME-Base64-3.130.0 )
+SHA1: 01e167372047b90da1c9c3a2fde712a31e14f5bd
+SIZE: 4507
+
+BUILD_TIME: 1373564803
+CPV: virtual/perl-Module-Build-0.400.300
+DEFINED_PHASES: -
+DESC: Virtual for Module-Build
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: 1c66e40f0721bd6e41a9505782cfc7fd
+MTIME: 1373564814
+RDEPEND: ~perl-core/Module-Build-0.400.300
+SHA1: ebe53bebee007f3163b01dc6932b45685619fa37
+SIZE: 4353
+
+BUILD_TIME: 1373557004
+CPV: virtual/perl-Module-CoreList-2.800.0
+DEFINED_PHASES: -
+DESC: Virtual for Module-CoreList
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: dd3fafca853fb433aca139e232a8821a
+MTIME: 1373557015
+RDEPEND: ~perl-core/Module-CoreList-2.800.0
+SHA1: ed03528010703ee912a2ab7136d2cd65a9bd65a8
+SIZE: 4371
+
+BUILD_TIME: 1373557082
+CPV: virtual/perl-Module-Load-0.240.0
+DEFINED_PHASES: -
+DESC: Virtual for Module-Load
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: 4f63e7effd79dc09ab8e3a42efb15602
+MTIME: 1373557093
+RDEPEND: ~perl-core/Module-Load-0.240.0
+SHA1: 26831262a79007140eaca23b2dbe77b3a1ced07b
+SIZE: 4326
+
+BUILD_TIME: 1373562865
+CPV: virtual/perl-Module-Load-Conditional-0.540.0
+DEFINED_PHASES: -
+DESC: Virtual for Module-Load-Conditional
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: 2c56e4f743704ec9e4e2763431d0eed4
+MTIME: 1373562876
+RDEPEND: ~perl-core/Module-Load-Conditional-0.540.0
+SHA1: c1af0ca02165ab32ef57736ec22d56a9c6c030a5
+SIZE: 4424
+
+BUILD_TIME: 1373560761
+CPV: virtual/perl-Module-Metadata-1.0.11
+DEFINED_PHASES: -
+DESC: Virtual for Module-Metadata
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: bce78c038b08d08e0b8fa0558c52fd6f
+MTIME: 1373560773
+RDEPEND: ~perl-core/Module-Metadata-1.0.11
+SHA1: c391661edbf34e8193100b6c38823823d39203db
+SIZE: 4349
+
+BUILD_TIME: 1373553368
+CPV: virtual/perl-Package-Constants-0.20.0-r2
+DEFINED_PHASES: -
+DESC: Virtual for Package-Constants
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: 064b0e48fcd5ec5463105617869e27bb
+MTIME: 1373553390
+RDEPEND: || ( =dev-lang/perl-5.16* =dev-lang/perl-5.14* ~dev-lang/perl-5.12.4 ~dev-lang/perl-5.12.3 ~dev-lang/perl-5.12.2 ~dev-lang/perl-5.10.1 ~perl-core/Package-Constants-0.20.0 )
+SHA1: 8282fda2102df8e298de78997f2ffe87990f4cf4
+SIZE: 4709
+
+BUILD_TIME: 1373557487
+CPV: virtual/perl-Params-Check-0.360.0
+DEFINED_PHASES: -
+DESC: Virtual for Params-Check
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: b027d2c154026e399a0860cefe2d29d5
+MTIME: 1373557498
+RDEPEND: ~perl-core/Params-Check-0.360.0
+SHA1: 40cf5c58495f5faa2e384cae0ae05d16de0e0aa1
+SIZE: 4346
+
+BUILD_TIME: 1373560087
+CPV: virtual/perl-Parse-CPAN-Meta-1.440.400
+DEFINED_PHASES: -
+DESC: Virtual for Parse-CPAN-Meta
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: b1d9c10b8d2a3c1f488d5e49e441b645
+MTIME: 1373560098
+RDEPEND: ~perl-core/Parse-CPAN-Meta-1.440.400
+SHA1: 30694b5c8d12562a36c22950214c30945597c4d6
+SIZE: 4367
+
+BUILD_TIME: 1373556134
+CPV: virtual/perl-Perl-OSType-1.2.0-r1
+DEFINED_PHASES: -
+DESC: Virtual for Perl-OSType
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: a34dc05c3eac57fd0aa572878814d937
+MTIME: 1373556145
+RDEPEND: || ( =dev-lang/perl-5.16* =dev-lang/perl-5.14* ~perl-core/Perl-OSType-1.2.0 )
+SHA1: 4be03d823d3b80291a89ec5a6cfe0192871cee43
+SIZE: 4462
+
+BUILD_TIME: 1373554979
+CPV: virtual/perl-Scalar-List-Utils-1.270.0
+DEFINED_PHASES: -
+DESC: Virtual for Scalar-List-Utils
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: 78349792ecc48995c04f4321c923395a
+MTIME: 1373555001
+RDEPEND: ~perl-core/Scalar-List-Utils-1.270.0
+SHA1: c77dba98bc3083363edaa249151378f48368b460
+SIZE: 4381
+
+BUILD_TIME: 1373556684
+CPV: virtual/perl-Storable-2.390.0
+DEFINED_PHASES: -
+DESC: Virtual for Storable
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: ca5e2cf33a0bd3c9fd258cc18d1de606
+MTIME: 1373556695
+RDEPEND: ~perl-core/Storable-2.390.0
+SHA1: 09b2bb7d39139c8878755e8691f6786a7d2789c0
+SIZE: 4309
+
+BUILD_TIME: 1373959055
+CPV: virtual/perl-Sys-Syslog-0.320.0
+DEFINED_PHASES: -
+DESC: Virtual for Sys-Syslog
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: 7d5bb51bc522697451bda07cfc1d3206
+MTIME: 1373959062
+RDEPEND: ~perl-core/Sys-Syslog-0.320.0
+SHA1: e52fdfdab6a5a915a0660cd00fbd8f52d25e9dbe
+SIZE: 4297
+
+BUILD_TIME: 1373556762
+CPV: virtual/perl-Test-Harness-3.260.0
+DEFINED_PHASES: -
+DESC: Virtual for Test-Harness
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: 8b8b7a593a23ae25a3be7cb2ed460248
+MTIME: 1373556773
+RDEPEND: ~perl-core/Test-Harness-3.260.0
+SHA1: d34cfd1ae692746670db6708bef710c0d3158897
+SIZE: 4383
+
+BUILD_TIME: 1373556370
+CPV: virtual/perl-Test-Simple-0.980.0-r2
+DEFINED_PHASES: -
+DESC: Virtual for Test-Simple
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: aa1b66e26d695c4688accdeb67e7596c
+MTIME: 1373556381
+RDEPEND: || ( =dev-lang/perl-5.16* =dev-lang/perl-5.14* ~perl-core/Test-Simple-0.980.0 )
+SHA1: 8cb2df8e8b76e1d1dc985863531678347105a11d
+SIZE: 4470
+
+BUILD_TIME: 1373958362
+CPV: virtual/perl-Text-Balanced-2.20.0-r2
+DEFINED_PHASES: -
+DESC: Virtual for Text-Balanced
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~x86-macos ~x86-solaris
+MD5: 734dfdc9d98281268ab92cdf0e7ba548
+MTIME: 1373958370
+RDEPEND: || ( =dev-lang/perl-5.16* =dev-lang/perl-5.14* ~dev-lang/perl-5.12.4 ~dev-lang/perl-5.12.3 ~dev-lang/perl-5.12.2 ~perl-core/Text-Balanced-2.20.0 )
+SHA1: a58561b755aa174739974b433110d6da0be6bbb3
+SIZE: 4414
+
+BUILD_TIME: 1373958872
+CPV: virtual/perl-Time-HiRes-1.972.500-r1
+DEFINED_PHASES: -
+DESC: Virtual for Time-HiRes
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~x86-solaris
+MD5: 7ae4512ad887c1123fb07a3a868a3b7d
+MTIME: 1373958880
+RDEPEND: || ( =dev-lang/perl-5.16* ~perl-core/Time-HiRes-1.972.500 )
+SHA1: 896f2dc822addf00b774af1003b0b998aec08820
+SIZE: 4185
+
+BUILD_TIME: 1373555979
+CPV: virtual/perl-Time-Local-1.230.0
+DEFINED_PHASES: -
+DESC: Virtual for Time-Local
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: 89240c3faffc7b1beb091d125ae894fd
+MTIME: 1373555990
+RDEPEND: ~perl-core/Time-Local-1.230.0
+SHA1: ba4929e793c06e0ca859da17e7a82dd97214314f
+SIZE: 4218
+
+BUILD_TIME: 1373561259
+CPV: virtual/perl-digest-base-1.170.0-r1
+DEFINED_PHASES: -
+DESC: Virtual for digest-base
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: 800580cf085deb2ab1cee4a71e8beb65
+MTIME: 1373561270
+RDEPEND: || ( =dev-lang/perl-5.16* ~perl-core/digest-base-1.170.0 )
+SHA1: 614149382dfa8252f45dc4e61958eae890ac7f2f
+SIZE: 4415
+
+BUILD_TIME: 1373552388
+CPV: virtual/perl-libnet-1.220.0-r1
+DEFINED_PHASES: -
+DESC: Virtual for libnet
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: c9f89ad3132f6523e3b1499e71ef693e
+MTIME: 1373552410
+RDEPEND: || ( =dev-lang/perl-5.16* =dev-lang/perl-5.14* ~dev-lang/perl-5.12.4 ~dev-lang/perl-5.12.3 ~dev-lang/perl-5.12.2 ~dev-lang/perl-5.10.1 ~perl-core/libnet-1.220.0 )
+SHA1: d746b1f9ced37fac664508c6af7a3cc8383d1ba4
+SIZE: 4634
+
+BUILD_TIME: 1373554662
+CPV: virtual/perl-version-0.990.100
+DEFINED_PHASES: -
+DESC: Virtual for version
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+MD5: 7721256bb0fcb89ab1c2d1564a64aef3
+MTIME: 1373554684
+RDEPEND: ~perl-core/version-0.990.100
+SHA1: cc3acb46b75d287a77b273f549de152b2dc54156
+SIZE: 4316
+
+BUILD_TIME: 1373582241
+CPV: virtual/python-argparse-1
+DEFINED_PHASES: -
+DESC: A virtual for the Python argparse module
+EAPI: 5
+IUSE: python_targets_python2_5 python_targets_python2_6 python_targets_python2_7 python_targets_python3_1 python_targets_python3_2 python_targets_python3_3 python_targets_pypy1_9 python_targets_pypy2_0
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x86-solaris
+MD5: 05d933b8dd3291e9aa8e375c62b9b5d0
+MTIME: 1373582252
+RDEPEND: dev-lang/python:2.7 dev-lang/python:3.2 dev-python/python-exec[python_targets_python2_7(-),python_targets_python3_2(-),-python_single_target_python2_5(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-),-python_single_target_python3_1(-),-python_single_target_python3_2(-),-python_single_target_python3_3(-),-python_single_target_pypy1_9(-),-python_single_target_pypy2_0(-)]
+SHA1: 025fdd9e1eff3161362065faacb3944172e98171
+SIZE: 18222
+USE: python_targets_python2_7 python_targets_python3_2
+
+BUILD_TIME: 1373523802
+CPV: virtual/udev-197-r3
+DEFINED_PHASES: -
+DESC: Virtual to select between sys-fs/udev and sys-fs/eudev
+EAPI: 5
+IUSE: gudev hwdb introspection keymap +kmod selinux static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86
+MD5: 1634161474fbd5b53d74d06a34e4db01
+MTIME: 1373523825
+RDEPEND: || ( >=sys-fs/udev-197-r8[kmod] >=sys-apps/systemd-198-r5[kmod] >=sys-fs/eudev-1_beta2-r2[modutils] )
+SHA1: 9bd0d4f7b4749a1ea13e34c6c4462cfbd1ba466c
+SIZE: 5782
+USE: kmod
+
