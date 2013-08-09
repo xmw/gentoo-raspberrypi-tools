@@ -1,0 +1,6 @@
+=app-portage/eix-0.29.3
+=app-vim/gnupg-2.5 **
+=net-analyzer/munin-2.0.14
+=net-misc/openssh-6.2_p2-r3
+=sys-boot/raspberrypi-mkimage-0_p20120201
+=sys-kernel/raspberrypi-image-3.10.4_pre-r20130802
