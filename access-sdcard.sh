@@ -46,7 +46,7 @@ if [ -n "${MOUNTPOINT}" ] ; then
 		usage 1 "${MOUNTPOINT} already mounted"
 	fi
 else
-	TMP=$(mktemp -d)
+	TMP=$(mktemp -d /tmp/rpi-card.XXXXX)
 	MOUNTPOINT=${TMP}
 	REMOVE_MOUNTPOINT=1
 fi
