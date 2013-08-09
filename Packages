@@ -8,11 +8,11 @@ CONFIG_PROTECT: /boot/cmdline.txt /boot/config.txt /etc /usr/share/gnupg/qualifi
 CONFIG_PROTECT_MASK: /etc/ca-certificates.conf /etc/env.d /etc/gconf /etc/gentoo-release /etc/revdep-rebuild /etc/sandbox.d /etc/terminfo
 FEATURES: assume-digests binpkg-logs buildpkg ccache config-protect-if-modified distcc distlocks ebuild-locks fixlafiles getbinpkg merge-sync news parallel-fetch preserve-libs protect-owned sandbox sfperms strict unknown-features-warn unmerge-logs unmerge-orphans userfetch
 GENTOO_MIRRORS: http://lore.xmw.de/gentoo/
-PACKAGES: 269
+PACKAGES: 282
 PROFILE: default/linux/arm/13.0
 SYNC: use update-portage
-TIMESTAMP: 1374522581
-USE: acl apache2_modules_actions apache2_modules_alias apache2_modules_auth_basic apache2_modules_authn_alias apache2_modules_authn_anon apache2_modules_authn_core apache2_modules_authn_dbm apache2_modules_authn_default apache2_modules_authn_file apache2_modules_authz_core apache2_modules_authz_dbm apache2_modules_authz_default apache2_modules_authz_groupfile apache2_modules_authz_host apache2_modules_authz_owner apache2_modules_authz_user apache2_modules_autoindex apache2_modules_cache apache2_modules_cgi apache2_modules_cgid apache2_modules_dav apache2_modules_dav_fs apache2_modules_dav_lock apache2_modules_deflate apache2_modules_dir apache2_modules_disk_cache apache2_modules_env apache2_modules_expires apache2_modules_ext_filter apache2_modules_file_cache apache2_modules_filter apache2_modules_headers apache2_modules_include apache2_modules_info apache2_modules_log_config apache2_modules_logio apache2_modules_mem_cache apache2_modules_mime apache2_modules_mime_magic apache2_modules_negotiation apache2_modules_rewrite apache2_modules_setenvif apache2_modules_socache_shmcb apache2_modules_speling apache2_modules_status apache2_modules_unique_id apache2_modules_unixd apache2_modules_userdir apache2_modules_usertrack apache2_modules_vhost_alias arm bash-completion berkdb bindist bzip2 calligra_features_author calligra_features_braindump calligra_features_flow calligra_features_karbon calligra_features_kexi calligra_features_krita calligra_features_plan calligra_features_sheets calligra_features_stage calligra_features_tables calligra_features_words cameras_ptp2 cli collectd_plugins_df collectd_plugins_interface collectd_plugins_irq collectd_plugins_load collectd_plugins_memory collectd_plugins_rrdtool collectd_plugins_swap collectd_plugins_syslog cracklib crypt cxx dri elibc_glibc fortran gdbm gpm gpsd_protocols_aivdm gpsd_protocols_ashtech gpsd_protocols_earthmate gpsd_protocols_evermore gpsd_protocols_fv18 gpsd_protocols_garmin gpsd_protocols_garmintxt gpsd_protocols_gpsclock gpsd_protocols_itrax gpsd_protocols_mtk3301 gpsd_protocols_navcom gpsd_protocols_nmea gpsd_protocols_ntrip gpsd_protocols_oceanserver gpsd_protocols_oldstyle gpsd_protocols_oncore gpsd_protocols_rtcm104v2 gpsd_protocols_rtcm104v3 gpsd_protocols_sirf gpsd_protocols_superstar2 gpsd_protocols_timing gpsd_protocols_tnt gpsd_protocols_tripmate gpsd_protocols_tsip gpsd_protocols_ubx iconv input_devices_evdev input_devices_keyboard input_devices_mouse ipv6 kernel_linux lcd_devices_bayrad lcd_devices_cfontz lcd_devices_cfontz633 lcd_devices_glk lcd_devices_hd44780 lcd_devices_lb216 lcd_devices_lcdm001 lcd_devices_mtxorb lcd_devices_ncurses lcd_devices_text libreoffice_extensions_presenter-console libreoffice_extensions_presenter-minimizer modules mudflap ncurses nls nptl office_implementation_libreoffice openmp pam pcre php_targets_php5-4 python_single_target_python2_7 python_targets_python2_7 python_targets_python3_2 readline ruby_targets_ruby18 ruby_targets_ruby19 session ssl tcpd unicode userland_GNU video_cards_dummy video_cards_exynos video_cards_fbdev video_cards_omap video_cards_omapfb video_cards_v4l xtables_addons_account xtables_addons_chaos xtables_addons_condition xtables_addons_delude xtables_addons_dhcpmac xtables_addons_fuzzy xtables_addons_geoip xtables_addons_iface xtables_addons_ipmark xtables_addons_ipp2p xtables_addons_ipset xtables_addons_ipv4options xtables_addons_length2 xtables_addons_logmark xtables_addons_lscan xtables_addons_pknock xtables_addons_psd xtables_addons_quota2 xtables_addons_rawnat xtables_addons_steal xtables_addons_sysrq xtables_addons_tarpit xtables_addons_tee zlib zsh-completion
+TIMESTAMP: 1376046419
+USE: acl apache2_modules_actions apache2_modules_alias apache2_modules_auth_basic apache2_modules_authn_alias apache2_modules_authn_anon apache2_modules_authn_core apache2_modules_authn_dbm apache2_modules_authn_default apache2_modules_authn_file apache2_modules_authz_core apache2_modules_authz_dbm apache2_modules_authz_default apache2_modules_authz_groupfile apache2_modules_authz_host apache2_modules_authz_owner apache2_modules_authz_user apache2_modules_autoindex apache2_modules_cache apache2_modules_cgi apache2_modules_cgid apache2_modules_dav apache2_modules_dav_fs apache2_modules_dav_lock apache2_modules_deflate apache2_modules_dir apache2_modules_disk_cache apache2_modules_env apache2_modules_expires apache2_modules_ext_filter apache2_modules_file_cache apache2_modules_filter apache2_modules_headers apache2_modules_include apache2_modules_info apache2_modules_log_config apache2_modules_logio apache2_modules_mem_cache apache2_modules_mime apache2_modules_mime_magic apache2_modules_negotiation apache2_modules_rewrite apache2_modules_setenvif apache2_modules_socache_shmcb apache2_modules_speling apache2_modules_status apache2_modules_unique_id apache2_modules_unixd apache2_modules_userdir apache2_modules_usertrack apache2_modules_vhost_alias arm bash-completion berkdb bindist bzip2 calligra_features_author calligra_features_braindump calligra_features_flow calligra_features_karbon calligra_features_kexi calligra_features_krita calligra_features_plan calligra_features_sheets calligra_features_stage calligra_features_tables calligra_features_words cameras_ptp2 cli collectd_plugins_df collectd_plugins_interface collectd_plugins_irq collectd_plugins_load collectd_plugins_memory collectd_plugins_rrdtool collectd_plugins_swap collectd_plugins_syslog cracklib crypt cxx dri elibc_glibc fortran gdbm gpsd_protocols_aivdm gpsd_protocols_ashtech gpsd_protocols_earthmate gpsd_protocols_evermore gpsd_protocols_fv18 gpsd_protocols_garmin gpsd_protocols_garmintxt gpsd_protocols_gpsclock gpsd_protocols_itrax gpsd_protocols_mtk3301 gpsd_protocols_navcom gpsd_protocols_nmea gpsd_protocols_ntrip gpsd_protocols_oceanserver gpsd_protocols_oldstyle gpsd_protocols_oncore gpsd_protocols_rtcm104v2 gpsd_protocols_rtcm104v3 gpsd_protocols_sirf gpsd_protocols_superstar2 gpsd_protocols_timing gpsd_protocols_tnt gpsd_protocols_tripmate gpsd_protocols_tsip gpsd_protocols_ubx iconv input_devices_evdev input_devices_keyboard input_devices_mouse ipv6 kernel_linux lcd_devices_bayrad lcd_devices_cfontz lcd_devices_cfontz633 lcd_devices_glk lcd_devices_hd44780 lcd_devices_lb216 lcd_devices_lcdm001 lcd_devices_mtxorb lcd_devices_ncurses lcd_devices_text libreoffice_extensions_presenter-console libreoffice_extensions_presenter-minimizer modules mudflap ncurses nls nptl office_implementation_libreoffice openmp pam pcre php_targets_php5-4 python_single_target_python2_7 python_targets_python2_7 python_targets_python3_2 readline ruby_targets_ruby18 ruby_targets_ruby19 session ssl tcpd unicode userland_GNU video_cards_dummy video_cards_exynos video_cards_fbdev video_cards_omap video_cards_omapfb video_cards_v4l xtables_addons_account xtables_addons_chaos xtables_addons_condition xtables_addons_delude xtables_addons_dhcpmac xtables_addons_fuzzy xtables_addons_geoip xtables_addons_iface xtables_addons_ipmark xtables_addons_ipp2p xtables_addons_ipset xtables_addons_ipv4options xtables_addons_length2 xtables_addons_logmark xtables_addons_lscan xtables_addons_pknock xtables_addons_psd xtables_addons_quota2 xtables_addons_rawnat xtables_addons_steal xtables_addons_sysrq xtables_addons_tarpit xtables_addons_tee zlib zsh-completion
 VERSION: 0
 REPO: gentoo
 
@@ -137,6 +137,20 @@ MTIME: 1373567410
 SHA1: e436a46d600c3016376bda44435eb686c3ef4736
 SIZE: 215166
 USE: nls
+
+BUILD_TIME: 1375489122
+CPV: app-arch/hardlink-0.2.0
+DEFINED_PHASES: compile prepare
+DEPEND: dev-libs/libpcre virtual/pkgconfig
+DESC: A tool which replaces copies of a file with hardlinks
+EAPI: 4
+KEYWORDS: ~amd64 ~ppc ~ppc64 ~x86
+LICENSE: MIT
+MD5: 4fa8d25b9ba06d66f70ef444a38d6cac
+MTIME: 1375489151
+RDEPEND: dev-libs/libpcre
+SHA1: 20c45bdfc356b5ace15aeb90534d607f508f1c30
+SIZE: 22154
 
 BUILD_TIME: 1374174737
 CPV: app-arch/lbzip2-2.2-r1
@@ -678,6 +692,22 @@ SIZE: 445193
 SLOT: 3
 USE: extensions readline
 
+BUILD_TIME: 1374694535
+CPV: dev-lang/lua-5.1.5
+DEFINED_PHASES: compile configure install prepare test
+DEPEND: sys-libs/readline sys-devel/libtool
+DESC: A powerful light-weight programming language designed for extending applications
+EAPI: 4
+IUSE: +deprecated emacs readline static
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~arm-linux ~x86-linux
+LICENSE: MIT
+MD5: 46de66e36fae82492423e583da9eed73
+MTIME: 1374694582
+RDEPEND: sys-libs/readline
+SHA1: e18b03bfee43d6797f31d721dc19b9e330745171
+SIZE: 248814
+USE: deprecated readline
+
 BUILD_TIME: 1374322753
 CPV: dev-lang/python-2.7.5
 DEFINED_PHASES: compile configure install postinst postrm preinst prepare setup test
@@ -714,6 +744,40 @@ SIZE: 12819009
 SLOT: 3.2
 USE: gdbm ipv6 ncurses readline ssl threads wide-unicode xml
 
+BUILD_TIME: 1374697104
+CPV: dev-libs/apr-1.4.5
+DEFINED_PHASES: compile configure install prepare
+DEPEND: >=sys-apps/util-linux-2.16 || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: Apache Portable Runtime Library
+EAPI: 4
+IUSE: doc elibc_FreeBSD older-kernels-compatibility static-libs +urandom +uuid
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~sparc-fbsd ~x86-fbsd
+LICENSE: Apache-2.0
+MD5: 5e8fd130c7757e33ed825930ed2c0287
+MTIME: 1374697144
+RDEPEND: >=sys-apps/util-linux-2.16
+RESTRICT: test
+SHA1: fe8306ba65bcc12959520535e9499955bdf473f5
+SIZE: 189483
+SLOT: 1
+USE: urandom uuid
+
+BUILD_TIME: 1374658759
+CPV: dev-libs/boost-1.49.0-r2
+DEFINED_PHASES: compile configure install prepare setup test
+DEPEND: >=dev-libs/icu-3.3 app-arch/bzip2 sys-libs/zlib !app-admin/eselect-boost <sys-libs/glibc-2.16 =dev-util/boost-build-1.49* dev-lang/python
+DESC: Boost Libraries for C++
+EAPI: 4
+IUSE: debug doc icu mpi python static-libs tools
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: Boost-1.0
+MD5: 0da2ef45d626177bf769fd6d7b279e9d
+MTIME: 1374659850
+RDEPEND: >=dev-libs/icu-3.3 app-arch/bzip2 sys-libs/zlib !app-admin/eselect-boost <sys-libs/glibc-2.16 dev-lang/python
+SHA1: 0e09a0bd3313aae2c47c6d30583bc69874ccb7fb
+SIZE: 10477990
+USE: icu python tools
+
 BUILD_TIME: 1373519074
 CPV: dev-libs/eventlog-0.2.12
 DEFINED_PHASES: configure install prepare
@@ -726,6 +790,21 @@ MD5: 0a37a8d57ae503f079556ed01eed5d28
 MTIME: 1373519100
 SHA1: 2735dbe9daf98e457b107624cd248cb74b7d9514
 SIZE: 36087
+
+BUILD_TIME: 1374618894
+CPV: dev-libs/icu-51.1
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: International Components for Unicode
+EAPI: 5
+IUSE: debug doc examples static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 -amd64-fbsd -x86-fbsd
+LICENSE: BSD
+MD5: 8809257b2d9f7acebcdb253163223f61
+MTIME: 1374619066
+SHA1: 60b366245b1ceef1199b0ed06639e94cf48f0b2f
+SIZE: 9980412
+SLOT: 0/51.1
 
 BUILD_TIME: 1373568139
 CPV: dev-libs/libassuan-2.1.0
@@ -1315,6 +1394,22 @@ RDEPEND: dev-lang/perl[-build]
 SHA1: a4d4ba9a88a9df67f119b550210f2ad99fcb7f21
 SIZE: 31308
 
+BUILD_TIME: 1375170280
+CPV: dev-perl/Net-DNS-0.660.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: virtual/perl-Digest-MD5 dev-perl/Digest-HMAC virtual/perl-Digest-SHA dev-perl/Net-IP dev-perl/IO-Socket-INET6 virtual/perl-MIME-Base64 dev-lang/perl[-build]
+DESC: Perl Net::DNS - Perl DNS Resolver Module
+EAPI: 4
+IUSE: ipv6 test
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: 5ecaf98b3bb780496c65dfbe34b7e891
+MTIME: 1375170321
+RDEPEND: virtual/perl-Digest-MD5 dev-perl/Digest-HMAC virtual/perl-Digest-SHA dev-perl/Net-IP dev-perl/IO-Socket-INET6 virtual/perl-MIME-Base64 dev-lang/perl[-build]
+SHA1: 68557a0dc85d5f803234c9553286345b4e367806
+SIZE: 130932
+USE: ipv6
+
 BUILD_TIME: 1373956957
 CPV: dev-perl/Net-Daemon-0.480.0
 DEFINED_PHASES: compile configure install prepare test unpack
@@ -1342,6 +1437,20 @@ MTIME: 1373561585
 RDEPEND: !<dev-perl/libwww-perl-6 virtual/perl-Compress-Raw-Zlib virtual/perl-IO virtual/perl-IO-Compress dev-lang/perl[-build]
 SHA1: b89a786a575116139b8a7feaeb453a1b45826761
 SIZE: 37423
+
+BUILD_TIME: 1375169843
+CPV: dev-perl/Net-IP-1.260.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: dev-lang/perl[-build]
+DESC: Perl extension for manipulating IPv4/IPv6 addresses
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: cf2c50b0a17952fe6143756a5994cc74
+MTIME: 1375169875
+RDEPEND: dev-lang/perl[-build]
+SHA1: f038015a38a9dffcc85a705258d60ef7baec22b6
+SIZE: 42683
 
 BUILD_TIME: 1373956024
 CPV: dev-perl/Net-Netmask-1.901.600
@@ -1515,6 +1624,22 @@ SHA1: bb2b3c1417d60bd9c8626b43659266ce47aa030a
 SIZE: 38641
 USE: python_targets_python2_5 python_targets_python2_6 python_targets_python2_7 python_targets_python3_1 python_targets_python3_2
 
+BUILD_TIME: 1374614228
+CPV: dev-util/boost-build-1.49.0
+DEFINED_PHASES: compile install prepare setup test unpack
+DEPEND: !<dev-libs/boost-1.34.0 !<=dev-util/boost-build-1.35.0-r1 dev-lang/python
+DESC: A system for large project software construction, which is simple to use and powerful.
+EAPI: 4
+IUSE: examples python
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: Boost-1.0
+MD5: 601ce85f99bea8904c75f408a24ad745
+MTIME: 1374614256
+RDEPEND: !<dev-libs/boost-1.34.0 !<=dev-util/boost-build-1.35.0-r1 dev-lang/python
+SHA1: 0ea0d52cada63dafc7b6860d0eeedfa395480f3a
+SIZE: 441353
+USE: python
+
 BUILD_TIME: 1374268998
 CPV: dev-util/catalyst-2.0.12.2
 DEFINED_PHASES: install postinst prepare setup
@@ -1529,6 +1654,22 @@ MTIME: 1374269019
 RDEPEND: app-arch/lbzip2 app-crypt/shash virtual/cdrtools dev-util/ccache app-misc/zisofs-tools >=sys-fs/squashfs-tools-2.1 =dev-lang/python-2*
 SHA1: 24dd851a5f845ab339f2095770f47f97f5fbb962
 SIZE: 931233
+USE: ccache kernel_linux
+
+BUILD_TIME: 1375337717
+CPV: dev-util/catalyst-2.0.13
+DEFINED_PHASES: install postinst prepare setup
+DEPEND: app-text/asciidoc =dev-lang/python-2*
+DESC: release metatool used for creating releases based on Gentoo Linux
+EAPI: 3
+IUSE: ccache kernel_linux
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd
+LICENSE: GPL-2
+MD5: e73788dd21b57448d30f78ec8a2ce333
+MTIME: 1375337752
+RDEPEND: app-arch/lbzip2 app-crypt/shash virtual/cdrtools dev-util/ccache app-misc/zisofs-tools >=sys-fs/squashfs-tools-2.1 =dev-lang/python-2*
+SHA1: 6a4cfdf6fd39dbd21bc055ef50d8bd3de7142578
+SIZE: 898597
 USE: ccache kernel_linux
 
 BUILD_TIME: 1374266021
@@ -1637,6 +1778,19 @@ SIZE: 940226
 USE: hardfp
 REPO: xmw
 
+BUILD_TIME: 1374926794
+CPV: net-analyzer/iftop-1.0_pre2
+DEFINED_PHASES: install prepare
+DEPEND: net-libs/libpcap sys-libs/ncurses || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: display bandwidth usage on an interface
+EAPI: 5
+KEYWORDS: ~alpha ~amd64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
+LICENSE: GPL-2
+MD5: 08419b716123ae135bcc0f8a2d3c4b63
+MTIME: 1374926811
+SHA1: be5505d9c02b3f9a32c3dda9a22410d6603113b8
+SIZE: 60470
+
 BUILD_TIME: 1373963912
 CPV: net-analyzer/munin-2.0.14
 DEFINED_PHASES: compile config configure install postinst preinst prepare setup test
@@ -1668,6 +1822,22 @@ RDEPEND: !net-analyzer/netcat
 SHA1: 1e3e79ee890c15e0aff00fa350f24dbaea4ec962
 SIZE: 66154
 USE: ipv6 nls
+
+BUILD_TIME: 1374701491
+CPV: net-analyzer/nmap-6.25
+DEFINED_PHASES: compile configure install prepare setup unpack
+DEPEND: dev-libs/apr dev-libs/libpcre net-libs/libpcap[ipv6] >=dev-lang/lua-5.1.4-r1[deprecated] virtual/libintl dev-libs/openssl sys-devel/gettext
+DESC: A utility for network exploration or security auditing
+EAPI: 4
+IUSE: gtk ipv6 +lua ncat ndiff nls nmap-update nping ssl linguas_de linguas_es linguas_fr linguas_hr linguas_hu linguas_id linguas_it linguas_ja linguas_pl linguas_pt_BR linguas_pt_PT linguas_ro linguas_ru linguas_sk linguas_zh
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x86-solaris
+LICENSE: GPL-2
+MD5: 9aaaf88b0fe81901fc7db0d9e2f7900a
+MTIME: 1374701684
+RDEPEND: dev-libs/apr dev-libs/libpcre net-libs/libpcap[ipv6] >=dev-lang/lua-5.1.4-r1[deprecated] virtual/libintl dev-libs/openssl
+SHA1: 555390bde535d7efdf5e36070f1c1fd47b475ab9
+SIZE: 3788080
+USE: ipv6 lua nls ssl
 
 BUILD_TIME: 1374320633
 CPV: net-analyzer/tcpdump-4.3.0
@@ -2857,6 +3027,24 @@ SIZE: 18673528
 SLOT: 4.6
 USE: cxx fortran mudflap nls nptl openmp
 
+BUILD_TIME: 1374751152
+CPV: sys-devel/gcc-4.7.3
+DEFINED_PHASES: compile install postinst postrm setup test unpack
+DEPEND: >=sys-libs/glibc-2.8 >=sys-devel/binutils-2.18 sys-devel/gnuconfig >=sys-apps/sed-4 sys-libs/zlib sys-devel/gettext virtual/libiconv >=dev-libs/gmp-4.3.2 >=dev-libs/mpfr-2.4.2 >=dev-libs/mpc-0.8.1 >=sys-devel/bison-1.875 >=sys-devel/flex-2.5.4
+DESC: The GNU Compiler Collection
+IUSE: multislot nls nptl regression-test vanilla altivec cxx fortran nopie nossp doc gcj gtk hardened multilib objc objc-gc mudflap libssp objc++ openmp fixed-point graphite lto go
+KEYWORDS: ~alpha ~amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 -amd64-fbsd -x86-fbsd
+LICENSE: GPL-3+ LGPL-3+ || ( GPL-3+ libgcc libstdc++ gcc-runtime-library-exception-3.1 ) FDL-1.3+
+MD5: 1dbb8ac37001577affb36881b4b845bb
+MTIME: 1374751411
+PDEPEND: >=sys-libs/glibc-2.8 >=sys-devel/gcc-config-1.7
+RDEPEND: sys-libs/zlib sys-devel/gettext virtual/libiconv >=dev-libs/gmp-4.3.2 >=dev-libs/mpfr-2.4.2 >=dev-libs/mpc-0.8.1
+RESTRICT: strip
+SHA1: ed82a91d8388b0b0b13d816419a4949d33eac0fa
+SIZE: 20956200
+SLOT: 4.7
+USE: cxx fortran mudflap nls nptl openmp
+
 BUILD_TIME: 1373965641
 CPV: sys-devel/gdb-7.5.1
 DEFINED_PHASES: configure install postinst prepare test
@@ -3023,6 +3211,24 @@ MTIME: 1373566598
 SHA1: 9d206db4af6d114e633f829b5295d4e77f361b4e
 SIZE: 29864024
 REPO: xmw
+
+BUILD_TIME: 1374560125
+CPV: sys-kernel/raspberrypi-sources-3.10.1_pre-r20130719
+DEFINED_PHASES: compile install postinst postrm preinst setup test unpack
+DEPEND: sys-apps/sed >=sys-devel/binutils-2.11.90.0.31
+DESC: Raspberry PI kernel sources
+EAPI: 5
+IUSE: symlink build
+KEYWORDS: ~arm
+LICENSE: GPL-2 freedist
+MD5: 62e7f71e31e1ad290d53700cf052e3c1
+MTIME: 1374562279
+PDEPEND: virtual/dev-manager
+RDEPEND: >=sys-libs/ncurses-5.2 sys-devel/make dev-lang/perl sys-devel/bc
+RESTRICT: binchecks strip
+SHA1: d7fdcf0e4b1dca36f9a8badd8dfe570c83797484
+SIZE: 88580528
+SLOT: 3.10.1_pre-r20130719
 
 BUILD_TIME: 1373869897
 CPV: sys-libs/e2fsprogs-libs-1.42
