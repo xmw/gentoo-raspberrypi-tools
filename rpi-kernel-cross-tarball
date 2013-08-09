@@ -13,7 +13,16 @@ make ARCH=arm CROSS_COMPILE=/usr/bin/armv6j-hardfloat-linux-gnueabi- -j2
 
 TMPDIR=$(mktemp -d /tmp/rpi-kernel-XXXXX)
 mkdir "${TMPDIR}"/boot
+
 make ARCH=arm CROSS_COMPILE=/usr/bin/armv6j-hardfloat-linux-gnueabi- modules_install INSTALL_MOD_PATH="${TMPDIR}"
 make ARCH=arm CROSS_COMPILE=/usr/bin/armv6j-hardfloat-linux-gnueabi- install INSTALL_PATH="${TMPDIR}"/boot
-tar cvJf "${TMPDIR}".tar.xz -C "${TMPDIR}" .
+
+rm "${TMPDIR}"/lib/modules/*/build
+rm "${TMPDIR}"/lib/modules/*/source
+
+PV="$(basename $(ls -d /tmp/rpi-kernel-Cpf17/lib/modules/*))"
+PV=${PV/-raspberrypi-/_pre-r}
+PV=${PV%%+}
+
+tar cvJf /tmp/raspberrypi-image-${PV}.tar.xz -C "${TMPDIR}" .
 
