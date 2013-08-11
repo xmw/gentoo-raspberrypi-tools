@@ -1,4 +1,5 @@
 dev-lang/python:2.7 berkdb sqlite
+dev-lang/python:3.2 berkdb sqlite
 dev-libs/libxml2 python
 dev-util/catalyst ccache
 media-libs/freetype X
@@ -6,3 +7,4 @@ net-analyzer/munin minimal
 net-libs/ldns -ecdsa
 net-misc/openssh ldns
 x11-base/xorg-server xvfb
+net-misc/openssh X
