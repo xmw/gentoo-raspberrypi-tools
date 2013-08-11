@@ -1,10 +1,15 @@
+app-doc/doxygen dot
+app-text/docbook-sgml-utils jadetex
 dev-lang/python:2.7 berkdb sqlite
 dev-lang/python:3.2 berkdb sqlite
 dev-libs/libxml2 python
 dev-util/catalyst ccache
 media-libs/freetype X
+media-libs/gd truetype fontconfig
 net-analyzer/munin minimal
 net-libs/ldns -ecdsa
 net-misc/openssh ldns
+sys-fs/udev gudev
+virtual/udev gudev
 x11-base/xorg-server xvfb
 net-misc/openssh X
