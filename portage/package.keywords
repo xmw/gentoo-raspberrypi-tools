@@ -4,3 +4,4 @@
 =net-misc/openssh-6.2_p2-r3
 =sys-boot/raspberrypi-mkimage-0_p20120201
 =sys-kernel/raspberrypi-image-3.10.4_pre-r20130802
+=media-gfx/feh-2.9.3
