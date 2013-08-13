@@ -1,0 +1,3 @@
+
+Build+CPV sorted by buildtime
+'\n'.join(['%s %s' % (time.ctime(int(t)), cpv) for t,cpv in sorted([(pkg.get('BUILD_TIME'), "=" + pkg.get('CPV')) for pkg in bh._pkgindex.packages])]))
