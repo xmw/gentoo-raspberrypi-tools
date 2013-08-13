@@ -14,3 +14,4 @@
 =net-dns/unbound-1.4.20
 =app-admin/tmpreaper-1.6.13
 =app-benchmarks/bonnie++-1.97
+=sys-devel/gcc-4.7.3
