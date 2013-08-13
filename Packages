@@ -6,13 +6,13 @@ CBUILD: armv6j-hardfloat-linux-gnueabi
 CHOST: armv6j-hardfloat-linux-gnueabi
 CONFIG_PROTECT: /boot/cmdline.txt /boot/config.txt /etc /usr/share/gnupg/qualified.txt /var/spool/munin-async/.ssh
 CONFIG_PROTECT_MASK: /etc/ca-certificates.conf /etc/env.d /etc/fonts/fonts.conf /etc/gconf /etc/gentoo-release /etc/revdep-rebuild /etc/sandbox.d /etc/terminfo
-FEATURES: assume-digests binpkg-logs buildpkg config-protect-if-modified distlocks ebuild-locks fixlafiles merge-sync news parallel-fetch preserve-libs protect-owned sandbox sfperms split-debug splitdebug strict unknown-features-warn unmerge-logs unmerge-orphans userfetch
+FEATURES: assume-digests binpkg-logs buildpkg config-protect-if-modified distlocks ebuild-locks fixlafiles getbinpkg merge-sync news parallel-fetch preserve-libs protect-owned sandbox sfperms split-log splitdebug strict unknown-features-warn unmerge-logs unmerge-orphans userfetch xattr
 GENTOO_MIRRORS: http://lore.xmw.de/gentoo/
-PACKAGES: 591
+PACKAGES: 580
 PROFILE: default/linux/arm/13.0
 SYNC: use update-portage
-TIMESTAMP: 1376335258
-USE: acl apache2_modules_actions apache2_modules_alias apache2_modules_auth_basic apache2_modules_authn_alias apache2_modules_authn_anon apache2_modules_authn_core apache2_modules_authn_dbm apache2_modules_authn_default apache2_modules_authn_file apache2_modules_authz_core apache2_modules_authz_dbm apache2_modules_authz_default apache2_modules_authz_groupfile apache2_modules_authz_host apache2_modules_authz_owner apache2_modules_authz_user apache2_modules_autoindex apache2_modules_cache apache2_modules_cgi apache2_modules_cgid apache2_modules_dav apache2_modules_dav_fs apache2_modules_dav_lock apache2_modules_deflate apache2_modules_dir apache2_modules_disk_cache apache2_modules_env apache2_modules_expires apache2_modules_ext_filter apache2_modules_file_cache apache2_modules_filter apache2_modules_headers apache2_modules_include apache2_modules_info apache2_modules_log_config apache2_modules_logio apache2_modules_mem_cache apache2_modules_mime apache2_modules_mime_magic apache2_modules_negotiation apache2_modules_rewrite apache2_modules_setenvif apache2_modules_socache_shmcb apache2_modules_speling apache2_modules_status apache2_modules_unique_id apache2_modules_unixd apache2_modules_userdir apache2_modules_usertrack apache2_modules_vhost_alias arm berkdb bindist bzip2 calligra_features_author calligra_features_braindump calligra_features_flow calligra_features_karbon calligra_features_kexi calligra_features_krita calligra_features_plan calligra_features_sheets calligra_features_stage calligra_features_tables calligra_features_words cameras_ptp2 cli collectd_plugins_df collectd_plugins_interface collectd_plugins_irq collectd_plugins_load collectd_plugins_memory collectd_plugins_rrdtool collectd_plugins_swap collectd_plugins_syslog cracklib crypt cxx dri elibc_glibc fortran gdbm gpsd_protocols_aivdm gpsd_protocols_ashtech gpsd_protocols_earthmate gpsd_protocols_evermore gpsd_protocols_fv18 gpsd_protocols_garmin gpsd_protocols_garmintxt gpsd_protocols_gpsclock gpsd_protocols_itrax gpsd_protocols_mtk3301 gpsd_protocols_navcom gpsd_protocols_nmea gpsd_protocols_ntrip gpsd_protocols_oceanserver gpsd_protocols_oldstyle gpsd_protocols_oncore gpsd_protocols_rtcm104v2 gpsd_protocols_rtcm104v3 gpsd_protocols_sirf gpsd_protocols_superstar2 gpsd_protocols_timing gpsd_protocols_tnt gpsd_protocols_tripmate gpsd_protocols_tsip gpsd_protocols_ubx iconv input_devices_evdev input_devices_joystick input_devices_keyboard input_devices_mouse ipv6 kernel_linux lcd_devices_bayrad lcd_devices_cfontz lcd_devices_cfontz633 lcd_devices_glk lcd_devices_hd44780 lcd_devices_lb216 lcd_devices_lcdm001 lcd_devices_mtxorb lcd_devices_ncurses lcd_devices_text libreoffice_extensions_presenter-console libreoffice_extensions_presenter-minimizer modules mudflap ncurses nls nptl office_implementation_libreoffice openmp pam pcre php_targets_php5-4 python_single_target_python2_7 python_targets_python2_7 python_targets_python3_2 readline ruby_targets_ruby18 ruby_targets_ruby19 session ssl tcpd unicode userland_GNU video_cards_fbdev xtables_addons_account xtables_addons_chaos xtables_addons_condition xtables_addons_delude xtables_addons_dhcpmac xtables_addons_fuzzy xtables_addons_geoip xtables_addons_iface xtables_addons_ipmark xtables_addons_ipp2p xtables_addons_ipset xtables_addons_ipv4options xtables_addons_length2 xtables_addons_logmark xtables_addons_lscan xtables_addons_pknock xtables_addons_psd xtables_addons_quota2 xtables_addons_rawnat xtables_addons_steal xtables_addons_sysrq xtables_addons_tarpit xtables_addons_tee zlib
+TIMESTAMP: 1376422294
+USE: acl apache2_modules_actions apache2_modules_alias apache2_modules_auth_basic apache2_modules_authn_alias apache2_modules_authn_anon apache2_modules_authn_core apache2_modules_authn_dbm apache2_modules_authn_default apache2_modules_authn_file apache2_modules_authz_core apache2_modules_authz_dbm apache2_modules_authz_default apache2_modules_authz_groupfile apache2_modules_authz_host apache2_modules_authz_owner apache2_modules_authz_user apache2_modules_autoindex apache2_modules_cache apache2_modules_cgi apache2_modules_cgid apache2_modules_dav apache2_modules_dav_fs apache2_modules_dav_lock apache2_modules_deflate apache2_modules_dir apache2_modules_disk_cache apache2_modules_env apache2_modules_expires apache2_modules_ext_filter apache2_modules_file_cache apache2_modules_filter apache2_modules_headers apache2_modules_include apache2_modules_info apache2_modules_log_config apache2_modules_logio apache2_modules_mem_cache apache2_modules_mime apache2_modules_mime_magic apache2_modules_negotiation apache2_modules_rewrite apache2_modules_setenvif apache2_modules_socache_shmcb apache2_modules_speling apache2_modules_status apache2_modules_unique_id apache2_modules_unixd apache2_modules_userdir apache2_modules_usertrack apache2_modules_vhost_alias arm berkdb bindist bzip2 calligra_features_author calligra_features_braindump calligra_features_flow calligra_features_karbon calligra_features_kexi calligra_features_krita calligra_features_plan calligra_features_sheets calligra_features_stage calligra_features_tables calligra_features_words cameras_ptp2 cli collectd_plugins_df collectd_plugins_interface collectd_plugins_irq collectd_plugins_load collectd_plugins_memory collectd_plugins_rrdtool collectd_plugins_swap collectd_plugins_syslog cracklib crypt cxx doc dri elibc_glibc fortran gdbm gpsd_protocols_aivdm gpsd_protocols_ashtech gpsd_protocols_earthmate gpsd_protocols_evermore gpsd_protocols_fv18 gpsd_protocols_garmin gpsd_protocols_garmintxt gpsd_protocols_gpsclock gpsd_protocols_itrax gpsd_protocols_mtk3301 gpsd_protocols_navcom gpsd_protocols_nmea gpsd_protocols_ntrip gpsd_protocols_oceanserver gpsd_protocols_oldstyle gpsd_protocols_oncore gpsd_protocols_rtcm104v2 gpsd_protocols_rtcm104v3 gpsd_protocols_sirf gpsd_protocols_superstar2 gpsd_protocols_timing gpsd_protocols_tnt gpsd_protocols_tripmate gpsd_protocols_tsip gpsd_protocols_ubx iconv input_devices_evdev input_devices_joystick input_devices_keyboard input_devices_mouse ipv6 kernel_linux lcd_devices_bayrad lcd_devices_cfontz lcd_devices_cfontz633 lcd_devices_glk lcd_devices_hd44780 lcd_devices_lb216 lcd_devices_lcdm001 lcd_devices_mtxorb lcd_devices_ncurses lcd_devices_text libreoffice_extensions_presenter-console libreoffice_extensions_presenter-minimizer modules mudflap ncurses nls nptl office_implementation_libreoffice openmp pam pcre php_targets_php5-4 python_single_target_python2_7 python_targets_python2_7 python_targets_python3_2 readline ruby_targets_ruby18 ruby_targets_ruby19 session ssl static-libs tcpd unicode userland_GNU video_cards_fbdev xtables_addons_account xtables_addons_chaos xtables_addons_condition xtables_addons_delude xtables_addons_dhcpmac xtables_addons_fuzzy xtables_addons_geoip xtables_addons_iface xtables_addons_ipmark xtables_addons_ipp2p xtables_addons_ipset xtables_addons_ipv4options xtables_addons_length2 xtables_addons_logmark xtables_addons_lscan xtables_addons_pknock xtables_addons_psd xtables_addons_quota2 xtables_addons_rawnat xtables_addons_steal xtables_addons_sysrq xtables_addons_tarpit xtables_addons_tee zlib
 VERSION: 0
 REPO: gentoo
 
@@ -650,22 +650,6 @@ RDEPEND: >=sys-libs/zlib-1.1.4
 SHA1: 099f842d4bcc857cb030b38f8dbc1e6ef807106d
 SIZE: 39589
 
-BUILD_TIME: 1373506295
-CPV: app-portage/eix-0.28.5
-DEFINED_PHASES: configure install postinst prepare setup
-DEPEND: app-shells/push virtual/libintl app-arch/xz-utils sys-devel/gettext
-DESC: Search and query ebuilds, portage incl. local settings, ext. overlays, version changes, and more
-EAPI: 5
-IUSE: clang debug +dep doc nls optimization security strong-optimization strong-security sqlite swap-remote tools zsh-completion linguas_de linguas_ru
-KEYWORDS: ~alpha ~amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x86-freebsd ~ia64-hpux ~x86-interix ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x86-solaris
-LICENSE: GPL-2
-MD5: 5e48d5f25626f5f9d847197589d9f4c2
-MTIME: 1373506314
-RDEPEND: app-shells/push virtual/libintl
-SHA1: 766d968dc32ea7d5f592483f6ec790b772e15bef
-SIZE: 658070
-USE: dep nls zsh-completion
-
 BUILD_TIME: 1376048125
 CPV: app-portage/eix-0.29.3
 DEFINED_PHASES: configure install postinst prepare setup
@@ -786,18 +770,18 @@ RDEPEND: app-admin/eselect || ( >=app-shells/bash-3.2 app-shells/zsh ) sys-apps/
 SHA1: f2f5b5e8f98cf1ec5ebd69174c4f016caad33ec0
 SIZE: 129845
 
-BUILD_TIME: 1374183355
-CPV: app-shells/gentoo-bashcomp-20101217-r1
+BUILD_TIME: 1376398319
+CPV: app-shells/gentoo-bashcomp-20121024
 DEFINED_PHASES: compile install postinst prepare
 DESC: Gentoo-specific bash command-line completions (emerge, ebuild, equery, repoman, layman, etc)
 EAPI: 4
-KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris
+KEYWORDS: ~alpha amd64 arm hppa ~ia64 ~mips ppc ppc64 ~s390 ~sh ~sparc ~x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris
 LICENSE: GPL-2
-MD5: f722228f664a8cc3af2895a5abbd5a89
-MTIME: 1374183369
+MD5: 35a17a1dee49c02d118dbf40091a740f
+MTIME: 1376398335
 RDEPEND: app-shells/bash-completion
-SHA1: 7d7c4357ddd9ab1d74ca07f33df9aa4f20b001f7
-SIZE: 39351
+SHA1: 3471d59182683adf82fe9de676d283d7636e6b6b
+SIZE: 44711
 
 BUILD_TIME: 1373503890
 CPV: app-shells/push-1.5
@@ -825,22 +809,6 @@ MTIME: 1374135459
 RDEPEND: >=sys-libs/ncurses-5.1 >=dev-libs/libpcre-3.9 sys-libs/gdbm
 SHA1: 680398055c13dfa0d99ab3394d695c7977a0c06f
 SIZE: 2444669
-USE: gdbm pcre unicode
-
-BUILD_TIME: 1373544562
-CPV: app-shells/zsh-5.0.2-r2
-DEFINED_PHASES: configure install postinst prepare test
-DEPEND: sys-apps/groff >=sys-libs/ncurses-5.1 >=dev-libs/libpcre-3.9 sys-libs/gdbm
-DESC: UNIX Shell similar to the Korn shell
-EAPI: 5
-IUSE: caps debug doc examples gdbm maildir pcre static unicode
-KEYWORDS: ~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
-LICENSE: ZSH GPL-2
-MD5: ac731d6d3356739f4fad1e8d31527b14
-MTIME: 1373544613
-RDEPEND: >=sys-libs/ncurses-5.1 >=dev-libs/libpcre-3.9 sys-libs/gdbm
-SHA1: 599a7789ff21ce74b719e52036df88688685157a
-SIZE: 2443176
 USE: gdbm pcre unicode
 
 BUILD_TIME: 1374183020
@@ -1155,20 +1123,20 @@ RDEPEND: app-shells/bash || ( sys-apps/which sys-freebsd/freebsd-ubin ) dev-libs
 SHA1: 032242285989be81eda38f6376aae2b7100884c4
 SIZE: 73698
 
-BUILD_TIME: 1373850083
-CPV: app-vim/gentoo-syntax-20120109
+BUILD_TIME: 1376398665
+CPV: app-vim/gentoo-syntax-20130619
 DEFINED_PHASES: install postinst postrm prepare
 DEPEND: || ( >=app-editors/vim-7.3 >=app-editors/gvim-7.3 )
 DESC: vim plugin: Gentoo and portage related syntax highlighting, filetype, and indent settings
-EAPI: 4
+EAPI: 5
 IUSE: ignore-glep31
-KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 ~sh sparc x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
 LICENSE: vim
-MD5: 4f2b21b7cee6f50cc3a4a4c1d64ec19e
-MTIME: 1373850098
+MD5: 1dc34759f3ff0ad1b8968b002f52c5ee
+MTIME: 1376398697
 RDEPEND: || ( >=app-editors/vim-7.3 >=app-editors/gvim-7.3 )
-SHA1: 8f991f113f7e5411af511763ba76ce3d86656b92
-SIZE: 29707
+SHA1: 1899b5461727c14e7fce84e5afca42aaa8899b1f
+SIZE: 36056
 
 BUILD_TIME: 1376054609
 CPV: app-vim/gnupg-2.5
@@ -1198,22 +1166,22 @@ RDEPEND: || ( >=app-editors/vim-7.3 >=app-editors/gvim-7.3 )
 SHA1: fdecd9f1ab67802a6d0f22467644be94ae15d683
 SIZE: 215204
 
-BUILD_TIME: 1376289126
-CPV: dev-db/sqlite-3.7.16.2
+BUILD_TIME: 1376382481
+CPV: dev-db/sqlite-3.7.17
 DEFINED_PHASES: compile configure install prepare setup test
 DEPEND: sys-libs/readline || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESC: A SQL Database Engine in a C Library
 EAPI: 5
 IUSE: debug doc +extensions icu +readline secure-delete static-libs tcl test
-KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x86-freebsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+KEYWORDS: ~alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~s390 ~sh ~sparc ~x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x86-freebsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
 LICENSE: public-domain
-MD5: aea66a887a089f397cad1eb1ec5e6fb2
-MTIME: 1376289150
+MD5: b471b02f30724210b62a5922546bf44e
+MTIME: 1376382504
 RDEPEND: sys-libs/readline
-SHA1: e2684cd59d713b4243a7103d1e85d7466752922d
-SIZE: 751494
+SHA1: ac243a20c21dbb19bcc5142db75b7211964535a6
+SIZE: 1189956
 SLOT: 3
-USE: extensions readline static-libs
+USE: extensions readline
 
 BUILD_TIME: 1374694535
 CPV: dev-lang/lua-5.1.5
@@ -1248,7 +1216,7 @@ SHA1: 8e4b816373f53bf0df6c031eb23f96c4650cba49
 SIZE: 12252500
 USE: berkdb gdbm
 
-BUILD_TIME: 1376300488
+BUILD_TIME: 1376410247
 CPV: dev-lang/python-2.7.5
 DEFINED_PHASES: compile configure install postinst postrm preinst prepare setup test
 DEPEND: app-arch/bzip2 >=sys-libs/zlib-1.1.3 virtual/libffi virtual/libintl || ( sys-libs/db:5.3 sys-libs/db:5.2 sys-libs/db:5.1 sys-libs/db:5.0 sys-libs/db:4.8 sys-libs/db:4.7 sys-libs/db:4.6 sys-libs/db:4.5 sys-libs/db:4.4 sys-libs/db:4.3 sys-libs/db:4.2 ) sys-libs/gdbm[berkdb] >=sys-libs/ncurses-5.2 >=sys-libs/readline-4.1 >=dev-db/sqlite-3.3.8:3[extensions] dev-libs/openssl >=dev-libs/expat-2.1 !!<sys-apps/portage-2.1.9 virtual/pkgconfig >=sys-devel/autoconf-2.65 !sys-devel/gcc[libffi] sys-devel/automake >=sys-devel/autoconf-2.68
@@ -1257,14 +1225,14 @@ EAPI: 4
 IUSE: -berkdb build doc elibc_uclibc examples gdbm hardened ipv6 +ncurses +readline sqlite +ssl +threads tk +wide-unicode wininst +xml
 KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 ~sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
 LICENSE: PSF-2
-MD5: 4e103216a556fb52b1d706a19ed92d28
-MTIME: 1376300729
+MD5: 458957790bd844502f1bd09eb2cb6073
+MTIME: 1376410562
 PDEPEND: app-admin/eselect-python app-admin/python-updater
-RDEPEND: app-arch/bzip2 >=sys-libs/zlib-1.1.3 virtual/libffi virtual/libintl || ( sys-libs/db:5.3 sys-libs/db:5.2 sys-libs/db:5.1 sys-libs/db:5.0 sys-libs/db:4.8 sys-libs/db:4.7 sys-libs/db:4.6 sys-libs/db:4.5 sys-libs/db:4.4 sys-libs/db:4.3 sys-libs/db:4.2 ) sys-libs/gdbm[berkdb] >=sys-libs/ncurses-5.2 >=sys-libs/readline-4.1 >=dev-db/sqlite-3.3.8:3[extensions] dev-libs/openssl >=dev-libs/expat-2.1 !!<sys-apps/portage-2.1.9 app-misc/mime-types
-SHA1: 5035fa8c78a5f085674a647c612229b0c11dd1e5
-SIZE: 13077751
+RDEPEND: app-arch/bzip2 >=sys-libs/zlib-1.1.3 virtual/libffi virtual/libintl || ( sys-libs/db:5.3 sys-libs/db:5.2 sys-libs/db:5.1 sys-libs/db:5.0 sys-libs/db:4.8 sys-libs/db:4.7 sys-libs/db:4.6 sys-libs/db:4.5 sys-libs/db:4.4 sys-libs/db:4.3 sys-libs/db:4.2 ) sys-libs/gdbm[berkdb] >=sys-libs/ncurses-5.2 >=sys-libs/readline-4.1 >=dev-db/sqlite-3.3.8:3[extensions] dev-libs/openssl >=dev-libs/expat-2.1 !!<sys-apps/portage-2.1.9 app-misc/mime-types dev-python/python-docs:2.7
+SHA1: e76b72998986cf14069695e67871ef32fcd48ee9
+SIZE: 15501525
 SLOT: 2.7
-USE: berkdb gdbm ipv6 ncurses readline sqlite ssl threads wide-unicode xml
+USE: berkdb doc gdbm ipv6 ncurses readline sqlite ssl threads wide-unicode xml
 
 BUILD_TIME: 1376302858
 CPV: dev-lang/python-3.2.5-r1
@@ -1284,23 +1252,22 @@ SIZE: 12798587
 SLOT: 3.2
 USE: gdbm ipv6 ncurses readline sqlite ssl threads wide-unicode xml
 
-BUILD_TIME: 1374697104
-CPV: dev-libs/apr-1.4.5
+BUILD_TIME: 1376414213
+CPV: dev-libs/apr-1.4.8-r1
 DEFINED_PHASES: compile configure install prepare
-DEPEND: >=sys-apps/util-linux-2.16 || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND: >=sys-apps/util-linux-2.16 app-doc/doxygen || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESC: Apache Portable Runtime Library
 EAPI: 4
-IUSE: doc elibc_FreeBSD older-kernels-compatibility static-libs +urandom +uuid
-KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~sparc-fbsd ~x86-fbsd
+IUSE: doc elibc_FreeBSD older-kernels-compatibility static-libs +urandom
+KEYWORDS: ~alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 ~sh sparc ~x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x86-freebsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
 LICENSE: Apache-2.0
-MD5: 5e8fd130c7757e33ed825930ed2c0287
-MTIME: 1374697144
+MD5: 76b2c768e1cf14a4e16a1de1de546b97
+MTIME: 1376414276
 RDEPEND: >=sys-apps/util-linux-2.16
-RESTRICT: test
-SHA1: fe8306ba65bcc12959520535e9499955bdf473f5
-SIZE: 189483
+SHA1: 97bc0fbcb606b839a10251a903f49a2657450c5c
+SIZE: 980133
 SLOT: 1
-USE: urandom uuid
+USE: doc static-libs urandom
 
 BUILD_TIME: 1376170242
 CPV: dev-libs/atk-2.6.0
@@ -1545,22 +1512,6 @@ SHA1: 8a745fa4f007de221b3245de4207175aed7b97ef
 SIZE: 113038
 USE: static-libs
 
-BUILD_TIME: 1373519208
-CPV: dev-libs/libgcrypt-1.5.2-r1
-DEFINED_PHASES: compile configure install prepare test
-DEPEND: >=dev-libs/libgpg-error-1.8 || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
-DESC: General purpose crypto library based on the code used in GnuPG
-EAPI: 5
-IUSE: static-libs
-KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 ~s390 ~sh ~sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
-LICENSE: LGPL-2.1 MIT
-MD5: c66656c3fa2d91cb78e444cab75385dc
-MTIME: 1373519245
-RDEPEND: >=dev-libs/libgpg-error-1.8
-SHA1: 2307fc81f2d260cbdfefabf8637dd4e4147dce0a
-SIZE: 425143
-SLOT: 0/11
-
 BUILD_TIME: 1376293580
 CPV: dev-libs/libgcrypt-1.5.3
 DEFINED_PHASES: compile configure install prepare test
@@ -1685,23 +1636,6 @@ SHA1: bba1e3dc0c9fbb8600945c1e5cdc38ce52c755a2
 SIZE: 45809
 SLOT: 1
 
-BUILD_TIME: 1373611582
-CPV: dev-libs/libxml2-2.9.0-r2
-DEFINED_PHASES: compile configure install postinst prepare test unpack
-DEPEND: sys-libs/zlib:0/0= sys-libs/readline:0/0= dev-util/gtk-doc-am || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
-DESC: Version 2 of the library to manipulate XML files
-EAPI: 5
-IUSE: debug examples icu ipv6 lzma python readline static-libs test python_targets_python2_5 python_targets_python2_6 python_targets_python2_7
-KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris ~x86-winnt
-LICENSE: MIT
-MD5: 3b084629a38946b4cfaa39f277f3cae1
-MTIME: 1373611628
-RDEPEND: sys-libs/zlib:0/0= sys-libs/readline:0/0=
-SHA1: 5763993a4852bbd5b565dcde8ee91ebd0ce71f1b
-SIZE: 1421451
-SLOT: 2
-USE: ipv6 python_targets_python2_7 readline
-
 BUILD_TIME: 1376275505
 CPV: dev-libs/libxml2-2.9.1-r1
 DEFINED_PHASES: compile configure install postinst prepare test unpack
@@ -1816,21 +1750,20 @@ SHA1: 8df863fbb43c387ca88e7409f5881378227fac21
 SIZE: 96816
 USE: nls static-libs
 
-BUILD_TIME: 1373553494
-CPV: dev-libs/protobuf-2.5.0
+BUILD_TIME: 1376407242
+CPV: dev-libs/protobuf-2.4.1
 DEFINED_PHASES: compile configure install postinst postrm preinst prepare setup test
 DEPEND: || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESC: Google's Protocol Buffers -- an efficient method of encoding structured data
-EAPI: 5
-IUSE: emacs examples java python static-libs vim-syntax python_targets_python2_5 python_targets_python2_6 python_targets_python2_7 elibc_FreeBSD source java
-KEYWORDS: ~amd64 ~arm ~ia64 ~mips ~ppc ~ppc64 ~x86 ~amd64-linux ~arm-linux ~x86-linux ~x64-macos x86-macos
+EAPI: 3
+IUSE: emacs examples java python static-libs vim-syntax elibc_FreeBSD source java
+KEYWORDS: amd64 arm ~ia64 ~mips ppc ppc64 x86 ~amd64-linux ~arm-linux ~x86-linux ~x64-macos
 LICENSE: Apache-2.0
-MD5: 1802e0d50d77c78cea57ee63d241b4fb
-MTIME: 1373553552
-SHA1: 68f7cd52bde2be45284af3b191a4484b5ebefaa1
-SIZE: 815143
-SLOT: 0/8
-USE: python_targets_python2_7
+MD5: 28f222e056e51403014fff97eec78329
+MTIME: 1376407327
+SHA1: 5c420d9f0b42ae33d5d0ea0ab16b8a5c19f99f76
+SIZE: 1487415
+USE: static-libs
 
 BUILD_TIME: 1373568575
 CPV: dev-libs/pth-2.0.7-r3
@@ -2319,19 +2252,19 @@ RDEPEND: dev-lang/perl[-build]
 SHA1: d98a56a6f4b6d9ae58d572a8a7f96a92663e8372
 SIZE: 49458
 
-BUILD_TIME: 1373561571
-CPV: dev-perl/Net-HTTP-6.30.0
+BUILD_TIME: 1376385665
+CPV: dev-perl/Net-HTTP-6.60.0
 DEFINED_PHASES: compile configure install prepare test unpack
-DEPEND: !<dev-perl/libwww-perl-6 virtual/perl-Compress-Raw-Zlib virtual/perl-IO virtual/perl-IO-Compress dev-lang/perl[-build]
+DEPEND: !<dev-perl/libwww-perl-6 virtual/perl-Compress-Raw-Zlib virtual/perl-IO virtual/perl-IO-Compress || ( >=dev-lang/perl-5.16 <dev-lang/perl-5.16[-build] )
 DESC: Low-level HTTP connection (client)
-EAPI: 4
-KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+EAPI: 5
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 ~sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
 LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
-MD5: b1e817a33444db97a959e1d6cfe364d9
-MTIME: 1373561585
-RDEPEND: !<dev-perl/libwww-perl-6 virtual/perl-Compress-Raw-Zlib virtual/perl-IO virtual/perl-IO-Compress dev-lang/perl[-build]
-SHA1: b89a786a575116139b8a7feaeb453a1b45826761
-SIZE: 37423
+MD5: 24856adb75efacf75e19582926258f1b
+MTIME: 1376385681
+RDEPEND: !<dev-perl/libwww-perl-6 virtual/perl-Compress-Raw-Zlib virtual/perl-IO virtual/perl-IO-Compress || ( >=dev-lang/perl-5.16 <dev-lang/perl-5.16[-build] )
+SHA1: df07dd0bcd88b1aea796b57915fc5df4a2ba3a38
+SIZE: 39482
 
 BUILD_TIME: 1375169843
 CPV: dev-perl/Net-IP-1.260.0
@@ -2590,6 +2523,19 @@ SHA1: 3f7ca5fae5080e6038eccc8047bf100ece931d9d
 SIZE: 121924
 USE: ipv6
 
+BUILD_TIME: 1376402666
+CPV: dev-python/python-docs-2.7.3
+DEFINED_PHASES: install postrm
+DESC: HTML documentation for Python
+EAPI: 3
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 ~sh sparc x86 amd64-fbsd ~sparc-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
+LICENSE: PSF-2
+MD5: b1e8b2bacc26286ee2b49306dfc84106
+MTIME: 1376402891
+SHA1: dfb3aeafb1ba727d25857bcb606313abf7b2e0cf
+SIZE: 2687498
+SLOT: 2.7
+
 BUILD_TIME: 1376132950
 CPV: dev-python/python-exec-0.3.1
 DEFINED_PHASES: compile configure install prepare test
@@ -2651,38 +2597,6 @@ RDEPEND: !<dev-libs/boost-1.34.0 !<=dev-util/boost-build-1.35.0-r1 dev-lang/pyth
 SHA1: 0ea0d52cada63dafc7b6860d0eeedfa395480f3a
 SIZE: 441353
 USE: python
-
-BUILD_TIME: 1374268998
-CPV: dev-util/catalyst-2.0.12.2
-DEFINED_PHASES: install postinst prepare setup
-DEPEND: app-text/asciidoc =dev-lang/python-2*
-DESC: release metatool used for creating releases based on Gentoo Linux
-EAPI: 3
-IUSE: ccache kernel_linux
-KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd
-LICENSE: GPL-2
-MD5: e71039baa578ee3c30f0662ed1be63e3
-MTIME: 1374269019
-RDEPEND: app-arch/lbzip2 app-crypt/shash virtual/cdrtools dev-util/ccache app-misc/zisofs-tools >=sys-fs/squashfs-tools-2.1 =dev-lang/python-2*
-SHA1: 24dd851a5f845ab339f2095770f47f97f5fbb962
-SIZE: 931233
-USE: ccache kernel_linux
-
-BUILD_TIME: 1375337717
-CPV: dev-util/catalyst-2.0.13
-DEFINED_PHASES: install postinst prepare setup
-DEPEND: app-text/asciidoc =dev-lang/python-2*
-DESC: release metatool used for creating releases based on Gentoo Linux
-EAPI: 3
-IUSE: ccache kernel_linux
-KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd
-LICENSE: GPL-2
-MD5: e73788dd21b57448d30f78ec8a2ce333
-MTIME: 1375337752
-RDEPEND: app-arch/lbzip2 app-crypt/shash virtual/cdrtools dev-util/ccache app-misc/zisofs-tools >=sys-fs/squashfs-tools-2.1 =dev-lang/python-2*
-SHA1: 6a4cfdf6fd39dbd21bc055ef50d8bd3de7142578
-SIZE: 898597
-USE: ccache kernel_linux
 
 BUILD_TIME: 1376049310
 CPV: dev-util/catalyst-2.0.14
@@ -2802,20 +2716,6 @@ RDEPEND: >=dev-lang/perl-5.6
 RESTRICT: test
 SHA1: 67e8cc750889a2a64bd33494b856737657afb5e8
 SIZE: 27095
-
-BUILD_TIME: 1376287451
-CPV: dev-util/intltool-0.50.2-r1
-DEFINED_PHASES: prepare
-DEPEND: >=dev-lang/perl-5.8.1 dev-perl/XML-Parser
-DESC: Internationalization Tool Collection
-EAPI: 5
-KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
-LICENSE: GPL-2
-MD5: 87707a005073a0ff4f38a2c5a0c54dda
-MTIME: 1376287473
-RDEPEND: >=dev-lang/perl-5.8.1 dev-perl/XML-Parser sys-devel/gettext
-SHA1: d30b57656b467db18de66a9abc056994b362757b
-SIZE: 108430
 
 BUILD_TIME: 1376298419
 CPV: dev-util/pkgconfig-0.28
@@ -3575,8 +3475,8 @@ SHA1: eeec7aded787d4e3c502aa774825ee1f33a3e759
 SIZE: 365728
 USE: chroot ipv6 ssl
 
-BUILD_TIME: 1373966745
-CPV: net-dns/bind-tools-9.9.2
+BUILD_TIME: 1376385256
+CPV: net-dns/bind-tools-9.9.3_p2
 DEFINED_PHASES: compile configure install prepare
 DEPEND: dev-libs/openssl sys-libs/readline || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESC: bind tools: dig, nslookup, host, nsupdate, dnssec-keygen
@@ -3584,11 +3484,11 @@ EAPI: 4
 IUSE: doc gssapi idn ipv6 readline ssl urandom xml
 KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
 LICENSE: ISC BSD BSD-2 HPND JNIC RSA openssl
-MD5: 3ef61e1d47bf4ecaa91e1a61d35eed6f
-MTIME: 1373966768
+MD5: b9148ad6120221cacb9eec51462423a0
+MTIME: 1376385366
 RDEPEND: dev-libs/openssl sys-libs/readline
-SHA1: dbbc0c3e6678dff92f56c3db194b6d19f0da2270
-SIZE: 3346176
+SHA1: a2202773b27ee57217130a1a7781cd885eec06e0
+SIZE: 11875887
 USE: ipv6 readline ssl
 
 BUILD_TIME: 1373618976
@@ -3826,20 +3726,20 @@ SHA1: b22af51870ced65518499e439860b4d64bcd08ac
 SIZE: 132109
 USE: ipv6 ssl
 
-BUILD_TIME: 1373555597
+BUILD_TIME: 1376409768
 CPV: net-misc/mosh-1.2.4
 DEFINED_PHASES: compile configure install prepare unpack
 DEPEND: dev-libs/protobuf sys-libs/ncurses:5 virtual/ssh dev-lang/perl dev-perl/IO-Tty sys-libs/libutempter virtual/pkgconfig || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESC: Mobile shell that supports roaming and intelligent local echo
 EAPI: 4
-IUSE: bash-completion +client examples +mosh-hardening +server ufw +utempter
+IUSE: +client examples +mosh-hardening +server ufw +utempter
 KEYWORDS: amd64 ~mips ppc x86 ~arm-linux ~x86-linux
 LICENSE: GPL-3
-MD5: ca8d0e2d2cb1f74f6b732a63fba42b2f
-MTIME: 1373555631
+MD5: a00f3cd16e5bb504e98a41e9ed8031da
+MTIME: 1376409807
 RDEPEND: dev-libs/protobuf sys-libs/ncurses:5 virtual/ssh dev-lang/perl dev-perl/IO-Tty sys-libs/libutempter
-SHA1: d462b7b1fe9d32630c8fec6f901ffdc0fd7cd69e
-SIZE: 269612
+SHA1: aacd2c39473639a4eb26c0c1926f138291301e36
+SIZE: 319120
 USE: client mosh-hardening server utempter
 
 BUILD_TIME: 1373617776
@@ -3857,37 +3757,6 @@ RDEPEND: >=sys-libs/ncurses-5.2 >=sys-libs/readline-4.1 !net-misc/openntpd dev-l
 SHA1: ffd9c9586bfdfa13bcc32b3691be137cf29fac8f
 SIZE: 1763470
 USE: ipv6 ssl
-
-BUILD_TIME: 1376052846
-CPV: net-misc/openssh-5.9_p1-r4
-DEFINED_PHASES: configure install postinst preinst prepare setup test
-DEPEND: virtual/pam >=dev-libs/openssl-0.9.6d:0[bindist] >=sys-libs/zlib-1.2.3 >=sys-apps/tcp-wrappers-7.6 virtual/shadow virtual/pkgconfig virtual/os-headers sys-devel/autoconf || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool virtual/pkgconfig
-DESC: Port of OpenBSD's free SSH release
-EAPI: 2
-IUSE: bindist +hpn kerberos ldap libedit pam selinux skey static tcpd X X509
-KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~sparc-fbsd ~x86-fbsd
-LICENSE: BSD GPL-2
-MD5: 8e995143e7fad6fa55cd918fdb803cc6
-MTIME: 1376052872
-RDEPEND: virtual/pam >=dev-libs/openssl-0.9.6d:0[bindist] >=sys-libs/zlib-1.2.3 >=sys-apps/tcp-wrappers-7.6 virtual/shadow >=sys-auth/pambase-20081028
-SHA1: 37dfa759fc24f3b2cd65391cee7f4735f0fa3735
-SIZE: 829464
-USE: bindist hpn pam tcpd
-
-BUILD_TIME: 1373559839
-CPV: net-misc/openssh-6.2_p2-r1
-DEFINED_PHASES: configure install postinst preinst prepare setup test
-DEPEND: >=dev-libs/openssl-0.9.6d:0[bindist] dev-libs/openssl >=sys-libs/zlib-1.2.3 >=sys-apps/tcp-wrappers-7.6 net-libs/ldns[-ecdsa,ssl] virtual/pam virtual/pkgconfig virtual/os-headers sys-devel/autoconf || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool virtual/pkgconfig
-DESC: Port of OpenBSD's free SSH release
-EAPI: 4
-IUSE: bindist +hpn kerberos ldap ldns libedit pam selinux skey static tcpd X X509
-LICENSE: BSD GPL-2
-MD5: aaaf53c7cf2b1ee99d6fb909bfcc2cff
-MTIME: 1373559865
-RDEPEND: >=dev-libs/openssl-0.9.6d:0[bindist] dev-libs/openssl >=sys-libs/zlib-1.2.3 >=sys-apps/tcp-wrappers-7.6 net-libs/ldns[-ecdsa,ssl] virtual/pam >=sys-auth/pambase-20081028 virtual/shadow
-SHA1: 7fefa877a70f60304132cfe095a6360754998fe0
-SIZE: 933842
-USE: bindist hpn ldns pam tcpd
 
 BUILD_TIME: 1376329803
 CPV: net-misc/openssh-6.2_p2-r3
@@ -5097,21 +4966,21 @@ MTIME: 1376136560
 SHA1: 8e5f4b1d7769a48375c07176847e87dba3bfdda9
 SIZE: 25509
 
-BUILD_TIME: 1376241848
-CPV: sys-auth/consolekit-0.4.5_p20120320-r1
+BUILD_TIME: 1376397968
+CPV: sys-auth/consolekit-0.4.6
 DEFINED_PHASES: configure install prepare setup
-DEPEND: >=dev-libs/dbus-glib-0.100:0/0= >=dev-libs/glib-2.22:2/2= sys-libs/zlib:0/0= x11-libs/libX11:0/0= sys-apps/acl:0/0= >=virtual/udev-171 virtual/pam dev-libs/libxslt virtual/pkgconfig app-text/xmlto || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool virtual/pkgconfig
+DEPEND: >=dev-libs/dbus-glib-0.100:0/0= >=dev-libs/glib-2.22:2/2= sys-libs/zlib:0/0= x11-libs/libX11:0/0= sys-apps/acl:0/0= >=virtual/udev-200 virtual/pam dev-libs/libxslt virtual/pkgconfig || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool virtual/pkgconfig
 DESC: Framework for defining and tracking users, login sessions and seats.
 EAPI: 5
 IUSE: acl debug doc kernel_linux pam policykit selinux test
-KEYWORDS: alpha amd64 arm ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~ia64-linux ~x86-linux
+KEYWORDS: ~alpha amd64 arm ~ia64 ~mips ppc ppc64 ~s390 ~sh ~sparc ~x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~ia64-linux ~x86-linux
 LICENSE: GPL-2
-MD5: de2c16fcad74438dcb764e1f3e9c3da9
-MTIME: 1376241873
-RDEPEND: >=dev-libs/dbus-glib-0.100:0/0= >=dev-libs/glib-2.22:2/2= sys-libs/zlib:0/0= x11-libs/libX11:0/0= sys-apps/acl:0/0= >=virtual/udev-171 virtual/pam sys-apps/coreutils[acl]
-SHA1: e8ea59ec5d80230d2ad6cc0cf506ef55a3d27538
-SIZE: 329574
-USE: acl doc kernel_linux pam
+MD5: f0a192b46bbca71277660c8892ad8d6c
+MTIME: 1376397994
+RDEPEND: >=dev-libs/dbus-glib-0.100:0/0= >=dev-libs/glib-2.22:2/2= sys-libs/zlib:0/0= x11-libs/libX11:0/0= sys-apps/acl:0/0= >=virtual/udev-200 virtual/pam sys-apps/coreutils[acl]
+SHA1: 53b64ba8fcd29490774d9a309fbbf11173cd2ce0
+SIZE: 329370
+USE: acl kernel_linux pam
 
 BUILD_TIME: 1376144840
 CPV: sys-auth/pambase-20120417-r2
@@ -5146,20 +5015,18 @@ SHA1: c13f5b698b9f2ea0dd79bb34af5663c8e1c01daf
 SIZE: 59079
 USE: zlib
 
-BUILD_TIME: 1373887287
-CPV: sys-boot/raspberrypi-firmware-0_p20130711
+BUILD_TIME: 1376375911
+CPV: sys-boot/raspberrypi-firmware-0_p20130722
 DEFINED_PHASES: install postinst preinst unpack
 DESC: Raspberry PI boot loader and firmware
 EAPI: 5
 KEYWORDS: ~arm -*
 LICENSE: GPL-2 raspberrypi-videocore-bin
-MD5: 258128fd38ef9b9350e69ce8acda1846
-MTIME: 1373887350
-RDEPEND: !sys-boot/raspberrypi-loader
+MD5: fbee363591bc21a7e631013bcf4463a8
+MTIME: 1376375944
 RESTRICT: binchecks strip
-SHA1: e0832c1848e09c2a5e3693e0014175d1bb586eba
-SIZE: 4240438
-REPO: x-portage
+SHA1: 9d58da290e44a3653a8a09014670b308bfc0b86c
+SIZE: 4243095
 
 BUILD_TIME: 1376286266
 CPV: sys-devel/autoconf-2.69
@@ -5528,23 +5395,23 @@ SHA1: 10103da460c43aa61fdaaf9a18aed99df41f5a01
 SIZE: 131073
 USE: xz
 
-BUILD_TIME: 1376331096
+BUILD_TIME: 1376396301
 CPV: sys-fs/udev-204
 DEFINED_PHASES: compile configure install postinst preinst prepare setup
-DEPEND: >=sys-apps/util-linux-2.20 sys-apps/acl >=sys-apps/kmod-13 !<sys-libs/glibc-2.11 !sys-apps/systemd app-text/docbook-xsl-stylesheets dev-libs/libxslt >=sys-devel/make-3.82-r4 virtual/os-headers virtual/pkgconfig !<sys-kernel/linux-headers-2.6.32 || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND: >=sys-apps/util-linux-2.20 sys-apps/acl >=dev-libs/glib-2 >=sys-apps/kmod-13 !<sys-libs/glibc-2.11 !sys-apps/systemd app-text/docbook-xsl-stylesheets dev-libs/libxslt >=sys-devel/make-3.82-r4 virtual/os-headers virtual/pkgconfig !<sys-kernel/linux-headers-2.6.32 || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESC: Linux dynamic and persistent device naming support (aka userspace devfs)
 EAPI: 5
 IUSE: acl doc +firmware-loader gudev hwdb introspection keymap +kmod +openrc selinux static-libs
 KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86
 LICENSE: LGPL-2.1 MIT GPL-2
-MD5: 43c34df15ad8ba92600404bd60a414b1
-MTIME: 1376331123
+MD5: fb8c01686670807085a06d08a04b7662
+MTIME: 1376396371
 PDEPEND: >=virtual/udev-197-r1 >=sys-fs/udev-init-scripts-25
-RDEPEND: >=sys-apps/util-linux-2.20 sys-apps/acl >=sys-apps/kmod-13 !<sys-libs/glibc-2.11 !sys-apps/systemd !<sys-apps/openrc-0.9.9 !sys-apps/coldplug !<sys-fs/lvm2-2.02.97-r1 !sys-fs/device-mapper !<sys-fs/udev-init-scripts-22 !<sys-kernel/dracut-017-r1 !<sys-kernel/genkernel-3.4.25 !<sec-policy/selinux-base-2.20120725-r10
+RDEPEND: >=sys-apps/util-linux-2.20 sys-apps/acl >=dev-libs/glib-2 >=sys-apps/kmod-13 !<sys-libs/glibc-2.11 !sys-apps/systemd !<sys-apps/openrc-0.9.9 !sys-apps/coldplug !<sys-fs/lvm2-2.02.97-r1 !sys-fs/device-mapper !<sys-fs/udev-init-scripts-22 !<sys-kernel/dracut-017-r1 !<sys-kernel/genkernel-3.4.25 !<sec-policy/selinux-base-2.20120725-r10
 RESTRICT: test
-SHA1: 7f0c8dcd2082e72756dbe885b11a16dd07aa234c
-SIZE: 499248
-USE: acl firmware-loader kmod openrc static-libs
+SHA1: 1ef0455615c3d8952fc764f8f3e41f3dd1cb7fc7
+SIZE: 1539426
+USE: acl firmware-loader gudev kmod openrc static-libs
 
 BUILD_TIME: 1376331576
 CPV: sys-fs/udev-init-scripts-26
@@ -5591,38 +5458,6 @@ RESTRICT: binchecks strip
 SHA1: 2f0219bccde8679a273d722e75356455e21307a5
 SIZE: 671764
 
-BUILD_TIME: 1373501517
-CHOST: x86_64-pc-linux-gnu
-CPV: sys-kernel/raspberrypi-image-3.2.27_p20121105
-DEFINED_PHASES: install
-DESC: Raspberry PI precompiled kernel and modules
-EAPI: 4
-KEYWORDS: ~arm -*
-LICENSE: GPL-2 raspberrypi-videocore-bin
-MD5: e7d79fadc5adaf6bc8a743b0d09e29a2
-MTIME: 1373566598
-SHA1: 9d206db4af6d114e633f829b5295d4e77f361b4e
-SIZE: 29864024
-REPO: xmw
-
-BUILD_TIME: 1374560125
-CPV: sys-kernel/raspberrypi-sources-3.10.1_pre-r20130719
-DEFINED_PHASES: compile install postinst postrm preinst setup test unpack
-DEPEND: sys-apps/sed >=sys-devel/binutils-2.11.90.0.31
-DESC: Raspberry PI kernel sources
-EAPI: 5
-IUSE: symlink build
-KEYWORDS: ~arm
-LICENSE: GPL-2 freedist
-MD5: 62e7f71e31e1ad290d53700cf052e3c1
-MTIME: 1374562279
-PDEPEND: virtual/dev-manager
-RDEPEND: >=sys-libs/ncurses-5.2 sys-devel/make dev-lang/perl sys-devel/bc
-RESTRICT: binchecks strip
-SHA1: d7fdcf0e4b1dca36f9a8badd8dfe570c83797484
-SIZE: 88580528
-SLOT: 3.10.1_pre-r20130719
-
 BUILD_TIME: 1376315646
 CPV: sys-libs/cracklib-2.8.19
 DEFINED_PHASES: compile configure install postinst postrm prepare setup
@@ -5653,22 +5488,6 @@ SHA1: 0a59ec3ed4959656419c489b83448c8b9513ac99
 SIZE: 3893959
 SLOT: 4.8
 USE: cxx
-
-BUILD_TIME: 1373869897
-CPV: sys-libs/e2fsprogs-libs-1.42
-DEFINED_PHASES: configure install prepare
-DEPEND: sys-devel/gettext virtual/pkgconfig
-DESC: e2fsprogs libraries (common error and subsystem)
-EAPI: 2
-IUSE: nls static-libs
-KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd
-LICENSE: GPL-2
-MD5: 5c4de6a745ef2fb34b2326b63058a13b
-MTIME: 1373869911
-RDEPEND: !sys-libs/com_err !sys-libs/ss !<sys-fs/e2fsprogs-1.41.8
-SHA1: 6fee794cc56fb9b2b6020d04639f0ab32456c7a3
-SIZE: 36360
-USE: nls
 
 BUILD_TIME: 1376305927
 CPV: sys-libs/e2fsprogs-libs-1.42.7
@@ -5905,20 +5724,6 @@ RDEPEND: sys-libs/ncurses[unicode]
 SHA1: f2dfe1e7c1dd9dd771a180ea88b2bf204dc17973
 SIZE: 86162
 USE: kernel_linux unicode
-
-BUILD_TIME: 1374080228
-CPV: sys-process/iotop-0.4.3
-DEFINED_PHASES: compile install postinst postrm prepare setup
-DEPEND: || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) || ( =dev-lang/python-2.7*[ncurses] =dev-lang/python-2.6*[ncurses] =dev-lang/python-2.5*[ncurses] )
-DESC: Top-like UI used to show which process is using the I/O
-EAPI: 4
-KEYWORDS: amd64 arm hppa ~ia64 ppc sparc x86 ~amd64-linux ~x86-linux
-LICENSE: GPL-2
-MD5: bcd077837c101fe8d2c985a1ca75b112
-MTIME: 1374080263
-RDEPEND: || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) || ( =dev-lang/python-2.7*[ncurses] =dev-lang/python-2.6*[ncurses] =dev-lang/python-2.5*[ncurses] )
-SHA1: c053c9a158bad2d5b2a27ee6492ed58c77acbb56
-SIZE: 66802
 
 BUILD_TIME: 1376047644
 CPV: sys-process/iotop-0.6
@@ -6816,20 +6621,6 @@ RDEPEND: || ( media-fonts/dejavu media-fonts/liberation-fonts media-fonts/crosco
 SHA1: 175b3b9be14375a0090867fd46d632ababd00fb2
 SIZE: 4882
 
-BUILD_TIME: 1373523802
-CPV: virtual/udev-197-r3
-DEFINED_PHASES: -
-DESC: Virtual to select between sys-fs/udev and sys-fs/eudev
-EAPI: 5
-IUSE: gudev hwdb introspection keymap +kmod selinux static-libs
-KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86
-MD5: 1634161474fbd5b53d74d06a34e4db01
-MTIME: 1373523825
-RDEPEND: || ( >=sys-fs/udev-197-r8[kmod] >=sys-apps/systemd-198-r5[kmod] >=sys-fs/eudev-1_beta2-r2[modutils] )
-SHA1: 9bd0d4f7b4749a1ea13e34c6c4462cfbd1ba466c
-SIZE: 5782
-USE: kmod
-
 BUILD_TIME: 1376331380
 CPV: virtual/udev-200
 DEFINED_PHASES: -
@@ -7468,6 +7259,22 @@ SHA1: c00da4bfa40b6982aecd4a29a4354bcd5334f0d2
 SIZE: 130521
 USE: ipv6 static-libs
 
+BUILD_TIME: 1376396282
+CPV: x11-libs/libXpm-3.5.10
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: x11-libs/libX11 x11-libs/libXt x11-libs/libXext x11-proto/xextproto x11-proto/xproto sys-devel/gettext || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool virtual/pkgconfig
+DESC: X.Org Xpm library
+EAPI: 4
+IUSE: static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: MIT
+MD5: eb2a77bee782acb1c50c3b27c7a78c5d
+MTIME: 1376396323
+RDEPEND: x11-libs/libX11 x11-libs/libXt x11-libs/libXext x11-proto/xextproto x11-proto/xproto
+SHA1: d769e44582931c3df76db5a04e37b2ff18c446b3
+SIZE: 213715
+USE: static-libs
+
 BUILD_TIME: 1376162094
 CPV: x11-libs/libXrandr-1.4.0
 DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
@@ -7889,6 +7696,22 @@ MTIME: 1376308231
 RDEPEND: >=dev-libs/glib-2 dev-libs/libxml2
 SHA1: 3048c92a0499ccbbbf65a633de631f387c9783a2
 SIZE: 566445
+
+BUILD_TIME: 1376397213
+CPV: x11-misc/slim-1.3.5-r2
+DEFINED_PHASES: compile configure install postinst prepare test
+DEPEND: x11-libs/libXmu x11-libs/libX11 x11-libs/libXpm x11-libs/libXft media-libs/libpng:0/0= virtual/jpeg x11-apps/sessreg virtual/pam virtual/pkgconfig x11-proto/xproto sys-devel/make >=dev-util/cmake-2.8.8 >=sys-apps/findutils-4.4.0 virtual/pkgconfig
+DESC: Simple Login Manager
+EAPI: 5
+IUSE: branding pam consolekit
+KEYWORDS: amd64 arm ~mips ppc ppc64 sparc x86 ~x86-fbsd
+LICENSE: GPL-2
+MD5: fd8018cdeb32d8569c5bdc3c16d83657
+MTIME: 1376397265
+RDEPEND: x11-libs/libXmu x11-libs/libX11 x11-libs/libXpm x11-libs/libXft media-libs/libpng:0/0= virtual/jpeg x11-apps/sessreg virtual/pam
+SHA1: de74e8bd630ca8616d1bd0872e67256be3acec12
+SIZE: 319893
+USE: pam
 
 BUILD_TIME: 1376067568
 CPV: x11-misc/xbitmaps-1.1.1
