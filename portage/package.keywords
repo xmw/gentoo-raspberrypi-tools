@@ -5,3 +5,10 @@
 =sys-boot/raspberrypi-mkimage-0_p20120201
 =sys-kernel/raspberrypi-image-3.10.4_pre-r20130802
 =media-gfx/feh-2.9.3
+=net-misc/mosh-1.2.4 ~*
+=sys-process/at-3.1.13-r2
+=app-arch/hardlink-0.2.0
+=app-admin/tmpreaper-1.6.13
+=sys-fs/ncdu-1.10
+=net-p2p/ncdc-1.17 ~*
+=net-dns/unbound-1.4.20
