@@ -12,7 +12,7 @@ sys.stderr.flush()
 
 lines = []
 for i in bh._pkgindex.packages:
-    iuses = i.get('IUSE', '').replace('+', '').split()
+    iuses = i.get('IUSE', '').replace('+', '').replace('-', '').split()
     if not iuses:
         continue
     uses = i.get('USE', '').split()

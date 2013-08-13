@@ -29,12 +29,8 @@ for pkg in bh._pkgindex.packages:
 
     print('missing %s' % cpv)
     
-    cmd = 'screen -S %s -X screen zsh -c "echo \\"emerge =%s\\" ; emerge -av1K \=%s ; echo \\"done\\" ; sleep 7d"\n' % (os.getenv('STY'), cpv, cpv)
+    cmd = ['emerge', '-v1K', '=%s' % cpv]
     print(cmd)
-
-    p = subprocess.Popen(['batch'], stdin=subprocess.PIPE, stdout=subprocess.PIPE)
-    p.stdin.write(cmd.encode('utf-8'))
-    p.stdin.close()
-    print(p.stdout.read().decode('utf-8'))
-    p.stdout.close()
+    subprocess.Popen(cmd).wait()
+    
 

@@ -1,3 +1,12 @@
 
 Build+CPV sorted by buildtime
 '\n'.join(['%s %s' % (time.ctime(int(t)), cpv) for t,cpv in sorted([(pkg.get('BUILD_TIME'), "=" + pkg.get('CPV')) for pkg in bh._pkgindex.packages])]))
+
+atd + screen 
+
+    cmd = 'screen -S %s -X screen zsh -c "echo \\"emerge =%s\\" ; emerge -av1K \=%s ; echo \\"done\\" ; sleep 7d"\n' % (os.getenv('STY'), cpv, cpv)
+    p = subprocess.Popen(['batch'], stdin=subprocess.PIPE, stdout=subprocess.PIPE)
+    p.stdin.write(cmd.encode('utf-8'))
+    p.stdin.close()
+    print(p.stdout.read().decode('utf-8'))
+    p.stdout.close()
