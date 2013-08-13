@@ -20,3 +20,8 @@ rm /var/cache/portage/latest.squashfs
 ln -s "${PORTAGE_SQUASHFS}" /var/cache/portage/latest.squashfs
 umount /usr/portage
 mount /usr/portage
+if [ -x /usr/bin/eix-update ] ; then
+	if [ /var/cache/portage/latest.squashfs -nt /var/cache/eix/portage.eix ] ; then
+		/usr/bin/eix-update
+	fi
+fi
