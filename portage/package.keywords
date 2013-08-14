@@ -16,3 +16,4 @@
 =app-benchmarks/bonnie++-1.97
 =sys-devel/gcc-4.7.3
 =net-libs/ldns-1.6.16
+=x11-misc/x2x-1.27-r3 ~*
