@@ -17,3 +17,15 @@
 =sys-devel/gcc-4.7.3
 =net-libs/ldns-1.6.16
 =x11-misc/x2x-1.27-r3 ~*
+portage/package.keywords
+=dev-libs/libcss-0.2.0 
+=dev-libs/libparserutils-0.1.2 
+=dev-libs/libwapcaplet-0.2.0 
+=media-libs/libnsgif-0.1.0 
+=media-libs/librosprite-0.1.0 
+=media-libs/libsvgtiny-0.1.0 
+=media-libs/libwebp-0.3.1 
+=net-libs/libdom-0.0.1 
+=net-libs/libhubbub-0.2.0 
+=www-client/netsurf-3.0 
+=media-libs/libnsbmp-0.1.0
