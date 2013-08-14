@@ -11,7 +11,7 @@ sed -e "/^CONFIG_LOCALVERSION/s:=.*:=\"-$loc\":" -i .config
 
 make ARCH=arm CROSS_COMPILE=/usr/bin/armv6j-hardfloat-linux-gnueabi- -j2
 
-TMPDIR=$(mktemp -d "${TMP-/tmp}/$(basename "$0")"-XXXXX)
+TMPDIR=$(mktemp -d "${TMP-/tmp}/${0##*/}"-XXXXX)
 trap "[ -d \"${TMPDIR}\" ] && rm -r \"${TMPDIR}\"" SIGINT ZERR
 mkdir "${TMPDIR}"/boot
 
