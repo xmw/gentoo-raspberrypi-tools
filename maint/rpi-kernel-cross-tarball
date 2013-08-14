@@ -2,7 +2,7 @@
 
 setopt -e
 
-rm .config
+[ -f .config ] && rm .config
 make ARCH=arm bcmrpi_defconfig
 make ARCH=arm CROSS_COMPILE=/usr/bin/armv6j-hardfloat-linux-gnueabi- oldconfig
 
@@ -11,18 +11,25 @@ sed -e "/^CONFIG_LOCALVERSION/s:=.*:=\"-$loc\":" -i .config
 
 make ARCH=arm CROSS_COMPILE=/usr/bin/armv6j-hardfloat-linux-gnueabi- -j2
 
-TMPDIR=$(mktemp -d /tmp/rpi-kernel-XXXXX)
+TMPDIR=$(mktemp -d "${TMP-/tmp}/$(basename "$0")"-XXXXX)
+trap "[ -d \"${TMPDIR}\" ] && rm -r \"${TMPDIR}\"" SIGINT ZERR
 mkdir "${TMPDIR}"/boot
 
 make ARCH=arm CROSS_COMPILE=/usr/bin/armv6j-hardfloat-linux-gnueabi- modules_install INSTALL_MOD_PATH="${TMPDIR}"
 make ARCH=arm CROSS_COMPILE=/usr/bin/armv6j-hardfloat-linux-gnueabi- install INSTALL_PATH="${TMPDIR}"/boot
+vmlinuz=$(ls -1 "${TMPDIR}"/boot/vmlinu*)
+kernelimg=${vmlinuz/vmlinuz-/kernel.img-}
+#imagetool-uncompressed.py "${vmlinuz}" "${kernelimg}"
+#rm -v "${vmlinuz}"
+mv -v "${vmlinuz}" "${kernelimg}"
+rm -v "${TMPDIR}"/lib/modules/*/build
+rm -v "${TMPDIR}"/lib/modules/*/source
 
-rm "${TMPDIR}"/lib/modules/*/build
-rm "${TMPDIR}"/lib/modules/*/source
-
-PV="$(basename $(ls -d /tmp/rpi-kernel-Cpf17/lib/modules/*))"
+PV=$(basename $(ls -d ${TMPDIR}/lib/modules/*))
 PV=${PV/-raspberrypi-/_pre-r}
 PV=${PV%%+}
+A=$(portageq distdir)/raspberrypi-image-${PV}.tar.xz
+tar cvJf "${A}" -C "${TMPDIR}" .
 
-tar cvJf /tmp/raspberrypi-image-${PV}.tar.xz -C "${TMPDIR}" .
+echo "scp \"${A}\" dev.gentoo.org:public_html/raspberrypi-image/"
 
