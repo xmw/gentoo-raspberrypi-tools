@@ -1,4 +1,5 @@
 #!/bin/bash
+# vim: tabstop=4
 
 [ -f /etc/portage/make.conf ] && source /etc/portage/make.conf
 
@@ -22,6 +23,9 @@ umount /usr/portage
 mount /usr/portage
 if [ -x /usr/bin/eix-update ] ; then
 	if [ /var/cache/portage/latest.squashfs -nt /var/cache/eix/portage.eix ] ; then
-		/usr/bin/eix-update
+		[ -e /var/cache/eix/portage.eix ] && \
+			cp -v /var/cache/eix/{portage,previous}.eix
+		eix-update
+		eix-diff
 	fi
 fi
