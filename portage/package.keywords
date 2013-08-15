@@ -30,3 +30,4 @@ portage/package.keywords
 =www-client/netsurf-3.0 
 =media-libs/libnsbmp-0.1.0
 =www-client/midori-0.5.4
+=sys-kernel/raspberrypi-image-3.10.6_pre-r20130805
