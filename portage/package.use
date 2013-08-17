@@ -198,7 +198,6 @@
 =xfce-base/xfconf-4.10.0 -debug -perl
 =gnome-base/gconf-2.32.4-r1 -debug -gtk introspection -ldap -policykit -debug
 =net-libs/glib-networking-2.32.3 gnome libproxy -smartcard ssl -test -test
-=sys-auth/consolekit-0.4.5_p20120320-r1 acl -debug doc kernel_linux pam -policykit -selinux -test
 =dev-perl/File-MimeInfo-0.150.0 -test
 =xfce-base/libxfce4ui-4.10.0 -debug -glade -startup-notification
 =net-libs/libsoup-2.38.1 -debug introspection -samba ssl -test -debug
@@ -360,3 +359,4 @@
 =app-misc/geoclue-0.12.99 -connman -geonames -gps -gsmloc -gtk -hostip -manual -networkmanager -nominatim -plazes -skyhook static-libs -yahoo-geo
 =x11-libs/libXfont-1.4.5-r1 bzip2 ipv6 -truetype static-libs doc
 =media-libs/gst-plugins-base-0.10.36 introspection nls -orc nls nls
+=net-libs/webkit-gtk-1.8.3-r300 -aqua -coverage -debug doc geoloc gstreamer introspection jit -spell webgl -webkit2 -test
