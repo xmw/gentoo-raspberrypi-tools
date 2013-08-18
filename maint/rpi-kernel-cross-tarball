@@ -32,5 +32,5 @@ PV=${PV%%+}
 A=$(portageq distdir)/raspberrypi-image-${PV}.tar.xz
 tar cvJf "${A}" -C "${TMPDIR}" .
 
-echo "scp \"${A}\" dev.gentoo.org:public_html/raspberrypi-image/"
+echo "rsync -avP --bwlimit=80 --no-owner --no-group \"${A}\" dev.gentoo.org:public_html/raspberrypi-image/"
 
