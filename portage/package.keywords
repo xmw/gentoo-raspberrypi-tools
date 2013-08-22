@@ -33,3 +33,15 @@ portage/package.keywords
 =sys-kernel/raspberrypi-image-3.10.6_pre-r20130805
 =sys-kernel/raspberrypi-image-3.10.7_pre-r20130815
 =sys-apps/portage-2.2.0
+=sys-fs/ncdu-1.10
+=net-analyzer/munin-2.0.14
+=net-analyzer/iftop-1.0_pre2 ~*
+=dev-perl/net-server-2.7.0
+=dev-perl/Net-SNMP-6.0.1
+=dev-perl/Net-Netmask-1.901.600
+=dev-perl/Net-CIDR-0.170.0
+=dev-perl/Log-Log4perl-1.400.0
+=dev-perl/IO-Multiplex-1.130.0
+=dev-perl/File-Copy-Recursive-0.380.0
+=dev-perl/Crypt-DES-2.50.0
+=media-libs/raspberrypi-userland-bin-0_p20130711
