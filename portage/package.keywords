@@ -31,3 +31,4 @@ portage/package.keywords
 =media-libs/libnsbmp-0.1.0
 =www-client/midori-0.5.4
 =sys-kernel/raspberrypi-image-3.10.6_pre-r20130805
+=sys-kernel/raspberrypi-image-3.10.7_pre-r20130815
