@@ -234,16 +234,10 @@ eend
 
 ebegin "setup make.conf"
 cat >> "${TARGET}"/etc/portage/make.conf <<EOF
-USE="\${USE} bash-completion zsh-completion"
-DISTDIR=/var/cache/distfiles
-PKGDIR=/var/cache/packages
-PORT_LOGDIR=/var/log/portage
+DISTDIR="/var/cache/distfiles"
 ${DISABLE_SYNC}
-GENTOO_MIRRORS="http://lore.xmw.de/gentoo/"
-PORTAGE_BINHOST="http://lore.xmw.de/gentoo/genberry/experimental"
-FEATURES="\${FEATURES} buildpkg getbinpkg splitdebug split-log"
-EMERGE_DEFAULT_OPTS="--binpkg-respect-use y"
-PORTAGE_TMPDIR="/tmp"
+source /var/lib/genberry/portage/make.conf.d/buildhost.conf
+source /var/lib/genberry/portage/make.conf.d/binpkg.conf
 #source /var/lib/layman/make.conf
 PORTDIR_OVERLAY="\${PORTDIR_OVERLAY} /usr/local/portage"
 VIDEO_CARDS="fbdev"
