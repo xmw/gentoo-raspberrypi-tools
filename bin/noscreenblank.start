@@ -1,0 +1,4 @@
+#!/bin/sh
+# man 4 console_codes
+echo -ne "\033[9;0]" >/dev/console
+echo -ne "\033[14;0]" >/dev/console

@@ -355,13 +355,7 @@ cat >> "${TARGET}"/etc/conf.d/net << EOF
 EOF
 
 #turn of screen blanking
-cat >> "${TARGET}"/etc/conf.d/net << EOF
-#!/bin/sh
-# man 4 console_codes
-echo -ne "\033[9;0]" >/dev/console
-echo -ne "\033[14;0]" >/dev/console
-EOF
-chmod +x "${TARGET}"/etc/conf.d/net
+ln -s ../../var/lib/genberry/bin/noscreenblank.start "${TARGET}"/etc/local.d
 
 #don't clear console1 after bootup
 sed -e '/c1:/s:agetty:agetty --noclear:' \
