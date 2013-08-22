@@ -369,3 +369,4 @@
 =sys-boot/raspberrypi-mkimage-0_p20120201 -python_targets_python2_5 -python_targets_python2_6 python_targets_python2_7 -python_targets_python3_1 python_targets_python3_2 -python_targets_python3_3
 =net-misc/curl-7.31.0 -adns -idn ipv6 -kerberos -ldap -metalink -rtmp -ssh ssl static-libs -test -threads -curl_ssl_axtls -curl_ssl_cyassl -curl_ssl_gnutls -curl_ssl_nss curl_ssl_openssl -curl_ssl_polarssl
 =sys-apps/portage-2.2.0 -build doc -epydoc ipc -linguas_ru -pypy2_0 -python2 -python3 -selinux -xattr -python_targets_pypy1_9 -python_targets_pypy2_0 -python_targets_python3_1 python_targets_python3_2 -python_targets_python3_3 -python_targets_python3_4 -python_targets_python2_6 python_targets_python2_7
+=dev-python/setuptools-0.8-r1 -python_targets_python2_5 -python_targets_python2_6 python_targets_python2_7 -python_targets_python3_1 python_targets_python3_2 -python_targets_python3_3 -python_targets_pypy1_9 -python_targets_pypy2_0
