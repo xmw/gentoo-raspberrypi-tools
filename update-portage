@@ -21,11 +21,16 @@ rm /var/cache/portage/latest.squashfs
 ln -s "${PORTAGE_SQUASHFS}" /var/cache/portage/latest.squashfs
 umount /usr/portage
 mount /usr/portage
+
+if [ -x /usr/bin/layman ] ; then
+	/usr/bin/layman -S
+fi
+
 if [ -x /usr/bin/eix-update ] ; then
 	if [ /var/cache/portage/latest.squashfs -nt /var/cache/eix/portage.eix ] ; then
 		[ -e /var/cache/eix/portage.eix ] && \
 			cp -v /var/cache/eix/{portage,previous}.eix
-		eix-update
-		eix-diff
+		/usr/bin/eix-update
+		/usr/bin/eix-diff
 	fi
 fi
