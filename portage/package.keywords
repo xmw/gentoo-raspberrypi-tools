@@ -45,3 +45,17 @@ portage/package.keywords
 =dev-perl/File-Copy-Recursive-0.380.0
 =dev-perl/Crypt-DES-2.50.0
 =media-libs/raspberrypi-userland-bin-0_p20130711
+=media-gfx/gthumb-2.14.4 **
+=media-gfx/gimp-2.8.6
+=media-gfx/xfig-3.2.5b-r3
+=media-libs/gegl-0.2.0-r2
+=media-libs/babl-0.1.10-r1
+=app-office/dia-0.97.2-r1
+=media-gfx/transfig-3.2.5d-r1
+=sci-libs/suitesparseconfig-4.2.1
+=sci-libs/umfpack-5.6.2
+=sci-libs/cholmod-2.1.2
+=sci-libs/colamd-2.8.0
+=sci-libs/amd-2.3.1
+
+=app-portage/porticron-0.6

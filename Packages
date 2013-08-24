@@ -9,10 +9,10 @@ CONFIG_PROTECT_MASK: /etc/ca-certificates.conf /etc/env.d /etc/fonts/fonts.conf 
 FEATURES: assume-digests binpkg-logs buildpkg compressdebug config-protect-if-modified distlocks ebuild-locks fixlafiles getbinpkg merge-sync news parallel-fetch preserve-libs protect-owned sandbox sfperms split-log strict unknown-features-warn unmerge-logs unmerge-orphans userfetch userpriv usersandbox usersync
 GENTOO_MIRRORS: http://lore.xmw.de/gentoo/
 IUSE_IMPLICIT: prefix
-PACKAGES: 649
+PACKAGES: 693
 PROFILE: default/linux/arm/13.0
 SYNC: use update-portage
-TIMESTAMP: 1377176731
+TIMESTAMP: 1377345061
 USE: acl apache2_modules_actions apache2_modules_alias apache2_modules_auth_basic apache2_modules_authn_alias apache2_modules_authn_anon apache2_modules_authn_core apache2_modules_authn_dbm apache2_modules_authn_default apache2_modules_authn_file apache2_modules_authz_core apache2_modules_authz_dbm apache2_modules_authz_default apache2_modules_authz_groupfile apache2_modules_authz_host apache2_modules_authz_owner apache2_modules_authz_user apache2_modules_autoindex apache2_modules_cache apache2_modules_cgi apache2_modules_cgid apache2_modules_dav apache2_modules_dav_fs apache2_modules_dav_lock apache2_modules_deflate apache2_modules_dir apache2_modules_disk_cache apache2_modules_env apache2_modules_expires apache2_modules_ext_filter apache2_modules_file_cache apache2_modules_filter apache2_modules_headers apache2_modules_include apache2_modules_info apache2_modules_log_config apache2_modules_logio apache2_modules_mem_cache apache2_modules_mime apache2_modules_mime_magic apache2_modules_negotiation apache2_modules_rewrite apache2_modules_setenvif apache2_modules_socache_shmcb apache2_modules_speling apache2_modules_status apache2_modules_unique_id apache2_modules_unixd apache2_modules_userdir apache2_modules_usertrack apache2_modules_vhost_alias arm berkdb bindist bzip2 calligra_features_author calligra_features_braindump calligra_features_flow calligra_features_karbon calligra_features_kexi calligra_features_krita calligra_features_plan calligra_features_sheets calligra_features_stage calligra_features_tables calligra_features_words cameras_ptp2 cli collectd_plugins_df collectd_plugins_interface collectd_plugins_irq collectd_plugins_load collectd_plugins_memory collectd_plugins_rrdtool collectd_plugins_swap collectd_plugins_syslog cracklib crypt cxx doc dri elibc_glibc fortran gdbm gpsd_protocols_aivdm gpsd_protocols_ashtech gpsd_protocols_earthmate gpsd_protocols_evermore gpsd_protocols_fv18 gpsd_protocols_garmin gpsd_protocols_garmintxt gpsd_protocols_gpsclock gpsd_protocols_itrax gpsd_protocols_mtk3301 gpsd_protocols_navcom gpsd_protocols_nmea gpsd_protocols_ntrip gpsd_protocols_oceanserver gpsd_protocols_oldstyle gpsd_protocols_oncore gpsd_protocols_rtcm104v2 gpsd_protocols_rtcm104v3 gpsd_protocols_sirf gpsd_protocols_superstar2 gpsd_protocols_timing gpsd_protocols_tnt gpsd_protocols_tripmate gpsd_protocols_tsip gpsd_protocols_ubx iconv input_devices_evdev input_devices_joystick input_devices_keyboard input_devices_mouse ipv6 kernel_linux lcd_devices_bayrad lcd_devices_cfontz lcd_devices_cfontz633 lcd_devices_glk lcd_devices_hd44780 lcd_devices_lb216 lcd_devices_lcdm001 lcd_devices_mtxorb lcd_devices_ncurses lcd_devices_text libreoffice_extensions_presenter-console libreoffice_extensions_presenter-minimizer modules mudflap ncurses nls nptl office_implementation_libreoffice openmp pam pcre php_targets_php5-4 python_single_target_python2_7 python_targets_python2_7 python_targets_python3_2 readline ruby_targets_ruby18 ruby_targets_ruby19 session ssl static-libs tcpd unicode userland_GNU video_cards_fbdev xtables_addons_account xtables_addons_chaos xtables_addons_condition xtables_addons_delude xtables_addons_dhcpmac xtables_addons_fuzzy xtables_addons_geoip xtables_addons_iface xtables_addons_ipmark xtables_addons_ipp2p xtables_addons_ipset xtables_addons_ipv4options xtables_addons_length2 xtables_addons_logmark xtables_addons_lscan xtables_addons_pknock xtables_addons_psd xtables_addons_quota2 xtables_addons_rawnat xtables_addons_steal xtables_addons_sysrq xtables_addons_tarpit xtables_addons_tee zlib
 USE_EXPAND: ABI_MIPS ABI_X86 ALSA_CARDS APACHE2_MODULES APACHE2_MPMS CALLIGRA_FEATURES CAMERAS COLLECTD_PLUGINS CROSSCOMPILE_OPTS CURL_SSL DRACUT_MODULES DVB_CARDS ELIBC ENLIGHTENMENT_MODULES FCDSL_CARDS FFTOOLS FOO2ZJS_DEVICES FRITZCAPI_CARDS GPSD_PROTOCOLS GRUB_PLATFORMS INPUT_DEVICES KERNEL LCD_DEVICES LIBREOFFICE_EXTENSIONS LINGUAS LIRC_DEVICES MONKEYD_PLUGINS NETBEANS_MODULES NGINX_MODULES_HTTP NGINX_MODULES_MAIL OFED_DRIVERS OFFICE_IMPLEMENTATION OPENMPI_FABRICS OPENMPI_OFED_FEATURES OPENMPI_RM PHP_TARGETS PYTHON_SINGLE_TARGET PYTHON_TARGETS QEMU_SOFTMMU_TARGETS QEMU_USER_TARGETS RUBY_TARGETS SANE_BACKENDS USERLAND VIDEO_CARDS VOICEMAIL_STORAGE XFCE_PLUGINS XTABLES_ADDONS
 USE_EXPAND_HIDDEN: ABI_MIPS ABI_X86 CROSSCOMPILE_OPTS ELIBC KERNEL USERLAND
@@ -24,6 +24,19 @@ USE_EXPAND_VALUES_KERNEL: AIX Cygwin Darwin FreeBSD freemint HPUX Interix linux 
 USE_EXPAND_VALUES_USERLAND: BSD GNU
 VERSION: 0
 REPO: gentoo
+
+BUILD_TIME: 1377343768
+CPV: app-accessibility/flite-1.3
+DEFINED_PHASES: compile install unpack
+DESC: Flite text to speech engine
+IUSE: alsa static
+KEYWORDS: alpha amd64 arm -hppa ppc ppc64 sparc x86
+LICENSE: BSD freetts public-domain regexp-UofT BSD-2
+MD5: db26f6f38be036c4e4f9f03e17c9f125
+MTIME: 1377343837
+SHA1: d3c2f80fc408c3d5459f6aa2baa54b74c16133ed
+SIZE: 6617038
+USE: alsa
 
 BUILD_TIME: 1376273664
 CPV: app-admin/eselect-1.3.4
@@ -496,6 +509,17 @@ SHA1: 18856528fb5a5ddd828e6edbc9d1f1d59b234cc2
 SIZE: 42072
 USE: bash-completion
 
+BUILD_TIME: 1377342378
+CPV: app-doc/blas-docs-3.1.1
+DEFINED_PHASES: install
+DESC: Documentation reference and man pages for blas implementations
+KEYWORDS: alpha amd64 arm hppa ia64 ppc ppc64 s390 sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~x86-macos
+LICENSE: BSD
+MD5: 92f7cdf18f46e96057ba436e240fc033
+MTIME: 1377342404
+SHA1: 3662b6b51f0c14580bf58c17df3f0d278e62475f
+SIZE: 604078
+
 BUILD_TIME: 1376172828
 CPV: app-doc/doxygen-1.8.3.1
 DEFINED_PHASES: compile configure install postinst postrm prepare setup unpack
@@ -512,6 +536,17 @@ RESTRICT: mirror
 SHA1: 6148e71df70257da9e79d393e925200a06a496ee
 SIZE: 10890668
 USE: doc dot userland_GNU
+
+BUILD_TIME: 1377342117
+CPV: app-doc/lapack-docs-3.1.1
+DEFINED_PHASES: install
+DESC: Documentation reference and man pages for lapack implementations
+KEYWORDS: alpha amd64 arm hppa ia64 ppc ppc64 s390 sparc x86 ~amd64-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~x86-macos
+LICENSE: BSD
+MD5: 26ee371af18ae3e6df2d52db5eb69403
+MTIME: 1377342178
+SHA1: 43a9bb1fef493439ba25839be626bcf0053ba75a
+SIZE: 1901739
 
 BUILD_TIME: 1373918856
 CPV: app-editors/joe-3.7-r1
@@ -688,6 +723,22 @@ RDEPEND: >=sys-libs/zlib-1.1.4
 SHA1: 099f842d4bcc857cb030b38f8dbc1e6ef807106d
 SIZE: 39589
 
+BUILD_TIME: 1377292697
+CPV: app-office/dia-0.97.2-r1
+DEFINED_PHASES: compile configure install postinst postrm preinst prepare setup unpack
+DEPEND: >=dev-libs/glib-2 dev-libs/libxml2 dev-libs/libxslt dev-libs/popt >=media-libs/freetype-2 >=media-libs/libart_lgpl-2 media-libs/libpng:0 sys-libs/zlib x11-libs/gtk+:2 x11-libs/pango x11-libs/cairo app-text/docbook-xml-dtd:4.5 app-text/docbook-xsl-stylesheets >=dev-python/pygtk-2 dev-util/intltool sys-apps/sed virtual/pkgconfig dev-libs/libxslt || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool app-arch/xz-utils >=sys-apps/sed-4 =dev-lang/python-2*
+DESC: Diagram/flowchart creation program
+EAPI: 4
+IUSE: cairo doc gnome python debug
+KEYWORDS: alpha amd64 ~arm hppa ia64 ppc ppc64 sparc x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos
+LICENSE: GPL-2
+MD5: 53b1b53219bed6e7196bf6e016066a22
+MTIME: 1377292794
+RDEPEND: >=dev-libs/glib-2 dev-libs/libxml2 dev-libs/libxslt dev-libs/popt >=media-libs/freetype-2 >=media-libs/libart_lgpl-2 media-libs/libpng:0 sys-libs/zlib x11-libs/gtk+:2 x11-libs/pango x11-libs/cairo app-text/docbook-xml-dtd:4.5 app-text/docbook-xsl-stylesheets >=dev-python/pygtk-2 =dev-lang/python-2*
+SHA1: 28a303fd90c9ab7518e27ade54e385adb4ee7c8a
+SIZE: 4599127
+USE: cairo doc python
+
 BUILD_TIME: 1376048125
 CPV: app-portage/eix-0.29.3
 DEFINED_PHASES: configure install postinst prepare setup
@@ -794,6 +845,19 @@ MD5: 4a38710aac7c531eb826f7bbe9ecc322
 MTIME: 1376139477
 SHA1: 65b812ff000437832517ba456e0d6f9f7d723e50
 SIZE: 121536
+
+BUILD_TIME: 1377344999
+CPV: app-portage/porticron-0.6
+DEFINED_PHASES: install
+DESC: porticron is a cron script to sync portage and send update mails to root
+EAPI: 3
+KEYWORDS: amd64 ~arm hppa ppc x86
+LICENSE: BSD
+MD5: 2357166aa8160e03d1dcf7485c5c9346
+MTIME: 1377345036
+RDEPEND: net-dns/bind-tools
+SHA1: a5cb8f6bbab186b30f985fc64a2804c8bc1ceb88
+SIZE: 7606
 
 BUILD_TIME: 1376957092
 CPV: app-portage/smart-live-rebuild-1.3
@@ -910,6 +974,22 @@ MTIME: 1376147252
 RDEPEND: || ( sys-apps/util-linux app-misc/getopt ) !<app-text/docbook-xsl-stylesheets-1.73.1 dev-libs/libxml2
 SHA1: eb103911559d4c6e93d27a419daa4b9f1f23483d
 SIZE: 10098
+
+BUILD_TIME: 1377227208
+CPV: app-text/djvu-3.5.25.3
+DEFINED_PHASES: configure install postinst postrm prepare
+DEPEND: virtual/jpeg media-libs/tiff:0/0= || ( gnome-base/librsvg media-gfx/inkscape ) || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: DjVu viewers, encoders and utilities
+EAPI: 5
+IUSE: debug doc jpeg tiff xml
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-solaris
+LICENSE: GPL-2
+MD5: e40fa0ad42c9aaa0d536576ef835c4f4
+MTIME: 1377227265
+RDEPEND: virtual/jpeg media-libs/tiff:0/0=
+SHA1: eb5a97dfade6539b2d1eb2b313de4caed18f0177
+SIZE: 2366215
+USE: doc jpeg tiff xml
 
 BUILD_TIME: 1376130105
 CPV: app-text/docbook-dsssl-stylesheets-1.79
@@ -1079,6 +1159,23 @@ MD5: ff8148b52ad6ccf1983d268f251853d6
 MTIME: 1376156613
 SHA1: 2887cfe91aa610cff93390b8b7695eb25b4322aa
 SIZE: 62368
+
+BUILD_TIME: 1377213349
+CPV: app-text/libspectre-0.2.7
+DEFINED_PHASES: compile configure install prepare
+DEPEND: >=app-text/ghostscript-gpl-8.62 virtual/pkgconfig app-doc/doxygen || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: A library for rendering Postscript documents
+EAPI: 4
+IUSE: debug doc static-libs
+KEYWORDS: alpha amd64 arm ia64 ~mips ppc ppc64 sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~x64-solaris
+LICENSE: GPL-2
+MD5: 205a8f7c6bbca5ec816c1d7d800ae6ce
+MTIME: 1377213401
+RDEPEND: >=app-text/ghostscript-gpl-8.62
+RESTRICT: test
+SHA1: 7ac0e3bf360536343aa5ec3736b2987c7ca73edd
+SIZE: 146258
+USE: doc static-libs
 
 BUILD_TIME: 1376134580
 CPV: app-text/openjade-1.3.2-r3
@@ -1336,6 +1433,39 @@ SIZE: 12798587
 SLOT: 3.2
 USE: gdbm ipv6 ncurses readline sqlite ssl threads wide-unicode xml
 
+BUILD_TIME: 1377185440
+CPV: dev-lang/vala-0.18.1
+DEFINED_PHASES: compile configure install postinst postrm preinst prepare setup unpack
+DEPEND: >=dev-libs/glib-2.18:2 >=dev-libs/vala-common-0.18.1 !dev-lang/vala:0 dev-libs/libxslt sys-devel/flex virtual/pkgconfig virtual/yacc app-arch/xz-utils >=sys-apps/sed-4
+DESC: Vala - Compiler for the GObject type system
+EAPI: 4
+IUSE: test +vapigen
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~arm-linux ~x86-linux
+LICENSE: LGPL-2.1
+MD5: dfef2f1da79e00f2bbaf8727ca9987e1
+MTIME: 1377185500
+RDEPEND: >=dev-libs/glib-2.18:2 >=dev-libs/vala-common-0.18.1
+SHA1: dcb0e9a218fdbf8ed848f62278be1398b12f73da
+SIZE: 1726439
+SLOT: 0.18
+USE: vapigen
+
+BUILD_TIME: 1377265622
+CPV: dev-libs/DirectFB-1.4.9-r1
+DEFINED_PHASES: configure install postinst prepare
+DEPEND: media-libs/libsdl media-libs/giflib media-libs/libpng virtual/jpeg sys-libs/zlib >=media-libs/freetype-2.0.1 x11-libs/libXext x11-libs/libX11 x11-proto/xextproto x11-proto/xproto
+DESC: Thin library on top of the Linux framebuffer devices
+EAPI: 2
+IUSE: debug doc fbcon gif jpeg mmx png sdl sse static-libs truetype v4l X zlib video_cards_intel video_cards_mach64 video_cards_mga video_cards_neomagic video_cards_nsc video_cards_nvidia video_cards_r128 video_cards_radeon video_cards_s3 video_cards_savage video_cards_sis video_cards_tdfx video_cards_via video_cards_vmware input_devices_dynapro input_devices_elo2300 input_devices_evdev input_devices_joystick input_devices_keyboard input_devices_lirc input_devices_mouse input_devices_mutouch input_devices_tslib
+KEYWORDS: alpha amd64 arm hppa ia64 -mips ppc ppc64 sh -sparc x86
+LICENSE: LGPL-2.1
+MD5: 6cd2ee9a46a1456d333e71d1fef0fb8a
+MTIME: 1377265689
+RDEPEND: media-libs/libsdl media-libs/giflib media-libs/libpng virtual/jpeg sys-libs/zlib >=media-libs/freetype-2.0.1 x11-libs/libXext x11-libs/libX11
+SHA1: 702aa7519eac77f0305efc8321f2d90a57c0bb80
+SIZE: 1543841
+USE: X doc fbcon gif input_devices_evdev input_devices_joystick input_devices_keyboard input_devices_mouse jpeg png sdl static-libs truetype v4l zlib
+
 BUILD_TIME: 1376414213
 CPV: dev-libs/apr-1.4.8-r1
 DEFINED_PHASES: compile configure install prepare
@@ -1521,6 +1651,22 @@ MTIME: 1376512759
 SHA1: 3a8293e64198934b3a6598633e1f8b522e9b8a7c
 SIZE: 26711419
 SLOT: 0/51.1
+USE: doc static-libs
+
+BUILD_TIME: 1377341332
+CPV: dev-libs/kpathsea-6.1.0_p20120701
+DEFINED_PHASES: configure install postinst postrm prepare
+DEPEND: !<app-text/texlive-core-2010 !app-text/ptex
+DESC: Library implementing generic path searching, configuration, and TeX-specific file searching
+EAPI: 4
+IUSE: doc source static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2
+MD5: d9d60f667ad0479a348f7e74957de1a9
+MTIME: 1377341398
+RDEPEND: !<app-text/texlive-core-2010 !app-text/ptex
+SHA1: bd49adc385a923648c604e0a2a9e24b5d31f7849
+SIZE: 1509665
 USE: doc static-libs
 
 BUILD_TIME: 1376225058
@@ -1741,6 +1887,23 @@ MTIME: 1376219485
 SHA1: a6c417f0875c8ef2b7c90c8f82bd1fe6d430ae11
 SIZE: 508789
 USE: doc static-libs
+
+BUILD_TIME: 1377181686
+CPV: dev-libs/libunique-1.1.6-r1
+DEFINED_PHASES: compile configure install postinst postrm preinst prepare setup test unpack
+DEPEND: >=dev-libs/glib-2.12:2 >=x11-libs/gtk+-2.11:2[introspection] x11-libs/libX11 sys-devel/gettext virtual/pkgconfig >=dev-util/gtk-doc-1.11 >=dev-libs/gobject-introspection-0.6.3 >=sys-apps/sed-4
+DESC: a library for writing single instance application
+EAPI: 4
+IUSE: dbus doc +introspection debug test
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~ia64-linux ~x86-linux ~x86-solaris
+LICENSE: LGPL-2.1
+MD5: 434b0a86f1102b249bf9c51c19d1da0a
+MTIME: 1377181703
+RDEPEND: >=dev-libs/glib-2.12:2 >=x11-libs/gtk+-2.11:2[introspection] x11-libs/libX11
+SHA1: 3de5dd64edb616e9dc5cffccaff2d943145f584e
+SIZE: 89520
+SLOT: 1
+USE: doc introspection
 
 BUILD_TIME: 1376490759
 CPV: dev-libs/libusb-1.0.9
@@ -2724,6 +2887,38 @@ SHA1: 038249e2266c670f60653be2a60c1a61e13d7776
 SIZE: 1489301
 USE: doc python_targets_python2_7
 
+BUILD_TIME: 1377277353
+CPV: dev-python/numpy-1.6.2-r2
+DEFINED_PHASES: compile configure install prepare setup test unpack
+DEPEND: dev-python/setuptools[python_targets_python2_7(-),python_targets_python3_2(-),-python_single_target_python2_5(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-),-python_single_target_python3_1(-),-python_single_target_python3_2(-)] app-arch/unzip dev-lang/python:2.7 dev-lang/python:3.2 dev-python/python-exec[python_targets_python2_7(-),python_targets_python3_2(-),-python_single_target_python2_5(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-),-python_single_target_python3_1(-),-python_single_target_python3_2(-)]
+DESC: Fast array and numerical python library
+EAPI: 5
+IUSE: doc lapack test python_targets_python2_5 python_targets_python2_6 python_targets_python2_7 python_targets_python3_1 python_targets_python3_2
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE: BSD
+MD5: 6879fe1cb77ae1f837ab975e50a0b368
+MTIME: 1377277649
+RDEPEND: dev-python/setuptools[python_targets_python2_7(-),python_targets_python3_2(-),-python_single_target_python2_5(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-),-python_single_target_python3_1(-),-python_single_target_python3_2(-)] dev-lang/python:2.7 dev-lang/python:3.2 dev-python/python-exec[python_targets_python2_7(-),python_targets_python3_2(-),-python_single_target_python2_5(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-),-python_single_target_python3_1(-),-python_single_target_python3_2(-)]
+SHA1: 21286d9b5d5de76df84cd85390298db1c95c91a4
+SIZE: 14307777
+USE: doc python_targets_python2_7 python_targets_python3_2
+
+BUILD_TIME: 1377283542
+CPV: dev-python/pycairo-1.10.0-r4
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: dev-lang/python:2.7 dev-lang/python:3.2 dev-python/python-exec[python_targets_python2_7(-),python_targets_python3_2(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-),-python_single_target_python3_1(-),-python_single_target_python3_2(-),-python_single_target_python3_3(-)] >=x11-libs/cairo-1.10.0[svg,xcb] x11-libs/xpyb virtual/pkgconfig dev-lang/python !dev-lang/python[-threads]
+DESC: Python bindings for the cairo library
+EAPI: 5
+IUSE: doc examples +svg test xcb python_targets_python2_6 python_targets_python2_7 python_targets_python3_1 python_targets_python3_2 python_targets_python3_3
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos
+LICENSE: LGPL-3 || ( LGPL-2.1 MPL-1.1 )
+MD5: 5eed05cf43636ad1c63c175f0f5320d4
+MTIME: 1377283570
+RDEPEND: dev-lang/python:2.7 dev-lang/python:3.2 dev-python/python-exec[python_targets_python2_7(-),python_targets_python3_2(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-),-python_single_target_python3_1(-),-python_single_target_python3_2(-),-python_single_target_python3_3(-)] >=x11-libs/cairo-1.10.0[svg,xcb] x11-libs/xpyb
+SHA1: 1ebaa920b10236a8a00547043a019f12525126b1
+SIZE: 185300
+USE: doc examples python_targets_python2_7 python_targets_python3_2 svg xcb
+
 BUILD_TIME: 1376949673
 CPV: dev-python/pygments-1.6
 DEFINED_PHASES: compile configure install prepare test
@@ -2739,6 +2934,40 @@ RDEPEND: dev-python/setuptools[python_targets_python2_7(-),python_targets_python
 SHA1: 221dc300ae6b43e8332c985be3efc15b05b6d1a1
 SIZE: 2870447
 USE: doc python_targets_python2_7 python_targets_python3_2
+
+BUILD_TIME: 1377282480
+CPV: dev-python/pygobject-2.28.6-r53
+DEFINED_PHASES: compile configure install postinst postrm preinst prepare test unpack
+DEPEND: >=dev-libs/glib-2.24.0:2 virtual/libffi:0/0= dev-lang/python:2.7 dev-python/python-exec[python_targets_python2_7(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-)] dev-util/gtk-doc-am virtual/pkgconfig || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool app-arch/xz-utils >=sys-apps/sed-4
+DESC: GLib's GObject library bindings for Python
+EAPI: 5
+IUSE: examples libffi test python_targets_python2_6 python_targets_python2_7 test
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE: LGPL-2.1+
+MD5: abfe75e19d8c3d0f97414be405028ef2
+MTIME: 1377282511
+RDEPEND: >=dev-libs/glib-2.24.0:2 virtual/libffi:0/0= dev-lang/python:2.7 dev-python/python-exec[python_targets_python2_7(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-)] !<dev-python/pygtk-2.23
+SHA1: a2c8cbef502325fb857ba1b3dc77ac0271bf0a35
+SIZE: 595792
+SLOT: 2
+USE: examples libffi python_targets_python2_7
+
+BUILD_TIME: 1377286170
+CPV: dev-python/pygtk-2.24.0-r3
+DEFINED_PHASES: compile configure install postinst postrm preinst prepare test unpack
+DEPEND: >=dev-libs/glib-2.8:2 >=x11-libs/pango-1.16 >=dev-libs/atk-1.12 >=x11-libs/gtk+-2.24:2 >=dev-python/pycairo-1.0.2[python_targets_python2_7(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-)] >=dev-python/pygobject-2.26.8-r53:2[python_targets_python2_7(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-)] dev-python/numpy[python_targets_python2_7(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-)] >=gnome-base/libglade-2.5:2.0 virtual/pkgconfig dev-libs/libxslt >=app-text/docbook-xsl-stylesheets-1.70.1 || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool >=sys-apps/sed-4
+DESC: GTK+2 bindings for Python
+EAPI: 5
+IUSE: doc examples test python_targets_python2_6 python_targets_python2_7 test
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE: LGPL-2.1
+MD5: 61a8b3adb008df5b8c0e61ad55787c30
+MTIME: 1377286287
+RDEPEND: >=dev-libs/glib-2.8:2 >=x11-libs/pango-1.16 >=dev-libs/atk-1.12 >=x11-libs/gtk+-2.24:2 >=dev-python/pycairo-1.0.2[python_targets_python2_7(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-)] >=dev-python/pygobject-2.26.8-r53:2[python_targets_python2_7(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-)] dev-python/numpy[python_targets_python2_7(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-)] >=gnome-base/libglade-2.5:2.0
+SHA1: 08e8fa0a0e17b266259d4537b10752f4d1ec357f
+SIZE: 1981200
+SLOT: 2
+USE: doc examples python_targets_python2_7
 
 BUILD_TIME: 1376402666
 CPV: dev-python/python-docs-2.7.3
@@ -3027,6 +3256,20 @@ RDEPEND: >=dev-libs/glib-2.12:2 >=x11-libs/gtk+-2.6:2 >=x11-libs/pango-1.3 >=gno
 SHA1: 8caabfbb597a1a863c7bef97ec0484de4f52aef9
 SIZE: 4299314
 USE: consolekit elibc_glibc gnome-keyring ipv6 pam tcpd xinerama
+
+BUILD_TIME: 1377221568
+CPV: gnome-base/gnome-common-3.6.0
+DEFINED_PHASES: install
+DEPEND: app-arch/xz-utils
+DESC: Common files for development of Gnome packages.
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-3
+MD5: bbce4c50abc79976f3fb51161f254ff4
+MTIME: 1377221603
+SHA1: a8a78594a425489a482f263a7a62551917515037
+SIZE: 121460
+SLOT: 3
 
 BUILD_TIME: 1376253104
 CPV: gnome-base/gnome-keyring-2.32.1-r1
@@ -3422,6 +3665,36 @@ MTIME: 1376138963
 SHA1: f45aa67327160891b8d17afd90cd733d7a003618
 SIZE: 631849
 
+BUILD_TIME: 1377333480
+CPV: media-fonts/font-alias-1.0.3
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: x11-apps/mkfontscale >=media-fonts/font-util-1.1.1-r1 || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool virtual/pkgconfig
+DESC: X.Org font aliases
+EAPI: 3
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE: MIT
+MD5: 2784f23c47243e3381af84210325cacb
+MTIME: 1377333495
+SHA1: 81cbdd68dadb51abb6755c8f7bb496099d03b590
+SIZE: 36753
+
+BUILD_TIME: 1377335465
+CPV: media-fonts/font-misc-misc-1.1.2
+DEFINED_PHASES: compile configure install postinst postrm prepare setup test unpack
+DEPEND: x11-apps/bdftopcf || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool x11-apps/mkfontdir media-fonts/encodings >=media-fonts/font-util-1.2.0 virtual/pkgconfig
+DESC: X.Org miscellaneous fonts
+EAPI: 3
+IUSE: X nls
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE: MIT
+MD5: b9900628d813cce9ce2873145b8da808
+MTIME: 1377335496
+PDEPEND: media-fonts/font-alias
+RDEPEND: media-fonts/encodings x11-apps/mkfontscale x11-apps/mkfontdir
+SHA1: adeef20ed3a46a44131075829559f2b700374a64
+SIZE: 3820914
+USE: X nls
+
 BUILD_TIME: 1376138137
 CPV: media-fonts/font-util-1.3.0
 DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
@@ -3434,6 +3707,21 @@ MD5: 89fe8bb24dc14d14e7ac0d4a6afae3ee
 MTIME: 1376138188
 SHA1: 57b0d7f2c9370c31bc82756c695cb4e65c6c8c0d
 SIZE: 88542
+
+BUILD_TIME: 1377249960
+CPV: media-fonts/terminus-font-4.36
+DEFINED_PHASES: compile configure install postinst postrm prepare setup
+DEPEND: dev-lang/perl virtual/awk app-arch/gzip x11-apps/bdftopcf
+DESC: A clean fixed font for the console and X11
+EAPI: 3
+IUSE: a-like-o distinct-l ru-dv +ru-g quote ru-i ru-k +psf raw-font-data +pcf X
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~s390 ~sh sparc x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
+LICENSE: OFL-1.1 GPL-2
+MD5: f16e1c905f1e41070ad24c35a90ee4fa
+MTIME: 1377250020
+SHA1: 70337e8de0699596af7b180ae62218274115e3e4
+SIZE: 2079629
+USE: pcf psf ru-g
 
 BUILD_TIME: 1376159379
 CPV: media-fonts/urw-fonts-2.4.9
@@ -3450,6 +3738,22 @@ SHA1: aa8004a5a2604cb7c48c087ca70c7e2df7be4b2a
 SIZE: 3269436
 USE: X
 
+BUILD_TIME: 1377207856
+CPV: media-gfx/exiv2-0.23-r1
+DEFINED_PHASES: compile configure install prepare setup test
+DEPEND: virtual/libiconv virtual/libintl dev-libs/expat sys-libs/zlib >=dev-libs/boost-1.44 app-doc/doxygen dev-libs/libxslt virtual/pkgconfig media-gfx/graphviz =dev-lang/python-2* sys-devel/gettext
+DESC: EXIF and IPTC metadata C++ library and command line utility
+EAPI: 4
+IUSE: contrib doc examples nls xmp zlib static-libs linguas_de linguas_es linguas_fi linguas_fr linguas_pl linguas_ru linguas_sk
+KEYWORDS: ~alpha amd64 arm ~hppa ~ia64 ~mips ppc ppc64 ~s390 ~sh ~sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: 6c9bf6a7ac02f3fbfc8ae8019d950e3b
+MTIME: 1377207998
+RDEPEND: virtual/libiconv virtual/libintl dev-libs/expat sys-libs/zlib
+SHA1: feb61709432bcd88ee10bcc24452f0517ed98331
+SIZE: 6390262
+USE: contrib doc examples linguas_de linguas_es linguas_fi linguas_fr linguas_pl linguas_ru linguas_sk nls static-libs xmp zlib
+
 BUILD_TIME: 1376293105
 CPV: media-gfx/feh-2.9.3
 DEFINED_PHASES: compile install prepare setup
@@ -3465,6 +3769,22 @@ RDEPEND: >=media-libs/giblib-1.2.4 media-libs/imlib2 >=media-libs/libpng-1.2:0 x
 SHA1: b17fd3d37f56a7d93c0eda2c8fb79717cc164dad
 SIZE: 370216
 USE: exif xinerama
+
+BUILD_TIME: 1377209988
+CPV: media-gfx/geeqie-1.1
+DEFINED_PHASES: compile configure install postinst prepare unpack
+DEPEND: x11-libs/gtk+:2 virtual/libintl app-text/gnome-doc-utils =media-libs/lcms-1* >=media-gfx/exiv2-0.17[xmp] virtual/pkgconfig dev-util/intltool sys-devel/gettext || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: A lightweight GTK image viewer forked from GQview
+EAPI: 4
+IUSE: doc exif lcms lirc xmp
+KEYWORDS: ~amd64 ~ppc ~x86
+LICENSE: GPL-2
+MD5: 873605fbff5f9598e71e0c3ada2e9435
+MTIME: 1377210041
+RDEPEND: x11-libs/gtk+:2 virtual/libintl app-text/gnome-doc-utils =media-libs/lcms-1* >=media-gfx/exiv2-0.17[xmp]
+SHA1: ecc950c37b1444a096a9f28ffaba84242e1c5ec1
+SIZE: 1128263
+USE: doc exif lcms xmp
 
 BUILD_TIME: 1376475012
 CPV: media-gfx/gpicview-0.2.3
@@ -3497,6 +3817,117 @@ SHA1: 841cf5ae6ba202486f3eacc0052783be733ad4d0
 SIZE: 7086320
 USE: doc nls static-libs
 
+BUILD_TIME: 1377242233
+CPV: media-gfx/gtkimageview-1.6.4
+DEFINED_PHASES: compile configure install postinst postrm preinst prepare setup test unpack
+DEPEND: x11-libs/gtk+:2 gnome-base/gnome-common dev-util/gtk-doc-am >=dev-util/gtk-doc-1.8 || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool app-arch/xz-utils >=sys-apps/sed-4
+DESC: A simple image viewer widget for GTK
+EAPI: 4
+IUSE: doc examples static-libs debug test
+KEYWORDS: alpha amd64 arm hppa ia64 ppc ppc64 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~x64-solaris ~x86-solaris
+LICENSE: LGPL-2.1
+MD5: e2d029d2011f2824156589ddb9596a13
+MTIME: 1377242271
+RDEPEND: x11-libs/gtk+:2
+RESTRICT: userpriv
+SHA1: 72fdd4adb0e793b8d8bb0b9aaf947c078ca94707
+SIZE: 422535
+USE: doc examples static-libs
+
+BUILD_TIME: 1377259780
+CPV: media-gfx/imagemagick-6.7.8.7
+DEFINED_PHASES: configure install prepare test
+DEPEND: >=sys-devel/libtool-2.2.6b app-arch/bzip2 app-text/djvu sci-libs/fftw:3.0 media-libs/fontconfig media-libs/jbigkit virtual/jpeg media-libs/jasper media-libs/lcms:2 x11-libs/pango media-libs/libpng:0 app-text/ghostscript-gpl media-gfx/ufraw gnome-base/librsvg media-libs/tiff:0 media-fonts/urw-fonts >=media-libs/freetype-2 media-libs/libwebp media-libs/libwmf x11-libs/libICE x11-libs/libSM x11-libs/libXext x11-libs/libXt dev-libs/libxml2 app-arch/xz-utils sys-libs/zlib !media-gfx/graphicsmagick[imagemagick] virtual/pkgconfig x11-proto/xextproto
+DESC: A collection of tools and libraries for many image formats
+EAPI: 5
+IUSE: autotrace bzip2 corefonts cxx djvu fftw fontconfig fpx graphviz hdri jbig jpeg jpeg2k lcms lqr lzma opencl openexr openmp pango perl png postscript q32 q64 q8 raw static-libs svg test tiff truetype webp wmf X xml zlib
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE: imagemagick
+MD5: ae794aa9375142854f6065f7cf52c6e5
+MTIME: 1377259993
+RDEPEND: >=sys-devel/libtool-2.2.6b app-arch/bzip2 app-text/djvu sci-libs/fftw:3.0 media-libs/fontconfig media-libs/jbigkit virtual/jpeg media-libs/jasper media-libs/lcms:2 x11-libs/pango media-libs/libpng:0 app-text/ghostscript-gpl media-gfx/ufraw gnome-base/librsvg media-libs/tiff:0 media-fonts/urw-fonts >=media-libs/freetype-2 media-libs/libwebp media-libs/libwmf x11-libs/libICE x11-libs/libSM x11-libs/libXext x11-libs/libXt dev-libs/libxml2 app-arch/xz-utils sys-libs/zlib
+SHA1: 14ccf3907e7491f351ae5dcdedf7d31578b94136
+SIZE: 9103006
+SLOT: 0/6.7.8.7
+USE: X bzip2 cxx djvu fftw fontconfig jbig jpeg jpeg2k lcms lzma openmp pango png postscript raw static-libs svg tiff truetype webp wmf xml zlib
+
+BUILD_TIME: 1377210987
+CPV: media-gfx/scrot-0.8
+DEFINED_PHASES: install postinst
+DEPEND: >=media-libs/imlib2-1.0.3 >=media-libs/giblib-1.2.3
+DESC: Screen capture utility using imlib2 library
+IUSE: bash-completion
+KEYWORDS: alpha amd64 arm hppa ppc ppc64 sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: feh LGPL-2+
+MD5: f168bbff5bc8bce58d4d6fd394268925
+MTIME: 1377211020
+PDEPEND: app-shells/bash-completion
+RDEPEND: >=media-libs/imlib2-1.0.3 >=media-libs/giblib-1.2.3 app-admin/eselect
+SHA1: 6009561bbebe34b925b9578e8863943f48cb8513
+SIZE: 36219
+USE: bash-completion
+
+BUILD_TIME: 1377332233
+CPV: media-gfx/transfig-3.2.5d-r1
+DEFINED_PHASES: compile install postinst prepare
+DEPEND: x11-libs/libXpm virtual/jpeg media-libs/libpng x11-apps/rgb x11-misc/imake app-text/rman
+DESC: A set of tools for creating TeX documents with graphics
+EAPI: 4
+KEYWORDS: alpha amd64 ~arm hppa ia64 ppc ppc64 sparc x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~x64-solaris ~x86-solaris
+LICENSE: BSD
+MD5: f3151dcdda999c97d86198805fb6829c
+MTIME: 1377332254
+RDEPEND: x11-libs/libXpm virtual/jpeg media-libs/libpng x11-apps/rgb
+SHA1: 2c085637d7c654d5b45e3f607affd30c332e08fb
+SIZE: 460401
+
+BUILD_TIME: 1377244043
+CPV: media-gfx/ufraw-0.19.2
+DEFINED_PHASES: compile configure install postinst postrm preinst prepare
+DEPEND: dev-libs/glib:2 >=media-gfx/exiv2-0.11 virtual/jpeg media-libs/lcms:0 >=media-libs/lensfun-0.2.5 media-libs/tiff >=x11-libs/gtk+-2.6:2 >=media-gfx/gtkimageview-1.5 virtual/pkgconfig || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool >=sys-apps/sed-4
+DESC: RAW Image format viewer and GIMP plugin
+EAPI: 5
+IUSE: contrast fits gimp gnome gtk openmp timezone
+KEYWORDS: alpha amd64 arm hppa ia64 ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~x64-solaris ~x86-solaris
+LICENSE: GPL-2
+MD5: 71731b0e5a87ede864aa997ff4c79e3c
+MTIME: 1377244091
+RDEPEND: dev-libs/glib:2 >=media-gfx/exiv2-0.11 virtual/jpeg media-libs/lcms:0 >=media-libs/lensfun-0.2.5 media-libs/tiff >=x11-libs/gtk+-2.6:2 >=media-gfx/gtkimageview-1.5
+SHA1: 9b37a348c486e1b3dcf5982d81bb0a2d43572695
+SIZE: 918064
+USE: contrast gtk openmp timezone
+
+BUILD_TIME: 1377336813
+CPV: media-gfx/xfig-3.2.5b-r3
+DEFINED_PHASES: compile install prepare
+DEPEND: x11-libs/libXaw x11-libs/libXp x11-libs/libXaw3d x11-libs/libXaw3d[unicode] x11-libs/libXi x11-libs/libXt virtual/jpeg media-libs/libpng media-fonts/font-misc-misc media-fonts/urw-fonts >=media-gfx/transfig-3.2.5-r1 media-libs/netpbm x11-misc/imake x11-proto/xproto x11-proto/inputproto
+DESC: A menu-driven tool to draw and manipulate objects interactively in an X window.
+EAPI: 5
+IUSE: nls
+KEYWORDS: alpha amd64 ~arm hppa ppc ppc64 sparc x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~x64-solaris ~x86-solaris
+LICENSE: BSD
+MD5: 553ae0af518c5d9897d3fed3049a4a72
+MTIME: 1377336963
+RDEPEND: x11-libs/libXaw x11-libs/libXp x11-libs/libXaw3d x11-libs/libXaw3d[unicode] x11-libs/libXi x11-libs/libXt virtual/jpeg media-libs/libpng media-fonts/font-misc-misc media-fonts/urw-fonts >=media-gfx/transfig-3.2.5-r1 media-libs/netpbm
+SHA1: b09e4f5d7c9abff390344f6ed4e703c56db28259
+SIZE: 5249495
+USE: nls
+
+BUILD_TIME: 1377215882
+CPV: media-libs/aalib-1.4_rc5
+DEFINED_PHASES: compile install unpack
+DEPEND: x11-libs/libX11 >=sys-libs/slang-1.4.2 >=sys-libs/ncurses-5.1 x11-proto/xproto sys-libs/gpm || ( >=sys-devel/automake-1.12 >=sys-devel/automake-1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: A ASCII-Graphics Library
+IUSE: X slang gpm
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd
+LICENSE: GPL-2
+MD5: 06f70b0cd7f4f7f5d50f07190e0e1eb7
+MTIME: 1377215980
+RDEPEND: x11-libs/libX11 >=sys-libs/slang-1.4.2
+SHA1: 3cabf3c688be69954ca11de4c085d8918c4ec0ed
+SIZE: 208925
+USE: X gpm slang
+
 BUILD_TIME: 1376462741
 CPV: media-libs/alsa-lib-1.0.27.1
 DEFINED_PHASES: compile configure install prepare setup
@@ -3511,6 +3942,22 @@ MTIME: 1376462826
 SHA1: 9923b9f8d98d66f3e9d5cd47b78d85544371ccce
 SIZE: 2406645
 USE: doc python_single_target_python2_7 python_targets_python2_7
+
+BUILD_TIME: 1377221707
+CPV: media-libs/audiofile-0.3.5
+DEFINED_PHASES: configure install prepare test
+DEPEND: || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool app-arch/xz-utils
+DESC: An elegant API for accessing audio files
+EAPI: 5
+IUSE: static-libs test
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x86-solaris
+LICENSE: GPL-2 LGPL-2
+MD5: bf9f779b478f38f60879058b12bb1e5a
+MTIME: 1377221782
+SHA1: 0fd6f256b003f0c5ef6f54d977b1fb14dbee09ef
+SIZE: 214961
+SLOT: 0/1
+USE: static-libs
 
 BUILD_TIME: 1376139987
 CPV: media-libs/fontconfig-2.8.0-r1
@@ -3723,6 +4170,22 @@ SIZE: 2878080
 SLOT: 2
 USE: doc jpeg static-libs tiff zlib
 
+BUILD_TIME: 1377241017
+CPV: media-libs/lensfun-0.2.5-r2
+DEFINED_PHASES: compile configure install prepare setup
+DEPEND: >=dev-libs/glib-2 >=media-libs/libpng-1.2 || ( dev-lang/python:2.7 dev-lang/python:2.6 ) virtual/pkgconfig >=app-doc/doxygen-1.5.0
+DESC: lensfun: A library for rectifying and simulating photographic lens distortions
+EAPI: 2
+IUSE: debug doc
+KEYWORDS: alpha amd64 arm hppa ia64 ppc ppc64 s390 sh sparc x86
+LICENSE: LGPL-3
+MD5: febdd4b10dbe66d295ef784a1c808526
+MTIME: 1377241059
+RDEPEND: >=dev-libs/glib-2 >=media-libs/libpng-1.2
+SHA1: ee18ed12eb855ee0a752697d28c55cd9c141620e
+SIZE: 268710
+USE: doc
+
 BUILD_TIME: 1376220872
 CPV: media-libs/libart_lgpl-2.3.21-r1
 DEFINED_PHASES: compile configure install postinst postrm preinst prepare setup unpack
@@ -3876,6 +4339,22 @@ SHA1: ff2336f37a8a9e42d3a72caafbf1981c3150c039
 SIZE: 45621
 USE: static-libs
 
+BUILD_TIME: 1377224525
+CPV: media-libs/libsdl-1.2.15-r2
+DEFINED_PHASES: configure install prepare setup
+DEPEND: >=media-libs/audiofile-0.1.9
+DESC: Simple Direct Media Layer
+EAPI: 2
+IUSE: oss alsa nas X dga xv xinerama fbcon directfb ggi svga tslib aalib opengl libcaca +audio +video +joystick custom-cflags pulseaudio ps3 static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: LGPL-2.1
+MD5: 8537906264465bb99e5f2f59e6c32cc4
+MTIME: 1377224585
+RDEPEND: >=media-libs/audiofile-0.1.9
+SHA1: 7b57ade0eb39a131d949a6b2e37c28e37d123258
+SIZE: 539260
+USE: audio joystick static-libs video
+
 BUILD_TIME: 1376495867
 CPV: media-libs/libsvgtiny-0.1.0
 DEFINED_PHASES: compile configure install prepare test unpack
@@ -3923,6 +4402,22 @@ RDEPEND: media-libs/giflib:0/0= virtual/jpeg:0/0= media-libs/libpng:0/0= media-l
 SHA1: 815f81be085e2d0b552798731969e45d2d9b9093
 SIZE: 1046573
 USE: gif jpeg png static-libs tiff
+
+BUILD_TIME: 1377228075
+CPV: media-libs/libwmf-0.2.8.4-r5
+DEFINED_PHASES: compile configure install prepare test
+DEPEND: app-text/ghostscript-gpl media-fonts/urw-fonts >=media-libs/freetype-2.0.1 >=media-libs/libpng-1.4 sys-libs/zlib x11-libs/gdk-pixbuf:2[X] virtual/jpeg dev-libs/expat x11-libs/libICE x11-libs/libSM x11-libs/libX11 virtual/pkgconfig x11-libs/libXt x11-libs/libXpm || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: library for converting WMF files
+EAPI: 5
+IUSE: X debug doc expat xml
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~x64-solaris
+LICENSE: GPL-2
+MD5: 1d9a5ad3c1baf8bdde4caf053167e48d
+MTIME: 1377228105
+RDEPEND: app-text/ghostscript-gpl media-fonts/urw-fonts >=media-libs/freetype-2.0.1 >=media-libs/libpng-1.4 sys-libs/zlib x11-libs/gdk-pixbuf:2[X] virtual/jpeg dev-libs/expat x11-libs/libICE x11-libs/libSM x11-libs/libX11
+SHA1: 6cb23531210ebd6eb24a268bd2f1b5b0e9c21866
+SIZE: 388348
+USE: X doc expat xml
 
 BUILD_TIME: 1376091231
 CPV: media-libs/mesa-9.1.2-r1
@@ -4003,6 +4498,18 @@ RDEPEND: x11-libs/libXext x11-proto/xextproto media-libs/giflib media-libs/tiff
 SHA1: 873ad1fa61fc5f644742cfba79f8590069f6c5b8
 SIZE: 1543546
 USE: X gif tiff
+
+BUILD_TIME: 1377344199
+CPV: media-sound/gsm-1.0.13
+DEFINED_PHASES: compile install prepare
+DESC: Lossy speech compression library and tool.
+EAPI: 2
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: gsm
+MD5: e7a7c454eb297d90b1fcb66074089f06
+MTIME: 1377344217
+SHA1: ae7ca84e5aaeb4ab6b5f1617784f0b802cf3a359
+SIZE: 84109
 
 BUILD_TIME: 1374926794
 CPV: net-analyzer/iftop-1.0_pre2
@@ -5091,6 +5598,37 @@ MTIME: 1373550533
 RDEPEND: dev-lang/perl[-build]
 SHA1: 865f3d914bb38bb055a413ae603fca56e616ad47
 SIZE: 71125
+
+BUILD_TIME: 1377240384
+CPV: sci-libs/fftw-3.2.2
+DEFINED_PHASES: compile configure install prepare setup test
+DEPEND: || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool virtual/fortran
+DESC: Fast C library for the Discrete Fourier Transform
+EAPI: 2
+IUSE: altivec doc fortran openmp sse sse2 threads
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sparc x86 ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
+LICENSE: GPL-2
+MD5: 51e2ede3204c5024571e436f281e3333
+MTIME: 1377240445
+RDEPEND: virtual/fortran
+SHA1: 5c76e9f21e87d37abc205a4e5d39d900857a603b
+SIZE: 3912772
+SLOT: 3.0
+USE: doc fortran openmp threads
+
+BUILD_TIME: 1377341781
+CPV: sci-libs/suitesparseconfig-4.2.1
+DEFINED_PHASES: compile configure install prepare test
+DESC: Common configurations for all packages in suitesparse
+EAPI: 5
+IUSE: static-libs
+KEYWORDS: ~alpha ~amd64 ~arm ~hppa ~ppc ~ppc64 ~sparc ~x86 ~amd64-fbsd ~amd64-linux ~x86-linux ~x86-macos
+LICENSE: LGPL-2.1
+MD5: e6afa4a068ef55e6b846e177d55c0f67
+MTIME: 1377341797
+SHA1: 9b0b63d025275dd62ce29cdc1e1c946b981c9861
+SIZE: 35128
+USE: static-libs
 
 BUILD_TIME: 1376206218
 CPV: sys-apps/acl-2.2.51
@@ -6678,6 +7216,21 @@ RDEPEND: || ( >=sys-apps/util-linux-2.22 sys-block/eject sys-block/eject-bsd )
 SHA1: 08021d907c9c84946555f6418efc68b519ff708d
 SIZE: 4337
 
+BUILD_TIME: 1377222036
+CPV: virtual/fortran-0
+DEFINED_PHASES: -
+DEPEND: || ( sys-devel/gcc[fortran,openmp] sys-devel/gcc-apple[fortran,openmp] dev-lang/ekopath dev-lang/ifc dev-lang/path64[openmp] )
+DESC: Virtual for Fortran Compiler
+EAPI: 4
+IUSE: openmp
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris
+MD5: 39dff4768e77524fbeb7f79f72321ff9
+MTIME: 1377222080
+RDEPEND: || ( sys-devel/gcc[fortran,openmp] sys-devel/gcc-apple[fortran,openmp] dev-lang/ekopath dev-lang/ifc dev-lang/path64[openmp] )
+SHA1: 159625ca41aae5c50440ad217aa217bb0eb4976a
+SIZE: 4886
+USE: openmp
+
 BUILD_TIME: 1376248147
 CPV: virtual/freedesktop-icon-theme-0
 DEFINED_PHASES: -
@@ -7489,6 +8042,22 @@ RDEPEND: || ( sys-devel/bison dev-util/byacc dev-util/yacc )
 SHA1: 2c516be793b14515c0045d734ceb84871e5e66be
 SIZE: 4721
 
+BUILD_TIME: 1377187749
+CPV: www-client/midori-0.5.4
+DEFINED_PHASES: compile configure install postinst postrm preinst prepare setup unpack
+DEPEND: >=dev-db/sqlite-3.6.19:3 >=dev-libs/glib-2.32.3 dev-libs/libxml2 >=net-libs/libsoup-2.34:2.4 >=x11-libs/libnotify-0.7 x11-libs/libXScrnSaver >=net-libs/webkit-gtk-1.8.3:2 >=x11-libs/gtk+-2.24:2 dev-libs/libunique:1 dev-lang/python:2.7 || ( dev-lang/vala:0.20 dev-lang/vala:0.18 dev-lang/vala:0.16 ) dev-util/intltool gnome-base/librsvg dev-util/gtk-doc sys-devel/gettext >=sys-apps/sed-4 dev-lang/python !dev-lang/python[-threads]
+DESC: A lightweight web browser based on WebKitGTK+
+EAPI: 5
+IUSE: +deprecated doc gnome nls +unique webkit2 zeitgeist
+KEYWORDS: ~amd64 ~arm ~ppc ~x86 ~x86-fbsd
+LICENSE: LGPL-2.1 MIT
+MD5: 84af394e9f51f454437b2a622b4e589d
+MTIME: 1377187776
+RDEPEND: >=dev-db/sqlite-3.6.19:3 >=dev-libs/glib-2.32.3 dev-libs/libxml2 >=net-libs/libsoup-2.34:2.4 >=x11-libs/libnotify-0.7 x11-libs/libXScrnSaver >=net-libs/webkit-gtk-1.8.3:2 >=x11-libs/gtk+-2.24:2 dev-libs/libunique:1
+SHA1: 3311085dd6c4c04dbf2caf678dd37b573dff5eaf
+SIZE: 553338
+USE: deprecated doc nls unique
+
 BUILD_TIME: 1376499602
 CPV: www-client/netsurf-3.0
 DEFINED_PHASES: compile configure install prepare test unpack
@@ -7518,6 +8087,20 @@ MTIME: 1376227127
 RDEPEND: x11-libs/libX11 x11-libs/libXt
 SHA1: 084e5eee73b86bffee1c3926bd12f4f3a7a4706f
 SIZE: 46138
+
+BUILD_TIME: 1377247780
+CPV: x11-apps/bdftopcf-1.0.3
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: x11-libs/libXfont || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool virtual/pkgconfig
+DESC: X.Org bdftopcf application
+EAPI: 3
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE: MIT
+MD5: 60f3c4f11513ab836a084b0a8a73e3b0
+MTIME: 1377247825
+RDEPEND: x11-libs/libXfont
+SHA1: 2b5b177813f44996e7971ffa7ad355e8e91eb556
+SIZE: 41374
 
 BUILD_TIME: 1376067097
 CPV: x11-apps/iceauth-1.0.5
@@ -7821,22 +8404,22 @@ RDEPEND: x11-base/xorg-server x11-base/xorg-server[xorg] x11-libs/libpciaccess
 SHA1: 7fe9e0a8d98421f0f0ed519506d22d1f7a90e0a5
 SIZE: 78275
 
-BUILD_TIME: 1376161350
+BUILD_TIME: 1377281377
 CPV: x11-libs/cairo-1.10.2-r3
 DEFINED_PHASES: configure install prepare
-DEPEND: media-libs/fontconfig media-libs/freetype:2 media-libs/libpng:0 sys-libs/zlib >=x11-libs/pixman-0.18.4 dev-libs/glib:2 >=x11-libs/libXrender-0.6 x11-libs/libX11 virtual/pkgconfig >=sys-devel/libtool-2 >=dev-util/gtk-doc-1.6 ~app-text/docbook-xml-dtd-4.2 x11-proto/renderproto || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND: media-libs/fontconfig media-libs/freetype:2 media-libs/libpng:0 sys-libs/zlib >=x11-libs/pixman-0.18.4 dev-libs/DirectFB dev-libs/glib:2 || ( media-libs/mesa[egl] media-libs/opengl-apple ) >=x11-libs/libXrender-0.6 x11-libs/libX11 x11-libs/libxcb x11-libs/xcb-util virtual/pkgconfig >=sys-devel/libtool-2 >=dev-util/gtk-doc-1.6 ~app-text/docbook-xml-dtd-4.2 x11-proto/renderproto || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESC: A vector graphics library with cross-device output support
 EAPI: 3
 IUSE: X aqua debug directfb doc drm gallium +glib opengl openvg qt4 static-libs +svg xcb
 KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
 LICENSE: || ( LGPL-2.1 MPL-1.1 )
-MD5: edec31fb648e036b0e41e14f146954e1
-MTIME: 1376161390
-RDEPEND: media-libs/fontconfig media-libs/freetype:2 media-libs/libpng:0 sys-libs/zlib >=x11-libs/pixman-0.18.4 dev-libs/glib:2 >=x11-libs/libXrender-0.6 x11-libs/libX11
+MD5: 9bea85def64a09281ea8532aa8839795
+MTIME: 1377281427
+RDEPEND: media-libs/fontconfig media-libs/freetype:2 media-libs/libpng:0 sys-libs/zlib >=x11-libs/pixman-0.18.4 dev-libs/DirectFB dev-libs/glib:2 || ( media-libs/mesa[egl] media-libs/opengl-apple ) >=x11-libs/libXrender-0.6 x11-libs/libX11 x11-libs/libxcb x11-libs/xcb-util
 RESTRICT: test
-SHA1: b44901f0fd68b23e2c0d53338e02bd5804132b7a
-SIZE: 2499734
-USE: X doc glib static-libs svg
+SHA1: f014e8575a5e2abe74b386dba130da1cd221f9f4
+SIZE: 1597360
+USE: X directfb doc glib opengl static-libs svg xcb
 
 BUILD_TIME: 1376170944
 CPV: x11-libs/gdk-pixbuf-2.26.4
@@ -7970,6 +8553,22 @@ SHA1: 813e91737b876a20c6b7a02cd7cfc61808ba6833
 SIZE: 2594181
 USE: ipv6 static-libs
 
+BUILD_TIME: 1377182056
+CPV: x11-libs/libXScrnSaver-1.2.2
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: x11-libs/libX11 x11-libs/libXext >=x11-proto/scrnsaverproto-1.2 || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool virtual/pkgconfig
+DESC: X.Org XScrnSaver library
+EAPI: 4
+IUSE: static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris ~x86-solaris
+LICENSE: MIT
+MD5: 652248bb02fb1036f7208baa08fed932
+MTIME: 1377182074
+RDEPEND: x11-libs/libX11 x11-libs/libXext >=x11-proto/scrnsaverproto-1.2
+SHA1: 23298188575e236d762a5f0cf70dea8b8473a671
+SIZE: 53119
+USE: static-libs
+
 BUILD_TIME: 1376305116
 CPV: x11-libs/libXau-1.0.7
 DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
@@ -7985,6 +8584,38 @@ RDEPEND: x11-proto/xproto
 SHA1: 91c7cd2683e7312835c6e30a104c1c92bf0b43cb
 SIZE: 54594
 USE: static-libs
+
+BUILD_TIME: 1377331553
+CPV: x11-libs/libXaw-1.0.11-r1
+DEFINED_PHASES: compile configure install postinst postrm prepare setup test unpack
+DEPEND: x11-libs/libX11 x11-libs/libXext x11-libs/libXt x11-libs/libXmu x11-libs/libXpm x11-proto/xproto x11-proto/xextproto || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool virtual/pkgconfig app-text/asciidoc app-text/xmlto app-doc/doxygen app-text/docbook-xml-dtd:4.1.2 app-text/docbook-xml-dtd:4.2 app-text/docbook-xml-dtd:4.3
+DESC: X.Org Xaw library
+EAPI: 4
+IUSE: deprecated static-libs doc
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: MIT
+MD5: 95310c70b6dc0f29a2ef70bb289cc69f
+MTIME: 1377331582
+RDEPEND: x11-libs/libX11 x11-libs/libXext x11-libs/libXt x11-libs/libXmu x11-libs/libXpm x11-proto/xproto x11-proto/xextproto
+SHA1: 60b53a3e507fc62a6c53a588d161947580e9ec04
+SIZE: 571257
+USE: doc static-libs
+
+BUILD_TIME: 1377333182
+CPV: x11-libs/libXaw3d-1.6.2
+DEFINED_PHASES: compile configure install postinst postrm prepare setup test unpack
+DEPEND: x11-libs/libX11 x11-libs/libXext x11-libs/libXmu x11-libs/libXt sys-devel/flex virtual/yacc x11-proto/xextproto x11-proto/xproto || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool virtual/pkgconfig
+DESC: X.Org Xaw3d library
+EAPI: 4
+IUSE: unicode static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~x64-solaris ~x86-solaris
+LICENSE: MIT
+MD5: 698ced139ace52e33a09d57b0cc94b08
+MTIME: 1377333203
+RDEPEND: x11-libs/libX11 x11-libs/libXext x11-libs/libXmu x11-libs/libXt
+SHA1: 54f3fe3a0c1ec5bd02c9f1e4bb27e423570c3a11
+SIZE: 307678
+USE: static-libs unicode
 
 BUILD_TIME: 1376173679
 CPV: x11-libs/libXcomposite-0.4.3-r1
@@ -8161,6 +8792,22 @@ RDEPEND: x11-libs/libXt x11-libs/libXext x11-libs/libX11 x11-proto/xextproto
 SHA1: c00da4bfa40b6982aecd4a29a4354bcd5334f0d2
 SIZE: 130521
 USE: ipv6 static-libs
+
+BUILD_TIME: 1377334248
+CPV: x11-libs/libXp-1.0.1
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: x11-libs/libX11 x11-libs/libXext x11-libs/libXau x11-proto/xextproto x11-proto/printproto || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool virtual/pkgconfig
+DESC: X.Org Xp library
+EAPI: 3
+IUSE: static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~ia64-hpux ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris ~x86-winnt
+LICENSE: MIT
+MD5: cd1bfbc103a171db372a030839e609ad
+MTIME: 1377334325
+RDEPEND: x11-libs/libX11 x11-libs/libXext x11-libs/libXau x11-proto/xextproto x11-proto/printproto
+SHA1: 267e1aba3f2f35daf0cef04eb61fcb8c6a587622
+SIZE: 124368
+USE: static-libs
 
 BUILD_TIME: 1376396282
 CPV: x11-libs/libXpm-3.5.10
@@ -8598,6 +9245,22 @@ SHA1: e408fe97437f2a475b06bef8e386d0cfd1154c30
 SIZE: 125924
 USE: doc static-libs
 
+BUILD_TIME: 1377283057
+CPV: x11-libs/xpyb-1.3.1-r1
+DEFINED_PHASES: compile configure install postinst postrm prepare setup test unpack
+DEPEND: >=x11-libs/libxcb-1.7 >=x11-proto/xcb-proto-1.7.1[python_targets_python2_7(-),python_targets_python3_2(-),python_single_target_python2_7(+)] dev-lang/python:2.7 dev-python/python-exec[python_targets_python2_7(-),python_targets_python3_2(-),python_single_target_python2_7(+)] || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool virtual/pkgconfig
+DESC: XCB-based Python bindings for the X Window System
+EAPI: 5
+IUSE: selinux python_targets_python2_5 python_targets_python2_6 python_targets_python2_7 python_targets_python3_1 python_targets_python3_2 python_targets_python3_3 python_single_target_python2_5 python_single_target_python2_6 python_single_target_python2_7 python_single_target_python3_1 python_single_target_python3_2 python_single_target_python3_3 static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: MIT
+MD5: b48872ae233e8cc0610012890df1822d
+MTIME: 1377283080
+RDEPEND: >=x11-libs/libxcb-1.7 >=x11-proto/xcb-proto-1.7.1[python_targets_python2_7(-),python_targets_python3_2(-),python_single_target_python2_7(+)] dev-lang/python:2.7 dev-python/python-exec[python_targets_python2_7(-),python_targets_python3_2(-),python_single_target_python2_7(+)]
+SHA1: a2c0b25c8e362a934343b797834668ca1a1f5be8
+SIZE: 199599
+USE: python_single_target_python2_7 python_targets_python2_7 python_targets_python3_2 static-libs
+
 BUILD_TIME: 1376304733
 CPV: x11-libs/xtrans-1.2.7
 DEFINED_PHASES: compile configure install postinst postrm prepare setup test unpack
@@ -8935,6 +9598,19 @@ MD5: 809533a23ff52ea33cf6ea88799ca302
 MTIME: 1376305449
 SHA1: e5dfd5546a4efbcc2edf78ca56489a53ab6b705c
 SIZE: 205835
+
+BUILD_TIME: 1377333769
+CPV: x11-proto/printproto-1.0.5
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool virtual/pkgconfig
+DESC: X.Org Print protocol headers
+EAPI: 3
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~ia64-hpux ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: MIT
+MD5: 20ec52a5535284232567189345920baa
+MTIME: 1377333786
+SHA1: 1b140b69faa16429a39567d45245aefa4ec72262
+SIZE: 50171
 
 BUILD_TIME: 1376062136
 CPV: x11-proto/randrproto-1.4.0
