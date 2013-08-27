@@ -57,5 +57,5 @@ portage/package.keywords
 =sci-libs/cholmod-2.1.2
 =sci-libs/colamd-2.8.0
 =sci-libs/amd-2.3.1
-
 =app-portage/porticron-0.6
+=sys-kernel/raspberrypi-image-3.10.9_pre-r20130820
