@@ -5,15 +5,15 @@ ACCEPT_RESTRICT: *
 CBUILD: armv6j-hardfloat-linux-gnueabi
 CHOST: armv6j-hardfloat-linux-gnueabi
 CONFIG_PROTECT: /boot/cmdline.txt /boot/config.txt /etc /usr/share/gnupg/qualified.txt /var/spool/munin-async/.ssh
-CONFIG_PROTECT_MASK: /etc/ca-certificates.conf /etc/env.d /etc/fonts/fonts.conf /etc/gconf /etc/gentoo-release /etc/revdep-rebuild /etc/sandbox.d /etc/terminfo
+CONFIG_PROTECT_MASK: /etc/ca-certificates.conf /etc/env.d /etc/fonts/fonts.conf /etc/gconf /etc/gentoo-release /etc/revdep-rebuild /etc/sandbox.d /etc/terminfo /etc/texmf/language.dat.d /etc/texmf/language.def.d /etc/texmf/updmap.d /etc/texmf/web2c
 FEATURES: assume-digests binpkg-logs buildpkg compressdebug config-protect-if-modified distlocks ebuild-locks fixlafiles getbinpkg merge-sync news parallel-fetch preserve-libs protect-owned sandbox sfperms split-log strict unknown-features-warn unmerge-logs unmerge-orphans userfetch userpriv usersandbox usersync
 GENTOO_MIRRORS: http://lore.xmw.de/gentoo/
 IUSE_IMPLICIT: prefix
-PACKAGES: 693
+PACKAGES: 751
 PROFILE: default/linux/arm/13.0
 SYNC: use update-portage
-TIMESTAMP: 1377345061
-USE: acl apache2_modules_actions apache2_modules_alias apache2_modules_auth_basic apache2_modules_authn_alias apache2_modules_authn_anon apache2_modules_authn_core apache2_modules_authn_dbm apache2_modules_authn_default apache2_modules_authn_file apache2_modules_authz_core apache2_modules_authz_dbm apache2_modules_authz_default apache2_modules_authz_groupfile apache2_modules_authz_host apache2_modules_authz_owner apache2_modules_authz_user apache2_modules_autoindex apache2_modules_cache apache2_modules_cgi apache2_modules_cgid apache2_modules_dav apache2_modules_dav_fs apache2_modules_dav_lock apache2_modules_deflate apache2_modules_dir apache2_modules_disk_cache apache2_modules_env apache2_modules_expires apache2_modules_ext_filter apache2_modules_file_cache apache2_modules_filter apache2_modules_headers apache2_modules_include apache2_modules_info apache2_modules_log_config apache2_modules_logio apache2_modules_mem_cache apache2_modules_mime apache2_modules_mime_magic apache2_modules_negotiation apache2_modules_rewrite apache2_modules_setenvif apache2_modules_socache_shmcb apache2_modules_speling apache2_modules_status apache2_modules_unique_id apache2_modules_unixd apache2_modules_userdir apache2_modules_usertrack apache2_modules_vhost_alias arm berkdb bindist bzip2 calligra_features_author calligra_features_braindump calligra_features_flow calligra_features_karbon calligra_features_kexi calligra_features_krita calligra_features_plan calligra_features_sheets calligra_features_stage calligra_features_tables calligra_features_words cameras_ptp2 cli collectd_plugins_df collectd_plugins_interface collectd_plugins_irq collectd_plugins_load collectd_plugins_memory collectd_plugins_rrdtool collectd_plugins_swap collectd_plugins_syslog cracklib crypt cxx doc dri elibc_glibc fortran gdbm gpsd_protocols_aivdm gpsd_protocols_ashtech gpsd_protocols_earthmate gpsd_protocols_evermore gpsd_protocols_fv18 gpsd_protocols_garmin gpsd_protocols_garmintxt gpsd_protocols_gpsclock gpsd_protocols_itrax gpsd_protocols_mtk3301 gpsd_protocols_navcom gpsd_protocols_nmea gpsd_protocols_ntrip gpsd_protocols_oceanserver gpsd_protocols_oldstyle gpsd_protocols_oncore gpsd_protocols_rtcm104v2 gpsd_protocols_rtcm104v3 gpsd_protocols_sirf gpsd_protocols_superstar2 gpsd_protocols_timing gpsd_protocols_tnt gpsd_protocols_tripmate gpsd_protocols_tsip gpsd_protocols_ubx iconv input_devices_evdev input_devices_joystick input_devices_keyboard input_devices_mouse ipv6 kernel_linux lcd_devices_bayrad lcd_devices_cfontz lcd_devices_cfontz633 lcd_devices_glk lcd_devices_hd44780 lcd_devices_lb216 lcd_devices_lcdm001 lcd_devices_mtxorb lcd_devices_ncurses lcd_devices_text libreoffice_extensions_presenter-console libreoffice_extensions_presenter-minimizer modules mudflap ncurses nls nptl office_implementation_libreoffice openmp pam pcre php_targets_php5-4 python_single_target_python2_7 python_targets_python2_7 python_targets_python3_2 readline ruby_targets_ruby18 ruby_targets_ruby19 session ssl static-libs tcpd unicode userland_GNU video_cards_fbdev xtables_addons_account xtables_addons_chaos xtables_addons_condition xtables_addons_delude xtables_addons_dhcpmac xtables_addons_fuzzy xtables_addons_geoip xtables_addons_iface xtables_addons_ipmark xtables_addons_ipp2p xtables_addons_ipset xtables_addons_ipv4options xtables_addons_length2 xtables_addons_logmark xtables_addons_lscan xtables_addons_pknock xtables_addons_psd xtables_addons_quota2 xtables_addons_rawnat xtables_addons_steal xtables_addons_sysrq xtables_addons_tarpit xtables_addons_tee zlib
+TIMESTAMP: 1377583959
+USE: X acl alsa apache2_modules_actions apache2_modules_alias apache2_modules_auth_basic apache2_modules_authn_alias apache2_modules_authn_anon apache2_modules_authn_core apache2_modules_authn_dbm apache2_modules_authn_default apache2_modules_authn_file apache2_modules_authz_core apache2_modules_authz_dbm apache2_modules_authz_default apache2_modules_authz_groupfile apache2_modules_authz_host apache2_modules_authz_owner apache2_modules_authz_user apache2_modules_autoindex apache2_modules_cache apache2_modules_cgi apache2_modules_cgid apache2_modules_dav apache2_modules_dav_fs apache2_modules_dav_lock apache2_modules_deflate apache2_modules_dir apache2_modules_disk_cache apache2_modules_env apache2_modules_expires apache2_modules_ext_filter apache2_modules_file_cache apache2_modules_filter apache2_modules_headers apache2_modules_include apache2_modules_info apache2_modules_log_config apache2_modules_logio apache2_modules_mem_cache apache2_modules_mime apache2_modules_mime_magic apache2_modules_negotiation apache2_modules_rewrite apache2_modules_setenvif apache2_modules_socache_shmcb apache2_modules_speling apache2_modules_status apache2_modules_unique_id apache2_modules_unixd apache2_modules_userdir apache2_modules_usertrack apache2_modules_vhost_alias arm berkdb bindist bzip2 cairo calligra_features_author calligra_features_braindump calligra_features_flow calligra_features_karbon calligra_features_kexi calligra_features_krita calligra_features_plan calligra_features_sheets calligra_features_stage calligra_features_tables calligra_features_words cameras_ptp2 cli collectd_plugins_df collectd_plugins_interface collectd_plugins_irq collectd_plugins_load collectd_plugins_memory collectd_plugins_rrdtool collectd_plugins_swap collectd_plugins_syslog cpudetection cracklib crypt curl cxx dbus doc dri elibc_glibc examples exif ffmpeg fontconfig fortran gdbm gpsd_protocols_aivdm gpsd_protocols_ashtech gpsd_protocols_earthmate gpsd_protocols_evermore gpsd_protocols_fv18 gpsd_protocols_garmin gpsd_protocols_garmintxt gpsd_protocols_gpsclock gpsd_protocols_itrax gpsd_protocols_mtk3301 gpsd_protocols_navcom gpsd_protocols_nmea gpsd_protocols_ntrip gpsd_protocols_oceanserver gpsd_protocols_oldstyle gpsd_protocols_oncore gpsd_protocols_rtcm104v2 gpsd_protocols_rtcm104v3 gpsd_protocols_sirf gpsd_protocols_superstar2 gpsd_protocols_timing gpsd_protocols_tnt gpsd_protocols_tripmate gpsd_protocols_tsip gpsd_protocols_ubx graphviz gsm gtk iconv input_devices_evdev input_devices_joystick input_devices_keyboard input_devices_mouse ipv6 jack jpeg jpeg2k kernel_linux lapack lcd_devices_bayrad lcd_devices_cfontz lcd_devices_cfontz633 lcd_devices_glk lcd_devices_hd44780 lcd_devices_lb216 lcd_devices_lcdm001 lcd_devices_mtxorb lcd_devices_ncurses lcd_devices_text lcms lensfun libass libcaca libreoffice_extensions_presenter-console libreoffice_extensions_presenter-minimizer libv4l linguas_am linguas_ar linguas_ast linguas_az linguas_be linguas_bg linguas_br linguas_ca linguas_ca@valencia linguas_cs linguas_csb linguas_da linguas_de linguas_dz linguas_el linguas_en_CA linguas_en_GB linguas_eo linguas_es linguas_et linguas_eu linguas_fa linguas_fi linguas_fr linguas_ga linguas_gl linguas_gu linguas_he linguas_hi linguas_hr linguas_hu linguas_id linguas_is linguas_it linguas_ja linguas_ka linguas_kk linguas_km linguas_kn linguas_ko linguas_lt linguas_lv linguas_mk linguas_ml linguas_ms linguas_my linguas_nb linguas_nds linguas_ne linguas_nl linguas_nn linguas_oc linguas_pa linguas_pl linguas_pt linguas_pt_BR linguas_ro linguas_ru linguas_rw linguas_si linguas_sk linguas_sl linguas_sr linguas_sr@latin linguas_sv linguas_ta linguas_te linguas_th linguas_tr linguas_tt linguas_uk linguas_vi linguas_xh linguas_yi linguas_zh_CN linguas_zh_HK linguas_zh_TW lua mng modplug modules mp3 mudflap ncurses network nls nptl office_implementation_libreoffice ogg openal openmp opus oss pam pcre pdf php_targets_php5-4 png postscript python python_single_target_python2_7 python_targets_python2_7 python_targets_python3_2 raw readline ruby_targets_ruby18 ruby_targets_ruby19 sdl session slang speex ssl static-libs svg tcpd theora threads tiff truetype twolame udev umfpack unicode userland_GNU v4l vala video_cards_fbdev vorbis webkit wmf xpm xtables_addons_account xtables_addons_chaos xtables_addons_condition xtables_addons_delude xtables_addons_dhcpmac xtables_addons_fuzzy xtables_addons_geoip xtables_addons_iface xtables_addons_ipmark xtables_addons_ipp2p xtables_addons_ipset xtables_addons_ipv4options xtables_addons_length2 xtables_addons_logmark xtables_addons_lscan xtables_addons_pknock xtables_addons_psd xtables_addons_quota2 xtables_addons_rawnat xtables_addons_steal xtables_addons_sysrq xtables_addons_tarpit xtables_addons_tee xvid zlib
 USE_EXPAND: ABI_MIPS ABI_X86 ALSA_CARDS APACHE2_MODULES APACHE2_MPMS CALLIGRA_FEATURES CAMERAS COLLECTD_PLUGINS CROSSCOMPILE_OPTS CURL_SSL DRACUT_MODULES DVB_CARDS ELIBC ENLIGHTENMENT_MODULES FCDSL_CARDS FFTOOLS FOO2ZJS_DEVICES FRITZCAPI_CARDS GPSD_PROTOCOLS GRUB_PLATFORMS INPUT_DEVICES KERNEL LCD_DEVICES LIBREOFFICE_EXTENSIONS LINGUAS LIRC_DEVICES MONKEYD_PLUGINS NETBEANS_MODULES NGINX_MODULES_HTTP NGINX_MODULES_MAIL OFED_DRIVERS OFFICE_IMPLEMENTATION OPENMPI_FABRICS OPENMPI_OFED_FEATURES OPENMPI_RM PHP_TARGETS PYTHON_SINGLE_TARGET PYTHON_TARGETS QEMU_SOFTMMU_TARGETS QEMU_USER_TARGETS RUBY_TARGETS SANE_BACKENDS USERLAND VIDEO_CARDS VOICEMAIL_STORAGE XFCE_PLUGINS XTABLES_ADDONS
 USE_EXPAND_HIDDEN: ABI_MIPS ABI_X86 CROSSCOMPILE_OPTS ELIBC KERNEL USERLAND
 USE_EXPAND_IMPLICIT: ARCH ELIBC KERNEL USERLAND
@@ -53,6 +53,19 @@ RDEPEND: !app-admin/eselect-news sys-apps/sed || ( sys-apps/coreutils sys-freebs
 SHA1: 3055f33b725103ad185ec3f8b4d58fc88b4d3d1d
 SIZE: 90804
 
+BUILD_TIME: 1377347470
+CPV: app-admin/eselect-blas-0.1
+DEFINED_PHASES: install
+DEPEND: >=app-admin/eselect-1.0.5
+DESC: BLAS module for eselect
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris
+LICENSE: GPL-2
+MD5: a7bb8c260f3f0c1ad681e092336e5fc2
+MTIME: 1377347485
+RDEPEND: >=app-admin/eselect-1.0.5
+SHA1: 8fbb3ec3ddfe336cb1409b4e7070d472051e37fd
+SIZE: 7326
+
 BUILD_TIME: 1373627330
 CPV: app-admin/eselect-ctags-1.14
 DEFINED_PHASES: compile install
@@ -77,6 +90,19 @@ MTIME: 1376140156
 RDEPEND: app-admin/eselect >=media-libs/fontconfig-2.4
 SHA1: d14e4bc383ed5abec13fa025fea5d93e2035e08d
 SIZE: 6682
+
+BUILD_TIME: 1377347293
+CPV: app-admin/eselect-lapack-0.1
+DEFINED_PHASES: install
+DEPEND: >=app-admin/eselect-1.0.5
+DESC: LAPACK module for eselect
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos
+LICENSE: GPL-2
+MD5: 5a9b55715df391efbf05183e139aad34
+MTIME: 1377347308
+RDEPEND: >=app-admin/eselect-1.0.5
+SHA1: 16d4f602324583c4405c0f6cbccb9c32600cb5d6
+SIZE: 22289
 
 BUILD_TIME: 1373568737
 CPV: app-admin/eselect-lib-bin-symlink-0.1.1
@@ -611,6 +637,22 @@ SHA1: a7a639614e9cc2013832e97b93009082fe11bd99
 SIZE: 6575770
 USE: acl nls
 
+BUILD_TIME: 1377469039
+CPV: app-i18n/enca-1.13-r3
+DEFINED_PHASES: compile configure install prepare test
+DEPEND: >=app-text/recode-3.6_p15 || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: ENCA detects the character coding of a file and converts it if desired
+EAPI: 4
+IUSE: doc +recode
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x86-solaris
+LICENSE: GPL-2
+MD5: 0f6dad93ebf8bcef50ac3ee5ecd1bea7
+MTIME: 1377469058
+RDEPEND: >=app-text/recode-3.6_p15
+SHA1: 579ed368075f079c0286e957fe0617158f4d5c65
+SIZE: 159911
+USE: doc recode
+
 BUILD_TIME: 1376146980
 CPV: app-misc/ca-certificates-20130119
 DEFINED_PHASES: compile install postinst prepare setup unpack
@@ -1103,6 +1145,22 @@ RESTRICT: test
 SHA1: 647a53ba7d8c2370c67bf25fd947a6f25cd19631
 SIZE: 4106809
 
+BUILD_TIME: 1377348654
+CPV: app-text/dvipsk-5.992_p20120701
+DEFINED_PHASES: configure install postinst postrm
+DEPEND: >=dev-libs/kpathsea-6.1.0_p20120701
+DESC: DVI-to-PostScript translator
+EAPI: 4
+IUSE: doc source
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2
+MD5: f533bdf33e26dbc5ae03f42d44fd3ab0
+MTIME: 1377348692
+RDEPEND: !<app-text/texlive-core-2010 !<dev-texlive/texlive-basic-2009 !app-text/ptex >=dev-libs/kpathsea-6.1.0_p20120701
+SHA1: 4c76c0c014ef44b258f9d619debc8afa4b2391cd
+SIZE: 1064360
+USE: doc
+
 BUILD_TIME: 1376169564
 CPV: app-text/ghostscript-gpl-9.05-r1
 DEFINED_PHASES: compile configure install prepare setup
@@ -1208,6 +1266,24 @@ SHA1: d18842eda7ba9f05b1b86dce9b711f2e7d02ad44
 SIZE: 5122001
 USE: doc nls static-libs
 
+BUILD_TIME: 1377355791
+CPV: app-text/poppler-0.22.2-r2
+DEFINED_PHASES: compile configure install prepare test
+DEPEND: >=media-libs/fontconfig-2.6.0 >=media-libs/freetype-2.3.9 sys-libs/zlib dev-libs/glib:2 >=x11-libs/cairo-1.10.0 >=dev-libs/gobject-introspection-1.32.1 net-misc/curl virtual/jpeg media-libs/openjpeg:0 media-libs/lcms:2 >=media-libs/libpng-1.4:0 media-libs/tiff:0 virtual/pkgconfig sys-devel/make >=dev-util/cmake-2.8.9 >=sys-apps/findutils-4.4.0
+DESC: PDF rendering library based on the xpdf-3.0 code base
+EAPI: 5
+IUSE: cairo cjk curl cxx debug doc +introspection +jpeg jpeg2k +lcms png qt4 tiff +utils
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2
+MD5: c777c68533305f7f7adfe5385beafbb7
+MTIME: 1377355870
+RDEPEND: >=media-libs/fontconfig-2.6.0 >=media-libs/freetype-2.3.9 sys-libs/zlib dev-libs/glib:2 >=x11-libs/cairo-1.10.0 >=dev-libs/gobject-introspection-1.32.1 net-misc/curl virtual/jpeg media-libs/openjpeg:0 media-libs/lcms:2 >=media-libs/libpng-1.4:0 media-libs/tiff:0 !dev-libs/poppler !dev-libs/poppler-glib !dev-libs/poppler-qt3 !dev-libs/poppler-qt4 !app-text/poppler-utils
+RESTRICT: test
+SHA1: 0dbdcf89ce34f92efcf7e9b4913c53b62e9b4117
+SIZE: 1332770
+SLOT: 0/35
+USE: cairo curl cxx doc introspection jpeg jpeg2k lcms png tiff utils
+
 BUILD_TIME: 1376154129
 CPV: app-text/poppler-data-0.4.6
 DEFINED_PHASES: install
@@ -1219,6 +1295,20 @@ MD5: 2b9b003d14a35220a2d5d7affd5450b7
 MTIME: 1376154229
 SHA1: bc87e4ddbef920335f07a8e0ebb0b96397fe55a3
 SIZE: 3800256
+
+BUILD_TIME: 1377349464
+CPV: app-text/ps2pkm-1.5_p20120701
+DEFINED_PHASES: configure
+DEPEND: >=dev-libs/kpathsea-6.1.0_p20120701
+DESC: Tool that converts a PostScript type1 font into a corresponding TeX PK font
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE: MIT
+MD5: 1f1adb1f52e1d6fb87599f25e05502f5
+MTIME: 1377349482
+RDEPEND: !<app-text/texlive-core-2010 !app-text/ptex >=dev-libs/kpathsea-6.1.0_p20120701
+SHA1: 7e79b9d105875efd3a9b7a1ce5133c782d018e00
+SIZE: 88371
 
 BUILD_TIME: 1376130773
 CPV: app-text/rarian-0.8.1-r2
@@ -1235,6 +1325,21 @@ RDEPEND: dev-libs/libxslt || ( sys-apps/util-linux app-misc/getopt )
 SHA1: b654a11a0f7b5ad41ad7b7366e7dab8addc11723
 SIZE: 496428
 USE: static-libs
+
+BUILD_TIME: 1377352862
+CPV: app-text/recode-3.6_p17-r2
+DEFINED_PHASES: configure install prepare
+DEPEND: sys-devel/flex sys-devel/gettext =sys-devel/automake-1.11* >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: Convert files between various character sets
+EAPI: 3
+IUSE: nls static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x86-solaris
+LICENSE: GPL-2
+MD5: 488fc2c487687ddb48ad175c695d515d
+MTIME: 1377352891
+SHA1: 487ddff9c0e6201d5cc91302263a25fcf2c1b753
+SIZE: 1763120
+USE: nls static-libs
 
 BUILD_TIME: 1376482830
 CPV: app-text/rman-3.2
@@ -1288,6 +1393,40 @@ MD5: 13973acec54634e57c9f688019bdbecc
 MTIME: 1374175198
 SHA1: 88d4ea90a388c52c8984ed61cdadb4647eae1a6e
 SIZE: 60698
+
+BUILD_TIME: 1377504501
+CPV: app-text/texi2html-5.0-r1
+DEFINED_PHASES: configure install preinst prepare
+DEPEND: >=dev-lang/perl-5.10.1 >=dev-perl/libintl-perl-1.200 dev-perl/Text-Unidecode dev-perl/Unicode-EastAsianWidth
+DESC: Perl script that converts Texinfo to HTML
+EAPI: 4
+IUSE: unicode
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE: CC-SA-1.0 FDL-1.3 GPL-2
+MD5: 7bcf6a5ef82e73e3dba10e31d95a59c0
+MTIME: 1377504549
+RDEPEND: >=dev-lang/perl-5.10.1 >=dev-perl/libintl-perl-1.200 dev-perl/Text-Unidecode dev-perl/Unicode-EastAsianWidth
+RESTRICT: test
+SHA1: a54f83b1129aed9a5e70875f531a7a61ba2339ee
+SIZE: 727907
+USE: unicode
+
+BUILD_TIME: 1377501640
+CPV: app-text/texlive-core-2012-r1
+DEFINED_PHASES: compile configure install postinst preinst prepare test unpack
+DEPEND: x11-libs/libXmu x11-libs/libXp x11-libs/libXpm x11-libs/libICE x11-libs/libSM x11-libs/libXaw x11-libs/libXfont !app-text/ptex !app-text/tetex !<app-text/texlive-2007 !app-text/xetex !<dev-texlive/texlive-basic-2009 !<dev-texlive/texlive-metapost-2011 !app-text/dvibook sys-libs/zlib >=media-libs/libpng-1.2.43-r2:0/0= >=app-text/poppler-0.12.3-r3:0/35= >=dev-libs/kpathsea-6.1.0_p20120701 virtual/pkgconfig sys-apps/ed sys-devel/flex app-arch/xz-utils
+DESC: A complete TeX distribution
+EAPI: 5
+IUSE: cjk X doc source tk xetex
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: GPL-2 LPPL-1.3c TeX
+MD5: f9812e28295341c74595e9a4d0588ba0
+MTIME: 1377501747
+PDEPEND: >=dev-tex/luatex-0.70
+RDEPEND: x11-libs/libXmu x11-libs/libXp x11-libs/libXpm x11-libs/libICE x11-libs/libSM x11-libs/libXaw x11-libs/libXfont !app-text/ptex !app-text/tetex !<app-text/texlive-2007 !app-text/xetex !<dev-texlive/texlive-basic-2009 !<dev-texlive/texlive-metapost-2011 !app-text/dvibook sys-libs/zlib >=media-libs/libpng-1.2.43-r2:0/0= >=app-text/poppler-0.12.3-r3:0/35= >=dev-libs/kpathsea-6.1.0_p20120701 >=app-text/ps2pkm-1.5_p20120701 >=app-text/dvipsk-5.992_p20120701 >=dev-tex/bibtexu-3.71_p20120701 virtual/perl-Getopt-Long
+SHA1: 05c0f61a8485a5277ecc0691c048f009d1f2ec92
+SIZE: 8998670
+USE: X doc
 
 BUILD_TIME: 1376131824
 CPV: app-text/xmlto-0.0.24-r1
@@ -1573,6 +1712,23 @@ MTIME: 1376133798
 SHA1: b0162d4717c8e91718801520c265f48a0d6ed65e
 SIZE: 291342
 USE: static-libs unicode
+
+BUILD_TIME: 1377491095
+CPV: dev-libs/fribidi-0.19.5-r1
+DEFINED_PHASES: configure install prepare
+DEPEND: >=dev-libs/glib-2 virtual/pkgconfig || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: A free implementation of the unicode bidirectional algorithm
+EAPI: 5
+IUSE: static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~x64-solaris ~x86-solaris
+LICENSE: LGPL-2.1
+MD5: c740ecaabf0fa7084c13ab1e5357066b
+MTIME: 1377491123
+RDEPEND: >=dev-libs/glib-2
+RESTRICT: test
+SHA1: 69edafc20d1f041eef81456a32053274b764ffda
+SIZE: 104581
+USE: static-libs
 
 BUILD_TIME: 1376297692
 CPV: dev-libs/glib-2.32.4-r1
@@ -2124,6 +2280,22 @@ MTIME: 1376216077
 RDEPEND: !<dev-lang/vala-0.10.4-r2 !<dev-lang/vala-0.12.1-r1:0.12 !<dev-lang/vala-0.14.2-r2:0.14 !<dev-lang/vala-0.16.1-r2:0.16 !<dev-lang/vala-0.17.5:0.18
 SHA1: 70890c24d5193363cca27d6f7d3087af5b59192d
 SIZE: 27402
+
+BUILD_TIME: 1377361570
+CPV: dev-libs/zziplib-0.13.60-r1
+DEFINED_PHASES: configure install prepare setup test
+DEPEND: sys-libs/zlib >=media-libs/libsdl-1.2.6 =dev-lang/python-2* virtual/pkgconfig
+DESC: Lightweight library used to easily extract data from files archived in a single zip file
+EAPI: 2
+IUSE: doc sdl static-libs test
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( LGPL-2.1 MPL-1.1 )
+MD5: 351036a45749cadf345506e0a7e63670
+MTIME: 1377361595
+RDEPEND: sys-libs/zlib >=media-libs/libsdl-1.2.6
+SHA1: 927f86fef900d34695a22767c7afd1bba54b7d95
+SIZE: 235411
+USE: doc sdl static-libs
 
 BUILD_TIME: 1373575991
 CPV: dev-perl/Authen-SASL-2.160.0
@@ -2695,6 +2867,20 @@ RDEPEND: dev-lang/perl
 SHA1: 225b8e5550682bf3485a1da78a1263038281078d
 SIZE: 40736
 
+BUILD_TIME: 1377351184
+CPV: dev-perl/Text-Unidecode-0.40.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: || ( >=dev-lang/perl-5.16 <dev-lang/perl-5.16[-build] )
+DESC: US-ASCII transliterations of Unicode text
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( Artistic GPL-1 GPL-2 GPL-3 )
+MD5: 37587d37acee2e0f3f03d45b59263dd2
+MTIME: 1377351202
+RDEPEND: || ( >=dev-lang/perl-5.16 <dev-lang/perl-5.16[-build] )
+SHA1: 17476a27d92254461191086b59c2dd57d5e94afe
+SIZE: 101695
+
 BUILD_TIME: 1373557390
 CPV: dev-perl/URI-1.600.0
 DEFINED_PHASES: compile configure install prepare test unpack
@@ -2708,6 +2894,20 @@ MTIME: 1373557405
 RDEPEND: virtual/perl-MIME-Base64 dev-lang/perl[-build]
 SHA1: b239757624055ce6d2953ff6d71ae3cff56deb8e
 SIZE: 68744
+
+BUILD_TIME: 1377489500
+CPV: dev-perl/Unicode-EastAsianWidth-1.320.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: virtual/perl-File-Spec virtual/perl-ExtUtils-MakeMaker || ( >=dev-lang/perl-5.16 <dev-lang/perl-5.16[-build] )
+DESC: East Asian Width properties
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE: CC0-1.0
+MD5: 9fca8fb5c497d1870ace1a123ca8d59b
+MTIME: 1377489516
+RDEPEND: virtual/perl-File-Spec || ( >=dev-lang/perl-5.16 <dev-lang/perl-5.16[-build] )
+SHA1: 2d1616c5ad089d303518aed7135b22529fd8a22d
+SIZE: 31209
 
 BUILD_TIME: 1373561077
 CPV: dev-perl/WWW-RobotRules-6.10.0
@@ -2821,6 +3021,20 @@ MTIME: 1373546072
 RDEPEND: dev-lang/perl[-build]
 SHA1: dc5a47102018b064af14ccc93a7a0efd0bace818
 SIZE: 92346
+
+BUILD_TIME: 1377351540
+CPV: dev-perl/libintl-perl-1.200.0
+DEFINED_PHASES: compile configure install prepare test unpack
+DEPEND: || ( >=dev-lang/perl-5.16 <dev-lang/perl-5.16[-build] )
+DESC: Perl internationalization library that aims to be compatible with the Uniforum message translations system
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE: LGPL-2.1
+MD5: c2ac1f5d45ffe7859f8aa9ad995fcc6d
+MTIME: 1377351579
+RDEPEND: || ( >=dev-lang/perl-5.16 <dev-lang/perl-5.16[-build] )
+SHA1: 1f853d0cbbed92eddb95ac438be0c78a2498e8d5
+SIZE: 274269
 
 BUILD_TIME: 1373563796
 CPV: dev-perl/libwww-perl-6.30.0
@@ -3043,6 +3257,144 @@ RDEPEND: dev-lang/python:2.7 dev-lang/python:3.2 dev-python/python-exec[python_t
 SHA1: 86c65190a5129ca7cd97747daf3bcebe1c54fe6c
 SIZE: 813151
 USE: python_targets_python2_7 python_targets_python3_2
+
+BUILD_TIME: 1377362338
+CPV: dev-tex/bibtexu-3.71_p20120701
+DEFINED_PHASES: configure install
+DEPEND: >=dev-libs/kpathsea-6.1.0_p20120701 >=dev-libs/icu-4.4 virtual/pkgconfig
+DESC: 8-bit Implementation of BibTeX 0.99 with a Very Large Capacity
+EAPI: 5
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2
+MD5: 933860cdc5d0d960423cd740b84d5440
+MTIME: 1377362354
+RDEPEND: >=dev-libs/kpathsea-6.1.0_p20120701 >=dev-libs/icu-4.4
+SHA1: 9054d807cae9090d64059e6ed6dfa07098df6f35
+SIZE: 97386
+
+BUILD_TIME: 1377472710
+CPV: dev-tex/luatex-0.70.1-r2
+DEFINED_PHASES: compile configure install postinst prepare
+DEPEND: dev-libs/zziplib >=media-libs/libpng-1.4 app-text/poppler:0/35=[xpdf-headers(+)] sys-libs/zlib >=dev-libs/kpathsea-6.0.1_p20110627 virtual/pkgconfig
+DESC: An extended version of pdfTeX using Lua as an embedded scripting language.
+EAPI: 5
+IUSE: doc
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2
+MD5: ea541bf5e398dd46cd60f560e8fe3207
+MTIME: 1377472745
+RDEPEND: dev-libs/zziplib >=media-libs/libpng-1.4 app-text/poppler:0/35=[xpdf-headers(+)] sys-libs/zlib >=dev-libs/kpathsea-6.0.1_p20110627
+SHA1: 8b73f081e6102862524d21b3d7d83972f51497da
+SIZE: 2386677
+USE: doc
+
+BUILD_TIME: 1377511703
+CPV: dev-tex/xcolor-2.11
+DEFINED_PHASES: compile install postinst postrm unpack
+DEPEND: dev-texlive/texlive-latex app-arch/unzip virtual/latex-base >=sys-apps/texinfo-4.2-r5
+DESC: xcolor -- easy driver-independent access to colors
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE: LPPL-1.2
+MD5: 85485836a14631d59658973323d1dca8
+MTIME: 1377511721
+RDEPEND: dev-texlive/texlive-latex virtual/latex-base
+SHA1: 5f30f2266115f61f64db84dca218d8e323175217
+SIZE: 710577
+
+BUILD_TIME: 1377506812
+CPV: dev-texlive/texlive-basic-2012
+DEFINED_PHASES: compile configure install postinst postrm prepare unpack
+DEPEND: >=dev-texlive/texlive-documentation-base-2012 >=dev-tex/luatex-0.70 !<app-text/texlive-core-2009 !<dev-texlive/texlive-latex-2009 !<dev-texlive/texlive-latexrecommended-2009 !!<dev-texlive/texlive-langcjk-2011 !!<dev-texlive/texlive-langother-2012 >=app-text/texlive-core-2012 app-arch/xz-utils
+DESC: TeXLive Essential programs and files
+EAPI: 4
+IUSE: source doc
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2 GPL-1 LPPL-1.3 OFL TeX TeX-other-free
+MD5: 12366b4747e688a8c994ecfa8f100834
+MTIME: 1377506942
+RDEPEND: >=dev-texlive/texlive-documentation-base-2012 >=dev-tex/luatex-0.70 !<app-text/texlive-core-2009 !<dev-texlive/texlive-latex-2009 !<dev-texlive/texlive-latexrecommended-2009 !!<dev-texlive/texlive-langcjk-2011 !!<dev-texlive/texlive-langother-2012 >=app-text/texlive-core-2012
+SHA1: 1b67d757120e29a85ecb04c232ad3585f07f2730
+SIZE: 17090321
+USE: doc
+
+BUILD_TIME: 1377504778
+CPV: dev-texlive/texlive-documentation-base-2012
+DEFINED_PHASES: compile configure install postinst postrm prepare unpack
+DEPEND: >=app-text/texlive-core-2012 app-arch/xz-utils
+DESC: TeXLive TeX Live documentation
+EAPI: 4
+IUSE: source
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2
+MD5: caa5bff95546371798f40528f4106891
+MTIME: 1377504805
+RDEPEND: >=app-text/texlive-core-2012
+SHA1: f5bf73fe95e495b1711fbac560f7316c66334757
+SIZE: 1593100
+
+BUILD_TIME: 1377509039
+CPV: dev-texlive/texlive-fontsrecommended-2012
+DEFINED_PHASES: compile configure install postinst postrm prepare unpack
+DEPEND: >=dev-texlive/texlive-basic-2012 !=dev-texlive/texlive-basic-2007* !<dev-texlive/texlive-fontsextra-2010 >=app-text/texlive-core-2012 app-arch/xz-utils
+DESC: TeXLive Recommended fonts
+EAPI: 4
+IUSE: source doc
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2 BSD GPL-1 LPPL-1.3 OFL public-domain TeX-other-free
+MD5: 7624dc868dfc7009644996186253e51f
+MTIME: 1377509754
+RDEPEND: >=dev-texlive/texlive-basic-2012 !=dev-texlive/texlive-basic-2007* !<dev-texlive/texlive-fontsextra-2010 >=app-text/texlive-core-2012
+SHA1: c5b0d53ff2f7d5532b795a0fbba3712c522a4fa8
+SIZE: 114828505
+USE: doc
+
+BUILD_TIME: 1377508088
+CPV: dev-texlive/texlive-fontutils-2012
+DEFINED_PHASES: compile configure install postinst postrm prepare unpack
+DEPEND: >=dev-texlive/texlive-basic-2012 !dev-texlive/texlive-psutils !<dev-texlive/texlive-fontsextra-2009 !<app-text/texlive-core-2009 >=app-text/texlive-core-2012 app-arch/xz-utils
+DESC: TeXLive Graphics and font utilities
+EAPI: 4
+IUSE: source doc
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2 Artistic GPL-1 LPPL-1.3 public-domain TeX-other-free
+MD5: 8529712f9a4e66542dcb4fc1fefe625a
+MTIME: 1377508118
+RDEPEND: >=dev-texlive/texlive-basic-2012 !dev-texlive/texlive-psutils !<dev-texlive/texlive-fontsextra-2009 !<app-text/texlive-core-2009 >=app-text/texlive-core-2012
+SHA1: f9d82d32b83680ef096b06ec11e07412a2196341
+SIZE: 1917071
+USE: doc
+
+BUILD_TIME: 1377507501
+CPV: dev-texlive/texlive-latex-2012
+DEFINED_PHASES: compile configure install postinst postrm prepare unpack
+DEPEND: >=dev-texlive/texlive-basic-2012 >=dev-tex/luatex-0.45 !<dev-texlive/texlive-context-2010 !<dev-texlive/texlive-latexrecommended-2009 >=app-text/texlive-core-2012 app-arch/xz-utils
+DESC: TeXLive Basic LaTeX packages
+EAPI: 4
+IUSE: source doc
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2 GPL-2 LPPL-1.3
+MD5: 40e7d6e44a5f7541a33da57b4cb3e749
+MTIME: 1377507755
+RDEPEND: >=dev-texlive/texlive-basic-2012 >=dev-tex/luatex-0.45 !<dev-texlive/texlive-context-2010 !<dev-texlive/texlive-latexrecommended-2009 >=app-text/texlive-core-2012
+SHA1: 81811c108ddb4b573f6cb3e67899fe8f8c16c792
+SIZE: 44271860
+USE: doc
+
+BUILD_TIME: 1377510479
+CPV: dev-texlive/texlive-latexrecommended-2012-r1
+DEFINED_PHASES: compile configure install postinst postrm prepare unpack
+DEPEND: >=dev-texlive/texlive-latex-2012 >=dev-texlive/texlive-latex-2012 >=dev-texlive/texlive-latex-2012 !dev-tex/xkeyval !dev-tex/memoir !dev-tex/listings !<dev-texlive/texlive-latexextra-2011 !=app-text/texlive-core-2007* !<dev-texlive/texlive-xetex-2011 !dev-texlive/texlive-latex3 >=app-text/texlive-core-2012 app-arch/xz-utils
+DESC: TeXLive LaTeX recommended packages
+EAPI: 4
+IUSE: source doc
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2 GPL-1 LPPL-1.2 LPPL-1.3 public-domain TeX-other-free
+MD5: 9a2eafb410a44747786b4782152bdc30
+MTIME: 1377510754
+RDEPEND: >=dev-texlive/texlive-latex-2012 >=dev-texlive/texlive-latex-2012 >=dev-texlive/texlive-latex-2012 !dev-tex/xkeyval !dev-tex/memoir !dev-tex/listings !<dev-texlive/texlive-latexextra-2011 !=app-text/texlive-core-2007* !<dev-texlive/texlive-xetex-2011 !dev-texlive/texlive-latex3 >=app-text/texlive-core-2012
+SHA1: df11210616541d369824e389a192204280289767
+SIZE: 46887636
+USE: doc
 
 BUILD_TIME: 1374614228
 CPV: dev-util/boost-build-1.49.0
@@ -3786,6 +4138,23 @@ SHA1: ecc950c37b1444a096a9f28ffaba84242e1c5ec1
 SIZE: 1128263
 USE: doc exif lcms xmp
 
+BUILD_TIME: 1377583625
+CPV: media-gfx/gimp-2.8.6
+DEFINED_PHASES: compile configure install postinst postrm preinst prepare setup unpack
+DEPEND: >=dev-libs/glib-2.30.2:2 >=dev-libs/atk-2.2.0 >=x11-libs/gtk+-2.24.10:2 >=x11-libs/gdk-pixbuf-2.24.1:2 >=x11-libs/cairo-1.10.2 >=x11-libs/pango-1.29.4 x11-libs/libXpm >=media-libs/freetype-2.1.7 >=media-libs/fontconfig-2.2.0 sys-libs/zlib dev-libs/libxml2 dev-libs/libxslt x11-themes/hicolor-icon-theme >=media-libs/babl-0.1.10 >=media-libs/gegl-0.2.0 media-libs/alsa-lib net-misc/curl dev-libs/dbus-glib >=net-libs/webkit-gtk-1.6.1:2 virtual/jpeg:0 media-libs/jasper >=media-libs/libexif-0.6.15 >=media-libs/lcms-1.16:0 media-libs/libmng >=app-text/poppler-0.12.4[cairo] >=media-libs/libpng-1.2.37:0 >=dev-python/pygtk-2.10.4:2 >=media-libs/tiff-3.5.7:0 >=gnome-base/librsvg-2.36.0:2 >=media-libs/libwmf-0.2.8 x11-libs/libXcursor sys-libs/zlib app-arch/bzip2 app-text/ghostscript-gpl virtual/udev[gudev] sys-apps/findutils virtual/pkgconfig >=dev-util/intltool-0.40.1 >=sys-devel/gettext-0.17 >=dev-util/gtk-doc-1 >=sys-devel/libtool-2.2 >=sys-devel/automake-1.11 dev-util/gtk-doc-am || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool >=sys-apps/sed-4 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
+DESC: GNU Image Manipulation Program
+EAPI: 3
+IUSE: alsa aalib altivec aqua bzip2 curl dbus debug doc exif gnome postscript jpeg jpeg2k lcms mmx mng pdf png python smp sse svg tiff udev webkit wmf xpm linguas_am linguas_ar linguas_ast linguas_az linguas_be linguas_bg linguas_br linguas_ca linguas_ca@valencia linguas_cs linguas_csb linguas_da linguas_de linguas_dz linguas_el linguas_en_CA linguas_en_GB linguas_eo linguas_es linguas_et linguas_eu linguas_fa linguas_fi linguas_fr linguas_ga linguas_gl linguas_gu linguas_he linguas_hi linguas_hr linguas_hu linguas_id linguas_is linguas_it linguas_ja linguas_ka linguas_kk linguas_km linguas_kn linguas_ko linguas_lt linguas_lv linguas_mk linguas_ml linguas_ms linguas_my linguas_nb linguas_nds linguas_ne linguas_nl linguas_nn linguas_oc linguas_pa linguas_pl linguas_pt linguas_pt_BR linguas_ro linguas_ru linguas_rw linguas_si linguas_sk linguas_sl linguas_sr linguas_sr@latin linguas_sv linguas_ta linguas_te linguas_th linguas_tr linguas_tt linguas_uk linguas_vi linguas_xh linguas_yi linguas_zh_CN linguas_zh_HK linguas_zh_TW debug
+KEYWORDS: ~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~x64-solaris ~x86-solaris
+LICENSE: GPL-3 LGPL-3
+MD5: 57e9d9029a57354f082095b61d1ee8ed
+MTIME: 1377583948
+RDEPEND: >=dev-libs/glib-2.30.2:2 >=dev-libs/atk-2.2.0 >=x11-libs/gtk+-2.24.10:2 >=x11-libs/gdk-pixbuf-2.24.1:2 >=x11-libs/cairo-1.10.2 >=x11-libs/pango-1.29.4 x11-libs/libXpm >=media-libs/freetype-2.1.7 >=media-libs/fontconfig-2.2.0 sys-libs/zlib dev-libs/libxml2 dev-libs/libxslt x11-themes/hicolor-icon-theme >=media-libs/babl-0.1.10 >=media-libs/gegl-0.2.0 media-libs/alsa-lib net-misc/curl dev-libs/dbus-glib >=net-libs/webkit-gtk-1.6.1:2 virtual/jpeg:0 media-libs/jasper >=media-libs/libexif-0.6.15 >=media-libs/lcms-1.16:0 media-libs/libmng >=app-text/poppler-0.12.4[cairo] >=media-libs/libpng-1.2.37:0 >=dev-python/pygtk-2.10.4:2 >=media-libs/tiff-3.5.7:0 >=gnome-base/librsvg-2.36.0:2 >=media-libs/libwmf-0.2.8 x11-libs/libXcursor sys-libs/zlib app-arch/bzip2 app-text/ghostscript-gpl virtual/udev[gudev] || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
+SHA1: 762b7961ea28b47941a212f3cb77d8ef2804cb7b
+SIZE: 19485368
+SLOT: 2
+USE: alsa bzip2 curl dbus doc exif jpeg jpeg2k lcms linguas_am linguas_ar linguas_ast linguas_az linguas_be linguas_bg linguas_br linguas_ca linguas_ca@valencia linguas_cs linguas_csb linguas_da linguas_de linguas_dz linguas_el linguas_en_CA linguas_en_GB linguas_eo linguas_es linguas_et linguas_eu linguas_fa linguas_fi linguas_fr linguas_ga linguas_gl linguas_gu linguas_he linguas_hi linguas_hr linguas_hu linguas_id linguas_is linguas_it linguas_ja linguas_ka linguas_kk linguas_km linguas_kn linguas_ko linguas_lt linguas_lv linguas_mk linguas_ml linguas_ms linguas_my linguas_nb linguas_nds linguas_ne linguas_nl linguas_nn linguas_oc linguas_pa linguas_pl linguas_pt linguas_pt_BR linguas_ro linguas_ru linguas_rw linguas_si linguas_sk linguas_sl linguas_sr linguas_sr@latin linguas_sv linguas_ta linguas_te linguas_th linguas_tr linguas_tt linguas_uk linguas_vi linguas_xh linguas_yi linguas_zh_CN linguas_zh_HK linguas_zh_TW mng pdf png postscript python svg tiff udev webkit wmf xpm
+
 BUILD_TIME: 1376475012
 CPV: media-gfx/gpicview-0.2.3
 DEFINED_PHASES: install
@@ -3799,6 +4168,20 @@ MTIME: 1376475048
 RDEPEND: virtual/jpeg >=x11-libs/gtk+-2.6:2
 SHA1: 3b50accb3cce1c854476c5f01d5fed6a0400f928
 SIZE: 222465
+
+BUILD_TIME: 1377353402
+CPV: media-gfx/graphite2-1.2.1
+DEFINED_PHASES: compile configure install prepare setup test unpack
+DEPEND: sys-devel/make >=dev-util/cmake-2.8.9 >=sys-apps/findutils-4.4.0
+DESC: Library providing rendering capabilities for complex non-Roman writing systems
+EAPI: 5
+IUSE: perl test
+KEYWORDS: alpha amd64 arm hppa ia64 ppc ppc64 ~sh sparc x86 ~amd64-fbsd ~x86-fbsd ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~x64-solaris
+LICENSE: LGPL-2.1
+MD5: 85f93a9614fe5e9ed6f3a0341585fd4d
+MTIME: 1377353417
+SHA1: dd1373583a6021086eebdc7590f242f8dabe3cb3
+SIZE: 101917
 
 BUILD_TIME: 1376164643
 CPV: media-gfx/graphviz-2.26.3-r4
@@ -3959,6 +4342,36 @@ SIZE: 214961
 SLOT: 0/1
 USE: static-libs
 
+BUILD_TIME: 1377356711
+CPV: media-libs/babl-0.1.10-r1
+DEFINED_PHASES: configure install prepare
+DEPEND: >=sys-devel/libtool-2.2 virtual/pkgconfig || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: A dynamic, any to any, pixel format conversion library
+EAPI: 5
+IUSE: altivec sse mmx
+KEYWORDS: ~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~amd64-fbsd ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~x64-solaris ~x86-solaris
+LICENSE: LGPL-3
+MD5: a40bc2ae3e225e4fc10cd9991a4eede6
+MTIME: 1377356731
+SHA1: 6145ab44eba20ef967da398ea13a5a7403af2cd8
+SIZE: 132783
+
+BUILD_TIME: 1377489211
+CPV: media-libs/flac-1.2.1-r3
+DEFINED_PHASES: configure install prepare test
+DEPEND: >=media-libs/libogg-1.1.3 sys-devel/gettext virtual/pkgconfig || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: free lossless audio encoder and decoder
+EAPI: 2
+IUSE: 3dnow altivec +cxx debug ogg sse static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~x86-fbsd
+LICENSE: BSD FDL-1.2 GPL-2 LGPL-2.1
+MD5: 43a76c4a008e561febddf7870e75e9ab
+MTIME: 1377489250
+RDEPEND: >=media-libs/libogg-1.1.3
+SHA1: 80c044c801cc0f22b11eba1f9b3ed59e021fd774
+SIZE: 1002808
+USE: cxx ogg static-libs
+
 BUILD_TIME: 1376139987
 CPV: media-libs/fontconfig-2.8.0-r1
 DEFINED_PHASES: configure install postinst preinst prepare
@@ -4009,6 +4422,22 @@ SHA1: 3abe5f3c6d0ce90bff58682aa6e5c5d75912f616
 SIZE: 1062341
 SLOT: 2
 USE: fontconfig jpeg png static-libs truetype zlib
+
+BUILD_TIME: 1377561490
+CPV: media-libs/gegl-0.2.0-r2
+DEFINED_PHASES: compile configure install prepare test
+DEPEND: >=media-libs/babl-0.1.10 >=dev-libs/glib-2.28:2 >=x11-libs/gdk-pixbuf-2.18:2 x11-libs/pango sys-libs/zlib x11-libs/cairo virtual/ffmpeg virtual/jpeg >=media-libs/jasper-1.900.1 media-libs/libpng >=media-libs/libopenraw-0.0.5 media-libs/libsdl >=gnome-base/librsvg-2.14:2 sci-libs/umfpack >=media-libs/lensfun-0.2.5 >=dev-util/intltool-0.40.1 dev-lang/perl virtual/pkgconfig >=sys-devel/libtool-2.2 >=sys-apps/sed-4 || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: A graph based image processing framework
+EAPI: 5
+IUSE: cairo debug ffmpeg jpeg jpeg2k lensfun mmx openexr png raw sdl sse svg umfpack
+KEYWORDS: ~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~amd64-fbsd ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~x64-solaris ~x86-solaris
+LICENSE: || ( GPL-3 LGPL-3 )
+MD5: 11b9f9a83e1e54abb6e442a29486f914
+MTIME: 1377561544
+RDEPEND: >=media-libs/babl-0.1.10 >=dev-libs/glib-2.28:2 >=x11-libs/gdk-pixbuf-2.18:2 x11-libs/pango sys-libs/zlib x11-libs/cairo virtual/ffmpeg virtual/jpeg >=media-libs/jasper-1.900.1 media-libs/libpng >=media-libs/libopenraw-0.0.5 media-libs/libsdl >=gnome-base/librsvg-2.14:2 sci-libs/umfpack >=media-libs/lensfun-0.2.5
+SHA1: f3427c3788035995125e576daf6c169d1578b74c
+SIZE: 658405
+USE: cairo ffmpeg jpeg jpeg2k lensfun png raw sdl svg umfpack
 
 BUILD_TIME: 1376292258
 CPV: media-libs/giblib-1.2.4
@@ -4073,6 +4502,22 @@ SHA1: fc3c3a011a7af8095c25baf98d33c8f907de7a18
 SIZE: 3874254
 SLOT: 0.10
 USE: introspection nls
+
+BUILD_TIME: 1377493123
+CPV: media-libs/harfbuzz-0.9.12
+DEFINED_PHASES: configure install prepare
+DEPEND: dev-libs/glib:2 dev-libs/icu:0/51.1= media-gfx/graphite2:0/0= media-libs/freetype:2/2= x11-libs/cairo:0/0= virtual/pkgconfig || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: An OpenType text shaping engine
+EAPI: 5
+IUSE: static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 ppc ppc64 ~sh sparc x86 ~amd64-fbsd ~x86-fbsd ~amd64-linux ~arm-linux ~x86-linux ~x64-macos ~x86-macos ~x64-solaris
+LICENSE: Old-MIT ISC icu
+MD5: e7426f401b4ccd2b0048c6b4b5297eb0
+MTIME: 1377493148
+RDEPEND: dev-libs/glib:2 dev-libs/icu:0/51.1= media-gfx/graphite2:0/0= media-libs/freetype:2/2= x11-libs/cairo:0/0=
+SHA1: aee3de6ef69f63334ece09ed4b9aaa60cf113343
+SIZE: 779629
+USE: static-libs
 
 BUILD_TIME: 1376291502
 CPV: media-libs/imlib2-1.4.5
@@ -4200,6 +4645,38 @@ RESTRICT: test
 SHA1: 77665dca28bb70b499857160ef162d18a37881d9
 SIZE: 184902
 
+BUILD_TIME: 1377503999
+CPV: media-libs/libass-0.10.1
+DEFINED_PHASES: configure install
+DEPEND: >=media-libs/fontconfig-2.4.2 >=media-libs/freetype-2.4:2 virtual/libiconv >=dev-libs/fribidi-0.19.0 >=media-libs/harfbuzz-0.9.11 app-i18n/enca virtual/pkgconfig
+DESC: Library for SSA/ASS subtitles rendering
+EAPI: 4
+IUSE: +enca +fontconfig +harfbuzz static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 ppc ppc64 sparc x86 ~amd64-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x86-solaris
+LICENSE: ISC
+MD5: 970a6ebeb7e8d6263c1927e03da4bf4d
+MTIME: 1377504025
+RDEPEND: >=media-libs/fontconfig-2.4.2 >=media-libs/freetype-2.4:2 virtual/libiconv >=dev-libs/fribidi-0.19.0 >=media-libs/harfbuzz-0.9.11 app-i18n/enca
+SHA1: 2030b2ed74bec7ff2385f51e0fcef965cf0d8fa9
+SIZE: 98588
+USE: enca fontconfig harfbuzz static-libs
+
+BUILD_TIME: 1377515769
+CPV: media-libs/libcaca-0.99_beta17
+DEFINED_PHASES: configure install preinst prepare setup
+DEPEND: >=sys-libs/ncurses-5.3 >=sys-libs/slang-2 x11-libs/libX11 x11-libs/libXt virtual/pkgconfig app-doc/doxygen virtual/latex-base dev-tex/xcolor dev-texlive/texlive-fontsrecommended || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: A library that creates colored ASCII-art graphics
+EAPI: 2
+IUSE: cxx doc imlib java mono ncurses opengl ruby slang static-libs truetype X elibc_FreeBSD java
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: GPL-2 ISC LGPL-2.1 WTFPL-2
+MD5: 71b1bb9d3feb11fb4c76418e46813237
+MTIME: 1377515803
+RDEPEND: >=sys-libs/ncurses-5.3 >=sys-libs/slang-2 x11-libs/libX11 x11-libs/libXt
+SHA1: 39dbd4c64802187be5e38a53895151defac975e5
+SIZE: 828543
+USE: X cxx doc ncurses slang static-libs truetype
+
 BUILD_TIME: 1376239424
 CPV: media-libs/libcanberra-0.30-r1
 DEFINED_PHASES: configure install
@@ -4264,6 +4741,21 @@ SHA1: 8381367c70bebdcb5ab82e69ddf8350ea01bd2c7
 SIZE: 620386
 USE: static-libs
 
+BUILD_TIME: 1377483937
+CPV: media-libs/libmodplug-0.8.8.4
+DEFINED_PHASES: compile configure install prepare unpack
+DEPEND: virtual/pkgconfig || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: Library for playing MOD-like music files
+EAPI: 4
+IUSE: static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x86-solaris
+LICENSE: public-domain
+MD5: af88b142c9fbb2f3da071eebb7b5acea
+MTIME: 1377483965
+SHA1: 9b42d5d4a08e7a3bbdce3b82690b3cf5afcd5480
+SIZE: 299943
+USE: static-libs
+
 BUILD_TIME: 1376492256
 CPV: media-libs/libnsbmp-0.1.0
 DEFINED_PHASES: compile configure install prepare test unpack
@@ -4308,6 +4800,22 @@ SHA1: ab7876d1f40c258762de11e1fbca8a8deb6cf079
 SIZE: 114237
 USE: static-libs
 
+BUILD_TIME: 1377359101
+CPV: media-libs/libopenraw-0.0.9
+DEFINED_PHASES: configure install
+DEPEND: virtual/jpeg dev-libs/libxml2 >=dev-libs/glib-2 >=x11-libs/gdk-pixbuf-2.24.0:2 >=dev-libs/boost-1.35 virtual/pkgconfig
+DESC: A decoding library for RAW image formats
+EAPI: 4
+IUSE: gtk static-libs test
+KEYWORDS: alpha amd64 arm hppa ia64 ppc ppc64 sparc x86 ~amd64-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~x64-macos ~x86-solaris
+LICENSE: GPL-3 LGPL-3
+MD5: 8d423108f9da32e54f05198c52ea40d9
+MTIME: 1377359137
+RDEPEND: virtual/jpeg dev-libs/libxml2 >=dev-libs/glib-2 >=x11-libs/gdk-pixbuf-2.24.0:2
+SHA1: 2027648c06f0a2f4e91373dc84b1fd7e50c367e4
+SIZE: 338737
+USE: gtk static-libs
+
 BUILD_TIME: 1376155680
 CPV: media-libs/libpng-1.5.15
 DEFINED_PHASES: configure install prepare
@@ -4339,6 +4847,19 @@ SHA1: ff2336f37a8a9e42d3a72caafbf1981c3150c039
 SIZE: 45621
 USE: static-libs
 
+BUILD_TIME: 1377490276
+CPV: media-libs/libsamplerate-0.1.7
+DEFINED_PHASES: compile install unpack
+DEPEND: virtual/pkgconfig || ( >=sys-devel/automake-1.12 >=sys-devel/automake-1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: Secret Rabbit Code (aka libsamplerate) is a Sample Rate Converter for audio
+IUSE: sndfile
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
+LICENSE: GPL-2
+MD5: 9733b9162e48af520a10c347d552109c
+MTIME: 1377490301
+SHA1: 2124f7d115451c87f6b66298a2e67e80a2c31d96
+SIZE: 2965403
+
 BUILD_TIME: 1377224525
 CPV: media-libs/libsdl-1.2.15-r2
 DEFINED_PHASES: configure install prepare setup
@@ -4355,6 +4876,22 @@ SHA1: 7b57ade0eb39a131d949a6b2e37c28e37d123258
 SIZE: 539260
 USE: audio joystick static-libs video
 
+BUILD_TIME: 1377503315
+CPV: media-libs/libsndfile-1.0.25
+DEFINED_PHASES: configure install prepare
+DEPEND: >=media-libs/flac-1.2.1 >=media-libs/libogg-1.1.3 >=media-libs/libvorbis-1.2.3 media-libs/alsa-lib virtual/pkgconfig || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: A C library for reading and writing files containing sampled sound
+EAPI: 5
+IUSE: alsa minimal sqlite static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE: LGPL-2.1
+MD5: 535fa2cd5d66ef992dc8b4b1313b56d5
+MTIME: 1377503340
+RDEPEND: >=media-libs/flac-1.2.1 >=media-libs/libogg-1.1.3 >=media-libs/libvorbis-1.2.3 media-libs/alsa-lib
+SHA1: 4ee591425fa11b714639966d01d2119becfdeeda
+SIZE: 557947
+USE: alsa static-libs
+
 BUILD_TIME: 1376495867
 CPV: media-libs/libsvgtiny-0.1.0
 DEFINED_PHASES: compile configure install prepare test unpack
@@ -4370,6 +4907,36 @@ RDEPEND: >=net-libs/libdom-0.0.1[xml,static-libs] >=dev-libs/libwapcaplet-0.2.0[
 SHA1: c1794903e7806bd51eacfe17d2c9c3819982fef4
 SIZE: 104624
 USE: static-libs
+
+BUILD_TIME: 1377486179
+CPV: media-libs/libtheora-1.1.1
+DEFINED_PHASES: configure install prepare
+DEPEND: media-libs/libogg:0/0= media-libs/libvorbis:0/0= media-libs/libpng:0/0= >=media-libs/libsdl-0.11.0 media-libs/libvorbis:0/0= app-doc/doxygen virtual/pkgconfig || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: The Theora Video Compression Codec
+EAPI: 5
+IUSE: doc +encode examples static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~ppc-aix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x86-solaris
+LICENSE: BSD
+MD5: 92ee32adfd01e55794c03b2b236a0316
+MTIME: 1377486207
+RDEPEND: media-libs/libogg:0/0= media-libs/libvorbis:0/0= media-libs/libpng:0/0= >=media-libs/libsdl-0.11.0 media-libs/libvorbis:0/0=
+SHA1: 5a45faa054e5da72fdc4c8f3277e2af66686ae97
+SIZE: 737016
+USE: doc encode examples static-libs
+
+BUILD_TIME: 1377362789
+CPV: media-libs/libv4l-0.8.9
+DEFINED_PHASES: compile install prepare setup
+DEPEND: virtual/jpeg >=sys-kernel/linux-headers-2.6.30-r1
+DESC: Separate libraries ebuild from upstream v4l-utils package
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ppc ppc64 sparc x86 ~amd64-linux ~x86-linux
+LICENSE: LGPL-2.1+
+MD5: bd0067342143ac7d77fe953cd4628b81
+MTIME: 1377362807
+RDEPEND: virtual/jpeg
+SHA1: 8802412480bcad842871fbf3d59a3ce1c51dc80f
+SIZE: 147498
 
 BUILD_TIME: 1376229902
 CPV: media-libs/libvorbis-1.3.3
@@ -4451,6 +5018,54 @@ SHA1: ec0c55b4568b6daeb29ff4710d2e3959d531e7f4
 SIZE: 3362709
 USE: X jbig jpeg jpeg2k png rle tiff zlib
 
+BUILD_TIME: 1377487770
+CPV: media-libs/openal-1.15.1
+DEFINED_PHASES: compile configure install prepare test
+DEPEND: media-libs/alsa-lib virtual/os-headers sys-devel/make >=dev-util/cmake-2.8.9 >=sys-apps/findutils-4.4.0
+DESC: A software implementation of the OpenAL 3D audio API
+EAPI: 5
+IUSE: alsa alstream coreaudio debug neon oss portaudio pulseaudio sse
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux
+LICENSE: LGPL-2
+MD5: 27134750d8974c4706a611325425adb7
+MTIME: 1377487788
+RDEPEND: media-libs/alsa-lib
+SHA1: 7b8d314bf680c26619dcb5787134e91a31958aa6
+SIZE: 242551
+USE: alsa oss
+
+BUILD_TIME: 1377347073
+CPV: media-libs/openjpeg-1.5.1
+DEFINED_PHASES: compile configure install prepare test
+DEPEND: media-libs/lcms:2/2=[static-libs] media-libs/libpng:0/0=[static-libs] media-libs/tiff:0/0=[static-libs] sys-libs/zlib:0/0=[static-libs] app-doc/doxygen sys-devel/make >=dev-util/cmake-2.8.9 >=sys-apps/findutils-4.4.0
+DESC: An open-source JPEG 2000 library
+EAPI: 5
+IUSE: doc static-libs test
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 ~sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE: BSD-2
+MD5: da313fddb8749777fc64afbeb14243be
+MTIME: 1377347094
+RDEPEND: media-libs/lcms:2/2=[static-libs] media-libs/libpng:0/0=[static-libs] media-libs/tiff:0/0=[static-libs] sys-libs/zlib:0/0=[static-libs]
+RESTRICT: test
+SHA1: 5d67a8df7a7cf337a500d0f1c4103e022a845e02
+SIZE: 226432
+USE: doc static-libs
+
+BUILD_TIME: 1377350882
+CPV: media-libs/opus-1.0.1
+DEFINED_PHASES: compile configure install prepare
+DEPEND: app-doc/doxygen || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: Open versatile codec designed for interactive speech and audio transmission over the internet
+EAPI: 4
+IUSE: doc static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 ppc ppc64 sparc x86 ~amd64-fbsd
+LICENSE: BSD-2
+MD5: bddbbeeddd305dcd1da464a401e3bc40
+MTIME: 1377350907
+SHA1: 378c5c0bdbd50f82b0d10a04da41cddf9da7fc02
+SIZE: 390675
+USE: doc static-libs
+
 BUILD_TIME: 1374103759
 CPV: media-libs/raspberrypi-userland-bin-0_p20130711
 DEFINED_PHASES: install prepare unpack
@@ -4467,6 +5082,22 @@ SHA1: 4f6145b7fb03e29baa3c5b7a3b83e08c57d68d56
 SIZE: 940226
 USE: hardfp
 REPO: xmw
+
+BUILD_TIME: 1377487139
+CPV: media-libs/speex-1.2_rc1
+DEFINED_PHASES: configure install prepare
+DEPEND: media-libs/libogg virtual/pkgconfig || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: Audio compression format designed for speech.
+EAPI: 2
+IUSE: ogg sse static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~x86-fbsd
+LICENSE: BSD
+MD5: 03b4b3c6d22a2efd09082154d66e5fcb
+MTIME: 1377487161
+RDEPEND: media-libs/libogg
+SHA1: 9c0eefee9ca34043683047c9a066948d73320058
+SIZE: 636750
+USE: ogg static-libs
 
 BUILD_TIME: 1376157712
 CPV: media-libs/tiff-4.0.3-r2
@@ -4499,6 +5130,20 @@ SHA1: 873ad1fa61fc5f644742cfba79f8590069f6c5b8
 SIZE: 1543546
 USE: X gif tiff
 
+BUILD_TIME: 1377345951
+CPV: media-libs/xvid-1.3.2
+DEFINED_PHASES: configure install
+DESC: XviD, a high performance/quality MPEG-4 video de-/encoding solution
+EAPI: 2
+IUSE: examples +threads pic
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sparc x86 ~x86-fbsd
+LICENSE: GPL-2
+MD5: 737f86492320c9fe3f01663c2062cdf4
+MTIME: 1377345977
+SHA1: de1edaae2bb6dcd76cdd3d4b74a4ed48c7335dae
+SIZE: 671775
+USE: examples threads
+
 BUILD_TIME: 1377344199
 CPV: media-sound/gsm-1.0.13
 DEFINED_PHASES: compile install prepare
@@ -4510,6 +5155,70 @@ MD5: e7a7c454eb297d90b1fcb66074089f06
 MTIME: 1377344217
 SHA1: ae7ca84e5aaeb4ab6b5f1617784f0b802cf3a359
 SIZE: 84109
+
+BUILD_TIME: 1377505795
+CPV: media-sound/jack-audio-connection-kit-0.121.3
+DEFINED_PHASES: configure install prepare
+DEPEND: >=media-libs/libsndfile-1.0.0 sys-libs/ncurses >=media-libs/alsa-lib-1.0.18 media-libs/libsamplerate !media-sound/jack-cvs virtual/pkgconfig app-doc/doxygen
+DESC: A low-latency audio server
+EAPI: 2
+IUSE: 3dnow altivec alsa coreaudio doc debug examples mmx oss sse cpudetection pam
+KEYWORDS: alpha amd64 arm hppa ia64 ppc ppc64 sh sparc x86 ~amd64-fbsd
+LICENSE: GPL-2 LGPL-2.1
+MD5: 3c4ec26184cc2e9909381be6fd24d95c
+MTIME: 1377505862
+RDEPEND: >=media-libs/libsndfile-1.0.0 sys-libs/ncurses >=media-libs/alsa-lib-1.0.18 media-libs/libsamplerate !media-sound/jack-cvs sys-process/lsof sys-auth/realtime-base
+SHA1: 10bd401e50ddabd1c0d1faaebbb592017cd8da01
+SIZE: 486012
+USE: alsa cpudetection doc examples oss pam
+
+BUILD_TIME: 1377485206
+CPV: media-sound/lame-3.99.5
+DEFINED_PHASES: configure install prepare
+DEPEND: >=sys-libs/ncurses-5.7-r7 virtual/pkgconfig || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: LAME Ain't an MP3 Encoder
+EAPI: 4
+IUSE: debug mmx mp3rtp sndfile static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE: LGPL-2.1
+MD5: 0fe18398ef5cc6d3945b74e47cfad488
+MTIME: 1377485230
+RDEPEND: >=sys-libs/ncurses-5.7-r7
+SHA1: 9b5297fc56a833796182df86e6e1742c9a3590f9
+SIZE: 607721
+USE: static-libs
+
+BUILD_TIME: 1377506381
+CPV: media-sound/twolame-0.3.12
+DEFINED_PHASES: configure install prepare
+DEPEND: >=media-libs/libsndfile-1 virtual/pkgconfig
+DESC: TwoLAME is an optimised MPEG Audio Layer 2 (MP2) encoder
+EAPI: 3
+IUSE: static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 ppc ppc64 sparc x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x86-solaris
+LICENSE: GPL-2
+MD5: 989c6653047cf0f5e7c3b1618e553d8d
+MTIME: 1377506402
+RDEPEND: >=media-libs/libsndfile-1
+SHA1: a3f46b96831f8693fc10710a39a34603d820895b
+SIZE: 153874
+USE: static-libs
+
+BUILD_TIME: 1377558573
+CPV: media-video/ffmpeg-1.0.7
+DEFINED_PHASES: compile configure install prepare test
+DEPEND: media-libs/alsa-lib app-arch/bzip2 >=media-sound/lame-3.98.3 >=media-libs/libtheora-1.1.1[encode] media-libs/libogg media-sound/twolame >=media-libs/xvid-1.1.0 media-libs/fontconfig >=media-sound/gsm-1.0.12-r1 media-sound/jack-audio-connection-kit >=media-libs/openjpeg-1.3-r2:0 media-libs/libass media-libs/libcaca media-libs/libv4l media-libs/libmodplug >=media-libs/openal-1.1 media-libs/opus >=media-libs/libsdl-1.2.13-r1[audio,video] >=media-libs/speex-1.2_beta3 media-libs/freetype:2 media-libs/libvorbis media-libs/libogg x11-libs/libX11 x11-libs/libXext x11-libs/libXfixes sys-libs/zlib !media-video/qt-faststart !media-libs/libpostproc >=sys-devel/make-3.81 app-text/texi2html virtual/pkgconfig virtual/pkgconfig virtual/pkgconfig sys-kernel/linux-headers
+DESC: Complete solution to record, convert and stream audio and video. Includes libavcodec.
+EAPI: 4
+IUSE: aac aacplus alsa amr bindist bluray +bzip2 cdio celt cpudetection debug doc +encode examples faac fdk flite fontconfig frei0r gnutls gsm +hardcoded-tables iec61883 ieee1394 jack jpeg2k libass libcaca libv4l modplug mp3 network openal openssl opus oss pic pulseaudio rtmp schroedinger sdl speex static-libs test theora threads truetype twolame v4l vaapi vdpau vorbis vpx X x264 xvid +zlib 3dnow 3dnowext altivec avx mmx mmxext ssse3 vis neon +fftools_aviocat +fftools_cws2fws +fftools_ffeval +fftools_fourcc2pixfmt +fftools_graph2dot +fftools_ismindex +fftools_pktdumper +fftools_qt-faststart +fftools_trasher
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sparc x86 ~amd64-fbsd ~x86-fbsd ~amd64-linux ~arm-linux ~x86-linux
+LICENSE: GPL-2
+MD5: 8a9889f17ef3ea547715430dbe46d15c
+MTIME: 1377558738
+RDEPEND: media-libs/alsa-lib app-arch/bzip2 >=media-sound/lame-3.98.3 >=media-libs/libtheora-1.1.1[encode] media-libs/libogg media-sound/twolame >=media-libs/xvid-1.1.0 media-libs/fontconfig >=media-sound/gsm-1.0.12-r1 media-sound/jack-audio-connection-kit >=media-libs/openjpeg-1.3-r2:0 media-libs/libass media-libs/libcaca media-libs/libv4l media-libs/libmodplug >=media-libs/openal-1.1 media-libs/opus >=media-libs/libsdl-1.2.13-r1[audio,video] >=media-libs/speex-1.2_beta3 media-libs/freetype:2 media-libs/libvorbis media-libs/libogg x11-libs/libX11 x11-libs/libXext x11-libs/libXfixes sys-libs/zlib !media-video/qt-faststart !media-libs/libpostproc
+SHA1: af2a8b2299a8fda5881e3711c17aaad16a4efc54
+SIZE: 10540417
+USE: X alsa bindist bzip2 cpudetection doc encode examples fftools_aviocat fftools_cws2fws fftools_ffeval fftools_fourcc2pixfmt fftools_graph2dot fftools_ismindex fftools_pktdumper fftools_qt-faststart fftools_trasher fontconfig gsm hardcoded-tables jack jpeg2k libass libcaca libv4l modplug mp3 network openal opus oss sdl speex static-libs theora threads truetype twolame v4l vorbis xvid zlib
 
 BUILD_TIME: 1374926794
 CPV: net-analyzer/iftop-1.0_pre2
@@ -5599,6 +6308,70 @@ RDEPEND: dev-lang/perl[-build]
 SHA1: 865f3d914bb38bb055a413ae603fca56e616ad47
 SIZE: 71125
 
+BUILD_TIME: 1377511449
+CPV: sci-libs/amd-2.3.1
+DEFINED_PHASES: compile configure install prepare setup test
+DEPEND: sci-libs/suitesparseconfig virtual/pkgconfig virtual/latex-base virtual/fortran
+DESC: Library to order a sparse matrix prior to Cholesky factorization
+EAPI: 5
+IUSE: doc fortran static-libs
+KEYWORDS: ~alpha ~amd64 ~arm ~hppa ~ppc ~ppc64 ~sparc ~x86 ~amd64-fbsd ~amd64-linux ~x86-linux ~x86-macos
+LICENSE: LGPL-2.1
+MD5: cdf7a1d730169288bb139655acd1b728
+MTIME: 1377511467
+RDEPEND: sci-libs/suitesparseconfig virtual/fortran
+SHA1: 53031062488f4d75d9d13516e5416b43c6571038
+SIZE: 331274
+USE: doc fortran static-libs
+
+BUILD_TIME: 1377360774
+CPV: sci-libs/blas-reference-20070226-r2
+DEFINED_PHASES: compile configure install postinst prepare setup
+DEPEND: app-admin/eselect-blas virtual/fortran || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: Basic Linear Algebra Subprograms F77 reference implementations
+EAPI: 3
+IUSE: doc
+KEYWORDS: ~alpha ~amd64 arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sparc ~x86 ~amd64-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~sparc-solaris
+LICENSE: BSD
+MD5: 80476c683b3f7b51dbce9d70051c8578
+MTIME: 1377360791
+RDEPEND: app-admin/eselect-blas app-doc/blas-docs virtual/fortran
+SHA1: 478dbf72bf0783bc326a3009507c4fd658a80e16
+SIZE: 212683
+USE: doc
+
+BUILD_TIME: 1377514345
+CPV: sci-libs/cholmod-2.1.2
+DEFINED_PHASES: compile configure install prepare test
+DEPEND: >=sci-libs/amd-2.3 >=sci-libs/colamd-2.8 virtual/lapack virtual/pkgconfig virtual/latex-base
+DESC: Sparse Cholesky factorization and update/downdate library
+EAPI: 5
+IUSE: cuda doc lapack metis minimal static-libs
+KEYWORDS: ~alpha ~amd64 ~arm ~hppa ~ppc ~ppc64 ~sparc ~x86 ~amd64-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~x86-macos
+LICENSE: GPL-2
+MD5: 782fd44398a986db62802dcf810875ec
+MTIME: 1377514369
+RDEPEND: >=sci-libs/amd-2.3 >=sci-libs/colamd-2.8 virtual/lapack
+SHA1: 33dc0042ddde03d3f4be6107858534d1486478b2
+SIZE: 1089336
+USE: doc lapack static-libs
+
+BUILD_TIME: 1377359495
+CPV: sci-libs/colamd-2.8.0
+DEFINED_PHASES: compile configure install prepare test
+DEPEND: sci-libs/suitesparseconfig virtual/pkgconfig
+DESC: Column approximate minimum degree ordering algorithm
+EAPI: 5
+IUSE: static-libs
+KEYWORDS: ~alpha ~amd64 ~arm ~hppa ~ppc ~ppc64 ~sparc ~x86 ~amd64-fbsd ~amd64-linux ~x86-linux ~x86-macos
+LICENSE: LGPL-2.1
+MD5: 2819ebf1549d7a989f965e6ebf074c4b
+MTIME: 1377359512
+RDEPEND: sci-libs/suitesparseconfig
+SHA1: 64baccb562adcef3b90fbb97f52ae68c5786bdf1
+SIZE: 49052
+USE: static-libs
+
 BUILD_TIME: 1377240384
 CPV: sci-libs/fftw-3.2.2
 DEFINED_PHASES: compile configure install prepare setup test
@@ -5616,6 +6389,22 @@ SIZE: 3912772
 SLOT: 3.0
 USE: doc fortran openmp threads
 
+BUILD_TIME: 1377482674
+CPV: sci-libs/lapack-reference-3.2.1-r1
+DEFINED_PHASES: configure install postinst prepare setup test
+DEPEND: app-admin/eselect-lapack virtual/blas virtual/pkgconfig app-doc/lapack-docs || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool virtual/fortran
+DESC: FORTRAN reference implementation of LAPACK Linear Algebra PACKage
+EAPI: 3
+IUSE: doc
+KEYWORDS: ~alpha ~amd64 arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sparc ~x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos
+LICENSE: BSD
+MD5: 2c0d2cd68b55f0c0883ffce93472630c
+MTIME: 1377482745
+RDEPEND: app-admin/eselect-lapack virtual/blas virtual/fortran
+SHA1: a31ef0e9fb314caed33894e749ddc2985d980744
+SIZE: 3754113
+USE: doc
+
 BUILD_TIME: 1377341781
 CPV: sci-libs/suitesparseconfig-4.2.1
 DEFINED_PHASES: compile configure install prepare test
@@ -5629,6 +6418,22 @@ MTIME: 1377341797
 SHA1: 9b0b63d025275dd62ce29cdc1e1c946b981c9861
 SIZE: 35128
 USE: static-libs
+
+BUILD_TIME: 1377518582
+CPV: sci-libs/umfpack-5.6.2
+DEFINED_PHASES: compile configure install prepare test
+DEPEND: >=sci-libs/amd-1.3 sci-libs/suitesparseconfig virtual/blas >=sci-libs/cholmod-2 virtual/pkgconfig virtual/latex-base
+DESC: Unsymmetric multifrontal sparse LU factorization library
+EAPI: 5
+IUSE: doc +cholmod static-libs
+KEYWORDS: ~amd64 ~arm ~hppa ~ppc ~ppc64 ~x86 ~amd64-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~x86-macos
+LICENSE: GPL-2
+MD5: 6a0c86036c3a53849f4733579977f4d0
+MTIME: 1377518609
+RDEPEND: >=sci-libs/amd-1.3 sci-libs/suitesparseconfig virtual/blas >=sci-libs/cholmod-2
+SHA1: 510c383222c664c0d88482c723ccbb0ec2aba5d4
+SIZE: 1004971
+USE: cholmod doc static-libs
 
 BUILD_TIME: 1376206218
 CPV: sys-apps/acl-2.2.51
@@ -5752,6 +6557,19 @@ MTIME: 1376155483
 SHA1: 717ba6b30b3354d7e07e38f12253f098688b08cf
 SIZE: 359024
 USE: nls
+
+BUILD_TIME: 1377347695
+CPV: sys-apps/ed-1.6
+DEFINED_PHASES: configure prepare
+DEPEND: sys-apps/texinfo
+DESC: Your basic line editor
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2
+MD5: c3d50bee0426b29fbe0b1197e3b1a246
+MTIME: 1377347724
+SHA1: c11bc4547f3014055c6ecadfe1145ddb628ccd06
+SIZE: 67339
 
 BUILD_TIME: 1374522539
 CPV: sys-apps/fbset-2.1
@@ -6297,6 +7115,19 @@ RESTRICT: binchecks
 SHA1: d92b920c917764e757b0190d44bac634652086df
 SIZE: 25680
 USE: cracklib sha512
+
+BUILD_TIME: 1377490473
+CPV: sys-auth/realtime-base-0.1
+DEFINED_PHASES: compile install postinst setup
+DESC: Sets up realtime scheduling
+EAPI: 3
+KEYWORDS: alpha amd64 arm hppa ia64 ppc ppc64 sh sparc x86 ~amd64-fbsd
+LICENSE: public-domain
+MD5: 2caeda975f4ab72575a070f3cdc76ca8
+MTIME: 1377490486
+RDEPEND: virtual/pam
+SHA1: 2ecf4736cebcd4c986674f7257d6433bfb962418
+SIZE: 8598
 
 BUILD_TIME: 1375831470
 CPV: sys-block/nbd-3.2
@@ -7170,6 +8001,17 @@ RDEPEND: || ( sys-apps/gawk sys-apps/mawk sys-apps/nawk sys-apps/busybox )
 SHA1: ad249f1eb962ef2264c0f941f5267bd680073f3f
 SIZE: 4168
 
+BUILD_TIME: 1377468363
+CPV: virtual/blas-1.0
+DEFINED_PHASES: -
+DESC: Virtual for FORTRAN 77 BLAS implementation
+KEYWORDS: alpha amd64 arm hppa ia64 ppc ppc64 s390 sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris
+MD5: 515608048ec75905092d734b4597b487
+MTIME: 1377468375
+RDEPEND: || ( sci-libs/blas-reference >=sci-libs/mkl-9.1.023 sci-libs/acml sci-libs/blas-goto )
+SHA1: d28ed343938563d40d9180330a99f2d2f28ee991
+SIZE: 4766
+
 BUILD_TIME: 1374182825
 CPV: virtual/cdrtools-0
 DEFINED_PHASES: -
@@ -7216,6 +8058,20 @@ RDEPEND: || ( >=sys-apps/util-linux-2.22 sys-block/eject sys-block/eject-bsd )
 SHA1: 08021d907c9c84946555f6418efc68b519ff708d
 SIZE: 4337
 
+BUILD_TIME: 1377558923
+CPV: virtual/ffmpeg-0.10.3
+DEFINED_PHASES: -
+DESC: Virtual package for FFmpeg implementation
+EAPI: 4
+IUSE: X +encode gsm jpeg2k mp3 sdl speex theora threads truetype vaapi vdpau x264
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sparc x86 ~amd64-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~x64-macos ~x86-solaris
+MD5: 3fbe1127f2f7dd3e7505ecf8f77920c2
+MTIME: 1377558935
+RDEPEND: || ( >=media-video/ffmpeg-0.10.3:0[X,encode,gsm,jpeg2k,mp3,sdl,speex,theora,threads,truetype] >=media-video/libav-0.8.4[X,encode,gsm,jpeg2k,mp3,sdl,speex,theora,threads,truetype] )
+SHA1: 94c19a6c4d98a895544e3c05b2d73fe58bf2344a
+SIZE: 5309
+USE: X encode gsm jpeg2k mp3 sdl speex theora threads truetype
+
 BUILD_TIME: 1377222036
 CPV: virtual/fortran-0
 DEFINED_PHASES: -
@@ -7256,6 +8112,28 @@ RDEPEND: || ( >=media-libs/libjpeg-turbo-1.2.0:0[static-libs] >=media-libs/jpeg-
 SHA1: e9a1b7ee068129e72dcb52b6fc68dd6e09b5c223
 SIZE: 4774
 USE: static-libs
+
+BUILD_TIME: 1377503522
+CPV: virtual/lapack-3.1
+DEFINED_PHASES: -
+DESC: Virtual for Linear Algebra Package FORTRAN 77 (LAPACK) implementation
+KEYWORDS: alpha amd64 arm hppa ia64 ppc ppc64 s390 sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos ~x86-macos
+MD5: 27aadcace96de2ffd4f6ca9afb6da07d
+MTIME: 1377503535
+RDEPEND: || ( >=sci-libs/lapack-reference-3.1 >=sci-libs/mkl-10 >=sci-libs/acml-4 )
+SHA1: 253b7fdbe0a58196cb2e764d6f27a3201e8b40f8
+SIZE: 4787
+
+BUILD_TIME: 1377510991
+CPV: virtual/latex-base-1.0
+DEFINED_PHASES: -
+DESC: Virtual for basic LaTeX binaries
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+MD5: c47bc421ceb4b33c57982dd745022beb
+MTIME: 1377511004
+RDEPEND: dev-texlive/texlive-latexrecommended dev-texlive/texlive-fontutils
+SHA1: cf920811067f23bb969f349522b9e6561051c32d
+SIZE: 4814
 
 BUILD_TIME: 1376201665
 CPV: virtual/libc-0
