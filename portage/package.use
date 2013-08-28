@@ -455,3 +455,5 @@
 =app-text/aspell-0.60.6.1 nls linguas_af linguas_be linguas_bg linguas_br linguas_ca linguas_cs linguas_cy linguas_da linguas_de linguas_el linguas_en linguas_eo linguas_es linguas_et linguas_fi linguas_fo linguas_fr linguas_ga linguas_gl linguas_he linguas_hr linguas_is linguas_it linguas_la linguas_lt linguas_nl linguas_no linguas_pl linguas_pt linguas_pt_BR linguas_ro linguas_ru linguas_sk linguas_sl linguas_sr linguas_sv linguas_uk linguas_vi
 =dev-lang/python-3.2.5-r2 -build doc -elibc_uclibc -examples gdbm -hardened ipv6 ncurses readline sqlite ssl threads -tk wide-unicode -wininst xml
 =app-dicts/aspell-be-0.01-r1 -classic
+=dev-libs/boehm-gc-7.2d-r1 cxx static-libs threads
+=media-libs/lcms-1.19-r1 jpeg python static-libs tiff zlib -python_targets_python2_5 -python_targets_python2_6 python_targets_python2_7 python_targets_python3_2 -python_targets_python3_3
