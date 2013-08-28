@@ -9,11 +9,11 @@ CONFIG_PROTECT_MASK: /etc/ca-certificates.conf /etc/env.d /etc/fonts/fonts.conf 
 FEATURES: assume-digests binpkg-logs buildpkg compressdebug config-protect-if-modified distlocks ebuild-locks fixlafiles getbinpkg merge-sync news parallel-fetch preserve-libs protect-owned sandbox sfperms split-log strict unknown-features-warn unmerge-logs unmerge-orphans userfetch userpriv usersandbox usersync
 GENTOO_MIRRORS: http://lore.xmw.de/gentoo/
 IUSE_IMPLICIT: prefix
-PACKAGES: 751
+PACKAGES: 795
 PROFILE: default/linux/arm/13.0
 SYNC: use update-portage
-TIMESTAMP: 1377583959
-USE: X acl alsa apache2_modules_actions apache2_modules_alias apache2_modules_auth_basic apache2_modules_authn_alias apache2_modules_authn_anon apache2_modules_authn_core apache2_modules_authn_dbm apache2_modules_authn_default apache2_modules_authn_file apache2_modules_authz_core apache2_modules_authz_dbm apache2_modules_authz_default apache2_modules_authz_groupfile apache2_modules_authz_host apache2_modules_authz_owner apache2_modules_authz_user apache2_modules_autoindex apache2_modules_cache apache2_modules_cgi apache2_modules_cgid apache2_modules_dav apache2_modules_dav_fs apache2_modules_dav_lock apache2_modules_deflate apache2_modules_dir apache2_modules_disk_cache apache2_modules_env apache2_modules_expires apache2_modules_ext_filter apache2_modules_file_cache apache2_modules_filter apache2_modules_headers apache2_modules_include apache2_modules_info apache2_modules_log_config apache2_modules_logio apache2_modules_mem_cache apache2_modules_mime apache2_modules_mime_magic apache2_modules_negotiation apache2_modules_rewrite apache2_modules_setenvif apache2_modules_socache_shmcb apache2_modules_speling apache2_modules_status apache2_modules_unique_id apache2_modules_unixd apache2_modules_userdir apache2_modules_usertrack apache2_modules_vhost_alias arm berkdb bindist bzip2 cairo calligra_features_author calligra_features_braindump calligra_features_flow calligra_features_karbon calligra_features_kexi calligra_features_krita calligra_features_plan calligra_features_sheets calligra_features_stage calligra_features_tables calligra_features_words cameras_ptp2 cli collectd_plugins_df collectd_plugins_interface collectd_plugins_irq collectd_plugins_load collectd_plugins_memory collectd_plugins_rrdtool collectd_plugins_swap collectd_plugins_syslog cpudetection cracklib crypt curl cxx dbus doc dri elibc_glibc examples exif ffmpeg fontconfig fortran gdbm gpsd_protocols_aivdm gpsd_protocols_ashtech gpsd_protocols_earthmate gpsd_protocols_evermore gpsd_protocols_fv18 gpsd_protocols_garmin gpsd_protocols_garmintxt gpsd_protocols_gpsclock gpsd_protocols_itrax gpsd_protocols_mtk3301 gpsd_protocols_navcom gpsd_protocols_nmea gpsd_protocols_ntrip gpsd_protocols_oceanserver gpsd_protocols_oldstyle gpsd_protocols_oncore gpsd_protocols_rtcm104v2 gpsd_protocols_rtcm104v3 gpsd_protocols_sirf gpsd_protocols_superstar2 gpsd_protocols_timing gpsd_protocols_tnt gpsd_protocols_tripmate gpsd_protocols_tsip gpsd_protocols_ubx graphviz gsm gtk iconv input_devices_evdev input_devices_joystick input_devices_keyboard input_devices_mouse ipv6 jack jpeg jpeg2k kernel_linux lapack lcd_devices_bayrad lcd_devices_cfontz lcd_devices_cfontz633 lcd_devices_glk lcd_devices_hd44780 lcd_devices_lb216 lcd_devices_lcdm001 lcd_devices_mtxorb lcd_devices_ncurses lcd_devices_text lcms lensfun libass libcaca libreoffice_extensions_presenter-console libreoffice_extensions_presenter-minimizer libv4l linguas_am linguas_ar linguas_ast linguas_az linguas_be linguas_bg linguas_br linguas_ca linguas_ca@valencia linguas_cs linguas_csb linguas_da linguas_de linguas_dz linguas_el linguas_en_CA linguas_en_GB linguas_eo linguas_es linguas_et linguas_eu linguas_fa linguas_fi linguas_fr linguas_ga linguas_gl linguas_gu linguas_he linguas_hi linguas_hr linguas_hu linguas_id linguas_is linguas_it linguas_ja linguas_ka linguas_kk linguas_km linguas_kn linguas_ko linguas_lt linguas_lv linguas_mk linguas_ml linguas_ms linguas_my linguas_nb linguas_nds linguas_ne linguas_nl linguas_nn linguas_oc linguas_pa linguas_pl linguas_pt linguas_pt_BR linguas_ro linguas_ru linguas_rw linguas_si linguas_sk linguas_sl linguas_sr linguas_sr@latin linguas_sv linguas_ta linguas_te linguas_th linguas_tr linguas_tt linguas_uk linguas_vi linguas_xh linguas_yi linguas_zh_CN linguas_zh_HK linguas_zh_TW lua mng modplug modules mp3 mudflap ncurses network nls nptl office_implementation_libreoffice ogg openal openmp opus oss pam pcre pdf php_targets_php5-4 png postscript python python_single_target_python2_7 python_targets_python2_7 python_targets_python3_2 raw readline ruby_targets_ruby18 ruby_targets_ruby19 sdl session slang speex ssl static-libs svg tcpd theora threads tiff truetype twolame udev umfpack unicode userland_GNU v4l vala video_cards_fbdev vorbis webkit wmf xpm xtables_addons_account xtables_addons_chaos xtables_addons_condition xtables_addons_delude xtables_addons_dhcpmac xtables_addons_fuzzy xtables_addons_geoip xtables_addons_iface xtables_addons_ipmark xtables_addons_ipp2p xtables_addons_ipset xtables_addons_ipv4options xtables_addons_length2 xtables_addons_logmark xtables_addons_lscan xtables_addons_pknock xtables_addons_psd xtables_addons_quota2 xtables_addons_rawnat xtables_addons_steal xtables_addons_sysrq xtables_addons_tarpit xtables_addons_tee xvid zlib
+TIMESTAMP: 1377659027
+USE: acl apache2_modules_actions apache2_modules_alias apache2_modules_auth_basic apache2_modules_authn_alias apache2_modules_authn_anon apache2_modules_authn_core apache2_modules_authn_dbm apache2_modules_authn_default apache2_modules_authn_file apache2_modules_authz_core apache2_modules_authz_dbm apache2_modules_authz_default apache2_modules_authz_groupfile apache2_modules_authz_host apache2_modules_authz_owner apache2_modules_authz_user apache2_modules_autoindex apache2_modules_cache apache2_modules_cgi apache2_modules_cgid apache2_modules_dav apache2_modules_dav_fs apache2_modules_dav_lock apache2_modules_deflate apache2_modules_dir apache2_modules_disk_cache apache2_modules_env apache2_modules_expires apache2_modules_ext_filter apache2_modules_file_cache apache2_modules_filter apache2_modules_headers apache2_modules_include apache2_modules_info apache2_modules_log_config apache2_modules_logio apache2_modules_mem_cache apache2_modules_mime apache2_modules_mime_magic apache2_modules_negotiation apache2_modules_rewrite apache2_modules_setenvif apache2_modules_socache_shmcb apache2_modules_speling apache2_modules_status apache2_modules_unique_id apache2_modules_unixd apache2_modules_userdir apache2_modules_usertrack apache2_modules_vhost_alias arm aspell berkdb bindist bzip2 calligra_features_author calligra_features_braindump calligra_features_flow calligra_features_karbon calligra_features_kexi calligra_features_krita calligra_features_plan calligra_features_sheets calligra_features_stage calligra_features_tables calligra_features_words cameras_ptp2 cli collectd_plugins_df collectd_plugins_interface collectd_plugins_irq collectd_plugins_load collectd_plugins_memory collectd_plugins_rrdtool collectd_plugins_swap collectd_plugins_syslog cracklib crypt cxx dia doc dri elibc_glibc examples fortran gdbm gpsd_protocols_aivdm gpsd_protocols_ashtech gpsd_protocols_earthmate gpsd_protocols_evermore gpsd_protocols_fv18 gpsd_protocols_garmin gpsd_protocols_garmintxt gpsd_protocols_gpsclock gpsd_protocols_itrax gpsd_protocols_mtk3301 gpsd_protocols_navcom gpsd_protocols_nmea gpsd_protocols_ntrip gpsd_protocols_oceanserver gpsd_protocols_oldstyle gpsd_protocols_oncore gpsd_protocols_rtcm104v2 gpsd_protocols_rtcm104v3 gpsd_protocols_sirf gpsd_protocols_superstar2 gpsd_protocols_timing gpsd_protocols_tnt gpsd_protocols_tripmate gpsd_protocols_tsip gpsd_protocols_ubx iconv inkjar input_devices_evdev input_devices_joystick input_devices_keyboard input_devices_mouse ipv6 kernel_linux lcd_devices_bayrad lcd_devices_cfontz lcd_devices_cfontz633 lcd_devices_glk lcd_devices_hd44780 lcd_devices_lb216 lcd_devices_lcdm001 lcd_devices_mtxorb lcd_devices_ncurses lcd_devices_text lcms libreoffice_extensions_presenter-console libreoffice_extensions_presenter-minimizer linguas_af linguas_be linguas_bg linguas_br linguas_ca linguas_cs linguas_cy linguas_da linguas_de linguas_el linguas_en linguas_eo linguas_es linguas_et linguas_fi linguas_fo linguas_fr linguas_ga linguas_gl linguas_he linguas_hr linguas_is linguas_it linguas_la linguas_lt linguas_nl linguas_no linguas_pl linguas_pt linguas_pt_BR linguas_ro linguas_ru linguas_sk linguas_sl linguas_sr linguas_sv linguas_uk linguas_vi modules mudflap ncurses nls nptl office_implementation_libreoffice openmp pam pcre php_targets_php5-5 postscript python_single_target_python2_7 python_targets_python2_7 python_targets_python3_2 readline ruby_targets_ruby18 ruby_targets_ruby19 session spell ssl static-libs tcpd threads unicode userland_GNU video_cards_fbdev wmf xtables_addons_account xtables_addons_chaos xtables_addons_condition xtables_addons_delude xtables_addons_dhcpmac xtables_addons_fuzzy xtables_addons_geoip xtables_addons_iface xtables_addons_ipmark xtables_addons_ipp2p xtables_addons_ipset xtables_addons_ipv4options xtables_addons_length2 xtables_addons_logmark xtables_addons_lscan xtables_addons_pknock xtables_addons_psd xtables_addons_quota2 xtables_addons_rawnat xtables_addons_steal xtables_addons_sysrq xtables_addons_tarpit xtables_addons_tee zlib
 USE_EXPAND: ABI_MIPS ABI_X86 ALSA_CARDS APACHE2_MODULES APACHE2_MPMS CALLIGRA_FEATURES CAMERAS COLLECTD_PLUGINS CROSSCOMPILE_OPTS CURL_SSL DRACUT_MODULES DVB_CARDS ELIBC ENLIGHTENMENT_MODULES FCDSL_CARDS FFTOOLS FOO2ZJS_DEVICES FRITZCAPI_CARDS GPSD_PROTOCOLS GRUB_PLATFORMS INPUT_DEVICES KERNEL LCD_DEVICES LIBREOFFICE_EXTENSIONS LINGUAS LIRC_DEVICES MONKEYD_PLUGINS NETBEANS_MODULES NGINX_MODULES_HTTP NGINX_MODULES_MAIL OFED_DRIVERS OFFICE_IMPLEMENTATION OPENMPI_FABRICS OPENMPI_OFED_FEATURES OPENMPI_RM PHP_TARGETS PYTHON_SINGLE_TARGET PYTHON_TARGETS QEMU_SOFTMMU_TARGETS QEMU_USER_TARGETS RUBY_TARGETS SANE_BACKENDS USERLAND VIDEO_CARDS VOICEMAIL_STORAGE XFCE_PLUGINS XTABLES_ADDONS
 USE_EXPAND_HIDDEN: ABI_MIPS ABI_X86 CROSSCOMPILE_OPTS ELIBC KERNEL USERLAND
 USE_EXPAND_IMPLICIT: ARCH ELIBC KERNEL USERLAND
@@ -535,6 +535,501 @@ SHA1: 18856528fb5a5ddd828e6edbc9d1f1d59b234cc2
 SIZE: 42072
 USE: bash-completion
 
+BUILD_TIME: 1377654496
+CPV: app-dicts/aspell-af-0.50.0
+DEFINED_PHASES: compile install
+DEPEND: >=app-text/aspell-0.50
+DESC: Afrikaans language dictionary for aspell
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: fb8b4946f8069fa37e033e9fadc1ad69
+MTIME: 1377654515
+RDEPEND: >=app-text/aspell-0.50
+SHA1: 2c2f676f5810ff39320cf945b9b5dab6c26fcb1f
+SIZE: 962605
+
+BUILD_TIME: 1377655103
+CPV: app-dicts/aspell-be-0.01-r1
+DEFINED_PHASES: compile install unpack
+DEPEND: >=app-text/aspell-0.50
+DESC: Belarusian language dictionary for aspell
+IUSE: classic
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: 74ecefb871224e8eb4a455d162c64ef7
+MTIME: 1377655195
+RDEPEND: >=app-text/aspell-0.50
+SHA1: 0ec8cdfb4c79118fec14db3a49758b0fee5e44a1
+SIZE: 12299655
+
+BUILD_TIME: 1377654851
+CPV: app-dicts/aspell-bg-4.1.0
+DEFINED_PHASES: compile install
+DEPEND: >=app-text/aspell-0.60
+DESC: Bulgarian language dictionary for aspell
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: f9853a876eae8ca331767ebe3636698b
+MTIME: 1377654870
+RDEPEND: >=app-text/aspell-0.60
+SHA1: 196014859c00a397596ea0ce0b3c37ea8d753f10
+SIZE: 870342
+
+BUILD_TIME: 1377655371
+CPV: app-dicts/aspell-br-0.50.2
+DEFINED_PHASES: compile install
+DEPEND: >=app-text/aspell-0.50
+DESC: Breton language dictionary for aspell
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: ba203442a915a677e4ebca773cd304d3
+MTIME: 1377655386
+RDEPEND: >=app-text/aspell-0.50
+SHA1: d1bdfce7f47009029873987e2552effe36df3566
+SIZE: 367750
+
+BUILD_TIME: 1377651692
+CPV: app-dicts/aspell-ca-2.1.5.1
+DEFINED_PHASES: compile install
+DEPEND: >=app-text/aspell-0.60
+DESC: Catalan language dictionary for aspell
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: c901f23413ee25cd4c00a82c0ff37d53
+MTIME: 1377651737
+RDEPEND: >=app-text/aspell-0.60
+SHA1: f0105c5213d8f534cca354acc9beffd39c13e2f3
+SIZE: 1368217
+
+BUILD_TIME: 1377654307
+CPV: app-dicts/aspell-cs-0.60.20040614
+DEFINED_PHASES: compile install
+DEPEND: >=app-text/aspell-0.60
+DESC: Czech language dictionary for aspell
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: 6135de2434afca3a1627e6dc97a7b88e
+MTIME: 1377654359
+RDEPEND: >=app-text/aspell-0.60
+SHA1: 45fb25956f70f4b0638ac8443feba5c1bc0aea1b
+SIZE: 2330510
+
+BUILD_TIME: 1377656526
+CPV: app-dicts/aspell-cy-0.50.3
+DEFINED_PHASES: compile install
+DEPEND: >=app-text/aspell-0.50
+DESC: Welsh language dictionary for aspell
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: 9625de7ebff0c7411b34b7ac7e73e8a7
+MTIME: 1377656553
+RDEPEND: >=app-text/aspell-0.50
+SHA1: 1d94eed38589e805f4b42fe4c5792fe025701b8a
+SIZE: 2219943
+
+BUILD_TIME: 1377658107
+CPV: app-dicts/aspell-da-1.7.42
+DEFINED_PHASES: compile install
+DEPEND: >=app-text/aspell-0.50
+DESC: Danish language dictionary for aspell
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~ppc-macos
+LICENSE: GPL-2
+MD5: 119219012c8a74aac12c5201b18223cd
+MTIME: 1377658137
+RDEPEND: >=app-text/aspell-0.50
+SHA1: b14fd50b3911617be8fd39795b72d0498ca432e2
+SIZE: 2449789
+
+BUILD_TIME: 1377655793
+CPV: app-dicts/aspell-de-0.60_pre20030222
+DEFINED_PHASES: compile install
+DEPEND: >=app-text/aspell-0.60
+DESC: German and Swiss-German language dictionary for aspell
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos
+LICENSE: GPL-2
+MD5: 4cf82584b8b1f722432b6624fbe580c6
+MTIME: 1377655833
+RDEPEND: >=app-text/aspell-0.60
+SHA1: f56659caefc5d7e0bfa815ba124da44114a3632f
+SIZE: 3749163
+
+BUILD_TIME: 1377656164
+CPV: app-dicts/aspell-el-0.50.3
+DEFINED_PHASES: compile install
+DEPEND: >=app-text/aspell-0.50
+DESC: Greek language dictionary for aspell
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: 029cf6309bff1f7514e668349f3ab3de
+MTIME: 1377656205
+RDEPEND: >=app-text/aspell-0.50
+SHA1: 781018854c2c306b3a1cc424abf96560bb9a6c82
+SIZE: 4240642
+
+BUILD_TIME: 1377658995
+CPV: app-dicts/aspell-en-7.1.0
+DEFINED_PHASES: compile install
+DEPEND: >=app-text/aspell-0.60
+DESC: English (US, British, Canadian) language dictionary for aspell
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 ~sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x86-solaris
+LICENSE: myspell-en_CA-KevinAtkinson public-domain Princeton Ispell
+MD5: 76df8bda020ab2c18a4100b26f0f8b95
+MTIME: 1377659018
+RDEPEND: >=app-text/aspell-0.60
+SHA1: 1b79f15543c7f9cceaff7dd52670bb9df0ffb1ad
+SIZE: 1363513
+
+BUILD_TIME: 1377656698
+CPV: app-dicts/aspell-eo-2.1.20000225.2
+DEFINED_PHASES: compile install
+DEPEND: >=app-text/aspell-0.60
+DESC: Esperanto language dictionary for aspell
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: e4ae72d85d9da698b247db3297c5b9c5
+MTIME: 1377656721
+RDEPEND: >=app-text/aspell-0.60
+SHA1: a5319bbc3b75750fe20941826b83df88b2048a9c
+SIZE: 179046
+
+BUILD_TIME: 1377655974
+CPV: app-dicts/aspell-es-1.9a
+DEFINED_PHASES: compile install
+DEPEND: >=app-text/aspell-0.60
+DESC: Spanish language dictionary for aspell
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: 5c004e0dd093e3800751c5034fff8dd6
+MTIME: 1377655990
+RDEPEND: >=app-text/aspell-0.60
+SHA1: e75c9e80c156750f803f73840183ca9d1384ba20
+SIZE: 415970
+
+BUILD_TIME: 1377650618
+CPV: app-dicts/aspell-et-0.1.21.1
+DEFINED_PHASES: compile install
+DEPEND: >=app-text/aspell-0.60
+DESC: Estonian language dictionary for aspell
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: a688651a851045ca4d78e6bc2b5b013a
+MTIME: 1377650658
+RDEPEND: >=app-text/aspell-0.60
+SHA1: 7f4548030dd00f6854a71964e2e9d7d4e518818b
+SIZE: 965983
+
+BUILD_TIME: 1377650224
+CPV: app-dicts/aspell-fi-0.7.0
+DEFINED_PHASES: compile install
+DEPEND: >=app-text/aspell-0.60
+DESC: Finnish language dictionary for aspell
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: 9252445dd25c6ad684691107d43d3421
+MTIME: 1377650262
+RDEPEND: >=app-text/aspell-0.60
+SHA1: 0c476c7661f66b9c1e2c885d1bbd32674cda7a9c
+SIZE: 702726
+
+BUILD_TIME: 1377652377
+CPV: app-dicts/aspell-fo-0.51.0
+DEFINED_PHASES: compile install
+DEPEND: >=app-text/aspell-0.50
+DESC: Faroese language dictionary for aspell
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: 6bfe27631760f1d5a94299579f213a52
+MTIME: 1377652417
+RDEPEND: >=app-text/aspell-0.50
+SHA1: 52beea43b2e3f00470788ded173ab1ab05d40cbb
+SIZE: 1096765
+
+BUILD_TIME: 1377655569
+CPV: app-dicts/aspell-fr-0.60
+DEFINED_PHASES: compile install
+DEPEND: >=app-text/aspell-0.60
+DESC: French language dictionary for aspell
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~ppc-macos
+LICENSE: GPL-2
+MD5: 93a702d4ee1e7771d2391a5169bd56bb
+MTIME: 1377655622
+RDEPEND: >=app-text/aspell-0.60
+SHA1: b3e30794b00f3f2812db6ceedf81631d199e632d
+SIZE: 5818539
+
+BUILD_TIME: 1377656887
+CPV: app-dicts/aspell-ga-0.50.4
+DEFINED_PHASES: compile install
+DEPEND: >=app-text/aspell-0.50
+DESC: Irish language dictionary for aspell
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: a08bcfdc6680ed3c96db0e313aee48bb
+MTIME: 1377656915
+RDEPEND: >=app-text/aspell-0.50
+SHA1: bcd3ef47060bedf687aa6770276f22cd1f217c05
+SIZE: 2403342
+
+BUILD_TIME: 1377656343
+CPV: app-dicts/aspell-gl-0.5.2
+DEFINED_PHASES: compile install
+DEPEND: >=app-text/aspell-0.60
+DESC: Galician language dictionary for aspell
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: aa264f1c12a562d5878b3c6a67b69e3d
+MTIME: 1377656358
+RDEPEND: >=app-text/aspell-0.60
+SHA1: f9b9aa73c3c2dd45295ee2fe1cde2e99b80620f4
+SIZE: 314726
+
+BUILD_TIME: 1377657744
+CPV: app-dicts/aspell-he-1.0.0
+DEFINED_PHASES: compile install
+DEPEND: >=app-text/aspell-0.60
+DESC: Hebrew language dictionary for aspell
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: 255c9ea219b974bc417dfebbba322b25
+MTIME: 1377657774
+RDEPEND: >=app-text/aspell-0.60
+SHA1: 2c27d2da7650c3dc06775705816eca01991dc6c2
+SIZE: 2895805
+
+BUILD_TIME: 1377649850
+CPV: app-dicts/aspell-hr-0.51.0
+DEFINED_PHASES: compile install
+DEPEND: >=app-text/aspell-0.50
+DESC: Croatian language dictionary for aspell
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: cb5ca7a7f7ec96de5ce280c6c934c26e
+MTIME: 1377649916
+RDEPEND: >=app-text/aspell-0.50
+SHA1: 2a3f4b747f3fed2bda8059b74ffd8227c956c37f
+SIZE: 2462178
+
+BUILD_TIME: 1377657929
+CPV: app-dicts/aspell-is-0.51.1.0
+DEFINED_PHASES: compile install
+DEPEND: >=app-text/aspell-0.50
+DESC: Icelandic language dictionary for aspell
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: 6d03af040b19771a49affc0e54aea2bf
+MTIME: 1377657965
+RDEPEND: >=app-text/aspell-0.50
+SHA1: c686b7b6510779530e72634f0a665fbbca7118e8
+SIZE: 1639983
+
+BUILD_TIME: 1377651299
+CPV: app-dicts/aspell-it-2.4.20070901
+DEFINED_PHASES: compile install
+DEPEND: >=app-text/aspell-0.60
+DESC: Italian language dictionary for aspell
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: e5f83b4c49fd53b9257dcd8bda345361
+MTIME: 1377651353
+RDEPEND: >=app-text/aspell-0.60
+SHA1: ae698aa3d84e44cac3d3e945774d3449f0c3b9a8
+SIZE: 751301
+
+BUILD_TIME: 1377654697
+CPV: app-dicts/aspell-la-6.0.20020503.0
+DEFINED_PHASES: compile install
+DEPEND: >=app-text/aspell-0.60
+DESC: Latin language dictionary for aspell
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: 6fea92f5d464141b7473d83f87b139d0
+MTIME: 1377654712
+RDEPEND: >=app-text/aspell-0.60
+SHA1: e6685c2f2e6bbcb4bdd7225c7bfb3b15c9e9a5a4
+SIZE: 153532
+
+BUILD_TIME: 1377658490
+CPV: app-dicts/aspell-lt-1.0.1
+DEFINED_PHASES: compile install
+DEPEND: >=app-text/aspell-0.60
+DESC: Lithuanian language dictionary for aspell
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: b69264b65d1c8ee610e8efb9b04921fc
+MTIME: 1377658511
+RDEPEND: >=app-text/aspell-0.60
+SHA1: 76c70bfc3f33938942c404aa839b8aa1186ea112
+SIZE: 632759
+
+BUILD_TIME: 1377653488
+CPV: app-dicts/aspell-nl-0.50.2
+DEFINED_PHASES: compile install
+DEPEND: >=app-text/aspell-0.50
+DESC: Dutch language dictionary for aspell
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris
+LICENSE: freedist
+MD5: 89bac9cb058a7e6097472e7072751fec
+MTIME: 1377653535
+RDEPEND: >=app-text/aspell-0.50
+SHA1: 9eb28f63dba7af67798f15a56431860d28307f6c
+SIZE: 1626549
+
+BUILD_TIME: 1377652732
+CPV: app-dicts/aspell-no-0.50.2
+DEFINED_PHASES: compile install
+DEPEND: >=app-text/aspell-0.50
+DESC: Norwegian language dictionary for aspell
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: 8417175f444cdd93b179b9b4121e45f7
+MTIME: 1377652776
+RDEPEND: >=app-text/aspell-0.50
+SHA1: 81cd19d9965befae7a4677b1686b59ae0dbd3f9e
+SIZE: 1340994
+
+BUILD_TIME: 1377657520
+CPV: app-dicts/aspell-pl-6.0.20120418.0
+DEFINED_PHASES: compile install
+DEPEND: >=app-text/aspell-0.60
+DESC: Polish language dictionary for aspell
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: 0f2c96fb6d87dddfbfbfe2b6b287cd73
+MTIME: 1377657550
+RDEPEND: >=app-text/aspell-0.60
+SHA1: 700575e43ef29ca455830caa43027260ad22f613
+SIZE: 2403184
+
+BUILD_TIME: 1377658316
+CPV: app-dicts/aspell-pt-0.50.2-r1
+DEFINED_PHASES: compile install
+DEPEND: >=app-text/aspell-0.50
+DESC: Portuguese language dictionary for aspell
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: 50cefc777f052f8ec82ca29d3878146b
+MTIME: 1377658345
+RDEPEND: >=app-text/aspell-0.50
+SHA1: 2828702364168c85bca498fd1ac8017628037e80
+SIZE: 2421636
+
+BUILD_TIME: 1377657268
+CPV: app-dicts/aspell-pt-br-6.0.20090702
+DEFINED_PHASES: compile install
+DEPEND: >=app-text/aspell-0.60
+DESC: Brazilian Portuguese language dictionary for aspell
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: LGPL-2
+MD5: f78161eea0f4b550a285b91a5c08e92b
+MTIME: 1377657299
+RDEPEND: !<app-dicts/aspell-pt-0.50.2-r1 >=app-text/aspell-0.60
+SHA1: 86973e1346d390f0d27ea6ca1484b225f656cd45
+SIZE: 2668615
+
+BUILD_TIME: 1377658727
+CPV: app-dicts/aspell-ro-3.3.2
+DEFINED_PHASES: compile install
+DEPEND: >=app-text/aspell-0.50
+DESC: Romanian language dictionary for aspell
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: 71a12065ad7feb0ec8801a5d710a4a9a
+MTIME: 1377658838
+RDEPEND: >=app-text/aspell-0.50
+SHA1: a7b1a1beae031901abfd1278040b7030d66152ca
+SIZE: 12647652
+
+BUILD_TIME: 1377657089
+CPV: app-dicts/aspell-ru-0.99.1-r1
+DEFINED_PHASES: compile install unpack
+DEPEND: >=app-text/aspell-0.60
+DESC: Russian language dictionary for aspell
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: ad5195d541b8a5311967ddac797c93db
+MTIME: 1377657115
+RDEPEND: >=app-text/aspell-0.60
+SHA1: 8e678faee8c03bca778e6d480211aafd89c60163
+SIZE: 1973408
+
+BUILD_TIME: 1377652054
+CPV: app-dicts/aspell-sk-2.01.2
+DEFINED_PHASES: compile install
+DEPEND: >=app-text/aspell-0.60
+DESC: Slovak language dictionary for aspell
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: 8ffc1fe86b235af63a28b8ba4458f7b8
+MTIME: 1377652094
+RDEPEND: >=app-text/aspell-0.60
+SHA1: 37fc9d6302545e984b24daa8ff85831dba7f5339
+SIZE: 1408735
+
+BUILD_TIME: 1377648989
+CPV: app-dicts/aspell-sl-0.50.0
+DEFINED_PHASES: compile install
+DEPEND: >=app-text/aspell-0.50
+DESC: Slovenian language dictionary for aspell
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: 20ff81188334673ccebd002082daff6e
+MTIME: 1377649126
+RDEPEND: >=app-text/aspell-0.50
+SHA1: 1e07897f0822921cf7454a65d354e888447a31c4
+SIZE: 7641985
+
+BUILD_TIME: 1377653115
+CPV: app-dicts/aspell-sr-0.60
+DEFINED_PHASES: compile install
+DEPEND: >=app-text/aspell-0.60
+DESC: Serbian language dictionary for aspell
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: 03221afaa5788812ef3051e7292ac7c5
+MTIME: 1377653216
+RDEPEND: >=app-text/aspell-0.60
+SHA1: 7fa3fab2491cb8f33465509d5869053c302dd2c2
+SIZE: 4579160
+
+BUILD_TIME: 1377649436
+CPV: app-dicts/aspell-sv-0.51.0
+DEFINED_PHASES: compile install
+DEPEND: >=app-text/aspell-0.50
+DESC: Swedish language dictionary for aspell
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris
+LICENSE: GPL-2
+MD5: b90b18bd84b40102c921a9113f51abb6
+MTIME: 1377649480
+RDEPEND: >=app-text/aspell-0.50
+SHA1: d710dc1b5dd187090b8d05b05efc7628dfdb0e65
+SIZE: 1259137
+
+BUILD_TIME: 1377654110
+CPV: app-dicts/aspell-uk-1.4.0.0
+DEFINED_PHASES: compile install
+DEPEND: >=app-text/aspell-0.60
+DESC: Ukrainian language dictionary for aspell
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2 LGPL-2.1
+MD5: f9d4e7a264c49cbbcb04226b916cf700
+MTIME: 1377654148
+RDEPEND: >=app-text/aspell-0.60
+SHA1: 6e7c0fe88356f7cfde9e24ee36c39e15653419d9
+SIZE: 772190
+
+BUILD_TIME: 1377650962
+CPV: app-dicts/aspell-vi-0.01.1.1
+DEFINED_PHASES: compile install
+DEPEND: >=app-text/aspell-0.60
+DESC: Vietnamese language dictionary for aspell
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: 526cbb41b25d9a5121404f2020b2e4f0
+MTIME: 1377650991
+RDEPEND: >=app-text/aspell-0.60
+SHA1: 97ab96e881fda62fd986a180f20781d9eeec5cc6
+SIZE: 64945
+
 BUILD_TIME: 1377342378
 CPV: app-doc/blas-docs-3.1.1
 DEFINED_PHASES: install
@@ -1002,6 +1497,23 @@ MTIME: 1374183040
 RDEPEND: >=app-text/docbook-xsl-stylesheets-1.75 dev-libs/libxslt app-text/docbook-xml-dtd:4.5 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
 SHA1: 9612d4a9f0546a5acd06165bff92eba6b602dd1c
 SIZE: 241914
+
+BUILD_TIME: 1377648041
+CPV: app-text/aspell-0.60.6.1
+DEFINED_PHASES: configure install postinst prepare
+DEPEND: >=sys-libs/ncurses-5.2 virtual/libintl sys-devel/gettext || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: A spell checker replacement for ispell
+EAPI: 4
+IUSE: nls linguas_af linguas_be linguas_bg linguas_br linguas_ca linguas_cs linguas_cy linguas_da linguas_de linguas_el linguas_en linguas_eo linguas_es linguas_et linguas_fi linguas_fo linguas_fr linguas_ga linguas_gl linguas_he linguas_hr linguas_is linguas_it linguas_la linguas_lt linguas_nl linguas_no linguas_pl linguas_pt linguas_pt_BR linguas_ro linguas_ru linguas_sk linguas_sl linguas_sr linguas_sv linguas_uk linguas_vi
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x86-solaris
+LICENSE: LGPL-2
+MD5: 5083554951d4dec739c8f944e65efdeb
+MTIME: 1377648175
+PDEPEND: app-dicts/aspell-en app-dicts/aspell-af app-dicts/aspell-be app-dicts/aspell-bg app-dicts/aspell-br app-dicts/aspell-ca app-dicts/aspell-cs app-dicts/aspell-cy app-dicts/aspell-da || ( app-dicts/aspell-de app-dicts/aspell-de-alt ) app-dicts/aspell-el app-dicts/aspell-en app-dicts/aspell-eo app-dicts/aspell-es app-dicts/aspell-et app-dicts/aspell-fi app-dicts/aspell-fo app-dicts/aspell-fr app-dicts/aspell-ga app-dicts/aspell-gl app-dicts/aspell-he app-dicts/aspell-hr app-dicts/aspell-is app-dicts/aspell-it app-dicts/aspell-la app-dicts/aspell-lt app-dicts/aspell-nl app-dicts/aspell-no app-dicts/aspell-pl app-dicts/aspell-pt app-dicts/aspell-pt-br app-dicts/aspell-ro app-dicts/aspell-ru app-dicts/aspell-sk app-dicts/aspell-sl app-dicts/aspell-sr app-dicts/aspell-sv app-dicts/aspell-uk app-dicts/aspell-vi
+RDEPEND: >=sys-libs/ncurses-5.2 virtual/libintl !=app-dicts/aspell-en-0.5*
+SHA1: c78b3bb27f0886b41c249c4b09d157c104e4d163
+SIZE: 848687
+USE: linguas_af linguas_be linguas_bg linguas_br linguas_ca linguas_cs linguas_cy linguas_da linguas_de linguas_el linguas_en linguas_eo linguas_es linguas_et linguas_fi linguas_fo linguas_fr linguas_ga linguas_gl linguas_he linguas_hr linguas_is linguas_it linguas_la linguas_lt linguas_nl linguas_no linguas_pl linguas_pt linguas_pt_BR linguas_ro linguas_ru linguas_sk linguas_sl linguas_sr linguas_sv linguas_uk linguas_vi nls
 
 BUILD_TIME: 1376147237
 CPV: app-text/build-docbook-catalog-1.19.1
@@ -1554,6 +2066,24 @@ SIZE: 15501525
 SLOT: 2.7
 USE: berkdb doc gdbm ipv6 ncurses readline sqlite ssl threads wide-unicode xml
 
+BUILD_TIME: 1377641750
+CPV: dev-lang/python-2.7.5-r2
+DEFINED_PHASES: compile configure install postinst postrm preinst prepare setup test
+DEPEND: app-arch/bzip2 >=sys-libs/zlib-1.1.3 virtual/libffi virtual/libintl || ( sys-libs/db:5.3 sys-libs/db:5.2 sys-libs/db:5.1 sys-libs/db:5.0 sys-libs/db:4.8 sys-libs/db:4.7 sys-libs/db:4.6 sys-libs/db:4.5 sys-libs/db:4.4 sys-libs/db:4.3 sys-libs/db:4.2 ) sys-libs/gdbm[berkdb] >=sys-libs/ncurses-5.2 >=sys-libs/readline-4.1 >=dev-db/sqlite-3.3.8:3[extensions] dev-libs/openssl >=dev-libs/expat-2.1 !!<sys-apps/portage-2.1.9 virtual/pkgconfig >=sys-devel/autoconf-2.65 !sys-devel/gcc[libffi] sys-devel/automake >=sys-devel/autoconf-2.68
+DESC: An interpreted, interactive, object-oriented programming language
+EAPI: 4
+IUSE: -berkdb build doc elibc_uclibc examples gdbm hardened ipv6 +ncurses +readline sqlite +ssl +threads tk +wide-unicode wininst +xml
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: PSF-2
+MD5: 60a91349069b1657261958724e1e4256
+MTIME: 1377642310
+PDEPEND: app-admin/eselect-python app-admin/python-updater
+RDEPEND: app-arch/bzip2 >=sys-libs/zlib-1.1.3 virtual/libffi virtual/libintl || ( sys-libs/db:5.3 sys-libs/db:5.2 sys-libs/db:5.1 sys-libs/db:5.0 sys-libs/db:4.8 sys-libs/db:4.7 sys-libs/db:4.6 sys-libs/db:4.5 sys-libs/db:4.4 sys-libs/db:4.3 sys-libs/db:4.2 ) sys-libs/gdbm[berkdb] >=sys-libs/ncurses-5.2 >=sys-libs/readline-4.1 >=dev-db/sqlite-3.3.8:3[extensions] dev-libs/openssl >=dev-libs/expat-2.1 !!<sys-apps/portage-2.1.9 app-misc/mime-types dev-python/python-docs:2.7
+SHA1: 31729543149ebcd5e35690e955a4e31c9438be3d
+SIZE: 13103486
+SLOT: 2.7
+USE: berkdb doc gdbm ipv6 ncurses readline sqlite ssl threads wide-unicode xml
+
 BUILD_TIME: 1376302858
 CPV: dev-lang/python-3.2.5-r1
 DEFINED_PHASES: compile configure install postinst postrm preinst prepare setup test
@@ -1571,6 +2101,41 @@ SHA1: e59f9af822cd3cec5135575c0b42690ac7f1cc90
 SIZE: 12798587
 SLOT: 3.2
 USE: gdbm ipv6 ncurses readline sqlite ssl threads wide-unicode xml
+
+BUILD_TIME: 1377652740
+CPV: dev-lang/python-3.2.5-r2
+DEFINED_PHASES: compile configure install postinst postrm preinst prepare setup test
+DEPEND: app-arch/bzip2 >=sys-libs/zlib-1.1.3 virtual/libffi virtual/libintl sys-libs/gdbm[berkdb] >=sys-libs/ncurses-5.2 >=sys-libs/readline-4.1 >=dev-db/sqlite-3.3.8:3[extensions] dev-libs/openssl >=dev-libs/expat-2.1 virtual/pkgconfig >=sys-devel/autoconf-2.65 !sys-devel/gcc[libffi] sys-devel/automake >=sys-devel/autoconf-2.68
+DESC: An interpreted, interactive, object-oriented programming language
+EAPI: 4
+IUSE: build doc elibc_uclibc examples gdbm hardened ipv6 +ncurses +readline sqlite +ssl +threads tk +wide-unicode wininst +xml
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: PSF-2
+MD5: c59462b5c5f37d686ec587b4584e0a91
+MTIME: 1377653257
+PDEPEND: app-admin/eselect-python app-admin/python-updater
+RDEPEND: app-arch/bzip2 >=sys-libs/zlib-1.1.3 virtual/libffi virtual/libintl sys-libs/gdbm[berkdb] >=sys-libs/ncurses-5.2 >=sys-libs/readline-4.1 >=dev-db/sqlite-3.3.8:3[extensions] dev-libs/openssl >=dev-libs/expat-2.1 app-misc/mime-types dev-python/python-docs:3.2
+SHA1: acf39548a8bb5a7e10c0c46fbd6ad9a5c2229c27
+SIZE: 12872293
+SLOT: 3.2
+USE: doc gdbm ipv6 ncurses readline sqlite ssl threads wide-unicode xml
+
+BUILD_TIME: 1377643336
+CPV: dev-lang/swig-2.0.9
+DEFINED_PHASES: configure install
+DEPEND: dev-libs/libpcre
+DESC: Simplified Wrapper and Interface Generator
+EAPI: 4
+IUSE: ccache doc pcre
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~ia64-hpux ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-3+ BSD BSD-2
+MD5: 9d992a2af999cb7dd0e8eab79f2932f1
+MTIME: 1377643467
+RDEPEND: dev-libs/libpcre
+RESTRICT: test
+SHA1: 139a6c4510e697b5e8ea074853cdcdb224203a37
+SIZE: 2037178
+USE: doc pcre
 
 BUILD_TIME: 1377185440
 CPV: dev-lang/vala-0.18.1
@@ -3196,6 +3761,19 @@ SHA1: dfb3aeafb1ba727d25857bcb606313abf7b2e0cf
 SIZE: 2687498
 SLOT: 2.7
 
+BUILD_TIME: 1377635487
+CPV: dev-python/python-docs-3.2.3
+DEFINED_PHASES: install postrm
+DESC: HTML documentation for Python
+EAPI: 3
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 ~sh sparc x86 amd64-fbsd ~sparc-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
+LICENSE: PSF-2
+MD5: c695e26e73b6fae875ed75e85c614aa1
+MTIME: 1377635727
+SHA1: e334b9d73480ef398129ba99f600dd5064d443e2
+SIZE: 2660850
+SLOT: 3.2
+
 BUILD_TIME: 1376132950
 CPV: dev-python/python-exec-0.3.1
 DEFINED_PHASES: compile configure install prepare test
@@ -4122,6 +4700,22 @@ SHA1: b17fd3d37f56a7d93c0eda2c8fb79717cc164dad
 SIZE: 370216
 USE: exif xinerama
 
+BUILD_TIME: 1377635046
+CPV: media-gfx/fim-0.4_pre
+DEFINED_PHASES: compile configure install prepare
+DEPEND: media-fonts/terminus-font media-libs/aalib[slang] app-office/dia app-text/djvu media-libs/libexif media-libs/giflib || ( media-gfx/graphicsmagick[imagemagick] media-gfx/imagemagick ) virtual/jpeg app-text/poppler media-libs/libpng app-text/libspectre sys-libs/readline media-libs/libsdl media-libs/tiff media-gfx/xfig sys-devel/bison sys-devel/flex || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: Fbi-IMproved is a framebuffer image viewer based on Fbi and inspired from Vim
+EAPI: 5
+IUSE: aalib dia djvu exif fbcon gif graphicsmagick imagemagick jpeg pdf png postscript readline sdl static svg tiff xfig
+KEYWORDS: ~amd64 ~arm ~x86
+LICENSE: GPL-2
+MD5: 8432b3db5dc85cfffcba2f0d7ddaa56b
+MTIME: 1377635079
+RDEPEND: media-fonts/terminus-font media-libs/aalib[slang] app-office/dia app-text/djvu media-libs/libexif media-libs/giflib || ( media-gfx/graphicsmagick[imagemagick] media-gfx/imagemagick ) virtual/jpeg app-text/poppler media-libs/libpng app-text/libspectre sys-libs/readline media-libs/libsdl media-libs/tiff media-gfx/xfig
+SHA1: 7dcb46e9d9d0de9fbdb2e1d412a1b20c17495b29
+SIZE: 393393
+USE: aalib dia djvu exif fbcon gif imagemagick jpeg pdf png postscript readline sdl tiff xfig
+
 BUILD_TIME: 1377209988
 CPV: media-gfx/geeqie-1.1
 DEFINED_PHASES: compile configure install postinst prepare unpack
@@ -4582,21 +5176,21 @@ SHA1: 097334836f3ec597773fce4ce827ded0fe3ab749
 SIZE: 170985
 USE: static-libs
 
-BUILD_TIME: 1376497982
+BUILD_TIME: 1377647926
 CPV: media-libs/lcms-1.19
 DEFINED_PHASES: compile configure install postinst postrm prepare setup
-DEPEND: media-libs/tiff:0 virtual/jpeg sys-libs/zlib || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND: media-libs/tiff:0 virtual/jpeg sys-libs/zlib >=dev-lang/swig-1.3.31 || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool =dev-lang/python-2*
 DESC: A lightweight, speed optimized color management engine
 EAPI: 3
 IUSE: jpeg python static-libs tiff zlib
 KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~x64-solaris ~x86-solaris
 LICENSE: MIT
-MD5: ecc1b048576d5ea2e801e0ccf6850eda
-MTIME: 1376498007
-RDEPEND: media-libs/tiff:0 virtual/jpeg sys-libs/zlib
-SHA1: ba50beea74cf05c285d4e45ac69cc5957bfa4f8a
-SIZE: 590756
-USE: jpeg static-libs tiff zlib
+MD5: b8f1d1ee783a5a71c008cd2c1f5e0b2a
+MTIME: 1377647997
+RDEPEND: media-libs/tiff:0 virtual/jpeg sys-libs/zlib =dev-lang/python-2*
+SHA1: 395c013a326616b9cdec1c072bca2814b1f1c605
+SIZE: 456186
+USE: jpeg python static-libs tiff zlib
 
 BUILD_TIME: 1376165093
 CPV: media-libs/lcms-2.3
@@ -8894,19 +9488,19 @@ RDEPEND: || ( media-fonts/dejavu media-fonts/liberation-fonts media-fonts/crosco
 SHA1: 175b3b9be14375a0090867fd46d632ababd00fb2
 SIZE: 4882
 
-BUILD_TIME: 1376331380
+BUILD_TIME: 1377638169
 CPV: virtual/udev-200
 DEFINED_PHASES: -
 DESC: Virtual to select between sys-fs/udev and sys-fs/eudev
 EAPI: 5
 IUSE: gudev hwdb introspection keymap +kmod selinux static-libs
 KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86
-MD5: f0b9acbbdfcdf536e079cb38a33c7570
-MTIME: 1376331394
-RDEPEND: || ( >=sys-fs/udev-200[kmod,static-libs] >=sys-apps/systemd-200[kmod,static-libs(-)] >=sys-fs/eudev-1[modutils,static-libs] )
-SHA1: 73c8eb36bd2ea8222fd86605ee4dc0baf5b1dfe1
-SIZE: 5965
-USE: kmod static-libs
+MD5: d1e1753cc160abb2bee053c2a32b1065
+MTIME: 1377638219
+RDEPEND: || ( >=sys-fs/udev-200[gudev,kmod,static-libs] >=sys-apps/systemd-200[gudev,kmod,static-libs(-)] >=sys-fs/eudev-1[modutils,gudev,static-libs] )
+SHA1: 0cdb1c732420b3bf42df745730838a0a72ca4cc9
+SIZE: 6290
+USE: gudev kmod static-libs
 
 BUILD_TIME: 1376159697
 CPV: virtual/yacc-0
