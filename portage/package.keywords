@@ -59,3 +59,11 @@ portage/package.keywords
 =sci-libs/amd-2.3.1
 =app-portage/porticron-0.6
 =sys-kernel/raspberrypi-image-3.10.9_pre-r20130820
+=media-gfx/fim-0.4_pre
+=media-gfx/inkscape-0.48.4-r1 **
+=media-libs/sk1libs-0.9.1-r3 **
+=dev-python/lxml-3.2.1
+=media-gfx/uniconvertor-1.1.5-r1 **
+=app-text/libwpg-0.2.2
+=app-text/libwpd-0.9.9
+=media-libs/lcms-1.19-r1

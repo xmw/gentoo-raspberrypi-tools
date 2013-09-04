@@ -9,11 +9,11 @@ CONFIG_PROTECT_MASK: /etc/ca-certificates.conf /etc/env.d /etc/fonts/fonts.conf 
 FEATURES: assume-digests binpkg-logs buildpkg compressdebug config-protect-if-modified distlocks ebuild-locks fixlafiles getbinpkg merge-sync news parallel-fetch preserve-libs protect-owned sandbox sfperms split-log strict unknown-features-warn unmerge-logs unmerge-orphans userfetch userpriv usersandbox usersync
 GENTOO_MIRRORS: http://lore.xmw.de/gentoo/
 IUSE_IMPLICIT: prefix
-PACKAGES: 798
+PACKAGES: 844
 PROFILE: default/linux/arm/13.0
 SYNC: use update-portage
-TIMESTAMP: 1377677474
-USE: acl apache2_modules_actions apache2_modules_alias apache2_modules_auth_basic apache2_modules_authn_alias apache2_modules_authn_anon apache2_modules_authn_core apache2_modules_authn_dbm apache2_modules_authn_default apache2_modules_authn_file apache2_modules_authz_core apache2_modules_authz_dbm apache2_modules_authz_default apache2_modules_authz_groupfile apache2_modules_authz_host apache2_modules_authz_owner apache2_modules_authz_user apache2_modules_autoindex apache2_modules_cache apache2_modules_cgi apache2_modules_cgid apache2_modules_dav apache2_modules_dav_fs apache2_modules_dav_lock apache2_modules_deflate apache2_modules_dir apache2_modules_disk_cache apache2_modules_env apache2_modules_expires apache2_modules_ext_filter apache2_modules_file_cache apache2_modules_filter apache2_modules_headers apache2_modules_include apache2_modules_info apache2_modules_log_config apache2_modules_logio apache2_modules_mem_cache apache2_modules_mime apache2_modules_mime_magic apache2_modules_negotiation apache2_modules_rewrite apache2_modules_setenvif apache2_modules_socache_shmcb apache2_modules_speling apache2_modules_status apache2_modules_unique_id apache2_modules_unixd apache2_modules_userdir apache2_modules_usertrack apache2_modules_vhost_alias arm berkdb bindist bzip2 calligra_features_author calligra_features_braindump calligra_features_flow calligra_features_karbon calligra_features_kexi calligra_features_krita calligra_features_plan calligra_features_sheets calligra_features_stage calligra_features_tables calligra_features_words cameras_ptp2 cli collectd_plugins_df collectd_plugins_interface collectd_plugins_irq collectd_plugins_load collectd_plugins_memory collectd_plugins_rrdtool collectd_plugins_swap collectd_plugins_syslog cracklib crypt cxx doc dri elibc_glibc examples fortran gdbm gpsd_protocols_aivdm gpsd_protocols_ashtech gpsd_protocols_earthmate gpsd_protocols_evermore gpsd_protocols_fv18 gpsd_protocols_garmin gpsd_protocols_garmintxt gpsd_protocols_gpsclock gpsd_protocols_itrax gpsd_protocols_mtk3301 gpsd_protocols_navcom gpsd_protocols_nmea gpsd_protocols_ntrip gpsd_protocols_oceanserver gpsd_protocols_oldstyle gpsd_protocols_oncore gpsd_protocols_rtcm104v2 gpsd_protocols_rtcm104v3 gpsd_protocols_sirf gpsd_protocols_superstar2 gpsd_protocols_timing gpsd_protocols_tnt gpsd_protocols_tripmate gpsd_protocols_tsip gpsd_protocols_ubx iconv input_devices_evdev input_devices_joystick input_devices_keyboard input_devices_mouse ipv6 jpeg kernel_linux lcd_devices_bayrad lcd_devices_cfontz lcd_devices_cfontz633 lcd_devices_glk lcd_devices_hd44780 lcd_devices_lb216 lcd_devices_lcdm001 lcd_devices_mtxorb lcd_devices_ncurses lcd_devices_text libreoffice_extensions_presenter-console libreoffice_extensions_presenter-minimizer modules mudflap ncurses nls nptl office_implementation_libreoffice openmp pam pcre php_targets_php5-5 python python_single_target_python2_7 python_targets_python2_7 python_targets_python3_2 readline ruby_targets_ruby18 ruby_targets_ruby19 session ssl static-libs tcpd threads tiff unicode userland_GNU video_cards_fbdev xtables_addons_account xtables_addons_chaos xtables_addons_condition xtables_addons_delude xtables_addons_dhcpmac xtables_addons_fuzzy xtables_addons_geoip xtables_addons_iface xtables_addons_ipmark xtables_addons_ipp2p xtables_addons_ipset xtables_addons_ipv4options xtables_addons_length2 xtables_addons_logmark xtables_addons_lscan xtables_addons_pknock xtables_addons_psd xtables_addons_quota2 xtables_addons_rawnat xtables_addons_steal xtables_addons_sysrq xtables_addons_tarpit xtables_addons_tee zlib
+TIMESTAMP: 1377695303
+USE: acl apache2_modules_actions apache2_modules_alias apache2_modules_auth_basic apache2_modules_authn_alias apache2_modules_authn_anon apache2_modules_authn_core apache2_modules_authn_dbm apache2_modules_authn_default apache2_modules_authn_file apache2_modules_authz_core apache2_modules_authz_dbm apache2_modules_authz_default apache2_modules_authz_groupfile apache2_modules_authz_host apache2_modules_authz_owner apache2_modules_authz_user apache2_modules_autoindex apache2_modules_cache apache2_modules_cgi apache2_modules_cgid apache2_modules_dav apache2_modules_dav_fs apache2_modules_dav_lock apache2_modules_deflate apache2_modules_dir apache2_modules_disk_cache apache2_modules_env apache2_modules_expires apache2_modules_ext_filter apache2_modules_file_cache apache2_modules_filter apache2_modules_headers apache2_modules_include apache2_modules_info apache2_modules_log_config apache2_modules_logio apache2_modules_mem_cache apache2_modules_mime apache2_modules_mime_magic apache2_modules_negotiation apache2_modules_rewrite apache2_modules_setenvif apache2_modules_socache_shmcb apache2_modules_speling apache2_modules_status apache2_modules_unique_id apache2_modules_unixd apache2_modules_userdir apache2_modules_usertrack apache2_modules_vhost_alias arm aspell berkdb bindist bzip2 calligra_features_author calligra_features_braindump calligra_features_flow calligra_features_karbon calligra_features_kexi calligra_features_krita calligra_features_plan calligra_features_sheets calligra_features_stage calligra_features_tables calligra_features_words cameras_ptp2 cli collectd_plugins_df collectd_plugins_interface collectd_plugins_irq collectd_plugins_load collectd_plugins_memory collectd_plugins_rrdtool collectd_plugins_swap collectd_plugins_syslog cracklib crypt cxx dia doc dri elibc_glibc examples fortran gdbm gpsd_protocols_aivdm gpsd_protocols_ashtech gpsd_protocols_earthmate gpsd_protocols_evermore gpsd_protocols_fv18 gpsd_protocols_garmin gpsd_protocols_garmintxt gpsd_protocols_gpsclock gpsd_protocols_itrax gpsd_protocols_mtk3301 gpsd_protocols_navcom gpsd_protocols_nmea gpsd_protocols_ntrip gpsd_protocols_oceanserver gpsd_protocols_oldstyle gpsd_protocols_oncore gpsd_protocols_rtcm104v2 gpsd_protocols_rtcm104v3 gpsd_protocols_sirf gpsd_protocols_superstar2 gpsd_protocols_timing gpsd_protocols_tnt gpsd_protocols_tripmate gpsd_protocols_tsip gpsd_protocols_ubx iconv inkjar input_devices_evdev input_devices_joystick input_devices_keyboard input_devices_mouse ipv6 kernel_linux lcd_devices_bayrad lcd_devices_cfontz lcd_devices_cfontz633 lcd_devices_glk lcd_devices_hd44780 lcd_devices_lb216 lcd_devices_lcdm001 lcd_devices_mtxorb lcd_devices_ncurses lcd_devices_text lcms libreoffice_extensions_presenter-console libreoffice_extensions_presenter-minimizer linguas_af linguas_bg linguas_ca linguas_cs linguas_cy linguas_da linguas_de linguas_el linguas_en linguas_eo linguas_es linguas_et linguas_fo linguas_fr linguas_ga linguas_gl linguas_he linguas_hr linguas_hu linguas_ia linguas_id linguas_is linguas_it linguas_km linguas_ku linguas_lt linguas_lv linguas_mk linguas_ms linguas_nb linguas_nl linguas_nn linguas_pl linguas_pt linguas_pt_BR linguas_ro linguas_ru linguas_sk linguas_sl linguas_sq linguas_sv linguas_sw linguas_tn linguas_uk linguas_zu modules mudflap ncurses nls nptl office_implementation_libreoffice openmp pam pcre php_targets_php5-5 postscript python_single_target_python2_7 python_targets_python2_7 python_targets_python3_2 readline ruby_targets_ruby18 ruby_targets_ruby19 session spell ssl static-libs tcpd threads unicode userland_GNU video_cards_fbdev wmf xtables_addons_account xtables_addons_chaos xtables_addons_condition xtables_addons_delude xtables_addons_dhcpmac xtables_addons_fuzzy xtables_addons_geoip xtables_addons_iface xtables_addons_ipmark xtables_addons_ipp2p xtables_addons_ipset xtables_addons_ipv4options xtables_addons_length2 xtables_addons_logmark xtables_addons_lscan xtables_addons_pknock xtables_addons_psd xtables_addons_quota2 xtables_addons_rawnat xtables_addons_steal xtables_addons_sysrq xtables_addons_tarpit xtables_addons_tee zlib
 USE_EXPAND: ABI_MIPS ABI_X86 ALSA_CARDS APACHE2_MODULES APACHE2_MPMS CALLIGRA_FEATURES CAMERAS COLLECTD_PLUGINS CROSSCOMPILE_OPTS CURL_SSL DRACUT_MODULES DVB_CARDS ELIBC ENLIGHTENMENT_MODULES FCDSL_CARDS FFTOOLS FOO2ZJS_DEVICES FRITZCAPI_CARDS GPSD_PROTOCOLS GRUB_PLATFORMS INPUT_DEVICES KERNEL LCD_DEVICES LIBREOFFICE_EXTENSIONS LINGUAS LIRC_DEVICES MONKEYD_PLUGINS NETBEANS_MODULES NGINX_MODULES_HTTP NGINX_MODULES_MAIL OFED_DRIVERS OFFICE_IMPLEMENTATION OPENMPI_FABRICS OPENMPI_OFED_FEATURES OPENMPI_RM PHP_TARGETS PYTHON_SINGLE_TARGET PYTHON_TARGETS QEMU_SOFTMMU_TARGETS QEMU_USER_TARGETS RUBY_TARGETS SANE_BACKENDS USERLAND VIDEO_CARDS VOICEMAIL_STORAGE XFCE_PLUGINS XTABLES_ADDONS
 USE_EXPAND_HIDDEN: ABI_MIPS ABI_X86 CROSSCOMPILE_OPTS ELIBC KERNEL USERLAND
 USE_EXPAND_IMPLICIT: ARCH ELIBC KERNEL USERLAND
@@ -1030,6 +1030,580 @@ RDEPEND: >=app-text/aspell-0.60
 SHA1: 97ab96e881fda62fd986a180f20781d9eeec5cc6
 SIZE: 64945
 
+BUILD_TIME: 1377691429
+CPV: app-dicts/myspell-af-20080701
+DEFINED_PHASES: compile configure install prepare unpack
+DEPEND: app-arch/unzip
+DESC: Afrikaans dictionaries for myspell/hunspell
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: LGPL-3
+MD5: e20b55cbb5da6be3b3191acad041fc4d
+MTIME: 1377691448
+SHA1: f4ba69b210566e03a744993df32655403ea0bb1f
+SIZE: 627644
+
+BUILD_TIME: 1377685776
+CPV: app-dicts/myspell-bg-4.3
+DEFINED_PHASES: compile configure install prepare unpack
+DEPEND: app-arch/unzip
+DESC: Bulgarian dictionaries for myspell/hunspell
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ppc ppc64 sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: GPL-2 LGPL-2.1 MPL-1.1
+MD5: 8ed28e01e66bb5334301cad29da247be
+MTIME: 1377685801
+SHA1: e823c66a06911972b5479fdea4fa014eb32b43dc
+SIZE: 1132094
+
+BUILD_TIME: 1377684393
+CPV: app-dicts/myspell-ca-2.3.0
+DEFINED_PHASES: compile configure install prepare unpack
+DEPEND: app-arch/unzip
+DESC: Catalan dictionaries for myspell/hunspell
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: 29bb3533e83a2f11bbd19f696d4e7bb9
+MTIME: 1377684410
+SHA1: d5d0625a363f64f746e15855657f2b1add5c091e
+SIZE: 424617
+
+BUILD_TIME: 1377693511
+CPV: app-dicts/myspell-cs-20110224
+DEFINED_PHASES: compile configure install prepare unpack
+DEPEND: app-arch/unzip
+DESC: Czech dictionaries for myspell/hunspell
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: GPL-2 MIT
+MD5: d2aa500afe7effbf8b6e8fa7e182bc15
+MTIME: 1377693536
+SHA1: dc59f59fe45390fc4bd1562f61a53144aa81afff
+SIZE: 1269384
+
+BUILD_TIME: 1377688368
+CPV: app-dicts/myspell-cy-20060316
+DEFINED_PHASES: install postinst preinst
+DEPEND: app-arch/unzip
+DESC: Welsh dictionaries for myspell/hunspell
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: ded30cd49d6b61c74515c0518a27ddc1
+MTIME: 1377688386
+SHA1: a61261c853475fbd2b9353ea2c5c9b79e30796e8
+SIZE: 548279
+
+BUILD_TIME: 1377684797
+CPV: app-dicts/myspell-da-2.1
+DEFINED_PHASES: compile configure install prepare unpack
+DEPEND: app-arch/unzip
+DESC: Danish dictionaries for myspell/hunspell
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: GPL-2 LGPL-2.1 MPL-1.1
+MD5: d504f7d3c1df72a1e7ca3fa36d881937
+MTIME: 1377684819
+SHA1: 1940e4df418cfec7495ea177440ebd55f3444155
+SIZE: 672493
+
+BUILD_TIME: 1377693803
+CPV: app-dicts/myspell-de-2012.06.17
+DEFINED_PHASES: compile configure install prepare unpack
+DEPEND: app-arch/unzip
+DESC: German dictionaries for myspell/hunspell
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: GPL-2 LGPL-2
+MD5: 87a0e92831f763a45a37b0c72f49b7e8
+MTIME: 1377693978
+SHA1: e32fbddd01fb087633131757e6725d4898101d7a
+SIZE: 12280194
+
+BUILD_TIME: 1377689879
+CPV: app-dicts/myspell-el-0.8
+DEFINED_PHASES: compile configure install prepare unpack
+DEPEND: app-arch/unzip
+DESC: Greek dictionaries for myspell/hunspell
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: GPL-2 LGPL-2.1 MPL-1.1
+MD5: 551b8e01aade60bc96afea22cb40635b
+MTIME: 1377689906
+SHA1: ea539b184ba792165ee1dafaa5786c540205ce18
+SIZE: 1835138
+
+BUILD_TIME: 1377689318
+CPV: app-dicts/myspell-en-20081002
+DEFINED_PHASES: install postinst preinst
+DEPEND: app-arch/unzip
+DESC: English dictionaries for myspell/hunspell
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x86-solaris
+LICENSE: GPL-2 LGPL-2.1 Princeton myspell-en_CA-KevinAtkinson
+MD5: 8d871a8a9634fe211d1ffdac04d90706
+MTIME: 1377689398
+SHA1: 436ca20a0d9d304a7467b823dcf8c681fc139f9d
+SIZE: 6129998
+
+BUILD_TIME: 1377689634
+CPV: app-dicts/myspell-eo-1.0
+DEFINED_PHASES: compile configure install prepare unpack
+DEPEND: app-arch/unzip
+DESC: Esperanto dictionaries for myspell/hunspell
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: GPL-2 LGPL-3 MPL-1.1
+MD5: 13d8bef6bca86c51f710102fa5f28866
+MTIME: 1377689651
+SHA1: 151d869118800d2632994a99e2d3696fe5d95b18
+SIZE: 156550
+
+BUILD_TIME: 1377683454
+CPV: app-dicts/myspell-es-0.6
+DEFINED_PHASES: compile configure install prepare unpack
+DEPEND: app-arch/unzip
+DESC: Spanish dictionaries for myspell/hunspell
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: GPL-3 LGPL-3 MPL-1.1
+MD5: aac5a2c53d1a879ee9170d60220ed2a3
+MTIME: 1377683578
+SHA1: 6a7f39b8e94b88c52b3df281fbeff27561bf56d8
+SIZE: 5109148
+
+BUILD_TIME: 1377688855
+CPV: app-dicts/myspell-et-20030606
+DEFINED_PHASES: compile configure install prepare unpack
+DEPEND: app-arch/unzip
+DESC: Estonian dictionaries for myspell/hunspell
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: LGPL-3
+MD5: d1b7988e3854dbe021202d5d73735268
+MTIME: 1377688882
+SHA1: 2ebec1371a9288cc096efcf51dec7212267ef004
+SIZE: 874917
+
+BUILD_TIME: 1377685047
+CPV: app-dicts/myspell-fo-0.4.2
+DEFINED_PHASES: compile configure install prepare unpack
+DEPEND: app-arch/unzip
+DESC: Faroese dictionaries for myspell/hunspell
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: GPL-2 LGPL-2.1 MPL-1.1
+MD5: c18f6f3fbc315bbe51d8d6e7566966d2
+MTIME: 1377685073
+SHA1: 305ca04b5646a493073e665cb0fb1ab8580bc00c
+SIZE: 1424413
+
+BUILD_TIME: 1377683829
+CPV: app-dicts/myspell-fr-4.5-r1
+DEFINED_PHASES: compile configure install prepare unpack
+DEPEND: app-arch/unzip
+DESC: French dictionaries for myspell/hunspell
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-linux ~x86-macos
+LICENSE: GPL-2 LGPL-2.1 MPL-1.1
+MD5: 802641ffcf74826ab4c917f6f01fccef
+MTIME: 1377683868
+SHA1: b120fa3d3fcbac55337b2efc80fdbd6aa3ee3b41
+SIZE: 2779194
+
+BUILD_TIME: 1377690556
+CPV: app-dicts/myspell-ga-20060316
+DEFINED_PHASES: install postinst preinst
+DEPEND: app-arch/unzip
+DESC: Irish dictionaries for myspell/hunspell
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: 11437cf307e880f2ad663b0f3574b17c
+MTIME: 1377690572
+SHA1: 1aea23e4f47d65f7ab4b37a27bf3e0e3a52013bb
+SIZE: 308905
+
+BUILD_TIME: 1377694129
+CPV: app-dicts/myspell-gl-20060316
+DEFINED_PHASES: -
+DESC: Galician dictionaries for myspell/hunspell
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: GPL-2 LGPL-2.1
+MD5: ea5d3f9deb0a5cd70fc0bbd1ae833616
+MTIME: 1377694142
+RDEPEND: app-dicts/myspell-es
+SHA1: 011b39fbb41319861f640d8f99e786db449157bc
+SIZE: 5270
+
+BUILD_TIME: 1377687690
+CPV: app-dicts/myspell-he-2010.11.05
+DEFINED_PHASES: compile configure install prepare unpack
+DEPEND: app-arch/unzip
+DESC: Hebrew dictionaries for myspell/hunspell
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: GPL-2 LGPL-2
+MD5: 54367ac4dc76e4de21b19f482b76540d
+MTIME: 1377687715
+SHA1: 792d045277a7e7723f9a97df55609dd7355b0efb
+SIZE: 409508
+
+BUILD_TIME: 1377686667
+CPV: app-dicts/myspell-hr-20060316
+DEFINED_PHASES: install postinst preinst
+DEPEND: app-arch/unzip
+DESC: Croatian dictionaries for myspell/hunspell
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: LGPL-2.1
+MD5: 3257e3f24190bbede2bd648d599a1b84
+MTIME: 1377686685
+SHA1: 7ab6bf353fa9f2bd0486d21176c87cc43a114c91
+SIZE: 984606
+
+BUILD_TIME: 1377692116
+CPV: app-dicts/myspell-hu-1.6.1
+DEFINED_PHASES: compile configure install prepare unpack
+DEPEND: >=app-arch/rpm2targz-9.0.0.3g app-arch/unzip
+DESC: Hungarian dictionaries for myspell/hunspell
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: GPL-3 GPL-2 LGPL-2.1 MPL-1.1
+MD5: dbf069417dc441513b1e59017ff95054
+MTIME: 1377692165
+SHA1: d55293b943509ebc8f8b1c68a3075deb3b98cad8
+SIZE: 1601703
+
+BUILD_TIME: 1377692325
+CPV: app-dicts/myspell-ia-20060316
+DEFINED_PHASES: install postinst preinst
+DEPEND: app-arch/unzip
+DESC: Interlingua dictionaries for myspell/hunspell
+KEYWORDS: alpha amd64 arm hppa ia64 ppc ppc64 sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: LGPL-2.1
+MD5: 69e9e22d4a6ef891063e9ce1e8d8037f
+MTIME: 1377692339
+SHA1: 4c927a513bab6492e610acf833794d46861549de
+SIZE: 112453
+
+BUILD_TIME: 1377692768
+CPV: app-dicts/myspell-id-1.0
+DEFINED_PHASES: compile configure install prepare unpack
+DEPEND: app-arch/unzip
+DESC: Indonesian dictionaries for myspell/hunspell
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: f41f11c58c6de14b01b8dcaf1428088e
+MTIME: 1377692785
+SHA1: cb3867b7ed064ef460a3fb3c4743f1d22b362200
+SIZE: 157835
+
+BUILD_TIME: 1377688612
+CPV: app-dicts/myspell-is-2012.09.01
+DEFINED_PHASES: compile configure install prepare unpack
+DEPEND: app-arch/unzip
+DESC: Icelandic dictionaries for myspell/hunspell
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: CC-BY-SA-3.0
+MD5: a508b3e83dfb4fc481eecf4c3346f784
+MTIME: 1377688630
+SHA1: 12d2e511e2b9aa8b5500b7b46310744711826413
+SIZE: 747725
+
+BUILD_TIME: 1377690371
+CPV: app-dicts/myspell-it-20081129-r1
+DEFINED_PHASES: compile configure install prepare unpack
+DEPEND: app-arch/unzip
+DESC: Italian dictionaries for myspell/hunspell
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: AGPL-3 GPL-3 LGPL-3
+MD5: 6d247a2a5f61e6665751ebae5789b7ff
+MTIME: 1377690396
+SHA1: ba3a160fba81ef2258c8dddebd62c6d4ca1b809e
+SIZE: 1151441
+
+BUILD_TIME: 1377693266
+CPV: app-dicts/myspell-km-1.6
+DEFINED_PHASES: compile configure install prepare unpack
+DEPEND: app-arch/unzip
+DESC: Khmer dictionaries for myspell/hunspell
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: GPL-3
+MD5: 93e84f2ccb4ed7dce1a0ec17f4164084
+MTIME: 1377693284
+SHA1: 7b76d19cb9e737e636b73363536dbe9466b81176
+SIZE: 335815
+
+BUILD_TIME: 1377690129
+CPV: app-dicts/myspell-ku-0.21
+DEFINED_PHASES: compile configure install prepare unpack
+DEPEND: app-arch/unzip
+DESC: Kurdish dictionaries for myspell/hunspell
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: GPL-3 LGPL-3 MPL-1.1
+MD5: 47f75e9da7803facaa6c29e35bc7d152
+MTIME: 1377690142
+SHA1: 68e6ed43d5b94055c70ca29f960bc57421d602e1
+SIZE: 39457
+
+BUILD_TIME: 1377688183
+CPV: app-dicts/myspell-lt-1.2.1
+DEFINED_PHASES: compile configure install prepare unpack
+DEPEND: app-arch/unzip
+DESC: Lithuanian dictionaries for myspell/hunspell
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: BSD LPPL-1.3b
+MD5: 9bf125d580c4723d2602325838a5b3b3
+MTIME: 1377688201
+SHA1: af37f3f57d569087565414200d552288d5d4c5ae
+SIZE: 390675
+
+BUILD_TIME: 1377690786
+CPV: app-dicts/myspell-lv-0.9.4-r1
+DEFINED_PHASES: compile install unpack
+DEPEND: app-arch/unzip
+DESC: Latvian dictionaries for myspell/hunspell
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: LGPL-2.1
+MD5: 620caac2dbbede3838d180ac1ce1ee28
+MTIME: 1377690805
+SHA1: 76d874ad7d77b01889e50b71eee313e2820d348f
+SIZE: 711307
+
+BUILD_TIME: 1377691633
+CPV: app-dicts/myspell-mk-20060316
+DEFINED_PHASES: install postinst preinst
+DEPEND: app-arch/unzip
+DESC: Macedonian dictionaries for myspell/hunspell
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: 0164d31f70ca8c759116654c60dd65b1
+MTIME: 1377691651
+SHA1: fd3004ab9feb7af5a324f5ee17a601dada9ca6bd
+SIZE: 759792
+
+BUILD_TIME: 1377692526
+CPV: app-dicts/myspell-ms-20060316
+DEFINED_PHASES: install postinst preinst
+DEPEND: app-arch/unzip
+DESC: Malay dictionaries for myspell/hunspell
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: FDL-1.2
+MD5: 15b6a54f29689be38007c7102a4815b7
+MTIME: 1377692541
+SHA1: 2fabd4c0ed2a5c59f4a2d487ec8379037e7daa40
+SIZE: 105402
+
+BUILD_TIME: 1377687944
+CPV: app-dicts/myspell-nb-2.0.10
+DEFINED_PHASES: compile configure install prepare unpack
+DEPEND: app-arch/unzip
+DESC: Norwegian dictionaries for myspell/hunspell
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: 723b7bb1bd388bc09ce220feb0714d06
+MTIME: 1377687984
+SHA1: a347dfdd37e74fc5e3911b163304cf4ff39fa18e
+SIZE: 1955611
+
+BUILD_TIME: 1377687434
+CPV: app-dicts/myspell-nl-2.10g
+DEFINED_PHASES: compile configure install prepare unpack
+DEPEND: app-arch/unzip
+DESC: Dutch dictionaries for myspell/hunspell
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: BSD-2 CC-BY-3.0
+MD5: f2438b84c65c465fcc6473e9e48ffd68
+MTIME: 1377687468
+SHA1: cee29de930d75c045eb74f649c9a93ad7a4ceea2
+SIZE: 2911013
+
+BUILD_TIME: 1377687183
+CPV: app-dicts/myspell-nn-2.0.10
+DEFINED_PHASES: compile configure install prepare unpack
+DEPEND: app-arch/unzip
+DESC: Norwegian dictionaries for myspell/hunspell
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: f556a39851a46057cebee6a96c2fdc97
+MTIME: 1377687205
+SHA1: 1fe10d51c331d642c525627d90cad3f3e62335db
+SIZE: 1001296
+
+BUILD_TIME: 1377692999
+CPV: app-dicts/myspell-pl-20130306
+DEFINED_PHASES: compile configure install prepare unpack
+DEPEND: app-arch/unzip
+DESC: Polish dictionaries for myspell/hunspell
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: CC-SA-1.0 LGPL-3 GPL-3 MPL-1.1
+MD5: de31137b1f845cb4a165a2a5877566f7
+MTIME: 1377693069
+SHA1: bea8c2fd271e78c9588efad28661c65b9f751cca
+SIZE: 2334822
+
+BUILD_TIME: 1377685545
+CPV: app-dicts/myspell-pt-20120420
+DEFINED_PHASES: compile configure install prepare unpack
+DEPEND: app-arch/unzip
+DESC: Portugalese dictionaries for myspell/hunspell
+EAPI: 4
+IUSE: +preao
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: GPL-2 MIT
+MD5: eefca3e4cb77d8765b2b622b80ae051d
+MTIME: 1377685575
+SHA1: 12a1d6c48a8a285f65d78b03f10f34e010f863b2
+SIZE: 471682
+USE: preao
+
+BUILD_TIME: 1377684102
+CPV: app-dicts/myspell-pt-br-2.1.1
+DEFINED_PHASES: compile configure install prepare unpack
+DEPEND: app-arch/unzip
+DESC: Brazilian dictionaries for myspell/hunspell
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: LGPL-3 MPL-1.1
+MD5: 3b10dbc09d8fa7aa82d6fb15f2b894ab
+MTIME: 1377684171
+SHA1: 56f7a006b48c508b1dfe6174488541cf48a4134a
+SIZE: 4558634
+
+BUILD_TIME: 1377691866
+CPV: app-dicts/myspell-ro-3.3.8
+DEFINED_PHASES: compile configure install prepare unpack
+DEPEND: app-arch/unzip
+DESC: Romanian dictionaries for myspell/hunspell
+EAPI: 5
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: GPL-2 LGPL-2.1 MPL-1.1
+MD5: daeddf9b7a9a8b66678845a93bc63309
+MTIME: 1377691894
+SHA1: 712a42b17c5b981bec3aadb22dfbe12b73097a89
+SIZE: 1716992
+
+BUILD_TIME: 1377690996
+CPV: app-dicts/myspell-ru-20060316
+DEFINED_PHASES: install postinst preinst
+DEPEND: app-arch/unzip
+DESC: Russian dictionaries for myspell/hunspell
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~amd64-fbsd ~amd64-linux ~x86-fbsd
+LICENSE: LGPL-2.1 myspell-ru_RU-ALexanderLebedev
+MD5: e3763f20d448f53fd17867f8369ab40b
+MTIME: 1377691022
+SHA1: 22da12a2cd17a3e4265120d4f3ac7df899292d2a
+SIZE: 2090504
+
+BUILD_TIME: 1377689084
+CPV: app-dicts/myspell-sk-20110224
+DEFINED_PHASES: compile configure install prepare unpack
+DEPEND: app-arch/unzip
+DESC: Slovak dictionaries for myspell/hunspell
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: a0b6db8de518ab59c41a3f075d38e263
+MTIME: 1377689116
+SHA1: a4cb1027e60c4139d8f5f946d500b99cb013335e
+SIZE: 1322336
+
+BUILD_TIME: 1377686915
+CPV: app-dicts/myspell-sl-2012.01.04
+DEFINED_PHASES: compile configure install prepare unpack
+DEPEND: app-arch/unzip
+DESC: Slovenian dictionaries for myspell/hunspell
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: GPL-3 LGPL-2.1
+MD5: 17feac5d3773fcd08b7213f3f9d7f81c
+MTIME: 1377686941
+SHA1: 72d9d247cc93dae2b72a71d15af2a0b1dbc6454f
+SIZE: 1258980
+
+BUILD_TIME: 1377686489
+CPV: app-dicts/myspell-sq-1.6.4
+DEFINED_PHASES: compile configure install prepare unpack
+DEPEND: app-arch/unzip
+DESC: Albanian dictionaries for myspell/hunspell
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: 011adb79743692817d23f30dd12f2139
+MTIME: 1377686509
+SHA1: 503a21c6fc7f28d3ff373e77ad8545e2790724f0
+SIZE: 770342
+
+BUILD_TIME: 1377686037
+CPV: app-dicts/myspell-sv-2.14
+DEFINED_PHASES: compile configure install prepare unpack
+DEPEND: app-arch/unzip
+DESC: Swedish dictionaries for myspell/hunspell
+EAPI: 5
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: CC-BY-SA-3.0 GPL-2 LGPL-3
+MD5: dd2f93a6085644faa98cf4b05206c774
+MTIME: 1377686064
+SHA1: 9dddb77cf73b354b0ac3685072e755025958c276
+SIZE: 1594326
+
+BUILD_TIME: 1377686247
+CPV: app-dicts/myspell-sw-20060316
+DEFINED_PHASES: install postinst preinst
+DEPEND: app-arch/unzip
+DESC: Kiswahili dictionaries for myspell/hunspell
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: LGPL-2.1
+MD5: 8faf0b4209fbb55ae55a460dfa5a2249
+MTIME: 1377686262
+SHA1: 9529843ccd8551413c15fc05217d2296e10ef622
+SIZE: 183627
+
+BUILD_TIME: 1377691185
+CPV: app-dicts/myspell-tn-20060316
+DEFINED_PHASES: install postinst preinst
+DEPEND: app-arch/unzip
+DESC: Setswana dictionaries for myspell/hunspell
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: c2a2de7bef475c12149c2138c822fb48
+MTIME: 1377691199
+SHA1: 4a1e3273c727fcc43a48616be0bba568d9e48955
+SIZE: 28218
+
+BUILD_TIME: 1377685301
+CPV: app-dicts/myspell-uk-1.6.5
+DEFINED_PHASES: compile configure install prepare unpack
+DEPEND: app-arch/unzip
+DESC: Ukrainian dictionaries for myspell/hunspell
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: GPL-3 LGPL-2.1 MPL-1.1
+MD5: 3b17a04237c291599f9e00e609a9f6ab
+MTIME: 1377685325
+SHA1: 511b39a865884f19fd990e32f99b2f0c31b65a0d
+SIZE: 722168
+
+BUILD_TIME: 1377684567
+CPV: app-dicts/myspell-zu-20060316
+DEFINED_PHASES: install postinst preinst
+DEPEND: app-arch/unzip
+DESC: Zulu dictionaries for myspell/hunspell
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~amd64-fbsd ~x86-fbsd
+LICENSE: LGPL-2.1
+MD5: ff97f26f98252f1f0c265c64e3c53e05
+MTIME: 1377684582
+SHA1: f3d716ec74d1028e3504f1d3f47758920ed78211
+SIZE: 271514
+
 BUILD_TIME: 1377342378
 CPV: app-doc/blas-docs-3.1.1
 DEFINED_PHASES: install
@@ -1702,6 +2276,23 @@ MTIME: 1376135323
 RDEPEND: >=dev-libs/libxml2-2.6.12[python] >=dev-libs/libxslt-1.1.8 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
 SHA1: 7bba4988b98ef8a4b4b67eca4647a3b689da4e84
 SIZE: 419100
+
+BUILD_TIME: 1377695270
+CPV: app-text/hunspell-1.3.2-r3
+DEFINED_PHASES: configure install prepare
+DEPEND: sys-libs/ncurses sys-libs/readline sys-devel/gettext || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: Hunspell spell checker - an improved replacement for myspell in OOo.
+EAPI: 4
+IUSE: ncurses nls readline static-libs linguas_af linguas_bg linguas_ca linguas_cs linguas_cy linguas_da linguas_de linguas_el linguas_en linguas_eo linguas_es linguas_et linguas_fo linguas_fr linguas_ga linguas_gl linguas_he linguas_hr linguas_hu linguas_ia linguas_id linguas_is linguas_it linguas_km linguas_ku linguas_lt linguas_lv linguas_mk linguas_ms linguas_nb linguas_nl linguas_nn linguas_pl linguas_pt linguas_pt_BR linguas_ro linguas_ru linguas_sk linguas_sl linguas_sq linguas_sv linguas_sw linguas_tn linguas_uk linguas_zu
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE: MPL-1.1 GPL-2 LGPL-2.1
+MD5: 0f65fb2bfd133900312737e6b954d820
+MTIME: 1377695293
+PDEPEND: app-dicts/myspell-en app-dicts/myspell-af app-dicts/myspell-bg app-dicts/myspell-ca app-dicts/myspell-cs app-dicts/myspell-cy app-dicts/myspell-da || ( app-dicts/myspell-de app-dicts/myspell-de-alt ) app-dicts/myspell-el app-dicts/myspell-en app-dicts/myspell-eo app-dicts/myspell-es app-dicts/myspell-et app-dicts/myspell-fo app-dicts/myspell-fr app-dicts/myspell-ga app-dicts/myspell-gl app-dicts/myspell-he app-dicts/myspell-hr app-dicts/myspell-hu app-dicts/myspell-ia app-dicts/myspell-id app-dicts/myspell-is app-dicts/myspell-it app-dicts/myspell-km app-dicts/myspell-ku app-dicts/myspell-lt app-dicts/myspell-lv app-dicts/myspell-mk app-dicts/myspell-ms app-dicts/myspell-nb app-dicts/myspell-nl app-dicts/myspell-nn app-dicts/myspell-pl app-dicts/myspell-pt app-dicts/myspell-pt-br app-dicts/myspell-ro app-dicts/myspell-ru app-dicts/myspell-sk app-dicts/myspell-sl app-dicts/myspell-sq app-dicts/myspell-sv app-dicts/myspell-sw app-dicts/myspell-tn app-dicts/myspell-uk app-dicts/myspell-zu
+RDEPEND: sys-libs/ncurses sys-libs/readline
+SHA1: 6c41c2d45104941bd2c5e79c2f40175a199911ed
+SIZE: 413139
+USE: linguas_af linguas_bg linguas_ca linguas_cs linguas_cy linguas_da linguas_de linguas_el linguas_en linguas_eo linguas_es linguas_et linguas_fo linguas_fr linguas_ga linguas_gl linguas_he linguas_hr linguas_hu linguas_ia linguas_id linguas_is linguas_it linguas_km linguas_ku linguas_lt linguas_lv linguas_mk linguas_ms linguas_nb linguas_nl linguas_nn linguas_pl linguas_pt linguas_pt_BR linguas_ro linguas_ru linguas_sk linguas_sl linguas_sq linguas_sv linguas_sw linguas_tn linguas_uk linguas_zu ncurses nls readline static-libs
 
 BUILD_TIME: 1376214384
 CPV: app-text/iso-codes-3.40
