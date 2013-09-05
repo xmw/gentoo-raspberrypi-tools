@@ -6,14 +6,14 @@ CBUILD: armv6j-hardfloat-linux-gnueabi
 CHOST: armv6j-hardfloat-linux-gnueabi
 CONFIG_PROTECT: /boot/cmdline.txt /boot/config.txt /etc /usr/share/gnupg/qualified.txt /var/spool/munin-async/.ssh
 CONFIG_PROTECT_MASK: /etc/ca-certificates.conf /etc/env.d /etc/fonts/fonts.conf /etc/gconf /etc/gentoo-release /etc/revdep-rebuild /etc/sandbox.d /etc/terminfo /etc/texmf/language.dat.d /etc/texmf/language.def.d /etc/texmf/updmap.d /etc/texmf/web2c
-FEATURES: assume-digests binpkg-logs buildpkg compressdebug config-protect-if-modified distlocks ebuild-locks fixlafiles getbinpkg merge-sync news parallel-fetch preserve-libs protect-owned sandbox sfperms split-log strict unknown-features-warn unmerge-logs unmerge-orphans userfetch userpriv usersandbox usersync
+FEATURES: assume-digests binpkg-logs buildpkg compressdebug config-protect-if-modified distlocks ebuild-locks fixlafiles getbinpkg merge-sync news parallel-fetch preserve-libs protect-owned sandbox sfperms split-log strict unknown-features-warn unmerge-logs unmerge-orphans userfetch xattr
 GENTOO_MIRRORS: http://lore.xmw.de/gentoo/
 IUSE_IMPLICIT: prefix
-PACKAGES: 844
+PACKAGES: 863
 PROFILE: default/linux/arm/13.0
 SYNC: use update-portage
-TIMESTAMP: 1377695303
-USE: acl apache2_modules_actions apache2_modules_alias apache2_modules_auth_basic apache2_modules_authn_alias apache2_modules_authn_anon apache2_modules_authn_core apache2_modules_authn_dbm apache2_modules_authn_default apache2_modules_authn_file apache2_modules_authz_core apache2_modules_authz_dbm apache2_modules_authz_default apache2_modules_authz_groupfile apache2_modules_authz_host apache2_modules_authz_owner apache2_modules_authz_user apache2_modules_autoindex apache2_modules_cache apache2_modules_cgi apache2_modules_cgid apache2_modules_dav apache2_modules_dav_fs apache2_modules_dav_lock apache2_modules_deflate apache2_modules_dir apache2_modules_disk_cache apache2_modules_env apache2_modules_expires apache2_modules_ext_filter apache2_modules_file_cache apache2_modules_filter apache2_modules_headers apache2_modules_include apache2_modules_info apache2_modules_log_config apache2_modules_logio apache2_modules_mem_cache apache2_modules_mime apache2_modules_mime_magic apache2_modules_negotiation apache2_modules_rewrite apache2_modules_setenvif apache2_modules_socache_shmcb apache2_modules_speling apache2_modules_status apache2_modules_unique_id apache2_modules_unixd apache2_modules_userdir apache2_modules_usertrack apache2_modules_vhost_alias arm aspell berkdb bindist bzip2 calligra_features_author calligra_features_braindump calligra_features_flow calligra_features_karbon calligra_features_kexi calligra_features_krita calligra_features_plan calligra_features_sheets calligra_features_stage calligra_features_tables calligra_features_words cameras_ptp2 cli collectd_plugins_df collectd_plugins_interface collectd_plugins_irq collectd_plugins_load collectd_plugins_memory collectd_plugins_rrdtool collectd_plugins_swap collectd_plugins_syslog cracklib crypt cxx dia doc dri elibc_glibc examples fortran gdbm gpsd_protocols_aivdm gpsd_protocols_ashtech gpsd_protocols_earthmate gpsd_protocols_evermore gpsd_protocols_fv18 gpsd_protocols_garmin gpsd_protocols_garmintxt gpsd_protocols_gpsclock gpsd_protocols_itrax gpsd_protocols_mtk3301 gpsd_protocols_navcom gpsd_protocols_nmea gpsd_protocols_ntrip gpsd_protocols_oceanserver gpsd_protocols_oldstyle gpsd_protocols_oncore gpsd_protocols_rtcm104v2 gpsd_protocols_rtcm104v3 gpsd_protocols_sirf gpsd_protocols_superstar2 gpsd_protocols_timing gpsd_protocols_tnt gpsd_protocols_tripmate gpsd_protocols_tsip gpsd_protocols_ubx iconv inkjar input_devices_evdev input_devices_joystick input_devices_keyboard input_devices_mouse ipv6 kernel_linux lcd_devices_bayrad lcd_devices_cfontz lcd_devices_cfontz633 lcd_devices_glk lcd_devices_hd44780 lcd_devices_lb216 lcd_devices_lcdm001 lcd_devices_mtxorb lcd_devices_ncurses lcd_devices_text lcms libreoffice_extensions_presenter-console libreoffice_extensions_presenter-minimizer linguas_af linguas_bg linguas_ca linguas_cs linguas_cy linguas_da linguas_de linguas_el linguas_en linguas_eo linguas_es linguas_et linguas_fo linguas_fr linguas_ga linguas_gl linguas_he linguas_hr linguas_hu linguas_ia linguas_id linguas_is linguas_it linguas_km linguas_ku linguas_lt linguas_lv linguas_mk linguas_ms linguas_nb linguas_nl linguas_nn linguas_pl linguas_pt linguas_pt_BR linguas_ro linguas_ru linguas_sk linguas_sl linguas_sq linguas_sv linguas_sw linguas_tn linguas_uk linguas_zu modules mudflap ncurses nls nptl office_implementation_libreoffice openmp pam pcre php_targets_php5-5 postscript python_single_target_python2_7 python_targets_python2_7 python_targets_python3_2 readline ruby_targets_ruby18 ruby_targets_ruby19 session spell ssl static-libs tcpd threads unicode userland_GNU video_cards_fbdev wmf xtables_addons_account xtables_addons_chaos xtables_addons_condition xtables_addons_delude xtables_addons_dhcpmac xtables_addons_fuzzy xtables_addons_geoip xtables_addons_iface xtables_addons_ipmark xtables_addons_ipp2p xtables_addons_ipset xtables_addons_ipv4options xtables_addons_length2 xtables_addons_logmark xtables_addons_lscan xtables_addons_pknock xtables_addons_psd xtables_addons_quota2 xtables_addons_rawnat xtables_addons_steal xtables_addons_sysrq xtables_addons_tarpit xtables_addons_tee zlib
+TIMESTAMP: 1378404447
+USE: acl apache2_modules_actions apache2_modules_alias apache2_modules_auth_basic apache2_modules_authn_alias apache2_modules_authn_anon apache2_modules_authn_core apache2_modules_authn_dbm apache2_modules_authn_default apache2_modules_authn_file apache2_modules_authz_core apache2_modules_authz_dbm apache2_modules_authz_default apache2_modules_authz_groupfile apache2_modules_authz_host apache2_modules_authz_owner apache2_modules_authz_user apache2_modules_autoindex apache2_modules_cache apache2_modules_cgi apache2_modules_cgid apache2_modules_dav apache2_modules_dav_fs apache2_modules_dav_lock apache2_modules_deflate apache2_modules_dir apache2_modules_disk_cache apache2_modules_env apache2_modules_expires apache2_modules_ext_filter apache2_modules_file_cache apache2_modules_filter apache2_modules_headers apache2_modules_include apache2_modules_info apache2_modules_log_config apache2_modules_logio apache2_modules_mem_cache apache2_modules_mime apache2_modules_mime_magic apache2_modules_negotiation apache2_modules_rewrite apache2_modules_setenvif apache2_modules_socache_shmcb apache2_modules_speling apache2_modules_status apache2_modules_unique_id apache2_modules_unixd apache2_modules_userdir apache2_modules_usertrack apache2_modules_vhost_alias arm berkdb bindist bzip2 calligra_features_author calligra_features_braindump calligra_features_flow calligra_features_karbon calligra_features_kexi calligra_features_krita calligra_features_plan calligra_features_sheets calligra_features_stage calligra_features_tables calligra_features_words cameras_ptp2 cli collectd_plugins_df collectd_plugins_interface collectd_plugins_irq collectd_plugins_load collectd_plugins_memory collectd_plugins_rrdtool collectd_plugins_swap collectd_plugins_syslog cracklib crypt cxx doc dri elibc_glibc examples fortran gdbm gpsd_protocols_aivdm gpsd_protocols_ashtech gpsd_protocols_earthmate gpsd_protocols_evermore gpsd_protocols_fv18 gpsd_protocols_garmin gpsd_protocols_garmintxt gpsd_protocols_gpsclock gpsd_protocols_itrax gpsd_protocols_mtk3301 gpsd_protocols_navcom gpsd_protocols_nmea gpsd_protocols_ntrip gpsd_protocols_oceanserver gpsd_protocols_oldstyle gpsd_protocols_oncore gpsd_protocols_rtcm104v2 gpsd_protocols_rtcm104v3 gpsd_protocols_sirf gpsd_protocols_superstar2 gpsd_protocols_timing gpsd_protocols_tnt gpsd_protocols_tripmate gpsd_protocols_tsip gpsd_protocols_ubx iconv input_devices_evdev input_devices_joystick input_devices_keyboard input_devices_mouse ipv6 kernel_linux lcd_devices_bayrad lcd_devices_cfontz lcd_devices_cfontz633 lcd_devices_glk lcd_devices_hd44780 lcd_devices_lb216 lcd_devices_lcdm001 lcd_devices_mtxorb lcd_devices_ncurses lcd_devices_text libreoffice_extensions_presenter-console libreoffice_extensions_presenter-minimizer modules mudflap ncurses nls nptl office_implementation_libreoffice openmp pam pcre php_targets_php5-5 python_single_target_python2_7 python_targets_python2_7 python_targets_python3_2 readline ruby_targets_ruby18 ruby_targets_ruby19 session ssl static-libs tcpd threads unicode userland_GNU video_cards_fbdev xtables_addons_account xtables_addons_chaos xtables_addons_condition xtables_addons_delude xtables_addons_dhcpmac xtables_addons_fuzzy xtables_addons_geoip xtables_addons_iface xtables_addons_ipmark xtables_addons_ipp2p xtables_addons_ipset xtables_addons_ipv4options xtables_addons_length2 xtables_addons_logmark xtables_addons_lscan xtables_addons_pknock xtables_addons_psd xtables_addons_quota2 xtables_addons_rawnat xtables_addons_steal xtables_addons_sysrq xtables_addons_tarpit xtables_addons_tee zlib
 USE_EXPAND: ABI_MIPS ABI_X86 ALSA_CARDS APACHE2_MODULES APACHE2_MPMS CALLIGRA_FEATURES CAMERAS COLLECTD_PLUGINS CROSSCOMPILE_OPTS CURL_SSL DRACUT_MODULES DVB_CARDS ELIBC ENLIGHTENMENT_MODULES FCDSL_CARDS FFTOOLS FOO2ZJS_DEVICES FRITZCAPI_CARDS GPSD_PROTOCOLS GRUB_PLATFORMS INPUT_DEVICES KERNEL LCD_DEVICES LIBREOFFICE_EXTENSIONS LINGUAS LIRC_DEVICES MONKEYD_PLUGINS NETBEANS_MODULES NGINX_MODULES_HTTP NGINX_MODULES_MAIL OFED_DRIVERS OFFICE_IMPLEMENTATION OPENMPI_FABRICS OPENMPI_OFED_FEATURES OPENMPI_RM PHP_TARGETS PYTHON_SINGLE_TARGET PYTHON_TARGETS QEMU_SOFTMMU_TARGETS QEMU_USER_TARGETS RUBY_TARGETS SANE_BACKENDS USERLAND VIDEO_CARDS VOICEMAIL_STORAGE XFCE_PLUGINS XTABLES_ADDONS
 USE_EXPAND_HIDDEN: ABI_MIPS ABI_X86 CROSSCOMPILE_OPTS ELIBC KERNEL USERLAND
 USE_EXPAND_IMPLICIT: ARCH ELIBC KERNEL USERLAND
@@ -52,6 +52,21 @@ MTIME: 1376273683
 RDEPEND: !app-admin/eselect-news sys-apps/sed || ( sys-apps/coreutils sys-freebsd/freebsd-bin app-misc/realpath ) sys-apps/file sys-libs/ncurses
 SHA1: 3055f33b725103ad185ec3f8b4d58fc88b4d3d1d
 SIZE: 90804
+
+BUILD_TIME: 1378366486
+CPV: app-admin/eselect-1.3.6
+DEFINED_PHASES: compile install postinst
+DEPEND: sys-apps/sed || ( sys-apps/coreutils sys-freebsd/freebsd-bin app-misc/realpath ) app-arch/xz-utils
+DESC: Gentoo's multi-purpose configuration and management tool
+EAPI: 4
+IUSE: doc
+KEYWORDS: alpha amd64 arm hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2+
+MD5: 98b05d2f910e3f0af1be68b53fa7f230
+MTIME: 1378366505
+RDEPEND: !app-admin/eselect-news sys-apps/sed || ( sys-apps/coreutils sys-freebsd/freebsd-bin app-misc/realpath ) sys-apps/file sys-libs/ncurses
+SHA1: 03d62129135b27a1d155463d01808fa0d54650b1
+SIZE: 91644
 
 BUILD_TIME: 1377347470
 CPV: app-admin/eselect-blas-0.1
@@ -2057,6 +2072,22 @@ SHA1: 680398055c13dfa0d99ab3394d695c7977a0c06f
 SIZE: 2444669
 USE: gdbm pcre unicode
 
+BUILD_TIME: 1378379312
+CPV: app-shells/zsh-5.0.2-r3
+DEFINED_PHASES: configure install postinst prepare test
+DEPEND: sys-apps/groff >=sys-libs/ncurses-5.1 >=dev-libs/libpcre-3.9 sys-libs/gdbm
+DESC: UNIX Shell similar to the Korn shell
+EAPI: 5
+IUSE: caps debug doc examples gdbm maildir pcre static unicode
+KEYWORDS: alpha amd64 arm hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: ZSH GPL-2
+MD5: a8b27f0cbb433add6c15fa2a9e306b67
+MTIME: 1378379370
+RDEPEND: >=sys-libs/ncurses-5.1 >=dev-libs/libpcre-3.9 sys-libs/gdbm
+SHA1: 598c72c20b924640f6d17f170a16e4b2ae13ab81
+SIZE: 2445730
+USE: gdbm pcre unicode
+
 BUILD_TIME: 1374183020
 CPV: app-text/asciidoc-8.6.5
 DEFINED_PHASES: compile configure install prepare setup test
@@ -2545,6 +2576,20 @@ MTIME: 1376131855
 RDEPEND: app-shells/bash || ( sys-apps/which sys-freebsd/freebsd-ubin ) dev-libs/libxslt >=app-text/docbook-xsl-stylesheets-1.62.0-r1 ~app-text/docbook-xml-dtd-4.2 || ( sys-apps/util-linux app-misc/getopt ) || ( >=sys-apps/coreutils-6.10-r1 sys-freebsd/freebsd-ubin )
 SHA1: 032242285989be81eda38f6376aae2b7100884c4
 SIZE: 73698
+
+BUILD_TIME: 1378368118
+CPV: app-text/yelp-tools-3.6.1
+DEFINED_PHASES: compile configure install postinst postrm preinst prepare unpack
+DEPEND: >=dev-libs/libxml2-2.6.12 >=dev-libs/libxslt-1.1.8 dev-util/itstool gnome-extra/yelp-xsl virtual/awk virtual/pkgconfig app-arch/xz-utils >=sys-apps/sed-4
+DESC: Collection of tools for building and converting documentation
+EAPI: 5
+KEYWORDS: alpha amd64 arm hppa ia64 ppc ppc64 ~sh sparc x86 ~amd64-fbsd ~arm-linux ~x86-linux
+LICENSE: || ( GPL-2+ freedist ) GPL-2+
+MD5: db826bf86852d1dc37e94a9dd8de9a71
+MTIME: 1378368137
+RDEPEND: >=dev-libs/libxml2-2.6.12 >=dev-libs/libxslt-1.1.8 dev-util/itstool gnome-extra/yelp-xsl virtual/awk
+SHA1: 258b3381e1e7f43d3dc3969fd5098f476c9ab20a
+SIZE: 165257
 
 BUILD_TIME: 1376398665
 CPV: app-vim/gentoo-syntax-20130619
@@ -4711,6 +4756,22 @@ SHA1: c54bdc60b944a7e0285c21e85eb54cca04a472af
 SIZE: 432892
 USE: doc
 
+BUILD_TIME: 1378371412
+CPV: dev-util/gtk-doc-1.19
+DEFINED_PHASES: compile configure install postinst postrm preinst prepare setup unpack
+DEPEND: >=dev-libs/glib-2.6:2 >=dev-lang/perl-5.6 >=app-text/openjade-1.3.1 dev-libs/libxslt >=dev-libs/libxml2-2.3.6:2 ~app-text/docbook-xml-dtd-4.3 app-text/docbook-xsl-stylesheets ~app-text/docbook-sgml-dtd-3.0 >=app-text/docbook-dsssl-stylesheets-1.40 !!<dev-tex/tex4ht-20090611_p1038-r1 ~dev-util/gtk-doc-am-1.19 app-text/yelp-tools >=app-text/scrollkeeper-0.3.14 virtual/pkgconfig app-arch/xz-utils >=sys-apps/sed-4
+DESC: GTK+ Documentation Generator
+EAPI: 5
+IUSE: debug doc emacs highlight vim test debug python_targets_python2_6 python_targets_python2_7 python_single_target_python2_6 python_single_target_python2_7
+KEYWORDS: alpha amd64 arm hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~sh ~sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris ~x64-solaris
+LICENSE: GPL-2 FDL-1.1
+MD5: f5d60c8f3fe80ad9fbdc6bd7d98715d2
+MTIME: 1378371435
+RDEPEND: >=dev-libs/glib-2.6:2 >=dev-lang/perl-5.6 >=app-text/openjade-1.3.1 dev-libs/libxslt >=dev-libs/libxml2-2.3.6:2 ~app-text/docbook-xml-dtd-4.3 app-text/docbook-xsl-stylesheets ~app-text/docbook-sgml-dtd-3.0 >=app-text/docbook-dsssl-stylesheets-1.40 !!<dev-tex/tex4ht-20090611_p1038-r1
+SHA1: bdac266ba73f42ffac8a16bc2361df0de4fa2827
+SIZE: 389585
+USE: doc python_single_target_python2_7 python_targets_python2_7
+
 BUILD_TIME: 1376294853
 CPV: dev-util/gtk-doc-am-1.18
 DEFINED_PHASES: compile configure install
@@ -4726,6 +4787,50 @@ RDEPEND: >=dev-lang/perl-5.6
 RESTRICT: test
 SHA1: 67e8cc750889a2a64bd33494b856737657afb5e8
 SIZE: 27095
+
+BUILD_TIME: 1378370654
+CPV: dev-util/gtk-doc-am-1.19
+DEFINED_PHASES: compile configure install
+DEPEND: >=dev-lang/perl-5.6 !<dev-util/gtk-doc-1.19 app-arch/xz-utils
+DESC: Automake files from gtk-doc
+EAPI: 5
+KEYWORDS: alpha amd64 arm hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~sh ~sparc x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~ia64-hpux ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2 FDL-1.1
+MD5: db57602ed084929de4c945fbac012c3f
+MTIME: 1378370668
+PDEPEND: virtual/pkgconfig
+RDEPEND: >=dev-lang/perl-5.6
+RESTRICT: test
+SHA1: 2b3d7b4ce7b72abbca75511831a26efb69e6de1a
+SIZE: 28175
+
+BUILD_TIME: 1378367523
+CPV: dev-util/intltool-0.50.2-r1
+DEFINED_PHASES: prepare
+DEPEND: >=dev-lang/perl-5.8.1 dev-perl/XML-Parser
+DESC: Internationalization Tool Collection
+EAPI: 5
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2
+MD5: 6a09135efdd8d8e29dfdd61ebf98c447
+MTIME: 1378367540
+RDEPEND: >=dev-lang/perl-5.8.1 dev-perl/XML-Parser sys-devel/gettext
+SHA1: b4055e9b91c9e329ddc29b44ebcaaf25686ac156
+SIZE: 108555
+
+BUILD_TIME: 1378367251
+CPV: dev-util/itstool-1.2.0
+DEFINED_PHASES: prepare setup
+DEPEND: dev-libs/libxml2[python] || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) || ( =dev-lang/python-2.7*[xml] =dev-lang/python-2.6*[xml] =dev-lang/python-2.5*[xml] )
+DESC: Translation tool for XML documents that uses gettext files and ITS rules
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~sh sparc x86 ~amd64-fbsd ~arm-linux ~x86-linux
+LICENSE: GPL-3+ || ( HPND GPL-3+ )
+MD5: 4a6a4db28d700fa292f092f5acedd971
+MTIME: 1378367268
+RDEPEND: dev-libs/libxml2[python] || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* ) || ( =dev-lang/python-2.7*[xml] =dev-lang/python-2.6*[xml] =dev-lang/python-2.5*[xml] )
+SHA1: f2445de23ad4f45687fd74d63de6852af6226d64
+SIZE: 46376
 
 BUILD_TIME: 1376298419
 CPV: dev-util/pkgconfig-0.28
@@ -4968,6 +5073,20 @@ SIZE: 991533
 SLOT: 2
 USE: static-libs
 
+BUILD_TIME: 1378367841
+CPV: gnome-extra/yelp-xsl-3.6.1
+DEFINED_PHASES: -
+DEPEND: >=dev-libs/libxml2-2.6.12 >=dev-libs/libxslt-1.1.8 >=dev-util/intltool-0.40 dev-util/itstool sys-devel/gettext virtual/awk virtual/pkgconfig app-arch/xz-utils
+DESC: XSL stylesheets for yelp
+EAPI: 5
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 ~sh sparc x86 ~amd64-fbsd ~amd64-linux ~arm-linux ~x86-linux
+LICENSE: GPL-2+ LGPL-2.1+ MIT FDL-1.1+
+MD5: 4d9cf59ac038f2dc85b9c324ac2cb8aa
+MTIME: 1378367867
+RDEPEND: >=dev-libs/libxml2-2.6.12 >=dev-libs/libxslt-1.1.8
+SHA1: 27c37bc157259910f464993c8e5143248790c167
+SIZE: 443457
+
 BUILD_TIME: 1376468506
 CPV: lxde-base/lxappearance-0.5.2
 DEFINED_PHASES: -
@@ -5082,21 +5201,21 @@ RDEPEND: x11-libs/gtk+:2 x11-libs/libXrandr x11-apps/xrandr
 SHA1: a96a8de9d5e1edad6221632345b9396c62acd904
 SIZE: 83839
 
-BUILD_TIME: 1376466624
+BUILD_TIME: 1378380914
 CPV: lxde-base/lxsession-0.4.6.1
-DEFINED_PHASES: configure install
-DEPEND: dev-libs/glib:2 x11-libs/gtk+:2 >=lxde-base/lxde-common-0.5.0 x11-libs/libX11 dev-util/intltool virtual/pkgconfig sys-devel/gettext x11-proto/xproto
+DEFINED_PHASES: configure
+DEPEND: dev-libs/glib:2 lxde-base/lxde-common x11-libs/gtk+:2 x11-libs/libX11 sys-apps/dbus dev-util/intltool sys-devel/gettext virtual/pkgconfig x11-proto/xproto
 DESC: LXDE session manager (lite version)
-EAPI: 4
-IUSE: nls udev
+EAPI: 5
+IUSE: +dbus nls upower
 KEYWORDS: ~alpha amd64 arm ppc x86 ~arm-linux ~x86-linux
 LICENSE: GPL-2
-MD5: 86e7b37e6f574334b14209e97fc639e0
-MTIME: 1376466662
-RDEPEND: dev-libs/glib:2 x11-libs/gtk+:2 >=lxde-base/lxde-common-0.5.0 x11-libs/libX11
-SHA1: 016b94d330d1f959b8787ee3d90c71709685e21d
-SIZE: 112582
-USE: nls
+MD5: 71b1ca1455a27ed9220ac89c600eca11
+MTIME: 1378380950
+RDEPEND: dev-libs/glib:2 lxde-base/lxde-common x11-libs/gtk+:2 x11-libs/libX11 sys-apps/dbus
+SHA1: 0cad373ea62704ac2869b286aa26142d05f10400
+SIZE: 64263
+USE: dbus nls
 
 BUILD_TIME: 1376470192
 CPV: lxde-base/lxsession-edit-0.2.0
@@ -5270,6 +5389,21 @@ MTIME: 1377250020
 SHA1: 70337e8de0699596af7b180ae62218274115e3e4
 SIZE: 2079629
 USE: pcf psf ru-g
+
+BUILD_TIME: 1378380468
+CPV: media-fonts/terminus-font-4.38
+DEFINED_PHASES: compile configure install postinst postrm prepare setup
+DEPEND: app-arch/gzip dev-lang/perl virtual/awk x11-apps/bdftopcf
+DESC: A clean fixed font for the console and X11
+EAPI: 4
+IUSE: a-like-o +center-tilde distinct-l ru-dv +ru-g quote ru-i ru-k +psf raw-font-data +pcf X
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ~ppc64 ~s390 ~sh ~sparc x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos
+LICENSE: OFL-1.1 GPL-2
+MD5: b76e63de91d760acc98d04c91a8f02b0
+MTIME: 1378380494
+SHA1: 71994f4df64e6497851f289b540a7446f8d01301
+SIZE: 2074737
+USE: center-tilde pcf psf ru-g
 
 BUILD_TIME: 1376159379
 CPV: media-fonts/urw-fonts-2.4.9
@@ -5446,6 +5580,23 @@ SIZE: 9103006
 SLOT: 0/6.7.8.7
 USE: X bzip2 cxx djvu fftw fontconfig jbig jpeg jpeg2k lcms lzma openmp pango png postscript raw static-libs svg tiff truetype webp wmf xml zlib
 
+BUILD_TIME: 1378394034
+CPV: media-gfx/imagemagick-6.8.6.8
+DEFINED_PHASES: configure install prepare test
+DEPEND: >=sys-devel/libtool-2.2.6b app-arch/bzip2 app-text/djvu sci-libs/fftw:3.0 media-libs/fontconfig media-libs/jbigkit virtual/jpeg:0 media-libs/jasper media-libs/lcms:2 x11-libs/pango media-libs/libpng:0 app-text/ghostscript-gpl media-gfx/ufraw gnome-base/librsvg media-libs/tiff:0 media-fonts/urw-fonts >=media-libs/freetype-2 media-libs/libwebp media-libs/libwmf x11-libs/libICE x11-libs/libSM x11-libs/libXext x11-libs/libXt dev-libs/libxml2 app-arch/xz-utils sys-libs/zlib !media-gfx/graphicsmagick[imagemagick] virtual/pkgconfig x11-proto/xextproto
+DESC: A collection of tools and libraries for many image formats
+EAPI: 5
+IUSE: autotrace bzip2 corefonts cxx djvu fftw fontconfig fpx graphviz hdri jbig jpeg jpeg2k lcms lqr lzma opencl openexr openmp pango perl png postscript q32 q64 q8 raw static-libs svg test tiff truetype webp wmf X xml zlib
+KEYWORDS: alpha amd64 arm ~hppa ia64 ~mips ppc ~ppc64 ~s390 ~sh ~sparc x86 ~ppc-aix ~amd64-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE: imagemagick
+MD5: 60eb0737e36fa1f74e2dee37acb0e129
+MTIME: 1378394186
+RDEPEND: >=sys-devel/libtool-2.2.6b app-arch/bzip2 app-text/djvu sci-libs/fftw:3.0 media-libs/fontconfig media-libs/jbigkit virtual/jpeg:0 media-libs/jasper media-libs/lcms:2 x11-libs/pango media-libs/libpng:0 app-text/ghostscript-gpl media-gfx/ufraw gnome-base/librsvg media-libs/tiff:0 media-fonts/urw-fonts >=media-libs/freetype-2 media-libs/libwebp media-libs/libwmf x11-libs/libICE x11-libs/libSM x11-libs/libXext x11-libs/libXt dev-libs/libxml2 app-arch/xz-utils sys-libs/zlib
+SHA1: 671e598cb5062f7b30d48cee7d98e793f328db12
+SIZE: 8287069
+SLOT: 0/6.8.6.8
+USE: X bzip2 cxx djvu fftw fontconfig jbig jpeg jpeg2k lcms lzma openmp pango png postscript raw static-libs svg tiff truetype webp wmf xml zlib
+
 BUILD_TIME: 1377210987
 CPV: media-gfx/scrot-0.8
 DEFINED_PHASES: install postinst
@@ -5583,6 +5734,24 @@ RDEPEND: >=media-libs/libogg-1.1.3
 SHA1: 80c044c801cc0f22b11eba1f9b3ed59e021fd774
 SIZE: 1002808
 USE: cxx ogg static-libs
+
+BUILD_TIME: 1378370267
+CPV: media-libs/fontconfig-2.10.92
+DEFINED_PHASES: compile configure install postinst preinst prepare setup test
+DEPEND: >=dev-libs/expat-1.95.3 >=media-libs/freetype-2.2.1 virtual/pkgconfig || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: A library for configuring and customizing font access
+EAPI: 5
+IUSE: doc static-libs abi_x86_32 abi_x86_64 abi_x86_x32 abi_x86_32 abi_x86_64 abi_mips_n32 abi_mips_n64 abi_mips_o32
+KEYWORDS: alpha ~amd64 arm hppa ia64 ~m68k ~mips ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~amd64-linux ~arm-linux ~x86-linux
+LICENSE: MIT
+MD5: 39055214a80f5cc9b358be618b40e1ee
+MTIME: 1378370308
+PDEPEND: app-admin/eselect-fontconfig virtual/ttf-fonts
+RDEPEND: >=dev-libs/expat-1.95.3 >=media-libs/freetype-2.2.1
+SHA1: 9d4988612440144c3443fa4665b1309b93ccba7c
+SIZE: 1248591
+SLOT: 1.0
+USE: static-libs
 
 BUILD_TIME: 1376139987
 CPV: media-libs/fontconfig-2.8.0-r1
@@ -6327,8 +6496,8 @@ SHA1: 9c0eefee9ca34043683047c9a066948d73320058
 SIZE: 636750
 USE: ogg static-libs
 
-BUILD_TIME: 1376157712
-CPV: media-libs/tiff-4.0.3-r2
+BUILD_TIME: 1378365711
+CPV: media-libs/tiff-4.0.3-r4
 DEFINED_PHASES: configure install prepare
 DEPEND: virtual/jpeg:0/0= media-libs/jbigkit:0/0= sys-libs/zlib:0/0=
 DESC: Tag Image File Format (TIFF) library
@@ -6336,11 +6505,11 @@ EAPI: 5
 IUSE: +cxx jbig jpeg lzma static-libs zlib
 KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~x64-solaris ~x86-solaris
 LICENSE: libtiff
-MD5: ed826fc101e82e07a36ea8a749385989
-MTIME: 1376157753
+MD5: d4f438a385b93d8a1f9eb99438627a04
+MTIME: 1378365747
 RDEPEND: virtual/jpeg:0/0= media-libs/jbigkit:0/0= sys-libs/zlib:0/0=
-SHA1: 9e03c12a8f03e2cb07845671e003c4bd25e6eff7
-SIZE: 1632007
+SHA1: b38ba6f8d6e2001e6fe8bf0a7c3961c2ea095a41
+SIZE: 1000430
 USE: cxx jbig jpeg static-libs zlib
 
 BUILD_TIME: 1376216549
@@ -7963,22 +8132,22 @@ SHA1: 1c54962d7926e12d29920ed004b475b2fe180827
 SIZE: 1202991
 USE: nls
 
-BUILD_TIME: 1376316220
+BUILD_TIME: 1378369008
 CPV: sys-apps/kmod-13-r1
-DEFINED_PHASES: compile configure install postinst postrm preinst prepare setup
+DEFINED_PHASES: configure install prepare
 DEPEND: !sys-apps/module-init-tools !sys-apps/modutils >=sys-libs/zlib-1.2.6 dev-libs/libxslt virtual/pkgconfig || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESC: library and tools for managing linux kernel modules
 EAPI: 5
-IUSE: debug doc lzma static-libs +tools zlib kernel_linux
+IUSE: debug doc lzma static-libs +tools zlib
 KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86
 LICENSE: LGPL-2
-MD5: b0f41108d4b7d81d5a4617ddeae1c9ef
-MTIME: 1376316241
+MD5: 619ec83b27e6798b90caf5508e9fa469
+MTIME: 1378369027
 RDEPEND: !sys-apps/module-init-tools !sys-apps/modutils >=sys-libs/zlib-1.2.6
 RESTRICT: test
-SHA1: 476d1a71f92df0ff1cc43aee33f17d9398cbfdb9
-SIZE: 162922
-USE: kernel_linux static-libs tools zlib
+SHA1: db790fc1c69aebac316eed79ec84bce314918159
+SIZE: 154532
+USE: static-libs tools zlib
 
 BUILD_TIME: 1376309691
 CPV: sys-apps/less-457
@@ -8027,6 +8196,23 @@ RDEPEND: virtual/man !<dev-libs/libaio-0.3.109-r2
 RESTRICT: binchecks
 SHA1: 436659a3cdd467bb1ea530ce31a3630d8cb01c82
 SIZE: 2540280
+USE: nls
+
+BUILD_TIME: 1378376411
+CPV: sys-apps/man-pages-3.51
+DEFINED_PHASES: compile configure install
+DESC: A somewhat comprehensive collection of Linux man pages
+EAPI: 3
+IUSE: nls linguas_da linguas_de linguas_fr linguas_it linguas_ja linguas_nl linguas_pl linguas_ro linguas_ru linguas_zh_CN
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux
+LICENSE: man-pages GPL-2+ BSD
+MD5: 85169203d14f26a38d67029ac7f12177
+MTIME: 1378376498
+PDEPEND: sys-apps/man-pages-posix
+RDEPEND: virtual/man !<dev-libs/libaio-0.3.109-r2
+RESTRICT: binchecks
+SHA1: a511ace25c4087d45467f8865792b9ba732fe934
+SIZE: 2547270
 USE: nls
 
 BUILD_TIME: 1376145299
@@ -8136,8 +8322,8 @@ SHA1: 7b1225a52fb867ea3183d3661fa1932188e193fe
 SIZE: 3993031
 USE: ipc python_targets_python2_7 python_targets_python3_2 xattr
 
-BUILD_TIME: 1377166706
-CPV: sys-apps/portage-2.2.0
+BUILD_TIME: 1378400003
+CPV: sys-apps/portage-2.2.1
 DEFINED_PHASES: compile install postinst preinst prepare setup test
 DEPEND: || ( >=dev-lang/python-2.7 dev-lang/python:2.6[threads] ) dev-lang/python:2.7 dev-lang/python:3.2 >=sys-devel/make-3.82 >=sys-apps/sed-4.0.5 sys-devel/patch app-text/xmlto ~app-text/docbook-xml-dtd-4.4
 DESC: Portage is the package management and distribution system for Gentoo
@@ -8145,12 +8331,12 @@ EAPI: 2
 IUSE: build doc epydoc +ipc linguas_ru pypy2_0 python2 python3 selinux xattr python_targets_pypy1_9 python_targets_pypy2_0 python_targets_python3_1 python_targets_python3_2 python_targets_python3_3 python_targets_python3_4 python_targets_python2_6 python_targets_python2_7
 KEYWORDS: ~alpha ~amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
 LICENSE: GPL-2
-MD5: d4b3eeeeb7025ccf0f4412823a5696aa
-MTIME: 1377166915
+MD5: f06a896e6295fbd9e61ce0bffae0af3e
+MTIME: 1378400097
 PDEPEND: >=net-misc/rsync-2.6.4 >=sys-apps/coreutils-6.4
 RDEPEND: || ( >=dev-lang/python-2.7 dev-lang/python:2.6[threads] ) dev-lang/python:2.7 dev-lang/python:3.2 >=sys-apps/sed-4.0.5 || ( >=app-shells/bash-4.2_p37[readline] ( <app-shells/bash-4.2_p37 >=app-shells/bash-3.2_p17 ) ) >=app-admin/eselect-1.2 || ( >=dev-lang/python-2.7[ssl] dev-lang/python:2.6[threads,ssl] dev-python/python-mhash ) >=sys-apps/sandbox-2.2 >=app-misc/pax-utils-0.1.17 !<app-shells/bash-3.2_p17 !<app-admin/logrotate-3.8.0
-SHA1: 7252f8c98216322849831bed9458296092488c55
-SIZE: 4192855
+SHA1: a993ae3a66936dc13bd3daf901e04e88107e745e
+SIZE: 4188773
 USE: doc ipc python_targets_python2_7 python_targets_python3_2
 
 BUILD_TIME: 1374146226
@@ -8470,6 +8656,20 @@ SHA1: 9295745704d9bf31e177f3a144ce33a033ceeb7d
 SIZE: 707857
 SLOT: 1.12
 
+BUILD_TIME: 1378368411
+CPV: sys-devel/automake-1.13.4
+DEFINED_PHASES: compile install test unpack
+DEPEND: dev-lang/perl >=sys-devel/automake-wrapper-8 >=sys-devel/autoconf-2.62 sys-devel/gnuconfig sys-apps/help2man
+DESC: Used to generate Makefile.in from Makefile.am
+KEYWORDS: alpha amd64 arm hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: GPL-2
+MD5: a2be56d0c6eaed08dfbecc2eb7f12ef2
+MTIME: 1378368437
+RDEPEND: dev-lang/perl >=sys-devel/automake-wrapper-8 >=sys-devel/autoconf-2.62 sys-devel/gnuconfig
+SHA1: 30259aa5c9067cce68ae6e33b81c3ae77c7ae628
+SIZE: 760415
+SLOT: 1.13
+
 BUILD_TIME: 1376136896
 CPV: sys-devel/automake-wrapper-7
 DEFINED_PHASES: install unpack
@@ -8480,6 +8680,17 @@ MD5: 365d749daf0c0bce0f10563bb38db3f5
 MTIME: 1376136913
 SHA1: dd9487d45c4f29d02abd4a084b8638e6dae87311
 SIZE: 7612
+
+BUILD_TIME: 1378366008
+CPV: sys-devel/automake-wrapper-9
+DEFINED_PHASES: install unpack
+DESC: wrapper for automake to manage multiple automake versions
+KEYWORDS: alpha amd64 arm hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc x86 ~ppc-aix ~amd64-fbsd ~sparc-fbsd ~x86-fbsd ~x64-freebsd ~x86-freebsd ~hppa-hpux ~ia64-hpux ~x86-interix ~amd64-linux ~arm-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~m68k-mint ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: GPL-2
+MD5: 017ce8c2475e0c058732c7c46b25faae
+MTIME: 1378366021
+SHA1: 07707af5fdaf7e1d9a14d977b01c5f51e1149a38
+SIZE: 7990
 
 BUILD_TIME: 1374078398
 CPV: sys-devel/bc-1.06.95
@@ -8859,6 +9070,20 @@ RESTRICT: binchecks strip
 SHA1: 2f0219bccde8679a273d722e75356455e21307a5
 SIZE: 671764
 
+BUILD_TIME: 1378381745
+CPV: sys-kernel/linux-headers-3.9
+DEFINED_PHASES: compile install postinst postrm preinst prepare setup test unpack
+DEPEND: app-arch/xz-utils dev-lang/perl !media-sound/alsa-headers
+DESC: Linux system headers
+EAPI: 3
+KEYWORDS: alpha amd64 arm hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~amd64-linux ~arm-linux ~x86-linux
+LICENSE: GPL-2
+MD5: 95624e2a9890a169e857336869248d7a
+MTIME: 1378381766
+RESTRICT: binchecks strip
+SHA1: 36b1c539e6f1f18b1816bdc624f39a1d7b4ba199
+SIZE: 690750
+
 BUILD_TIME: 1376567286
 CPV: sys-kernel/raspberrypi-image-3.10.6_pre-r20130805
 DEFINED_PHASES: install prepare
@@ -9055,6 +9280,20 @@ SHA1: 0d0645a9f74d6bf417cbef48b483956b49e747e6
 SIZE: 489210
 USE: elibc_glibc nls
 
+BUILD_TIME: 1378363575
+CPV: sys-libs/timezone-data-2013c
+DEFINED_PHASES: compile config install postinst unpack
+DESC: Timezone data (/usr/share/zoneinfo) and utilities (tzselect/zic/zdump)
+IUSE: nls elibc_FreeBSD elibc_glibc
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd
+LICENSE: BSD public-domain
+MD5: a11c58da418159c32a7421d716a9190d
+MTIME: 1378363651
+RDEPEND: !<sys-libs/glibc-2.3.5
+SHA1: a83301c39c078e2fb3e60db344e8269f4702256b
+SIZE: 492989
+USE: elibc_glibc nls
+
 BUILD_TIME: 1376446169
 CPV: sys-libs/zlib-1.2.7
 DEFINED_PHASES: compile install unpack
@@ -9125,6 +9364,20 @@ MTIME: 1373525174
 RDEPEND: virtual/mta >=sys-process/cronbase-0.3.2 !sys-process/vixie-cron !sys-process/bcron !sys-process/cronie !sys-process/fcron
 SHA1: 680aa5b5b1fed6baefe64eed4e77722bf4185117
 SIZE: 59615
+
+BUILD_TIME: 1378398317
+CPV: sys-process/dcron-4.5-r1
+DEFINED_PHASES: install postinst prepare
+DEPEND: >=sys-apps/sed-4.0.5 virtual/pkgconfig
+DESC: A cute little cron from Matt Dillon
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ~ppc64 ~s390 ~sh ~sparc x86
+LICENSE: GPL-2
+MD5: 34fff6935af7f076011718ea7559cb0a
+MTIME: 1378398335
+RDEPEND: virtual/mta >=sys-process/cronbase-0.3.2 !sys-process/vixie-cron !sys-process/bcron !sys-process/cronie !sys-process/fcron
+SHA1: d756f9ef62cb0b541e4cfcfdf540dc34e9707eef
+SIZE: 60741
 
 BUILD_TIME: 1373506769
 CPV: sys-process/htop-1.0.2
@@ -10527,6 +10780,23 @@ SHA1: f014e8575a5e2abe74b386dba130da1cd221f9f4
 SIZE: 1597360
 USE: X directfb doc glib opengl static-libs svg xcb
 
+BUILD_TIME: 1378376099
+CPV: x11-libs/cairo-1.12.14-r4
+DEFINED_PHASES: configure install postinst prepare
+DEPEND: media-libs/fontconfig media-libs/freetype:2 media-libs/libpng:0/0= sys-libs/zlib >=x11-libs/pixman-0.28.0 dev-libs/DirectFB >=dev-libs/glib-2.28.6:2 || ( media-libs/mesa[egl] media-libs/opengl-apple ) >=x11-libs/libXrender-0.6 x11-libs/libXext x11-libs/libX11 x11-libs/libxcb x11-libs/xcb-util virtual/pkgconfig >=sys-devel/libtool-2 >=dev-util/gtk-doc-1.6 ~app-text/docbook-xml-dtd-4.2 x11-proto/renderproto || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: A vector graphics library with cross-device output support
+EAPI: 5
+IUSE: X aqua debug directfb doc drm gallium gles2 +glib legacy-drivers opengl openvg qt4 static-libs +svg valgrind xcb xlib-xcb
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ~ppc64 ~s390 ~sh ~sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( LGPL-2.1 MPL-1.1 )
+MD5: 4670daac694082a116db23a8d6414828
+MTIME: 1378376141
+RDEPEND: media-libs/fontconfig media-libs/freetype:2 media-libs/libpng:0/0= sys-libs/zlib >=x11-libs/pixman-0.28.0 dev-libs/DirectFB >=dev-libs/glib-2.28.6:2 || ( media-libs/mesa[egl] media-libs/opengl-apple ) >=x11-libs/libXrender-0.6 x11-libs/libXext x11-libs/libX11 x11-libs/libxcb x11-libs/xcb-util
+RESTRICT: test
+SHA1: 21358ac8ad76c465c5e154e8a1c233fc0a2093d0
+SIZE: 1729334
+USE: X directfb doc glib opengl static-libs svg xcb
+
 BUILD_TIME: 1376170944
 CPV: x11-libs/gdk-pixbuf-2.26.4
 DEFINED_PHASES: configure install postinst prepare
@@ -11581,6 +11851,22 @@ MTIME: 1376264170
 RDEPEND: dev-libs/libxml2 >=gnome-base/libglade-2 media-libs/netpbm x11-apps/appres x11-apps/xwininfo x11-libs/gtk+:2 x11-libs/libX11 x11-libs/libXext x11-libs/libXi x11-libs/libXmu x11-libs/libXrandr x11-libs/libXt x11-libs/libXxf86misc x11-libs/libXxf86vm virtual/jpeg gnome-base/gdm virtual/pam x11-libs/libXinerama dev-lang/perl dev-perl/libwww-perl virtual/perl-Digest-MD5
 SHA1: e699de1f987a106695ad2b3c1a82ff847c812201
 SIZE: 6681183
+USE: gdm jpeg new-login pam perl xinerama
+
+BUILD_TIME: 1378396500
+CPV: x11-misc/xscreensaver-5.22
+DEFINED_PHASES: configure install prepare
+DEPEND: dev-libs/libxml2 >=gnome-base/libglade-2 media-libs/netpbm x11-apps/appres x11-apps/xwininfo x11-libs/gtk+:2 x11-libs/libX11 x11-libs/libXext x11-libs/libXi x11-libs/libXmu x11-libs/libXrandr x11-libs/libXt x11-libs/libXxf86misc x11-libs/libXxf86vm virtual/jpeg:0 gnome-base/gdm virtual/pam x11-libs/libXinerama dev-util/intltool virtual/pkgconfig sys-devel/bc sys-devel/gettext x11-proto/recordproto x11-proto/scrnsaverproto x11-proto/xextproto x11-proto/xf86miscproto x11-proto/xf86vidmodeproto x11-proto/xineramaproto || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: A modular screen saver and locker for the X Window System
+EAPI: 5
+IUSE: gdm jpeg new-login opengl pam +perl selinux suid xinerama
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ~ppc64 ~sh ~sparc ~x86 ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux ~x64-solaris ~x86-solaris
+LICENSE: BSD
+MD5: 03982cb69bfcf46b636f5c0024915841
+MTIME: 1378396592
+RDEPEND: dev-libs/libxml2 >=gnome-base/libglade-2 media-libs/netpbm x11-apps/appres x11-apps/xwininfo x11-libs/gtk+:2 x11-libs/libX11 x11-libs/libXext x11-libs/libXi x11-libs/libXmu x11-libs/libXrandr x11-libs/libXt x11-libs/libXxf86misc x11-libs/libXxf86vm virtual/jpeg:0 gnome-base/gdm virtual/pam x11-libs/libXinerama dev-lang/perl dev-perl/libwww-perl virtual/perl-Digest-MD5
+SHA1: ec5b50cecab7c9779e16d5d156db15ddaff930f4
+SIZE: 2043469
 USE: gdm jpeg new-login pam perl xinerama
 
 BUILD_TIME: 1376513535
