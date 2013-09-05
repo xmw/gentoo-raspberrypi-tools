@@ -17,7 +17,6 @@
 =sys-devel/gcc-4.7.3
 =net-libs/ldns-1.6.16
 =x11-misc/x2x-1.27-r3 ~*
-portage/package.keywords
 =dev-libs/libcss-0.2.0 
 =dev-libs/libparserutils-0.1.2 
 =dev-libs/libwapcaplet-0.2.0 
@@ -32,7 +31,6 @@ portage/package.keywords
 =www-client/midori-0.5.4
 =sys-kernel/raspberrypi-image-3.10.6_pre-r20130805
 =sys-kernel/raspberrypi-image-3.10.7_pre-r20130815
-=sys-apps/portage-2.2.0
 =sys-fs/ncdu-1.10
 =net-analyzer/munin-2.0.14
 =net-analyzer/iftop-1.0_pre2 ~*
@@ -67,3 +65,4 @@ portage/package.keywords
 =app-text/libwpg-0.2.2
 =app-text/libwpd-0.9.9
 =media-libs/lcms-1.19-r1
+=sys-apps/portage-2.2.1
