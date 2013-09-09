@@ -66,3 +66,14 @@
 =app-text/libwpd-0.9.9
 =media-libs/lcms-1.19-r1
 =sys-apps/portage-2.2.1
+=dev-embedded/mspdebug-0.22 **
+=cross-msp430/msp430-binutils-2.22_p20120911 **
+=cross-msp430/msp430-gcc-4.6.3_p20120406 **
+=cross-msp430/msp430-libc-20120716 **
+=cross-msp430/msp430mcu-20130321 **
+=x11-wm/cwm-5.1_p20130728
+=app-admin/conky-1.9.0-r2
+=sys-kernel/raspberrypi-image-3.10.10_pre-r20130830
+=x11-misc/xbindkeys-1.8.5 **
+=x11-misc/trayer-srg-1.1.5 **
+=x11-misc/wmname-0.1
