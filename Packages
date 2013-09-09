@@ -6,13 +6,13 @@ CBUILD: armv6j-hardfloat-linux-gnueabi
 CHOST: armv6j-hardfloat-linux-gnueabi
 CONFIG_PROTECT: /boot/cmdline.txt /boot/config.txt /etc /usr/share/gnupg/qualified.txt /var/spool/munin-async/.ssh
 CONFIG_PROTECT_MASK: /etc/ca-certificates.conf /etc/env.d /etc/fonts/fonts.conf /etc/gconf /etc/gentoo-release /etc/revdep-rebuild /etc/sandbox.d /etc/terminfo /etc/texmf/language.dat.d /etc/texmf/language.def.d /etc/texmf/updmap.d /etc/texmf/web2c
-FEATURES: assume-digests binpkg-logs buildpkg compressdebug config-protect-if-modified distlocks ebuild-locks fixlafiles getbinpkg merge-sync news parallel-fetch preserve-libs protect-owned sandbox sfperms split-log strict unknown-features-warn unmerge-logs unmerge-orphans userfetch xattr
+FEATURES: assume-digests binpkg-logs buildpkg compressdebug config-protect-if-modified distlocks ebuild-locks fixlafiles getbinpkg merge-sync news parallel-fetch preserve-libs protect-owned sandbox sfperms split-log strict unknown-features-warn unmerge-logs unmerge-orphans userfetch userpriv usersandbox usersync
 GENTOO_MIRRORS: http://lore.xmw.de/gentoo/
 IUSE_IMPLICIT: prefix
-PACKAGES: 863
+PACKAGES: 901
 PROFILE: default/linux/arm/13.0
 SYNC: use update-portage
-TIMESTAMP: 1378404447
+TIMESTAMP: 1378712574
 USE: acl apache2_modules_actions apache2_modules_alias apache2_modules_auth_basic apache2_modules_authn_alias apache2_modules_authn_anon apache2_modules_authn_core apache2_modules_authn_dbm apache2_modules_authn_default apache2_modules_authn_file apache2_modules_authz_core apache2_modules_authz_dbm apache2_modules_authz_default apache2_modules_authz_groupfile apache2_modules_authz_host apache2_modules_authz_owner apache2_modules_authz_user apache2_modules_autoindex apache2_modules_cache apache2_modules_cgi apache2_modules_cgid apache2_modules_dav apache2_modules_dav_fs apache2_modules_dav_lock apache2_modules_deflate apache2_modules_dir apache2_modules_disk_cache apache2_modules_env apache2_modules_expires apache2_modules_ext_filter apache2_modules_file_cache apache2_modules_filter apache2_modules_headers apache2_modules_include apache2_modules_info apache2_modules_log_config apache2_modules_logio apache2_modules_mem_cache apache2_modules_mime apache2_modules_mime_magic apache2_modules_negotiation apache2_modules_rewrite apache2_modules_setenvif apache2_modules_socache_shmcb apache2_modules_speling apache2_modules_status apache2_modules_unique_id apache2_modules_unixd apache2_modules_userdir apache2_modules_usertrack apache2_modules_vhost_alias arm berkdb bindist bzip2 calligra_features_author calligra_features_braindump calligra_features_flow calligra_features_karbon calligra_features_kexi calligra_features_krita calligra_features_plan calligra_features_sheets calligra_features_stage calligra_features_tables calligra_features_words cameras_ptp2 cli collectd_plugins_df collectd_plugins_interface collectd_plugins_irq collectd_plugins_load collectd_plugins_memory collectd_plugins_rrdtool collectd_plugins_swap collectd_plugins_syslog cracklib crypt cxx doc dri elibc_glibc examples fortran gdbm gpsd_protocols_aivdm gpsd_protocols_ashtech gpsd_protocols_earthmate gpsd_protocols_evermore gpsd_protocols_fv18 gpsd_protocols_garmin gpsd_protocols_garmintxt gpsd_protocols_gpsclock gpsd_protocols_itrax gpsd_protocols_mtk3301 gpsd_protocols_navcom gpsd_protocols_nmea gpsd_protocols_ntrip gpsd_protocols_oceanserver gpsd_protocols_oldstyle gpsd_protocols_oncore gpsd_protocols_rtcm104v2 gpsd_protocols_rtcm104v3 gpsd_protocols_sirf gpsd_protocols_superstar2 gpsd_protocols_timing gpsd_protocols_tnt gpsd_protocols_tripmate gpsd_protocols_tsip gpsd_protocols_ubx iconv input_devices_evdev input_devices_joystick input_devices_keyboard input_devices_mouse ipv6 kernel_linux lcd_devices_bayrad lcd_devices_cfontz lcd_devices_cfontz633 lcd_devices_glk lcd_devices_hd44780 lcd_devices_lb216 lcd_devices_lcdm001 lcd_devices_mtxorb lcd_devices_ncurses lcd_devices_text libreoffice_extensions_presenter-console libreoffice_extensions_presenter-minimizer modules mudflap ncurses nls nptl office_implementation_libreoffice openmp pam pcre php_targets_php5-5 python_single_target_python2_7 python_targets_python2_7 python_targets_python3_2 readline ruby_targets_ruby18 ruby_targets_ruby19 session ssl static-libs tcpd threads unicode userland_GNU video_cards_fbdev xtables_addons_account xtables_addons_chaos xtables_addons_condition xtables_addons_delude xtables_addons_dhcpmac xtables_addons_fuzzy xtables_addons_geoip xtables_addons_iface xtables_addons_ipmark xtables_addons_ipp2p xtables_addons_ipset xtables_addons_ipv4options xtables_addons_length2 xtables_addons_logmark xtables_addons_lscan xtables_addons_pknock xtables_addons_psd xtables_addons_quota2 xtables_addons_rawnat xtables_addons_steal xtables_addons_sysrq xtables_addons_tarpit xtables_addons_tee zlib
 USE_EXPAND: ABI_MIPS ABI_X86 ALSA_CARDS APACHE2_MODULES APACHE2_MPMS CALLIGRA_FEATURES CAMERAS COLLECTD_PLUGINS CROSSCOMPILE_OPTS CURL_SSL DRACUT_MODULES DVB_CARDS ELIBC ENLIGHTENMENT_MODULES FCDSL_CARDS FFTOOLS FOO2ZJS_DEVICES FRITZCAPI_CARDS GPSD_PROTOCOLS GRUB_PLATFORMS INPUT_DEVICES KERNEL LCD_DEVICES LIBREOFFICE_EXTENSIONS LINGUAS LIRC_DEVICES MONKEYD_PLUGINS NETBEANS_MODULES NGINX_MODULES_HTTP NGINX_MODULES_MAIL OFED_DRIVERS OFFICE_IMPLEMENTATION OPENMPI_FABRICS OPENMPI_OFED_FEATURES OPENMPI_RM PHP_TARGETS PYTHON_SINGLE_TARGET PYTHON_TARGETS QEMU_SOFTMMU_TARGETS QEMU_USER_TARGETS RUBY_TARGETS SANE_BACKENDS USERLAND VIDEO_CARDS VOICEMAIL_STORAGE XFCE_PLUGINS XTABLES_ADDONS
 USE_EXPAND_HIDDEN: ABI_MIPS ABI_X86 CROSSCOMPILE_OPTS ELIBC KERNEL USERLAND
@@ -37,6 +37,22 @@ MTIME: 1377343837
 SHA1: d3c2f80fc408c3d5459f6aa2baa54b74c16133ed
 SIZE: 6617038
 USE: alsa
+
+BUILD_TIME: 1378675008
+CPV: app-admin/conky-1.9.0-r2
+DEFINED_PHASES: configure install postinst prepare
+DEPEND: x11-libs/libXft >=media-libs/freetype-2 x11-libs/libX11 x11-libs/libXdamage x11-libs/libXext dev-libs/glib sys-libs/ncurses net-wireless/wireless-tools net-misc/curl virtual/libiconv virtual/pkgconfig
+DESC: An advanced, highly configurable system monitor for X
+EAPI: 5
+IUSE: apcupsd audacious curl debug eve hddtemp imlib iostats lua lua-cairo lua-imlib math moc mpd nano-syntax ncurses nvidia +portmon rss thinkpad truetype vim-syntax weather-metar weather-xoap wifi X xmms2
+KEYWORDS: alpha amd64 ~arm ppc ppc64 sparc x86
+LICENSE: GPL-3 BSD LGPL-2.1 MIT
+MD5: 567309c685539f95ea0c108fe41ede78
+MTIME: 1378675054
+RDEPEND: x11-libs/libXft >=media-libs/freetype-2 x11-libs/libX11 x11-libs/libXdamage x11-libs/libXext dev-libs/glib sys-libs/ncurses net-wireless/wireless-tools net-misc/curl virtual/libiconv || ( app-editors/vim app-editors/gvim )
+SHA1: 986baf9e17d29784b0f60c2341a6d7049917f1e4
+SIZE: 270905
+USE: X mpd ncurses portmon truetype vim-syntax weather-metar wifi
 
 BUILD_TIME: 1376273664
 CPV: app-admin/eselect-1.3.4
@@ -80,6 +96,19 @@ MTIME: 1377347485
 RDEPEND: >=app-admin/eselect-1.0.5
 SHA1: 8fbb3ec3ddfe336cb1409b4e7070d472051e37fd
 SIZE: 7326
+
+BUILD_TIME: 1378474606
+CPV: app-admin/eselect-cblas-0.1
+DEFINED_PHASES: install
+DEPEND: >=app-admin/eselect-1.0.5
+DESC: C-language BLAS module for eselect
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~x86-interix ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x86-solaris
+LICENSE: GPL-2
+MD5: 8fa22cddd17646a0ea40f620078dd7b8
+MTIME: 1378474621
+RDEPEND: >=app-admin/eselect-1.0.5
+SHA1: 1890f659a993f54ece3fe5ebead180db6c11f567
+SIZE: 7269
 
 BUILD_TIME: 1373627330
 CPV: app-admin/eselect-ctags-1.14
@@ -2278,6 +2307,22 @@ SHA1: 4c76c0c014ef44b258f9d619debc8afa4b2391cd
 SIZE: 1064360
 USE: doc
 
+BUILD_TIME: 1378487605
+CPV: app-text/enchant-1.6.0
+DEFINED_PHASES: configure install prepare
+DEPEND: dev-libs/glib:2 app-text/aspell >=app-text/hunspell-1.2.1 virtual/pkgconfig || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: Spellchecker wrapping library
+EAPI: 4
+IUSE: aspell +hunspell static-libs zemberek
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~x86-solaris
+LICENSE: LGPL-2.1
+MD5: 5ab23b138837c841eb6f245c4ed7f308
+MTIME: 1378487624
+RDEPEND: dev-libs/glib:2 app-text/aspell >=app-text/hunspell-1.2.1
+SHA1: 5a089ab7d05fd03c8e4e53175d00df6877a953af
+SIZE: 81418
+USE: aspell hunspell static-libs
+
 BUILD_TIME: 1376169564
 CPV: app-text/ghostscript-gpl-9.05-r1
 DEFINED_PHASES: compile configure install prepare setup
@@ -2307,6 +2352,21 @@ MTIME: 1376135323
 RDEPEND: >=dev-libs/libxml2-2.6.12[python] >=dev-libs/libxslt-1.1.8 || ( =dev-lang/python-2.7* =dev-lang/python-2.6* =dev-lang/python-2.5* )
 SHA1: 7bba4988b98ef8a4b4b67eca4647a3b689da4e84
 SIZE: 419100
+
+BUILD_TIME: 1378487996
+CPV: app-text/gtkspell-2.0.16
+DEFINED_PHASES: configure install prepare
+DEPEND: x11-libs/gtk+:2 >=app-text/enchant-1.1.6 dev-util/gtk-doc-am >=dev-util/intltool-0.35.0 virtual/pkgconfig
+DESC: Spell checking widget for GTK
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sparc x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~x86-macos ~x86-solaris
+LICENSE: GPL-2+
+MD5: a7e303c1313a03784bf9969460209f47
+MTIME: 1378488024
+RDEPEND: x11-libs/gtk+:2 >=app-text/enchant-1.1.6
+SHA1: a3469f1b676e5c1164ac0adf017a86d0f0a64a86
+SIZE: 52181
+SLOT: 2
 
 BUILD_TIME: 1377695270
 CPV: app-text/hunspell-1.3.2-r3
@@ -2367,6 +2427,40 @@ RDEPEND: >=app-text/ghostscript-gpl-8.62
 RESTRICT: test
 SHA1: 7ac0e3bf360536343aa5ec3736b2987c7ca73edd
 SIZE: 146258
+USE: doc static-libs
+
+BUILD_TIME: 1378480667
+CPV: app-text/libwpd-0.9.9
+DEFINED_PHASES: configure install postinst postrm
+DEPEND: virtual/pkgconfig app-doc/doxygen
+DESC: WordPerfect Document import/export library
+EAPI: 5
+IUSE: doc test +tools
+KEYWORDS: ~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( LGPL-2.1 MPL-2.0 )
+MD5: 5f2cccb55ffc1a0ee039e0cbec8f4662
+MTIME: 1378480775
+RDEPEND: !<app-text/libwpd-0.8.14-r1
+SHA1: 135d4e5bc149d5544243460f7c316acd874e2fe0
+SIZE: 1768019
+SLOT: 0.9
+USE: doc tools
+
+BUILD_TIME: 1378488584
+CPV: app-text/libwpg-0.2.2
+DEFINED_PHASES: configure install postinst postrm
+DEPEND: app-text/libwpd:0.9[tools] virtual/pkgconfig app-doc/doxygen
+DESC: C++ library to read and parse graphics in WPG
+EAPI: 5
+IUSE: doc static-libs
+KEYWORDS: alpha amd64 ~arm hppa ia64 ~mips ppc ppc64 sparc x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris
+LICENSE: || ( LGPL-2.1 MPL-2.0 )
+MD5: 0a6537507515664069c1ecd734661463
+MTIME: 1378488616
+RDEPEND: app-text/libwpd:0.9[tools] !<app-text/libwpd-0.1.3-r1
+SHA1: 1484dc5dd1f5c8cca0df8cec182bf4ee83a0a208
+SIZE: 293474
+SLOT: 0.2
 USE: doc static-libs
 
 BUILD_TIME: 1376134580
@@ -2634,6 +2728,154 @@ RDEPEND: || ( >=app-editors/vim-7.3 >=app-editors/gvim-7.3 )
 SHA1: fdecd9f1ab67802a6d0f22467644be94ae15d683
 SIZE: 215204
 
+BUILD_TIME: 1378600778
+CPV: cross-msp430/msp430-binutils-2.22_p20120911
+DEFINED_PHASES: compile install postinst postrm setup test unpack
+DEPEND: sys-devel/gnuconfig >=sys-devel/binutils-config-1.9 sys-libs/zlib sys-devel/gettext sys-devel/flex virtual/yacc
+DESC: Tools necessary to build programs for MSP430 microcontrollers
+IUSE: cxx nls multitarget multislot static-libs test vanilla zlib
+KEYWORDS: ~amd64 ~x86
+LICENSE: || ( GPL-3 LGPL-3 )
+MD5: 70940b4caef49922ae1f40990e2956cf
+MTIME: 1378600855
+RDEPEND: >=sys-devel/binutils-config-3-r2 >=sys-devel/binutils-config-1.9 sys-libs/zlib
+SHA1: 1746a03accce091d371fa783682806aa521729e2
+SIZE: 3541008
+USE: cxx nls static-libs zlib
+REPO: x-portage
+
+BUILD_TIME: 1378628700
+CPV: cross-msp430/msp430-gcc-4.6.3_p20120406
+DEFINED_PHASES: compile install postinst postrm prepare pretend setup test unpack
+DEPEND: >=sys-libs/glibc-2.8 cross-msp430/msp430-binutils sys-devel/gnuconfig >=sys-apps/sed-4 sys-libs/zlib sys-devel/gettext virtual/libiconv >=dev-libs/gmp-4.3.2 >=dev-libs/mpfr-2.4.2 >=dev-libs/mpc-0.8.1 >=sys-devel/bison-1.875 >=sys-devel/flex-2.5.4
+DESC: The GNU Compiler Collection for MSP430 microcontrollers
+EAPI: 4
+IUSE: multislot nls nptl regression-test vanilla altivec cxx fortran doc gcj gtk hardened multilib objc objc-gc mudflap libssp objc++ openmp fixed-point graphite lto
+KEYWORDS: ~amd64 ~x86
+LICENSE: GPL-3 LGPL-3 || ( GPL-3 libgcc libstdc++ gcc-runtime-library-exception-3.1 ) FDL-1.2
+MD5: 5b080b65f66be938ff44dc94f79477c7
+MTIME: 1378628791
+PDEPEND: >=sys-devel/gcc-config-1.7
+RDEPEND: sys-libs/zlib sys-devel/gettext virtual/libiconv >=dev-libs/gmp-4.3.2 >=dev-libs/mpfr-2.4.2 >=dev-libs/mpc-0.8.1
+RESTRICT: strip
+SHA1: 0f789a8ed9a55896304f728973b9d407a77d88d8
+SIZE: 9352990
+SLOT: 4.6
+USE: cxx doc multilib nls nptl
+REPO: x-portage
+
+BUILD_TIME: 1378615908
+CPV: cross-msp430/msp430-libc-20120716
+DEFINED_PHASES: install setup
+DEPEND: sys-devel/crossdev
+DESC: C library for MSP430 microcontrollers
+EAPI: 4
+IUSE: crosscompile_opts_headers-only
+KEYWORDS: ~amd64 ~x86
+LICENSE: GPL-2
+MD5: 2c0b881d0390abb0828717f37bf4d0d6
+MTIME: 1378615932
+RDEPEND: !dev-embedded/msp430-libc
+SHA1: 991dd8b471f9f33319cce4f39417f0df448ed340
+SIZE: 105956
+REPO: x-portage
+
+BUILD_TIME: 1378614732
+CPV: cross-msp430/msp430mcu-20130321
+DEFINED_PHASES: install
+DESC: MCU-specific data for MSP430 microcontrollers
+EAPI: 4
+KEYWORDS: ~amd64 ~x86
+LICENSE: BSD
+MD5: c7123a377c737cd09c61140f78ae32d7
+MTIME: 1378615036
+SHA1: 8e4a10de85101a937b12ad63aca0c0cd69a1636a
+SIZE: 5297710
+REPO: x-portage
+
+BUILD_TIME: 1378490751
+CPV: dev-cpp/atkmm-2.22.6
+DEFINED_PHASES: compile configure install postinst postrm preinst prepare unpack
+DEPEND: >=dev-cpp/glibmm-2.24:2[doc] >=dev-libs/atk-1.12 dev-libs/libsigc++:2 !<dev-cpp/gtkmm-2.22.0 virtual/pkgconfig app-arch/xz-utils >=sys-apps/sed-4
+DESC: C++ interface for the ATK library
+EAPI: 4
+IUSE: doc
+KEYWORDS: alpha amd64 arm hppa ia64 ppc ppc64 sh sparc x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~sparc-solaris ~x86-solaris
+LICENSE: LGPL-2.1
+MD5: 7f8ece815ab05520dcc68e1b970944ea
+MTIME: 1378490776
+RDEPEND: >=dev-cpp/glibmm-2.24:2[doc] >=dev-libs/atk-1.12 dev-libs/libsigc++:2 !<dev-cpp/gtkmm-2.22.0
+SHA1: 563bb960d020ea121224ccd3be0feba21ddac766
+SIZE: 401063
+USE: doc
+
+BUILD_TIME: 1378481269
+CPV: dev-cpp/cairomm-1.10.0
+DEFINED_PHASES: configure install prepare
+DEPEND: >=x11-libs/cairo-1.10[svg] dev-libs/libsigc++:2 virtual/pkgconfig app-doc/doxygen dev-libs/libxslt media-gfx/graphviz
+DESC: C++ bindings for the Cairo vector graphics library
+EAPI: 4
+IUSE: doc +svg
+KEYWORDS: alpha amd64 arm hppa ia64 ppc ppc64 sh sparc x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~x86-solaris
+LICENSE: LGPL-2
+MD5: fd1be4c7aa5760d45526eef0e66eba84
+MTIME: 1378481298
+RDEPEND: >=x11-libs/cairo-1.10[svg] dev-libs/libsigc++:2
+SHA1: 15a229ac17d6bc50c2e1b5980a45374f82a8e1ea
+SIZE: 571067
+USE: doc svg
+
+BUILD_TIME: 1378478701
+CPV: dev-cpp/glibmm-2.32.1
+DEFINED_PHASES: compile configure install postinst postrm preinst prepare setup test unpack
+DEPEND: >=dev-libs/libsigc++-2.2.10:2 >=dev-libs/glib-2.32.0:2 virtual/pkgconfig app-doc/doxygen app-arch/xz-utils >=sys-apps/sed-4
+DESC: C++ interface for glib2
+EAPI: 4
+IUSE: doc debug examples test
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh sparc x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris ~x86-solaris
+LICENSE: LGPL-2.1+ GPL-2+
+MD5: 4e6677ae074b5347feaa4db2c070b553
+MTIME: 1378478892
+RDEPEND: >=dev-libs/libsigc++-2.2.10:2 >=dev-libs/glib-2.32.0:2
+SHA1: 5c081205103c8a4225bf72a534d209229ae62a4c
+SIZE: 6100718
+SLOT: 2
+USE: doc examples
+
+BUILD_TIME: 1378498998
+CPV: dev-cpp/gtkmm-2.24.2
+DEFINED_PHASES: compile configure install postinst postrm preinst prepare setup unpack
+DEPEND: >=dev-cpp/glibmm-2.24:2 >=x11-libs/gtk+-2.24:2 >=dev-cpp/atkmm-2.22.2 >=dev-cpp/cairomm-1.2.2 >=dev-cpp/pangomm-2.27.1:1.4 dev-libs/libsigc++:2 virtual/pkgconfig media-gfx/graphviz dev-libs/libxslt app-doc/doxygen app-arch/xz-utils >=sys-apps/sed-4
+DESC: C++ interface for GTK+
+EAPI: 5
+IUSE: doc examples test
+KEYWORDS: alpha amd64 arm hppa ia64 ppc ppc64 sh sparc x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~sparc-solaris ~x86-solaris
+LICENSE: LGPL-2.1+
+MD5: 985a3a0e02ce238b19193c9b9ca67b0a
+MTIME: 1378499337
+RDEPEND: >=dev-cpp/glibmm-2.24:2 >=x11-libs/gtk+-2.24:2 >=dev-cpp/atkmm-2.22.2 >=dev-cpp/cairomm-1.2.2 >=dev-cpp/pangomm-2.27.1:1.4 dev-libs/libsigc++:2
+SHA1: 018c63b831fbcb1bcb1e6cf8edbe0d55f6cb2252
+SIZE: 14481885
+SLOT: 2.4
+USE: doc examples
+
+BUILD_TIME: 1378489931
+CPV: dev-cpp/pangomm-2.28.4
+DEFINED_PHASES: compile configure install postinst postrm preinst prepare unpack
+DEPEND: >=x11-libs/pango-1.23.0 >=dev-cpp/glibmm-2.14.1:2 >=dev-cpp/cairomm-1.2.2 dev-libs/libsigc++:2 virtual/pkgconfig media-gfx/graphviz dev-libs/libxslt app-doc/doxygen app-arch/xz-utils >=sys-apps/sed-4
+DESC: C++ interface for pango
+EAPI: 4
+IUSE: doc
+KEYWORDS: alpha amd64 arm hppa ia64 ppc ppc64 sh sparc x86 ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~sparc-solaris ~x86-solaris
+LICENSE: LGPL-2.1
+MD5: 96ddca7a7248ffcd1efc7bd3fa8d7dcb
+MTIME: 1378489965
+RDEPEND: >=x11-libs/pango-1.23.0 >=dev-cpp/glibmm-2.14.1:2 >=dev-cpp/cairomm-1.2.2 dev-libs/libsigc++:2 !<dev-cpp/gtkmm-2.13:2.4
+SHA1: c2495ce52f87567b9bdc864c6c1d736d3539784c
+SIZE: 711100
+SLOT: 1.4
+USE: doc
+
 BUILD_TIME: 1376382481
 CPV: dev-db/sqlite-3.7.17
 DEFINED_PHASES: compile configure install prepare setup test
@@ -2650,6 +2892,22 @@ SHA1: ac243a20c21dbb19bcc5142db75b7211964535a6
 SIZE: 1189956
 SLOT: 3
 USE: extensions readline
+
+BUILD_TIME: 1378595781
+CPV: dev-embedded/mspdebug-0.22
+DEFINED_PHASES: compile install prepare
+DEPEND: sys-libs/readline virtual/libusb:0
+DESC: A free debugger for use with MSP430 MCUs
+EAPI: 5
+IUSE: readline
+KEYWORDS: ~amd64 ~x86
+LICENSE: GPL-2
+MD5: a67c7141186217a2f812dfec49ce076b
+MTIME: 1378595799
+RDEPEND: sys-libs/readline virtual/libusb:0
+SHA1: 2a9d256f77fcd76452d10c7559e716ba7cdb8fa2
+SIZE: 153783
+USE: readline
 
 BUILD_TIME: 1374694535
 CPV: dev-lang/lua-5.1.5
@@ -3257,6 +3515,22 @@ SHA1: 4752bd1372f732722c867dc51a04ba4e13fa903a
 SIZE: 31320
 USE: static-libs
 
+BUILD_TIME: 1378469470
+CPV: dev-libs/libsigc++-2.3.1
+DEFINED_PHASES: configure install prepare
+DEPEND: sys-devel/m4 app-arch/xz-utils
+DESC: Typesafe callback system for standard C++
+EAPI: 4
+IUSE: doc static-libs test
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd ~amd64-linux ~arm-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE: LGPL-2.1
+MD5: 586eecb41a101d4a819843ed28db9b86
+MTIME: 1378469682
+SHA1: 8369c8e90d16ce41195f2c68cfc6e2f9f499e1c0
+SIZE: 6894274
+SLOT: 2
+USE: doc static-libs
+
 BUILD_TIME: 1376219460
 CPV: dev-libs/libtasn1-2.14
 DEFINED_PHASES: compile configure install prepare test
@@ -3305,6 +3579,22 @@ SHA1: 6e6b94c4c3305b28f12c09c8c95fa63fcc6d1bb0
 SIZE: 258830
 SLOT: 1
 USE: doc static-libs
+
+BUILD_TIME: 1378595204
+CPV: dev-libs/libusb-compat-0.1.5
+DEFINED_PHASES: configure install prepare
+DEPEND: virtual/libusb:1 !dev-libs/libusb:0 virtual/pkgconfig
+DESC: Userspace access to USB devices (libusb-0.1 compat wrapper)
+EAPI: 5
+IUSE: debug static-libs
+KEYWORDS: alpha amd64 arm hppa ia64 ~m68k ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos
+LICENSE: LGPL-2.1
+MD5: f0bfc77dc72e37f65141746675ec3e99
+MTIME: 1378595221
+RDEPEND: virtual/libusb:1 !dev-libs/libusb:0
+SHA1: cf400bd95e32357cbe419387ea37974bd4299816
+SIZE: 47350
+USE: static-libs
 
 BUILD_TIME: 1376491434
 CPV: dev-libs/libwapcaplet-0.2.0
@@ -4297,6 +4587,21 @@ SHA1: 3f7ca5fae5080e6038eccc8047bf100ece931d9d
 SIZE: 121924
 USE: ipv6
 
+BUILD_TIME: 1378711548
+CPV: dev-python/beautifulsoup-3.1.0.1-r1
+DEFINED_PHASES: compile install postinst postrm prepare test
+DEPEND: =dev-lang/python-3*
+DESC: HTML/XML parser for quick-turnaround applications like screen-scraping.
+EAPI: 3
+KEYWORDS: ~alpha amd64 arm ~hppa ~ia64 ppc ppc64 ~s390 ~sh ~sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~x86-macos ~x86-solaris
+LICENSE: BSD
+MD5: 875193fd58b278d868ced0f45aae898f
+MTIME: 1378711564
+RDEPEND: !dev-python/beautifulsoup:0 =dev-lang/python-3*
+SHA1: 8c877179807f33ddba53749068402a7d7e8a2af8
+SIZE: 64910
+SLOT: python-3
+
 BUILD_TIME: 1376955741
 CPV: dev-python/docutils-0.10
 DEFINED_PHASES: compile configure install prepare test
@@ -4328,6 +4633,71 @@ RDEPEND: dev-python/docutils[python_targets_python2_7(-),-python_single_target_p
 SHA1: 038249e2266c670f60653be2a60c1a61e13d7776
 SIZE: 1489301
 USE: doc python_targets_python2_7
+
+BUILD_TIME: 1378675508
+CPV: dev-python/jinja-2.6-r100
+DEFINED_PHASES: compile configure install postinst prepare test
+DEPEND: dev-python/markupsafe[python_targets_python3_2(-),-python_single_target_python3_2(-)] dev-python/setuptools[python_targets_python3_2(-),-python_single_target_python3_2(-)] !<dev-python/jinja-2.7:0 dev-lang/python:3.2 dev-python/python-exec[python_targets_python3_2(-),-python_single_target_python3_2(-)]
+DESC: A small but fast and easy to use stand-alone template engine written in pure Python
+EAPI: 5
+IUSE: doc examples python_targets_python3_2
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris
+LICENSE: BSD
+MD5: d3e6528435505190f842ae53eb197e16
+MTIME: 1378675551
+RDEPEND: dev-python/markupsafe[python_targets_python3_2(-),-python_single_target_python3_2(-)] dev-python/setuptools[python_targets_python3_2(-),-python_single_target_python3_2(-)] !<dev-python/jinja-2.7:0 dev-lang/python:3.2 dev-python/python-exec[python_targets_python3_2(-),-python_single_target_python3_2(-)]
+SHA1: 6fc3a857c71d35bb9d37e53ad80dae180f8193f5
+SIZE: 507877
+SLOT: compat
+USE: examples python_targets_python3_2
+
+BUILD_TIME: 1378672022
+CPV: dev-python/jinja-2.7
+DEFINED_PHASES: compile configure install postinst prepare test
+DEPEND: dev-python/markupsafe[python_targets_python2_7(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-),-python_single_target_python3_3(-),-python_single_target_pypy2_0(-)] dev-python/setuptools[python_targets_python2_7(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-),-python_single_target_python3_3(-),-python_single_target_pypy2_0(-)] dev-lang/python:2.7 dev-python/python-exec[python_targets_python2_7(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-),-python_single_target_python3_3(-),-python_single_target_pypy2_0(-)]
+DESC: A small but fast and easy to use stand-alone template engine written in pure Python
+EAPI: 5
+IUSE: doc examples python_targets_python2_6 python_targets_python2_7 python_targets_python3_3 python_targets_pypy2_0
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris
+LICENSE: BSD
+MD5: c963b6b6359453d0c40717aaaf0c2ca7
+MTIME: 1378672046
+RDEPEND: dev-python/markupsafe[python_targets_python2_7(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-),-python_single_target_python3_3(-),-python_single_target_pypy2_0(-)] dev-python/setuptools[python_targets_python2_7(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-),-python_single_target_python3_3(-),-python_single_target_pypy2_0(-)] dev-lang/python:2.7 dev-python/python-exec[python_targets_python2_7(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-),-python_single_target_python3_3(-),-python_single_target_pypy2_0(-)]
+SHA1: 3b5c2da4b1c23877bf9035b6f91d18bf260b2714
+SIZE: 517120
+USE: examples python_targets_python2_7
+
+BUILD_TIME: 1378474302
+CPV: dev-python/lxml-3.2.1
+DEFINED_PHASES: compile configure install prepare test
+DEPEND: >=dev-libs/libxml2-2.7.2 >=dev-libs/libxslt-1.1.15 dev-python/setuptools[python_targets_python2_7(-),python_targets_python3_2(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-),-python_single_target_python3_1(-),-python_single_target_python3_2(-),-python_single_target_python3_3(-)] dev-lang/python:2.7 dev-lang/python:3.2 dev-python/python-exec[python_targets_python2_7(-),python_targets_python3_2(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-),-python_single_target_python3_1(-),-python_single_target_python3_2(-),-python_single_target_python3_3(-)]
+DESC: A Pythonic binding for the libxml2 and libxslt libraries
+EAPI: 5
+IUSE: beautifulsoup3 doc examples +threads python_targets_python2_6 python_targets_python2_7 python_targets_python3_1 python_targets_python3_2 python_targets_python3_3
+KEYWORDS: ~alpha amd64 ~arm ~hppa ia64 ~mips ppc ~ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris
+LICENSE: BSD ElementTree GPL-2 PSF-2
+MD5: 85783c92ff63d8ab0d575522e604448b
+MTIME: 1378474424
+RDEPEND: >=dev-libs/libxml2-2.7.2 >=dev-libs/libxslt-1.1.15 dev-lang/python:2.7 dev-lang/python:3.2 dev-python/python-exec[python_targets_python2_7(-),python_targets_python3_2(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-),-python_single_target_python3_1(-),-python_single_target_python3_2(-),-python_single_target_python3_3(-)]
+SHA1: a5e4fe475a3e69952a2e00f530d82e053fa25089
+SIZE: 2620101
+USE: doc examples python_targets_python2_7 python_targets_python3_2 threads
+
+BUILD_TIME: 1378671694
+CPV: dev-python/markupsafe-0.15-r1
+DEFINED_PHASES: compile configure install prepare test
+DEPEND: dev-python/setuptools[python_targets_python2_7(-),python_targets_python3_2(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-),-python_single_target_python3_2(-),-python_single_target_python3_3(-),-python_single_target_pypy2_0(-)] dev-lang/python:2.7 dev-lang/python:3.2 dev-python/python-exec[python_targets_python2_7(-),python_targets_python3_2(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-),-python_single_target_python3_2(-),-python_single_target_python3_3(-),-python_single_target_pypy2_0(-)]
+DESC: Implements a XML/HTML/XHTML Markup safe string for Python
+EAPI: 5
+IUSE: python_targets_python2_6 python_targets_python2_7 python_targets_python3_2 python_targets_python3_3 python_targets_pypy2_0
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~x64-macos ~x86-macos ~sparc-solaris ~sparc64-solaris
+LICENSE: BSD
+MD5: 4ece1dbd26d2b61961bca90034f60414
+MTIME: 1378671715
+RDEPEND: dev-lang/python:2.7 dev-lang/python:3.2 dev-python/python-exec[python_targets_python2_7(-),python_targets_python3_2(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-),-python_single_target_python3_2(-),-python_single_target_python3_3(-),-python_single_target_pypy2_0(-)]
+SHA1: e71e725a9dde2fd0f71da01d5e580f1fb8ab6f12
+SIZE: 60457
+USE: python_targets_python2_7 python_targets_python3_2
 
 BUILD_TIME: 1377277353
 CPV: dev-python/numpy-1.6.2-r2
@@ -5405,6 +5775,18 @@ SHA1: 71994f4df64e6497851f289b540a7446f8d01301
 SIZE: 2074737
 USE: center-tilde pcf psf ru-g
 
+BUILD_TIME: 1378468453
+CPV: media-fonts/ttf-bitstream-vera-1.10-r3
+DEFINED_PHASES: install postinst postrm setup
+DESC: Bitstream Vera font family
+IUSE: X
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~x86-macos ~sparc-solaris ~x86-solaris
+LICENSE: BitstreamVera
+MD5: fc6a95b1a0de0362f0a1f6b9070aa8d3
+MTIME: 1378468484
+SHA1: f1db77f4bb9fe5d79b60a5fc8b8df676a4985806
+SIZE: 288308
+
 BUILD_TIME: 1376159379
 CPV: media-fonts/urw-fonts-2.4.9
 DEFINED_PHASES: install postinst postrm setup unpack
@@ -5597,6 +5979,23 @@ SIZE: 8287069
 SLOT: 0/6.8.6.8
 USE: X bzip2 cxx djvu fftw fontconfig jbig jpeg jpeg2k lcms lzma openmp pango png postscript raw static-libs svg tiff truetype webp wmf xml zlib
 
+BUILD_TIME: 1378542895
+CPV: media-gfx/inkscape-0.48.4-r1
+DEFINED_PHASES: compile configure install postinst postrm preinst prepare setup unpack
+DEPEND: dev-lang/python:2.7[xml] dev-python/python-exec[python_targets_python2_7(-),python_single_target_python2_7(+)] >=app-text/poppler-0.12.3-r3[cairo,xpdf-headers(+)] dev-cpp/glibmm >=dev-cpp/gtkmm-2.18.0:2.4 >=dev-libs/boehm-gc-6.4 >=dev-libs/glib-2.6.5 >=dev-libs/libsigc++-2.0.12 >=dev-libs/libxml2-2.6.20 >=dev-libs/libxslt-1.0.15 dev-libs/popt dev-python/lxml[python_targets_python2_7(-),python_single_target_python2_7(+)] media-gfx/imagemagick[cxx] media-libs/fontconfig media-libs/freetype:2 media-libs/libpng:0 app-text/libwpd:0.9 app-text/libwpg:0.2 sci-libs/gsl x11-libs/libX11 >=x11-libs/gtk+-2.10.7:2 >=x11-libs/pango-1.4.0 media-libs/lcms:2 app-text/aspell app-text/gtkspell:2 dev-libs/boost sys-devel/gettext virtual/pkgconfig >=dev-util/intltool-0.29 || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool app-arch/xz-utils >=sys-apps/sed-4
+DESC: A SVG based generic vector-drawing program
+EAPI: 5
+IUSE: dia gnome postscript inkjar lcms nls spell wmf python_targets_python2_6 python_targets_python2_7 python_single_target_python2_6 python_single_target_python2_7
+KEYWORDS: ~amd64 ~hppa ~ppc ~ppc64 ~x86 ~amd64-linux ~x86-linux ~sparc-solaris ~x86-solaris
+LICENSE: GPL-2 LGPL-2.1
+MD5: 3f195f3fe1056b7caf85a7a7c371c7f4
+MTIME: 1378543202
+RDEPEND: dev-lang/python:2.7[xml] dev-python/python-exec[python_targets_python2_7(-),python_single_target_python2_7(+)] >=app-text/poppler-0.12.3-r3[cairo,xpdf-headers(+)] dev-cpp/glibmm >=dev-cpp/gtkmm-2.18.0:2.4 >=dev-libs/boehm-gc-6.4 >=dev-libs/glib-2.6.5 >=dev-libs/libsigc++-2.0.12 >=dev-libs/libxml2-2.6.20 >=dev-libs/libxslt-1.0.15 dev-libs/popt dev-python/lxml[python_targets_python2_7(-),python_single_target_python2_7(+)] media-gfx/imagemagick[cxx] media-libs/fontconfig media-libs/freetype:2 media-libs/libpng:0 app-text/libwpd:0.9 app-text/libwpg:0.2 sci-libs/gsl x11-libs/libX11 >=x11-libs/gtk+-2.10.7:2 >=x11-libs/pango-1.4.0 media-libs/lcms:2 app-text/aspell app-text/gtkspell:2 dev-python/numpy[python_targets_python2_7(-),python_single_target_python2_7(+)] media-gfx/uniconvertor app-office/dia app-text/ghostscript-gpl media-libs/libwmf
+RESTRICT: test
+SHA1: e1f6b43149a3cbbc28d6b23863c3a9aaa33e9ef3
+SIZE: 20486956
+USE: dia inkjar lcms nls postscript python_single_target_python2_7 python_targets_python2_7 spell wmf
+
 BUILD_TIME: 1377210987
 CPV: media-gfx/scrot-0.8
 DEFINED_PHASES: install postinst
@@ -5642,6 +6041,22 @@ RDEPEND: dev-libs/glib:2 >=media-gfx/exiv2-0.11 virtual/jpeg media-libs/lcms:0 >
 SHA1: 9b37a348c486e1b3dcf5982d81bb0a2d43572695
 SIZE: 918064
 USE: contrast gtk openmp timezone
+
+BUILD_TIME: 1378488992
+CPV: media-gfx/uniconvertor-1.1.5-r1
+DEFINED_PHASES: compile configure install prepare test
+DEPEND: >=media-libs/sk1libs-0.9.1[python_targets_python2_7(-),-python_single_target_python2_5(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-)] dev-lang/python:2.7 dev-python/python-exec[python_targets_python2_7(-),-python_single_target_python2_5(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-)]
+DESC: Commandline tool for popular vector formats convertion
+EAPI: 5
+IUSE: python_targets_python2_5 python_targets_python2_6 python_targets_python2_7
+KEYWORDS: ~amd64 ~hppa ~ppc ~ppc64 ~x86 ~amd64-linux ~x86-linux ~x64-macos ~sparc-solaris ~x86-solaris
+LICENSE: GPL-2 LGPL-2
+MD5: 9789e91c3b2f84aea04d0529935c53e8
+MTIME: 1378489017
+RDEPEND: >=media-libs/sk1libs-0.9.1[python_targets_python2_7(-),-python_single_target_python2_5(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-)] app-text/ghostscript-gpl dev-lang/python:2.7 dev-python/python-exec[python_targets_python2_7(-),-python_single_target_python2_5(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-)]
+SHA1: c1808e3888d5e4e2169875025fe2d7efa54a231f
+SIZE: 466459
+USE: python_targets_python2_7
 
 BUILD_TIME: 1377336813
 CPV: media-gfx/xfig-3.2.5b-r3
@@ -6480,6 +6895,22 @@ SIZE: 940226
 USE: hardfp
 REPO: xmw
 
+BUILD_TIME: 1378486934
+CPV: media-libs/sk1libs-0.9.1-r3
+DEFINED_PHASES: compile configure install prepare test
+DEPEND: media-fonts/ttf-bitstream-vera media-libs/freetype:2 virtual/jpeg >=media-libs/lcms-1.15:0[python,python_targets_python2_7(-),-python_single_target_python2_5(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-)] sys-libs/zlib dev-lang/python:2.7 dev-python/python-exec[python_targets_python2_7(-),-python_single_target_python2_5(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-)]
+DESC: sk1 vector graphics lib
+EAPI: 5
+IUSE: python_targets_python2_5 python_targets_python2_6 python_targets_python2_7
+KEYWORDS: ~amd64 ~hppa ~ppc ~ppc64 ~x86 ~amd64-linux ~x86-linux ~x64-macos ~sparc-solaris ~x86-solaris
+LICENSE: LGPL-2
+MD5: eb60f142d6b5ac0df60c84d1311e3286
+MTIME: 1378486972
+RDEPEND: media-fonts/ttf-bitstream-vera media-libs/freetype:2 virtual/jpeg >=media-libs/lcms-1.15:0[python,python_targets_python2_7(-),-python_single_target_python2_5(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-)] sys-libs/zlib app-arch/bzip2 app-arch/gzip app-text/ghostscript-gpl media-libs/netpbm dev-lang/python:2.7 dev-python/python-exec[python_targets_python2_7(-),-python_single_target_python2_5(-),-python_single_target_python2_6(-),-python_single_target_python2_7(-)]
+SHA1: c06c5759ac42c96e3ae8c7529e2957f1845cffb8
+SIZE: 1536710
+USE: python_targets_python2_7
+
 BUILD_TIME: 1377487139
 CPV: media-libs/speex-1.2_rc1
 DEFINED_PHASES: configure install prepare
@@ -7154,6 +7585,20 @@ RDEPEND: virtual/libusb:1
 SHA1: 90df729c3ce41449b8f9dbbc4a531fbfd4dd1608
 SIZE: 95931
 
+BUILD_TIME: 1378653278
+CPV: net-wireless/wireless-tools-30_pre9
+DEFINED_PHASES: compile install prepare
+DEPEND: sys-apps/sed
+DESC: A collection of tools to configure IEEE 802.11 wireless LAN cards
+EAPI: 4
+IUSE: linguas_cs linguas_fr multicall
+KEYWORDS: ~alpha amd64 arm hppa ia64 ~mips ppc ppc64 sh ~sparc x86
+LICENSE: GPL-2
+MD5: 1c3144dab73afeb91a615dcc41d89b27
+MTIME: 1378653298
+SHA1: 712a655716815ed325512146ab20d51e411db176
+SIZE: 157512
+
 BUILD_TIME: 1373620038
 CPV: net-wireless/wpa_supplicant-0.7.3-r5
 DEFINED_PHASES: compile configure install postinst prepare setup unpack
@@ -7785,6 +8230,20 @@ SHA1: 5c76e9f21e87d37abc205a4e5d39d900857a603b
 SIZE: 3912772
 SLOT: 3.0
 USE: doc fortran openmp threads
+
+BUILD_TIME: 1378486237
+CPV: sci-libs/gsl-1.14
+DEFINED_PHASES: configure install postinst prepare setup
+DEPEND: app-admin/eselect-cblas virtual/pkgconfig || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: The GNU Scientific Library
+EAPI: 3
+IUSE: cblas-external
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd ~x86-interix ~amd64-linux ~x86-linux ~x86-macos ~sparc-solaris ~x86-solaris
+LICENSE: GPL-3
+MD5: 79c2b036bdb67c59dc2931bd814c97d5
+MTIME: 1378486292
+SHA1: a8844b4d00ed2028414675e0e592c94619fa3d44
+SIZE: 1901164
 
 BUILD_TIME: 1377482674
 CPV: sci-libs/lapack-reference-3.2.1-r1
@@ -8750,6 +9209,20 @@ SHA1: afd4cd4f3815453267138fc6adb665acdc152abc
 SIZE: 628564
 USE: nls
 
+BUILD_TIME: 1378594889
+CPV: sys-devel/crossdev-20120913
+DEFINED_PHASES: install
+DEPEND: app-arch/xz-utils
+DESC: Gentoo Cross-toolchain generator
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~x86-fbsd
+LICENSE: GPL-2
+MD5: 4b1f31661a0bc5861a5f788ba2f7dfdb
+MTIME: 1378594905
+RDEPEND: >=sys-apps/portage-2.1 app-shells/bash !sys-devel/crossdev-wrappers
+SHA1: 7805cdd8eed52eee1fa605e9b9c4b03e2e2ebeab
+SIZE: 27721
+
 BUILD_TIME: 1374089960
 CPV: sys-devel/distcc-3.1-r5
 DEFINED_PHASES: configure install postinst postrm prepare setup
@@ -9175,6 +9648,22 @@ RESTRICT: strip
 SHA1: 396e91e56d8b56e5e3bbe846e6b40fc8e6f0507a
 SIZE: 12423850
 SLOT: 2.2
+
+BUILD_TIME: 1378632605
+CPV: sys-libs/gpm-1.20.7-r1
+DEFINED_PHASES: compile configure install prepare
+DEPEND: sys-libs/ncurses app-arch/xz-utils virtual/yacc virtual/pkgconfig || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: Console-based mouse driver
+EAPI: 4
+IUSE: selinux static-libs
+KEYWORDS: ~alpha amd64 arm hppa ~ia64 ~m68k ~mips ~ppc ppc64 ~s390 ~sh sparc ~x86
+LICENSE: GPL-2
+MD5: baa2725e7c3e8e571255b6c983cb8b9b
+MTIME: 1378632629
+RDEPEND: sys-libs/ncurses
+SHA1: a8739fd5319ccbb81eb3af7b3afd73d4fec6c3d8
+SIZE: 205922
+USE: static-libs
 
 BUILD_TIME: 1373548048
 CPV: sys-libs/libutempter-1.1.5
@@ -9662,6 +10151,18 @@ MTIME: 1376128077
 SHA1: 91f2b0de699dc100877251b2ed264a77f7bd0e05
 SIZE: 4771
 USE: elibc_glibc
+
+BUILD_TIME: 1378595381
+CPV: virtual/libusb-0
+DEFINED_PHASES: -
+DESC: Virtual for libusb
+EAPI: 5
+KEYWORDS: alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~ia64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos
+MD5: cdc524d837eaf22d11b8494a71bf2697
+MTIME: 1378595394
+RDEPEND: || ( >=dev-libs/libusb-compat-0.1.4 >=sys-freebsd/freebsd-lib-8.0[usb] )
+SHA1: e5ff97e45cda717f01130dbc1b3e4f82d3fa7dd1
+SIZE: 5455
 
 BUILD_TIME: 1373953792
 CPV: virtual/libusb-1
@@ -10528,6 +11029,20 @@ MD5: 11001fb46460706d5e45702a64857e8e
 MTIME: 1376227418
 SHA1: 358c48f0b48c8bb4dc03d5731719c010bc4933e6
 SIZE: 54299
+
+BUILD_TIME: 1378669445
+CPV: x11-apps/setxkbmap-1.3.0
+DEFINED_PHASES: compile configure install postinst postrm prepare test unpack
+DEPEND: x11-libs/libxkbfile x11-libs/libX11 || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool virtual/pkgconfig
+DESC: Controls the keyboard layout of a running X server.
+EAPI: 4
+KEYWORDS: alpha amd64 arm hppa ia64 ~mips ppc ppc64 s390 sh sparc x86 ~amd64-fbsd ~x86-fbsd ~amd64-linux ~x86-linux
+LICENSE: MIT
+MD5: ac2515802ee462b7295432058564ec75
+MTIME: 1378669485
+RDEPEND: x11-libs/libxkbfile x11-libs/libX11
+SHA1: 657be3dd3540ea0c1ab9797bab00dfa63be2db27
+SIZE: 52253
 
 BUILD_TIME: 1376328671
 CPV: x11-apps/xauth-1.0.7
@@ -11753,6 +12268,34 @@ SHA1: de74e8bd630ca8616d1bd0872e67256be3acec12
 SIZE: 319893
 USE: pam
 
+BUILD_TIME: 1378669353
+CPV: x11-misc/trayer-srg-1.1.5
+DEFINED_PHASES: compile install unpack
+DEPEND: x11-libs/gdk-pixbuf:2 x11-libs/gtk+:2 x11-libs/libX11 x11-libs/libXmu virtual/pkgconfig
+DESC: trayer fork with multi monitor support, cleaned up codebase and other fancy stuff
+EAPI: 4
+KEYWORDS: amd64 x86
+LICENSE: MIT
+MD5: b6592bcdaae7dfe43fd338ad7d72a391
+MTIME: 1378669386
+RDEPEND: x11-libs/gdk-pixbuf:2 x11-libs/gtk+:2 x11-libs/libX11 x11-libs/libXmu
+SHA1: d8c9d62f91b8ee12421736994ee910c8dee19fdf
+SIZE: 34442
+
+BUILD_TIME: 1378712546
+CPV: x11-misc/wmname-0.1
+DEFINED_PHASES: compile install prepare
+DEPEND: x11-libs/libX11
+DESC: utility to set the name of your window manager
+EAPI: 3
+KEYWORDS: amd64 ~arm ~ppc ~sparc x86
+LICENSE: MIT
+MD5: df65876f742a9ff7711ba392b441063a
+MTIME: 1378712562
+RDEPEND: x11-libs/libX11
+SHA1: 3850e22ac7e55e4d0bfb9320ad7aeb0f207aca81
+SIZE: 23331
+
 BUILD_TIME: 1376484577
 CPV: x11-misc/x2x-1.27-r3
 DEFINED_PHASES: compile install unpack
@@ -11765,6 +12308,21 @@ MTIME: 1376484593
 RDEPEND: x11-libs/libX11 x11-libs/libXtst x11-libs/libXext
 SHA1: c3d1ee2aa9ded4541ac5d4f7699c2687e0c75be4
 SIZE: 57988
+
+BUILD_TIME: 1378668097
+CPV: x11-misc/xbindkeys-1.8.5
+DEFINED_PHASES: configure install
+DEPEND: x11-libs/libX11 x11-proto/xproto
+DESC: Tool for launching commands on keystrokes
+EAPI: 2
+IUSE: guile tk
+KEYWORDS: ~amd64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~sparc-solaris
+LICENSE: GPL-2
+MD5: 7ac978af299e294f176646abfb4c97bf
+MTIME: 1378668113
+RDEPEND: x11-libs/libX11
+SHA1: a1837dfeaa4f50f6939db6cf61ed489bb44560f9
+SIZE: 36759
 
 BUILD_TIME: 1376067568
 CPV: x11-misc/xbitmaps-1.1.1
@@ -12254,6 +12812,23 @@ MTIME: 1376274090
 SHA1: ed292e9233809eefa70f9459bfab20591b8432bb
 SIZE: 124472
 
+BUILD_TIME: 1378654079
+CPV: x11-terms/rxvt-unicode-9.18
+DEFINED_PHASES: compile configure install postinst prepare
+DEPEND: >=sys-libs/ncurses-5.7-r6 media-libs/fontconfig dev-lang/perl x11-libs/libX11 x11-libs/libXrender virtual/pkgconfig x11-proto/xproto || ( >=sys-devel/automake-1.12:1.12 >=sys-devel/automake-1.13:1.13 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DESC: rxvt clone with xft and unicode support
+EAPI: 4
+IUSE: 256-color alt-font-width blink buffer-on-clear +focused-urgency fading-colors +font-styles iso14755 +mousewheel +perl pixbuf secondary-wheel startup-notification xft unicode3 +vanilla wcwidth
+KEYWORDS: alpha amd64 arm hppa ia64 ppc ppc64 sparc x86 ~x86-fbsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris
+LICENSE: GPL-2
+MD5: 182fbe6d772ce9aa01cb65641802ee0b
+MTIME: 1378654105
+RDEPEND: >=sys-libs/ncurses-5.7-r6 media-libs/fontconfig dev-lang/perl x11-libs/libX11 x11-libs/libXrender
+RESTRICT: test
+SHA1: 6df7931c0e652b9d15e95e549d025fced488b381
+SIZE: 1262846
+USE: focused-urgency font-styles mousewheel perl vanilla
+
 BUILD_TIME: 1376514332
 CPV: x11-terms/xfce4-terminal-0.4.8
 DEFINED_PHASES: compile configure install postinst postrm preinst prepare setup unpack
@@ -12325,6 +12900,21 @@ MD5: 9cd0554b4604e93c210ce7502b110341
 MTIME: 1376216828
 SHA1: 9c5a27aa3c2759e81624b4db63418d489c4d255a
 SIZE: 401296
+
+BUILD_TIME: 1378639445
+CPV: x11-wm/cwm-5.1_p20130728
+DEFINED_PHASES: compile install unpack
+DEPEND: x11-libs/libXft x11-libs/libXinerama x11-libs/libXrandr virtual/pkgconfig sys-devel/bison
+DESC: OpenBSD fork of calmwm, a clean and lightweight window manager
+EAPI: 5
+IUSE: vanilla
+KEYWORDS: ~amd64 ~arm ~x86
+LICENSE: ISC
+MD5: 5db7acabe0793c8fedbef776117e7661
+MTIME: 1378639463
+RDEPEND: x11-libs/libXft x11-libs/libXinerama x11-libs/libXrandr
+SHA1: 22bc6a089898729e8d95d5fcdf23ae38481b4f6d
+SIZE: 62687
 
 BUILD_TIME: 1376466243
 CPV: x11-wm/openbox-3.5.0_p20130215
