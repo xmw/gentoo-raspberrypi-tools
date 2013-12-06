@@ -10,7 +10,8 @@ loc=$(git log --date=short -n 1000 | grep "^Date" | sort | tail -n 1 \
 	| awk '$1 == "Date:" { print $2 }' | tr -d - | head -n 1)
 sed -e "/^CONFIG_LOCALVERSION/s:=.*:=\"-$loc\":" -i .config
 
-make ARCH=arm CROSS_COMPILE=/usr/bin/armv6j-hardfloat-linux-gnueabi- -j2
+cpu=$(grep ^processor /proc/cpuinfo | wc -l)
+make ARCH=arm CROSS_COMPILE=/usr/bin/armv6j-hardfloat-linux-gnueabi- -j${cpu}
 
 TMPDIR=$(mktemp -d "${TMP-/tmp}/${0##*/}"-XXXXX)
 trap "[ -d \"${TMPDIR}\" ] && rm -r \"${TMPDIR}\"" SIGINT ZERR
