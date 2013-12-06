@@ -58,3 +58,4 @@ for src in "${SQUASHFS_DIR}"/*.xz.squashfs ; do
 	echo "$(basename "${src}")"
 done | sort | tail -n 1 | tee "${SQUASHFS_DIR}"/LATEST.xz.txt
 
+tmpreaper -v 7d "${SQUASHFS_DIR}"
